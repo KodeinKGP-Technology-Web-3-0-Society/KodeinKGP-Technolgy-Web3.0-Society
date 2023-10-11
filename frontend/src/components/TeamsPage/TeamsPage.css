@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@keyframes comein {
+    0% {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.members_title{
+    color: #3DC4D4;
+    font-size: 2.5vw;
+}
+
+.photo-image {
+    width: 275px;
+    height: 325px;
+    border-radius: 5px;
+    margin: 10px 0;
+    max-width: 325px;
+    max-height: 433px;
+    position: relative;
+    animation: gradient 15s infinite;
+    overflow: hidden;
+}
+
+.photo-image img {
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+}
+
+.founders{
+    display: flex;
+    width: 40vw;
+    margin: 3vw auto;
+    justify-content: space-between;
+}
+
+.photo-details{
+    position: absolute;
+    top: 2rem;
+    right: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: #10121E;
+
+    padding: 0.6rem 8px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    transition: all 300ms ease;
+    animation: comein 500ms ease forwards;
+    display: none;
+}
+
+.member{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.member:hover .photo-details{
+    display: flex;
+}
+
+.photo-details span a {
+    color: #3DC4D4;
+    font-size: 1.4rem;  
+}
+
+.photo-name{
+    color: white;
+    font-size: 1.5rem;
+    font-family: "Kdam Thmor Pro", sans-serif;
+}
+
+.photo-role{
+    color: #3DC4D4;
+    font-size: 1.25rem;
+}
+
+.heads{
+    width: 90vw;
+    margin: 5vw auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 5vw;
+}
