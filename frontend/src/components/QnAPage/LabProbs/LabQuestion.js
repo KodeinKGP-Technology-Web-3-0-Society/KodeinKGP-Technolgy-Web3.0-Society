@@ -23,7 +23,7 @@ export default function LabQuestion() {
                         language="cpp"
                         style={dracula}
                         customStyle={{
-                            padding: "2rem",
+                            padding: "1.9rem",
                         }}
                     >
                         {sol}
