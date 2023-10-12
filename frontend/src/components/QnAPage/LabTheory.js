@@ -1,9 +1,10 @@
-import React from 'react';
+import React,{useState, useEffect} from 'react';
+import { Link } from 'react-router-dom';
 export default function LabTheory() {
   return (
     <div>
-        <a href='/pds/lab'>lab</a>
-        <a href='/pds/theory'>theory</a>   
+        <Link to='/pds/lab'>lab</Link>
+        <Link to='/pds/theory'>theory</Link>
     </div>
   )
 }
