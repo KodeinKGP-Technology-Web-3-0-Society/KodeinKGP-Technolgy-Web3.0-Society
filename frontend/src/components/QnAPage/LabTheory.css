@@ -1,3 +1,7 @@
+body{
+    background-color: black;
+}
+
 #LabTheory{
     display: flex;
     flex-wrap: wrap;
@@ -31,10 +35,13 @@
     color: black;
     background-color: blue;
     border-radius: 1rem;
+    color: white;
 }
 a{
     text-decoration: none;
-    color: black;  
+    color: white;
+    margin: 2rem;
+
 }
 .LabTheoryHeads{
     margin: 1rem;

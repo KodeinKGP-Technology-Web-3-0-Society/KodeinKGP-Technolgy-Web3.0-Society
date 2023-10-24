@@ -4,7 +4,7 @@ import './Lab.css'
 export default function Lab() {
   return (
     <>
-    <div id="LabHeader"><h1>TOPICS</h1></div>
+    <div ><h1 id="LabHeader">TOPICS</h1></div>
     <div id='Lab'>
       {/* <Link to='/pds/lab/initialBasics'>Initial Basics</Link>
       <Link to='/pds/lab/ArrayAndStrings'>1D Arrays and Strings</Link>
