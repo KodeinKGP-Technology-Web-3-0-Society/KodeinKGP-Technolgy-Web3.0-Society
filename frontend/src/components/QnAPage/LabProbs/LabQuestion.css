@@ -33,6 +33,11 @@
     font-weight: bold;
     cursor: pointer;
 }
+.onlineEditor a{
+    text-decoration: none;
+    color: white;
+    margin: 1rem;
+}
 .copyBtn{
     font-size: 1rem;
     font-weight: 400;

@@ -37,11 +37,10 @@ body{
     border-radius: 1rem;
     color: white;
 }
-a{
+.LabTheoryBtns a{
     text-decoration: none;
     color: white;
     margin: 2rem;
-
 }
 .LabTheoryHeads{
     margin: 1rem;

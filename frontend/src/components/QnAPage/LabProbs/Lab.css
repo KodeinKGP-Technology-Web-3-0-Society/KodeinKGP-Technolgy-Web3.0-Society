@@ -16,6 +16,12 @@
     border-radius: 1rem;
     cursor: pointer;
 }
+.LabItem a{
+    text-decoration: none;
+    color: white;
+    margin: 2rem;
+}
 #LabHeader{
     text-align: center;
+    font-size: 3rem;
 }
