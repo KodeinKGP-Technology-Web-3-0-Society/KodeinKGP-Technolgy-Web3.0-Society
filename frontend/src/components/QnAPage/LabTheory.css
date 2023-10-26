@@ -1,48 +1,74 @@
-body{
-    background-color: black;
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
-#LabTheory{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    align-items: center;
-    margin: 1rem;
-    padding: 1rem;
+#LabTheory {
+  display: flex;
+  height: 100vh;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
-.LabTheoryItems{
-    width: 40%;
-    background-color: blanchedalmond;
-    color: black;
-    margin: 8rem 1rem;
-    padding: 1rem;
-    border-radius: 1.3rem;
 
+.LabTheoryItems {
+  text-align: left;
+  min-width: 300px;
+  border: 1px solid #555;
+  padding: 20px;
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s;
+  margin: 10px;
+  flex: 1;
+  font-family: 'Arial', sans-serif;
 }
-.LabTheoryTexts{
-    font-size: 1.1rem;
-    font-weight: 600;
-    margin: 1rem;
-    padding: 1rem;
+
+.LabTheoryItems:hover {
+  transform: translateY(-5px);
 }
-.LabTheoryBtns{
-    font-size: 1.2rem;
-    font-weight: bold;
-    justify-content: center;
-    margin: auto;
-    margin: 1rem;
-    padding: 1rem;
-    color: black;
-    background-color: blue;
-    border-radius: 1rem;
-    color: white;
+
+.LabTheoryHeads {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #00a1d9;
 }
-.LabTheoryBtns a{
-    text-decoration: none;
-    color: white;
-    margin: 2rem;
+
+.LabTheoryTexts {
+  color: #ccc;
+  margin: 15px 0;
 }
-.LabTheoryHeads{
-    margin: 1rem;
-    padding: 1rem;
+
+.LabTheoryBtns {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+  text-transform: none;
+}
+
+.LabTheoryBtns a {
+  color: white;
+  text-decoration: none;
+}
+
+.LabTheoryBtns:hover {
+  background-color: #0056b3;
+  text-decoration: none;
 }

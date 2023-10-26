@@ -4,14 +4,12 @@ import { Link } from 'react-router-dom';
 export default function LabTheory() {
   return (
     <div id='LabTheory'>
-        {/* <Link to='/pds/lab'>lab</Link>
-        <Link to='/pds/theory'>theory</Link> */}
         <div id='labContainer' className='LabTheoryItems'>
         <h2 id="theoryHead" className='LabTheoryHeads'>
           Lab Problems
           </h2>
           <div id="labText" className='LabTheoryTexts'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam maxime adipisci aperiam, cumque quisquam quas. Rerum, mollitia fuga? Sit, et excepturi. Odit, incidunt ipsam.
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus, accusantium totam asperiores autem obcaecati nihil minima optio, aliquam sint temporibus necessitatibus quaerat nobis voluptas adipisci eos officia repudiandae sed quod ab? Illo explicabo quis ipsum tempore iste perspiciatis assumenda dolore odit dignissimos illum ipsam natus blanditiis quidem, similique maiores aut consequuntur sunt accusantium eveniet vitae quod mollitia veritatis! Quidem, dolores.
           </div>
             <button id='labBtn' className='LabTheoryBtns'><Link to='/pds/lab'>See Problems</Link></button>
         </div>
@@ -20,7 +18,7 @@ export default function LabTheory() {
           Theory Problems
           </h2>
           <div id="theoryText" className='LabTheoryTexts'>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Similique numquam maxime adipisci aperiam, cumque quisquam quas. Rerum, mollitia fuga? Sit, et excepturi. Odit, incidunt ipsam.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut corporis eius minima assumenda veniam, facilis incidunt dolor id nobis ab quas pariatur explicabo eligendi temporibus, iusto eveniet molestiae sequi eum? Corrupti nostrum ex reprehenderit a earum in totam mollitia praesentium et, necessitatibus officia quia eos sapiente libero minima numquam sit distinctio maxime dolor commodi aliquam! Lorem ipsum dolor sit amet.lorem5 Lorem ipsum dolor sit amet.
           </div>
             <button id='theoryBtn' className='LabTheoryBtns'><Link to='/pds/lab'>See Problems</Link></button>
         </div>

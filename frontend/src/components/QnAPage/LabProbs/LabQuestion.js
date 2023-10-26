@@ -60,7 +60,7 @@ export default function LabQuestion() {
     return (
         <>
             <div className="question">
-                <pre>{q}</pre>
+                <pre className="pretext">{q}</pre>
             </div>
             <button onClick={toggleHide} id="toggleBtn">
                 show solution

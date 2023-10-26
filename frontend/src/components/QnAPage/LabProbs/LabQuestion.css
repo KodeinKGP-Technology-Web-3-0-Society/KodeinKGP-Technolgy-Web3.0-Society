@@ -1,55 +1,100 @@
-.question{
-    font-size: 1rem;
-    padding: 2rem;
-    width: 75%;
-    margin: 1rem auto;
-    background-color: rgb(62, 60, 60);
-    border-radius: 1rem;
-    color: white;
+body {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
-#toggleBtn{
-    font-size: 1.05rem;
-    background-color: blue;
-    padding: 1rem;
-    margin: 1rem 10rem;
-    border-radius: 1rem;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+
+.question {
+  font-family: 'Arial', sans-serif;
+  background-color: #222;
+  color: #fff;
+  padding: 20px;
+  margin: 20px auto;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  font-size: 1rem;
 }
-.solution{
-    padding: 1rem;
-    width: 75%;
-    margin: 1rem auto;
-    border-radius: 1rem;
+
+.pretext {
+  overflow-x: auto;
 }
-.onlineEditor{
-    font-size: 1.05rem;
-    background-color: blue;
-    padding: 1rem 0.4rem;
-    margin: 1rem 10rem;
-    border-radius: 1rem;
-    color: white;
-    font-weight: bold;
-    cursor: pointer;
+
+.copyBtn {
+  font-size: 1rem;
+  font-weight: 400;
+  background-color: rgb(48, 40, 40);
+  color: white;
+  padding: 0.3rem 1rem 0.3rem 0.5rem;
+  cursor: pointer;
 }
-.onlineEditor a{
-    text-decoration: none;
-    color: white;
-    margin: 1rem;
+
+.clip {
+  padding: 0.3rem 0.5rem 0.3rem 0rem;
 }
-.copyBtn{
-    font-size: 1rem;
-    font-weight: 400;
-    background-color: rgb(48, 40, 40);
-    color: white;
-    padding: 0.3rem 1rem 0.3rem 0.5rem;
-    cursor: pointer;
+
+.copy {
+  margin: 0;
+  background-color: #282a36;
 }
-.clip{
-    padding: 0.3rem 0.5rem 0.3rem 0rem;
+
+#toggleBtn {
+  background-color: #00a1d9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
 }
-.copy{
-    margin: 0;
-    background-color: rgb(48, 40, 40);
+
+#toggleBtn:hover {
+  background-color: #007dab;
+}
+
+#toggleBtn.hide-solution {
+  background-color: #00a1d9;
+}
+
+#toggleBtn.hide-solution:hover {
+  background-color: #007dab;
+}
+
+.solution {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.onlineEditor {
+  background-color: #00a1d9;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin: 10px;
+}
+
+.onlineEditor:hover {
+  background-color: #007dab;
+}
+
+.onlineEditor a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.onlineEditor a:hover {
+  text-decoration: underline;
+}
+
+.react-syntax-highlighter-code {
+  background-color: #333;
+  padding: 1.9rem;
+  margin: 0;
+  border-radius: 10px;
 }

@@ -4,8 +4,8 @@ import './LabCard.css'
 export default function LabCard({qna,topic,ind}) {
   let path= `/pds/lab/${topic}/${ind}`;
   return (
-    <div className='cardDiv'>
-      <Link to={path} className='cards'><p className='text'><span className='index'>{ind+1}.</span> {qna.Question}</p></Link>
-    </div>
+    
+      
+    <Link to={path} className='cards'><div className='cardDiv'><p className='text'><span className='index'>{ind+1}.</span> {qna.Question}</p></div></Link>
   )
 }
