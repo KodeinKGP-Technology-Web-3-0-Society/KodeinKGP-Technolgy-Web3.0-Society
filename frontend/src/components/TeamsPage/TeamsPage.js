@@ -8,13 +8,13 @@ const TeamsPage = () => {
   return (
     <div className="teamspage" style={{ backgroundColor:"#10121E",textAlign: "center" ,padding:"2vw 0"}}>
       <div className="members">
-        <h3 className="members_title">Advisors</h3>
+        <h3 className="members_title" style={{color:"#3DC4D4", fontSize:"3vw"}}>Advisors</h3>
         <Founders />
       </div>
-      <div className="members"> 
+      {/* <div className="members"> 
         <h3 className="members_title">Heads</h3>
         <Heads /> 
-      </div>     
+      </div>      */}
     </div>
   );
 };
