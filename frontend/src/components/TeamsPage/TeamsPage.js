@@ -11,10 +11,10 @@ const TeamsPage = () => {
         <h3 className="members_title" style={{color:"#3DC4D4", fontSize:"3vw"}}>Advisors</h3>
         <Founders />
       </div>
-      {/* <div className="members"> 
-        <h3 className="members_title">Heads</h3>
+      <div className="members"> 
+        <h3 className="members_title" style={{color:"#3DC4D4", fontSize:"3vw"}}>Heads</h3>
         <Heads /> 
-      </div>      */}
+      </div>     
     </div>
   );
 };

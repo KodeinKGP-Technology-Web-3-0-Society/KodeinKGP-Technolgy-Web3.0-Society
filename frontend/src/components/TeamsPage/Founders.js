@@ -22,12 +22,12 @@ const Founders = () => {
               <div className="photo-image">
                 <img src="https://user-images.githubusercontent.com/96824839/171794126-16b6182a-65f3-483b-95f1-04682526a6ca.jpg" alt="" />
                 <div className = "photo-details"> 
-                <span><a href="https://www.facebook.com/profile.php?id=100057206746965" target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
-                <span><a href="mailto:surajgupta.3072@gmail.com" target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
-                <span><a href="#" target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
-                <span><a href="https://www.linkedin.com/in/suraj-gupta-457496201/" target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
-                <span><a href="https://github.com/surajgupta3072/" target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
-              </div>
+                  <span><a href="https://www.facebook.com/profile.php?id=100057206746965" target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
+                  <span><a href="mailto:surajgupta.3072@gmail.com" target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
+                  <span><a href="#" target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
+                  <span><a href="https://www.linkedin.com/in/suraj-gupta-457496201/" target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
+                  <span><a href="https://github.com/surajgupta3072/" target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
+                </div>
               </div>
               <h5 className='photo-name'><strong>Suraj Gupta</strong></h5>
         </article>

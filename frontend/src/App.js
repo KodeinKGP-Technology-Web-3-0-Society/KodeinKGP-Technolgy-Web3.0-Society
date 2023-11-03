@@ -6,7 +6,6 @@ import LabQuestion from "./components/QnAPage/LabProbs/LabQuestion";
 import TeamsPage from "./components/TeamsPage/TeamsPage"; 
 import React from 'react';
 import Home from "./components/LandingPage/Home";
-import TeamsPage from './components/TeamsPage/TeamsPage';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 function App() {

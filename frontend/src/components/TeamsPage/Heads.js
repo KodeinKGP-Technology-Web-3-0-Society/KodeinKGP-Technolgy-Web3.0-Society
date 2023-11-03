@@ -1,6 +1,7 @@
 import React from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import './TeamsPage.css';
+import { Tilt } from 'react-tilt';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faInstagram ,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
@@ -12,6 +13,13 @@ library.add(faFacebook, faInstagram, faEnvelope , faLinkedin ,faGithub);
 const Heads = () => {
     function eachHead( head){
         return (
+          <Tilt
+          className="parallax-effect-glare-scale"
+          perspective={500}
+          glareEnable={true}
+          scale={1}
+          gyroscope={true}
+          >
              <article className = "member head">
               <div className="photo-image">
                 <img src={head.image_url} alt="" />
@@ -26,6 +34,7 @@ const Heads = () => {
               <h5 className="photo-name"><strong>{head.name}</strong></h5>
               <h6 className="photo-role"><strong>( {head.role} )</strong></h6>
             </article> 
+          </Tilt>
         );
     }
   return (
