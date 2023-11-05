@@ -1,0 +1,41 @@
+#footer {
+    background-color: rgb(22, 3, 64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.footerItems {
+    
+    padding: 1rem;
+    margin: 1rem;
+}
+.footerItemElement {
+    margin: 1rem;
+    padding: 1rem;
+}
+#KiKLogo {
+    width: 50px;
+}
+.KiKName {
+    margin: 0px;
+}
+.iconsContainer{
+    margin: 2rem 0rem;
+}
+.iconsContainer a{
+    margin: 1rem 1rem 1rem 0rem;
+}
+ion-icon {
+    color: white;
+  }
+.KiKDescription{
+    margin-top: 1rem;
+}
+.KiKName{
+    margin-top: 0.5rem;
+}
+#footerItemElement1{
+    font-weight: bold;
+    font-size: 1.1rem;
+}
