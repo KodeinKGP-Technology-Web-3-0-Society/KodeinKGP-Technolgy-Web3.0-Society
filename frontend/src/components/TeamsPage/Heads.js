@@ -21,6 +21,7 @@ const Heads = () => {
           gyroscope={true}
           >
              <article className = "member head">
+              <h4 className="photo-role"><strong>{head.role}</strong></h4>
               <div className="photo-image">
                 <img src={head.image_url} alt="" />
                 <div className = "photo-details">
@@ -32,7 +33,6 @@ const Heads = () => {
                 </div>
               </div>
               <h5 className="photo-name"><strong>{head.name}</strong></h5>
-              <h6 className="photo-role"><strong>( {head.role} )</strong></h6>
             </article> 
           </Tilt>
         );

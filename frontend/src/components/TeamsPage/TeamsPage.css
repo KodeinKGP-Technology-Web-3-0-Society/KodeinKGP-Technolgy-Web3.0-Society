@@ -1,22 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+.members{
+    margin: 0 0 1rem 0;
 }
 
-body {
-    width: 100%;
-    margin: 0 auto;
+.members_title{
+    font-family: Montserrat;
+    font-size: 2rem;
+    color: #3DC4D4;
+}
+
+.founders,.heads{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.founders{
+    width: 50vw;
+    margin: 2rem auto;
+}
+
+.heads{
+    width: 80vw;
+    margin: 3rem auto;
 }
 
 .parallax-effect-glare-scale{
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 325px;
+    /* height: 325px; */
+    padding: 10px 10px;
     border-radius: 10px;
     border: 4px solid #3DC4D4;
     background-color: #393940;
@@ -27,30 +46,13 @@ body {
     box-shadow: 0px 0px 5px #3DC4D4;
 }
 
-.parallax-effect-glare-scale:hover .founder{
+.parallax-effect-glare-scale:hover .founder,.parallax-effect-glare-scale:hover .member{
     transform: translateZ(20px);
 }
 
-.founders{
-    width: 50vw;
-    display: flex;
-    margin: 2vw auto;
-    justify-content: space-between;
-}
-
-.heads{
-    width: 70vw;
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    justify-content: space-between;
-    margin: 2vw auto;
-    gap: 50px;
-}
 .founder,.member{
     width: 250px;
-    /* height: 325px;
-    background-color: #393940; */
-    padding: 10px 20px; 
+    margin: 0px 0;
 }
 
 .photo-image img{
@@ -80,6 +82,13 @@ body {
 
 .photo-name{
     color: #fff;
-    font-size: 0.8vw;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1rem;
+    font-family: Montserrat;
+}
+
+.photo-role{
+    color: #3DC4D4;
+    font-size: 1.25rem;
+    margin: 4px 0 8px;
+    font-family: Montserrat;
 }

@@ -1,6 +1,7 @@
 import React from "react";
 import Founders from "./Founders";
 import Heads from "./Heads.js";
+import Teams from "./Teams.js";
 import "./TeamsPage.css";
 
 const TeamsPage = () => {
@@ -8,13 +9,17 @@ const TeamsPage = () => {
   return (
     <div className="teamspage" style={{ backgroundColor:"#10121E",textAlign: "center" ,padding:"2vw 0"}}>
       <div className="members">
-        <h3 className="members_title" style={{color:"#3DC4D4", fontSize:"3vw"}}>Advisors</h3>
+        <h3 className="members_title">Advisors</h3>
         <Founders />
       </div>
       <div className="members"> 
-        <h3 className="members_title" style={{color:"#3DC4D4", fontSize:"3vw"}}>Heads</h3>
+        <h3 className="members_title">Heads</h3>
         <Heads /> 
       </div>     
+      <div className="teams">
+        <h3 className="members_title">Our Teams</h3>
+        <Teams/>
+      </div>
     </div>
   );
 };
