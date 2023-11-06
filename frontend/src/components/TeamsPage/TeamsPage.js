@@ -2,12 +2,16 @@ import React from "react";
 import Founders from "./Founders";
 import Heads from "./Heads.js";
 import Teams from "./Teams.js";
+import Footer from "../LandingPage/Footer.js";
+import Navbar from "../LandingPage/Navbar.js";
 import "./TeamsPage.css";
 
 const TeamsPage = () => {
   
   return (
-    <div className="teamspage" style={{ backgroundColor:"#10121E",textAlign: "center" ,padding:"2vw 0"}}>
+    <>
+    <Navbar />
+    <div className="teamspage" style={{ backgroundColor:"rgb(1, 1, 27)",textAlign: "center"}}>
       <div className="members">
         <h3 className="members_title">Advisors</h3>
         <Founders />
@@ -20,7 +24,9 @@ const TeamsPage = () => {
         <h3 className="members_title">Our Teams</h3>
         <Teams/>
       </div>
+      <Footer />
     </div>
+    </>
   );
 };
 
