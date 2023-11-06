@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import SelectedTeam from "./SelectedTeam";
+import './SelectedTeam.css';
 
 const Teams = () =>{
     const [activeButton, setActiveButton] = useState('1');
