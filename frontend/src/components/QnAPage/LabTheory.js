@@ -1,8 +1,11 @@
 import React,{useState, useEffect} from 'react';
+import Navbar from '../LandingPage/Navbar';
 import './LabTheory.css'
 import { Link } from 'react-router-dom';
 export default function LabTheory() {
   return (
+    <>
+    <Navbar />
     <div id='LabTheory'>
         <div id='labContainer' className='LabTheoryItems'>
         <h2 id="theoryHead" className='LabTheoryHeads'>
@@ -25,5 +28,6 @@ export default function LabTheory() {
             
         </div>
     </div>
+    </>
   )
 }

@@ -1,10 +1,13 @@
 import React from 'react';
+import Navbar from '../../LandingPage/Navbar'
 import { Link } from 'react-router-dom'
 
 import './Theory.css';
 
 export default function Theory() {
   return (
+    <>
+    <Navbar />
     <div style={{ backgroundColor: "rgb(1, 1, 27)", fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif" }}>
       <div><h1 id="LabHeader">THEORY TOPICS</h1></div>
       <div id='Lab'>
@@ -32,5 +35,6 @@ export default function Theory() {
 </Link>
       </div>
     </div>
+</>
   );
 }

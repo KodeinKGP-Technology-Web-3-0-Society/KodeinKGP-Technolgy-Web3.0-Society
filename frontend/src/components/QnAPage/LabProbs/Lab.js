@@ -1,8 +1,11 @@
 import React from 'react'
+import Navbar from '../../LandingPage/Navbar'
 import { Link } from 'react-router-dom'
 import './Lab.css'
 export default function Lab() {
   return (
+    <>
+    <Navbar />
     <div style={{backgroundColor:"rgb(1, 1, 27)",fontFamily:" system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"}}>
     <div ><h1 id="LabHeader">LAB TOPICS</h1></div>
     <div id='Lab'>
@@ -39,5 +42,6 @@ export default function Lab() {
 
     </div>
     </div>
+    </>
   )
 }
