@@ -78,7 +78,7 @@
     transform: translateY(0);
     z-index: 2;
   }
-  .content p{
+  .card_content p{
     visibility: hidden;
     transform: translateY(-100px);
     background-color: transparent;
