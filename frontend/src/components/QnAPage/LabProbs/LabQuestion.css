@@ -88,9 +88,6 @@ body {
   text-decoration: none;
 }
 
-.onlineEditor a:hover {
-  text-decoration: underline;
-}
 
 .react-syntax-highlighter-code {
   background-color: #333;

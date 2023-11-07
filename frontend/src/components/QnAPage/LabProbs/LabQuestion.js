@@ -69,7 +69,8 @@ export default function LabQuestion() {
             <button className="onlineEditor">
                 <a
                     href="https://www.programiz.com/c-programming/online-compiler/"
-                    target="blank"
+                    target="blank" 
+                    className="editorLink"
                 >
                     open online editor
                 </a>

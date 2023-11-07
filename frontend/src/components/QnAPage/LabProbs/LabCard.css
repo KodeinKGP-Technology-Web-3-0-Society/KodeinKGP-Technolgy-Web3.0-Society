@@ -16,7 +16,7 @@
 
 .cardDiv:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 10px 2px #FFD700;
+  box-shadow: 0 0 1px 1px #FFD700;
 }
 
 .text {
@@ -31,5 +31,5 @@
 
 .index {
   font-weight: bold;
-  color: #00a1d9;
+  color: rgb(91, 230, 255);
 }
