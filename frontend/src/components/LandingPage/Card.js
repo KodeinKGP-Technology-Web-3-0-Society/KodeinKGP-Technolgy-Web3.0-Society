@@ -1,30 +1,20 @@
 import React from "react"
-import eventAssests, { PRODUCTS } from "./eventassets"
+import { PRODUCTS } from "./eventassets"
 
-const Card = (props) => {
-
-    const { id, eventName, img, eventDescription } = PRODUCTS
-
+const Card = () => {
     return (
         <div className="cards">
-            <div className="card 1">
-                <img src={ img }/>
-                <h1>{eventName}</h1>
-                <span>{eventDescription}​</span>
-            </div>
-            <div className="card 2">
-            <img src={event2} alt="event2" />
-                <h1>Event 2</h1>
-                <span>Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.​</span>
-            </div>
-            <div className="card 3">
-            <img src={event3} alt="event3" />
-                <h1>Event 3</h1>
-                <span>Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency.​</span>
-            </div>
+            {PRODUCTS.map(product => (
+                <div className={`card ${product.id}`} key={product.id}>
+                    <img src="./event1.jpg" alt={product.eventName} />
+                    <h1>{product.eventName}</h1>
+                    <span>{product.eventDescription}</span>
+                </div>
+            ))}
         </div>
     );
 }
+
  
 export default Card
 {/* <div className="cards">

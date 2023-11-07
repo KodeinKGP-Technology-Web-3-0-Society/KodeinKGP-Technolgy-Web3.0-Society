@@ -4,6 +4,9 @@ import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
 import RecentEvents from './RecentEvents';
+import Teams from "./Teams";
+// import Cards from "./Card";
+import Card from "./Card";
 const Home = () => {
   const [number, setNumber] = useState(null);
 
@@ -30,6 +33,8 @@ const Home = () => {
         <div className="text">$0M+ <span>TRANSACTIONS</span></div>
       </div>
       <RecentEvents/>
+      <Teams />
+      <Card />
       <Footer/>
     </div>
   );
