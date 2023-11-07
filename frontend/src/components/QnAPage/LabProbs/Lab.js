@@ -4,10 +4,13 @@ import './Lab.css'
 export default function Lab() {
   return (
     <div style={{backgroundColor:"rgb(1, 1, 27)",fontFamily:" system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif"}}>
-    <div ><h1 id="LabHeader">TOPICS</h1></div>
+    <div ><h1 id="LabHeader">LAB TOPICS</h1></div>
     <div id='Lab'>
     <Link to='/pds/lab/initialBasics' className="classOfLinks">
   <div id="initialBasics" className="LabItem">Initial Basics</div>
+</Link>
+    <Link to='/pds/lab/loops' className="classOfLinks">
+  <div id="loops" className="LabItem">Loops</div>
 </Link>
 
 <Link to='/pds/lab/ArrayAndStrings' className="classOfLinks">
@@ -28,6 +31,9 @@ export default function Lab() {
 
 <Link to='/pds/lab/linkedList' className="classOfLinks">
   <div id="linkedLists" className="LabItem">Linked Lists and Files</div>
+</Link>
+<Link to='/pds/lab/labTest' className="classOfLinks">
+  <div id="labTest" className="LabItem">Lab Tests [Combined]</div>
 </Link>
 
 

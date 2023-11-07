@@ -1,10 +1,10 @@
 import React from "react";
-import dataJ from "./data.json";
+import dataJ from "../LabProbs/data.json";
 import { useParams } from "react-router-dom";
 import SyntaxHighlighter from "react-syntax-highlighter";
 import { dracula } from "react-syntax-highlighter/dist/esm/styles/hljs";
-import "./LabQuestion.css";
-export default function LabQuestion() {
+import "./TheoryQuestion.css";
+export default function TheoryQuestion() {
     const [flag, setFlag] = React.useState(0);
     const [copy, setCopy] = React.useState(0);
     let arr=[];
@@ -13,10 +13,10 @@ export default function LabQuestion() {
     const param = useParams();
     const topic = param.topic;
     const ind = param.ind;
-    if(topic=='labTest'){
+    if(topic=='theoryTest'){
         let topicArray = ["initialBasics","loops","ArrayAndStrings","functionsAndRecursions","structuresAndPointers","sortingAnd2dArrays","linkedList"];
         topicArray.forEach(element => {
-          arr=arr.concat(data[element][2].Elements);
+          arr=arr.concat(data[element][1].Elements);
         });
       }
       else  arr = data[topic][0].Elements;
