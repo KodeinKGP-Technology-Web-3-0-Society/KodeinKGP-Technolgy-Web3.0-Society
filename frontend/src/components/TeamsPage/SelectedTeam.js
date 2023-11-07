@@ -6,35 +6,32 @@ import BlockchainTeam from "./BlockchainTeam.json";
 import AITeam from "./AITeam.json";
 
 const SelectedTeam = (props) =>{
-    let number = props.id;
-    let selectedData; 
-    switch (number){
-        case '1':
-            selectedData = WebTeam; 
-            return (<div>
-                <h2>Tech Team</h2>
-            </div>);
-        case '2':
-            selectedData = AITeam; 
-            return (<div>
-                <h2>AI & Metaverse Team</h2>
-            </div>);
-        case '3':
-            selectedData = BlockchainTeam; 
-            return (<div>
-                <h2>Blockchain Team</h2>
-            </div>);
-        case '4':
-            selectedData = DesignTeam; 
-            return (<div>
-                <h2>Design & Media Team</h2>
-            </div>);
-        case '5':
-            selectedData = EventTeam; 
-            return (<div>
-                <h2>Events Team</h2>
-            </div>);
-    }
+    let number = props.id-1;
+    let totalData = [WebTeam,AITeam,BlockchainTeam,DesignTeam,EventTeam];
+    let selectedData= totalData[number]; 
+    // console.log(selectedData);
+    let memberDetails = selectedData[0];
+    // console.log(memberDetails);
+    return(
+        <div>
+            <h2 className='teamttitle'>{selectedData[1].teamName}</h2>
+            <div className='aboutteam'>
+                <div className='teamcontent'>
+                    <p className='team_content'>{selectedData[1].content}</p>
+                    <img src={selectedData[1].image_url} alt ="img"/>
+                </div>
+                <div className='teammembers'>
+                    {memberDetails.map(member=>{
+                        return(
+                            <div className='teammember'>
+                                <img src={member.image_url} alt="img"/>
+                            </div>
+                        )
+                    })}
+                </div>
+            </div>
+        </div>
+    )
 }
 
 export default SelectedTeam;

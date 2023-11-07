@@ -11,7 +11,7 @@ const TeamsPage = () => {
   return (
     <>
     <Navbar />
-    <div className="teamspage" style={{ backgroundColor:"rgb(1, 1, 27)",textAlign: "center"}}>
+    <div className="teamspage" style={{ backgroundColor:"rgb(1, 1, 27)",textAlign: "center",color:"white",fontFamily:"Montserrat"}}>
       <div className="members">
         <h3 className="members_title">Advisors</h3>
         <Founders />

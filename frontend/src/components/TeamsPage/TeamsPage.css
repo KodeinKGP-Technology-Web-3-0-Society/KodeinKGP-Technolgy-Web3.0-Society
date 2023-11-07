@@ -56,10 +56,11 @@
 }
 
 .photo-image img{
+    object-fit: cover;
     max-width: 200px;
     height: 250px;
 }
-
+ 
 .photo-details{
     opacity: 0;
 }

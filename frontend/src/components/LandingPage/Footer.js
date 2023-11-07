@@ -4,7 +4,7 @@ import Logo from './kik-final-logo.png';
 export default function Footer() {
     
     return (
-        <div id="footer">
+        <div id="footer" style={{color:"white"}}>
             <div className="footerItems" id="footerItem1">
 
           <div className='footerHeader'>

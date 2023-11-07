@@ -1,7 +1,6 @@
 [
 [
   {
-    "teamId":4,
     "name": "Bishal Dalai",
     "id": "1",
     "mailid": "bishaldalai@kgpian.iitkgp.ac.in ",
@@ -82,18 +81,8 @@
     "image_url":"https://drive.google.com/uc?export=view&id=1_2119cZLV_KYU7sFZmiuER_jA5cn3m7H"
   },
 {
-    "name": "Devanshu Agrawal",
-    "id": "9",
-    "mailid": "devanshuagrawal99@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1exQvzUiAN4jHE0LWFid31lKmHr1hA7g7"
-  },
-{
     "name": "Saketh Amballa",
-    "id": "10F",
+    "id": "10",
     "mailid": "amballasaketh1121@gmail.com",
     "facebook": "https://www.facebook.com/sakethlucky11",
     "instagram": "www.instagram.com/sakethlucky11",
@@ -102,7 +91,9 @@
     "image_url":"https://drive.google.com/uc?export=view&id=1ZQ692M1N_EAE7B_N-qEWBluinFLC74rT"
   }
 ],{
-    "content" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repudiandae rem dolores perspiciatis consequatur possimus, nisi, quidem voluptas dolor cum vel error iure nam, architecto cumque minus voluptates odio! Voluptates voluptatibus veritatis voluptatum fugiat minus asperiores provident. Ab ullam asperiores, modi facere est, quod vero, nemo adipisci quam harum praesentium optio dolor exercitationem? Iste blanditiis officia voluptatibus facere eius unde cumque eum consequuntur vero recusandae. Deserunt rerum, pariatur tempora corporis, temporibus, dolorum minus provident officiis consequatur exercitationem voluptatibus. Nulla placeat, rem saepe nisi incidunt voluptas molestiae. Minima quis soluta aut dolor fuga, excepturi laborum inventore fugit itaque quae. Dolore, voluptatum!"
+    "teamName":"Events Team",
+    "content" : "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi repudiandae rem dolores perspiciatis consequatur possimus, nisi, quidem voluptas dolor cum vel error iure nam, architecto cumque minus voluptates odio! Voluptates voluptatibus veritatis voluptatum fugiat minus asperiores provident. Ab ullam asperiores, modi facere est, quod vero, nemo adipisci quam harum praesentium optio dolor exercitationem? Iste blanditiis officia voluptatibus facere eius unde cumque eum consequuntur vero recusandae. Deserunt rerum, pariatur tempora corporis, temporibus, dolorum minus provident officiis consequatur exercitationem voluptatibus. Nulla placeat, rem saepe nisi incidunt voluptas molestiae. Minima quis soluta aut dolor fuga, excepturi laborum inventore fugit itaque quae. Dolore, voluptatum!",
+    "image_url":""
   }
   ]
   
