@@ -27,9 +27,9 @@ const Home = () => {
         </div>
       </div>
       <div className="bottom-bar">
-        <div className="text">0+ <span>ACTIVE USERS</span></div>
-        <div className="text">0+ <span>COMPANIES TRUSTED</span></div>
-        <div className="text">$0M+ <span>TRANSACTIONS</span></div>
+        <div className="text">260+ <span>Problems</span></div>
+        <div className="text">260+ <span>Detailed Solutions</span></div>
+        <div className="text">10+ <span>Events Conducted</span></div>
       </div>
       <RecentEvents/>
       <Teams />

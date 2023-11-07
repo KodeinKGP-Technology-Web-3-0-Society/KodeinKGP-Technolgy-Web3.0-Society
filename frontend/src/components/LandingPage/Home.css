@@ -18,11 +18,23 @@
     justify-content: space-between;
     padding: 20px;
   }
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    font-size: 1.2rem;
+  }
+  .logo h4 {
+    color: white;
+  }
+
   .logo img{
-    width: 128px;
-    height: 32px;
+    width: 60px;
+    height: 60px;
     padding: 5px;
-    padding-left: 30px;
+    /* padding-left: 30px; */
   }
   .links{
     display: flex;
