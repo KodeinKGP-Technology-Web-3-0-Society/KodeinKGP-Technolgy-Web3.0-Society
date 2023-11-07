@@ -1,4 +1,5 @@
 import React from 'react';
+import Navbar from '../LandingPage/Navbar';
 import img1 from './Images/img1.jpg';
 import img2 from './Images/img2.jpg';
 import img3 from './Images/img3.jpg';
@@ -10,6 +11,8 @@ import './EventsPage.css';
 
 const EventsPage = () =>{
     return (
+      <>
+      <Navbar />
         <div>
       <div className = "heading"><span>Events</span></div>
       <div className="container">
@@ -76,6 +79,8 @@ const EventsPage = () =>{
       </div>
     </div>
     </div>
+
+    </>
     )
 }
 

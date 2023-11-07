@@ -18,6 +18,8 @@ body {
   justify-content: center;
   align-items: center;
   padding: 20px;
+  margin-top: -2rem;
+
 }
 
 .LabTheoryItems {
@@ -71,4 +73,44 @@ body {
 .LabTheoryBtns:hover {
   background-color: #0056b3;
   text-decoration: none;
+}
+
+.quesimg {
+  width: 90%;
+  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quesimg {
+  width: 90%;
+  /* background: red; */
+  height: 300px;
+  /* margin-top: -2rem; */
+}
+.qimg { 
+  width: 500px;
+  height: 100%;
+  /* background: yellow; */
+  overflow: hidden;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+
+.qimg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#theoryContainer, #labContainer {
+  background: linear-gradient(-168.39deg,#ffffff -278.56%,#24248b -78.47%, #1d1b66 5.67%, #11101d 91.61%);
+}
+
+@media only screen and (min-width: 1200px) {
+  .quesimg {
+    display: block;
+  }
 }
