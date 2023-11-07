@@ -42,18 +42,23 @@
     width: 55vw;
     font-size: 1.25rem;
 }
-
+.team_image{
+    width: 35vw;
+}
 .teammembers{
     display: flex;
     align-items: center;
     justify-content: space-around;
     width: 80vw;
+    margin: 3rem auto;
     flex-wrap: wrap;
+    gap: 30px;
 }
 
-.teammember img{
+.member img{
     object-fit: cover;
-    max-width: 250px;
-    height: 300px;
+    width: 200px;
+    margin-top: 1rem;
 }
+
 
