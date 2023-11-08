@@ -3,7 +3,7 @@ import Navbar from "./Navbar";
 import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
-import RecentEvents from './RecentEvents';
+// import RecentEvents from './RecentEvents';
 import Work from "./Work.js";
 import Card from "./Card.js";
 const Home = () => {
@@ -31,7 +31,7 @@ const Home = () => {
         <div className="text">260+ <span>Detailed Solutions</span></div>
         <div className="text">10+ <span>Events Conducted</span></div>
       </div>
-      <RecentEvents/>
+      {/* <RecentEvents/> */}
       <Work />
       <Card />
       <Footer/>

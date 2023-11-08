@@ -43,18 +43,32 @@ export default function Footer() {
           </div>
         </div>
             <div className="footerItems" id="footerItem2">
+              <h1>Resources :</h1>
                 <div className="footerItemElement" id="footerItemElement1">
-                    Lorem, ipsum.
+                    <p>Blockchain:</p>
+                    <ul>
+                      <li>Link 1</li>
+                      <li>Link 2</li>
+                      <li>Link 3</li>
+                    </ul>
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
-                    Lorem, ipsum dolor.
+                <p>Blockchain:</p>
+                    <ul>
+                      <li>Link 1</li>
+                      <li>Link 2</li>
+                      <li>Link 3</li>
+                    </ul>
                 </div>
                 <div className="footerItemElement" id="footerItemElement3">
-                    Lorem, ipsum dolor.
+                <p>Blockchain:</p>
+                    <ul>
+                      <li>Link 1</li>
+                      <li>Link 2</li>
+                      <li>Link 3</li>
+                    </ul>
                 </div>
-                <div className="footerItemElement" id="footerItemElement4">
-                    Lorem, ipsum dolor.
-                </div>
+                
             </div>
             <div className="footerItems" id="footerItem3">
                 <div className="footerItemElement" id="footerItemElement1">
@@ -70,7 +84,7 @@ export default function Footer() {
                     Lorem, ipsum dolor.
                 </div>
             </div>
-            <div className="footerItems" id="footerItem4">
+            {/* <div className="footerItems" id="footerItem4">
                 <div className="footerItemElement" id="footerItemElement1">
                     Lorem, ipsum.
                 </div>
@@ -83,7 +97,7 @@ export default function Footer() {
                 <div className="footerItemElement" id="footerItemElement4">
                     Lorem, ipsum dolor.
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }
