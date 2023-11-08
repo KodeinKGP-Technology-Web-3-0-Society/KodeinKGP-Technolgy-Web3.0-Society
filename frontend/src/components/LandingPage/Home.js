@@ -3,9 +3,9 @@ import Navbar from "./Navbar";
 import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
-import RecentEvents from './RecentEvents';
-import Teams from "./Teams";
-import Card from "./Card";
+// import RecentEvents from './RecentEvents';
+import Work from "./Work.js";
+import Card from "./Card.js";
 const Home = () => {
   const [number, setNumber] = useState(null);
 
@@ -31,8 +31,8 @@ const Home = () => {
         <div className="text">260+ <span>Detailed Solutions</span></div>
         <div className="text">10+ <span>Events Conducted</span></div>
       </div>
-      <RecentEvents/>
-      <Teams />
+      {/* <RecentEvents/> */}
+      <Work />
       <Card />
       <Footer/>
     </div>
