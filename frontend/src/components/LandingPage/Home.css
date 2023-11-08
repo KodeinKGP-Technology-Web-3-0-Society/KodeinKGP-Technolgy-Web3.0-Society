@@ -24,18 +24,18 @@
     padding: 20px;
   }
 
-  .logo {
+  .logoo {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 5px;
     font-size: 1.2rem;
   }
-  .logo h4 {
+  .logoo h4 {
     color: white;
   }
 
-  .logo img{
+  .logoo img{
     width: 60px;
     height: 60px;
     padding: 5px;

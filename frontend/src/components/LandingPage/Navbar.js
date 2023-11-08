@@ -6,8 +6,8 @@ import './Home.css'
 const Navbar = () => {
   return (
     <div className='navbar'>
-        <div className="logo">
-            <img src={Logo} alt="logo" />
+        <div className="logoo">
+            <img src={Logo} alt="logoo" />
             <h4>KodeinKGP</h4>
         </div>
         <div className="links">

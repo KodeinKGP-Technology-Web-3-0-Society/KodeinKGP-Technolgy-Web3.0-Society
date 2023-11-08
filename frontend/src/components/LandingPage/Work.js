@@ -2,7 +2,7 @@ import React from "react";
 import { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
 
-import "./Teams.css";
+import "./Work.css";
 import web from "./web-dev.png"
 import ai from './ai-metaverse.png'
 import blockchain from './blockchain.png'

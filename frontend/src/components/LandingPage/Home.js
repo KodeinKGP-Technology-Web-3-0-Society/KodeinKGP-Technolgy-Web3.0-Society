@@ -3,19 +3,18 @@ import Navbar from "./Navbar";
 import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
-// import RecentEvents from './Teams.js';
-import Card from "./Card.js";
+import RecentEvents from './RecentEvents';
 import Work from "./Work.js";
-
+import Card from "./Card.js";
 const Home = () => {
-  // const [number, setNumber] = useState(null);
+  const [number, setNumber] = useState(null);
 
   return (
     <div className="landing-page">
       <Navbar />
       <div className="content">
         <div className="right">
-          <h1 className="heading">Welcome to <span>KodeinKGP.</span></h1>
+          <h1>Welcome to <span>KodeinKGP.</span></h1>
           <p className="vision">
             “The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”
           </p>
@@ -28,14 +27,13 @@ const Home = () => {
         </div>
       </div>
       <div className="bottom-bar">
-        <div className="text">260+ <span>PDS Problems</span></div>
+        <div className="text">260+ <span>Problems</span></div>
         <div className="text">260+ <span>Detailed Solutions</span></div>
-        <div className="text">1 <span>PLATFORM</span></div>
-        <div className="text">1 <span>MISSION</span></div>
+        <div className="text">10+ <span>Events Conducted</span></div>
       </div>
-      <Work/>
-      <Card/>
-      <div class="communities"><div class="communities_about aos-init aos-animate" data-aos="fade">🚀 Explore the future with us! Join our vibrant community at the crossroads of Web3.0 . Unleash innovation together! 🌐 #JoinUsNow</div><div class="community_links aos-init aos-animate" data-aos="fade"><a target="_blank" href="https://chat.whatsapp.com/IFt69sSqZsu7FlRWl3EIbk">Web3.0 Community</a> </div></div>
+      <RecentEvents/>
+      <Work />
+      <Card />
       <Footer/>
     </div>
   );
