@@ -23,7 +23,7 @@ export default function Teams() {
 
     return (
         <>
-            <h2 id="recentHeader">What we do?</h2>
+            <h2 id="recentHeader">Our Expertise</h2>
             <div id="recentEvents">
                 <div className="recentEvent" id="event1">
                     <div className="eventImage">
