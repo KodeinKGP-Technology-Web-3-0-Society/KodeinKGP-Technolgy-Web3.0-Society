@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import Navbar from '../LandingPage/Navbar';
+import '../LandingPage/Navbar.css';
 import QuestionImg from './assets/question_mark.svg'
 import './LabTheory.css'
 import { Link } from 'react-router-dom';

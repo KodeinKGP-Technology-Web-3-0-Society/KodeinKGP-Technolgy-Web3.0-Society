@@ -1,0 +1,162 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 10px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: black;
+}
+
+.logoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.logoo img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  /* padding-left: 30px; */
+}
+
+.logoo h4 {
+  color: white;
+}
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+.links {
+  display: flex;
+  margin: 1px 0;
+  text-align: center;
+}
+
+.link-tag{
+  display: flex;
+  flex-direction: column;
+}
+
+.link-tag::after{
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: relative;
+  left: 15px;
+  bottom: 15px;
+  background-color: rgb(17, 227, 251);
+  transition: width 0.3s linear;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  padding: 25px;
+  padding-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.link-tag:hover::after{
+  width: 70%;
+  transition: width 0.3s linear;
+}
+.link:hover{
+  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+  -webkit-background-clip: text;
+  color: whitesmoke;
+  background-clip: text;
+  font-weight: 500;
+}
+
+/* Media query for mobile devices */
+@media screen and (max-width: 768px) {
+  .navbar {
+    display: flex;
+    flex-direction: inline-flex;
+    align-items: center;
+    margin: 1% 0 2% 2%;
+    margin-right: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .links {
+    display: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .link-tag {
+    margin: 1% 0; /* Adjust spacing as needed */
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* .link {
+    padding: 10px;
+    display: block;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ddd; /* Optional: Add a border between links */
+   */
+
+  .link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+    padding: 2px;
+    padding-top: 1px;
+    letter-spacing: 0.5px;
+  }
+
+  .links.show {
+    display: flex;
+    flex-direction: column;
+    margin: 0 0 0 0;
+  }
+
+  .link-tag::after{
+    content: "";
+    height: 1px;
+    width: 0%;
+    position: relative;
+    left: 1px;
+    bottom: 1px;
+    background-color: rgb(17, 227, 251);
+    transition: width 0.3s linear;
+  }
+  
+  
+  .link-tag:hover::after{
+    width: 70%;
+    transition: width 0.3s linear;
+  }
+  .link:hover{
+    background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+    -webkit-background-clip: text;
+    color: whitesmoke;
+    background-clip: text;
+    font-weight: 500;
+  }
+
+  .hamburger.show-menu {
+    color: #ddd; /* Optional: Change color when menu is open */
+  }
+}
