@@ -6,6 +6,9 @@ import Footer from "./Footer";
 // import RecentEvents from './RecentEvents';
 import Work from "./Work.js";
 import Card from "./Card.js";
+import CarouselItem from "react-bootstrap/esm/CarouselItem.js";
+import ControlledCarousel from "./Carousel.js";
+import Carousel from 'react-bootstrap/Carousel';
 const Home = () => {
   const [number, setNumber] = useState(null);
 
@@ -14,7 +17,7 @@ const Home = () => {
       <Navbar />
       <div className="content">
         <div className="right">
-          <h1>Welcome to <span>KodeinKGP.</span></h1>
+          <h1 className="wel">Welcome to <br></br><span>KodeinKGP.</span></h1>
           <p className="vision">
             “The Web as I envisaged it, we have not seen it yet. The future is still so much bigger than the past.”
           </p>
@@ -34,6 +37,7 @@ const Home = () => {
       {/* <RecentEvents/> */}
       <Work />
       <Card />
+      <ControlledCarousel/>
       <Footer/>
     </div>
   );

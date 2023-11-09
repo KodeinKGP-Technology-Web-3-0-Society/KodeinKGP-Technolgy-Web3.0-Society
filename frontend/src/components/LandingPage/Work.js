@@ -39,7 +39,7 @@ export default function Teams() {
                         className={`eventDescription ${
                             inView ? "textAni" : ""
                         }`}>
-                        <h2 className="workHeader">Web</h2>
+                        <h1 className="workHeader">Web</h1>
                         Weave your digital aspirations into reality through our
                         dynamic Web solutions, fusing creativity with
                         functionality. Lorem ipsum dolor sit amet consectetur
@@ -56,7 +56,7 @@ export default function Teams() {
                         className={`eventDescription ${
                             inView1 ? "textAni" : ""
                         }`}>
-                        <h2 className="workHeader">AI and Metaverse</h2>
+                        <h1 className="workHeader">AI and Metaverse</h1>
                         Enter a realm where AI drives immersive Metaverse
                         encounters, pushing boundaries of what's possible. Lorem
                         ipsum dolor sit amet consectetur adipisicing elit.
@@ -92,7 +92,7 @@ export default function Teams() {
                         className={`eventDescription ${
                             inView2 ? "textAni" : ""
                         }`}>
-                        <h2 className="workHeader">Blockchain</h2>
+                        <h1 className="workHeader">Blockchain</h1>
                         Transform transactions with our secure Blockchain
                         solutions, rewriting the rules of trust and
                         transparency. Lorem ipsum dolor sit amet consectetur

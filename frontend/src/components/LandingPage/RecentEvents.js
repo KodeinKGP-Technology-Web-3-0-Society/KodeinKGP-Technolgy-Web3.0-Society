@@ -76,6 +76,9 @@ export default function RecentEvents() {
                         saepe nemo repudiandae ex id maxime porro!
                     </div>
                 </div>
+
+                
+
             </div>
         </>
     );
