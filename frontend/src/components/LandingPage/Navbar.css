@@ -1,5 +1,3 @@
-/* Navbar.css */
-
 .navbar {
   display: flex;
   align-items: center;
@@ -23,7 +21,6 @@
   width: 60px;
   height: 60px;
   padding: 5px;
-  /* padding-left: 30px; */
 }
 
 .logoo h4 {
@@ -81,7 +78,6 @@
   font-weight: 500;
 }
 
-/* Media query for mobile devices */
 @media screen and (max-width: 768px) {
   .navbar {
     display: flex;
@@ -102,19 +98,10 @@
   }
 
   .link-tag {
-    margin: 1% 0; /* Adjust spacing as needed */
+    margin: 1% 0;
     display: flex;
     flex-direction: column;
   }
-
-  /* .link {
-    padding: 10px;
-    display: block;
-    text-align: center;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid #ddd; /* Optional: Add a border between links */
-   */
 
   .link {
     text-decoration: none;
@@ -157,6 +144,6 @@
   }
 
   .hamburger.show-menu {
-    color: #ddd; /* Optional: Change color when menu is open */
+    color: #ddd; 
   }
 }
