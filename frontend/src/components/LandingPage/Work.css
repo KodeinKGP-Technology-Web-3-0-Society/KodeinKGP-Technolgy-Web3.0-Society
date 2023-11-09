@@ -103,10 +103,9 @@
 }
 .workHeader{
   font-family: 'Poppins', sans-serif;
-  color: white;
-  font-size: 48px;
+  font-size: 3.5rem;
   line-height: 76.8px;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   color: rgb(17, 227, 251);
  text-align: center;
 }

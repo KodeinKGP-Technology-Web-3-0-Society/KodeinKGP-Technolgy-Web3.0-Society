@@ -47,16 +47,17 @@ export default function Footer() {
                     Blockchain
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/watch?v=gyMwXuJrbJQ" target="_blank" rel="noopener noreferrer">freeCodeCamp</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement3">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@CodeEater21/videos" target="_blank" rel="noopener noreferrer">Code Eater</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement4">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@WhiteboardCrypto" target="_blank" rel="noopener noreferrer">Whiteboard Crypto 
+</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement5">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@Finematics" target="_blank" rel="noopener noreferrer">Finematics</a>
                 </div>
                 
             </div>
@@ -65,16 +66,17 @@ export default function Footer() {
                     Machine Learning
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@Deeplearningai" target="_blank" rel="noopener noreferrer">DeepLearningAI</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement3">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@SirajRaval/about" target="_blank" rel="noopener noreferrer">Siraj Raval</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement4">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@sentdex/playlists" target="_blank" rel="noopener noreferrer">sentdex</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement5">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/@coreyms/about" target="_blank" rel="noopener noreferrer">Corey Schafer 
+</a>
                 </div>
                 
             </div>
@@ -83,16 +85,16 @@ export default function Footer() {
                     Web Development
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/playlist?list=PLu0W_9lII9agiCUZYRsvtGTXdxkzPyItg" target="_blank" rel="noopener noreferrer">CodeWithHarry</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement3">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/playlist?list=PLfqMhTWNBTe3H6c9OGXb5_6wcc1Mca52n" target="_blank" rel="noopener noreferrer">Apna College</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement4">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/playlist?list=PL4cUxeGkcC9ivBf_eKCPIAYXWzLlPAm6G" target="_blank" rel="noopener noreferrer">net ninja</a>
                 </div>
                 <div className="footerItemElement" id="footerItemElement5">
-                    Lorem, ipsum dolor.
+                    <a className="footerLinks" href="https://www.youtube.com/playlist?list=PLillGF-RfqbZTASqIqdvm1R5mLrQq79CU" target="_blank" rel="noopener noreferrer">Traversy Media</a>
                 </div>
                 
             </div>
