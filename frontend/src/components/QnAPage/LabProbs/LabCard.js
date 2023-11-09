@@ -6,6 +6,6 @@ export default function LabCard({qna,topic,ind}) {
   return (
     
       
-    <Link to={path} className='cards'><div className='cardDiv'><p className='text'><span className='index'>{ind+1}.</span> {qna.Question}</p></div></Link>
+    <Link to={path} className='labCards'><div className='cardDiv'><p className='text'><span className='index'>{ind+1}.</span> {qna.Question}</p></div></Link>
   )
 }

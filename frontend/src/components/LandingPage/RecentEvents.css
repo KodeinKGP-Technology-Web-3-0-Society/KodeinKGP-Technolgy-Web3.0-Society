@@ -1,3 +1,4 @@
+
 @keyframes scaleIn {
   from {
     transform: scale(0.5);
@@ -22,7 +23,7 @@
   margin: 2rem;
   text-align: center;
   color: #fff;
-  font-family: 'Corben', serif;
+  /* font-family: 'Corben', serif; */
   font-size: 2em;
 }
 
@@ -54,7 +55,6 @@
 }
 
 .eventDescription {
-  font-family: 'Corben', serif;
   width: 45%;
   padding: 1rem;
   text-align: center;

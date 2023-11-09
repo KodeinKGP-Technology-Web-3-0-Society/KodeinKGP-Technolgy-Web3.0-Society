@@ -1,11 +1,19 @@
 #footer {
-    background: linear-gradient(0deg, #01011b, #0f142c, #1b2040, #272c54, #343969, #43467e, #515494, #6162ab);
+    background-color: transparent;
+    /* background-color: rgb(16, 16, 83); */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
     align-items: center;
-    border-radius: 8px 8px 0px 0px;
+    /* border-radius: 8px 8px 0px 0px; */
     margin-top: 2rem;
+    color: white;
+    /* font-family: Mark Pro,sans-serif; */
+  font-family: 'Poppins', sans-serif;
+  border: 1px solid rgb(1, 1, 27);
+  border-top-width: 1px;
+  border-top-color: rgb(63 62 69 / 1);
+
 }
 .footerItems {
     
@@ -14,7 +22,7 @@
 }
 .footerItemElement {
     margin: 1rem;
-    padding: 1rem;
+    /* padding: 1rem; */
 }
 #KiKLogo {
     width: 50px;
@@ -39,5 +47,10 @@ ion-icon {
 }
 #footerItemElement1{
     font-weight: bold;
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    padding-bottom: 1rem;
+}
+.footerLinks{
+    text-decoration: none;
+    color: wheat;
 }
