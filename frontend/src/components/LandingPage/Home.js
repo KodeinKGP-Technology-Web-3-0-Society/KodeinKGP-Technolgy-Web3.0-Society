@@ -6,9 +6,9 @@ import Footer from "./Footer";
 // import RecentEvents from './RecentEvents';
 import Work from "./Work.js";
 import Card from "./Card.js";
-import CarouselItem from "react-bootstrap/esm/CarouselItem.js";
-import ControlledCarousel from "./Carousel.js";
-import Carousel from 'react-bootstrap/Carousel';
+// import CarouselItem from "react-bootstrap/esm/CarouselItem.js";
+// import ControlledCarousel from "./Carousel.js";
+// import Carousel from 'react-bootstrap/Carousel';
 const Home = () => {
   const [number, setNumber] = useState(null);
 
@@ -37,7 +37,7 @@ const Home = () => {
       {/* <RecentEvents/> */}
       <Work />
       <Card />
-      <ControlledCarousel/>
+      {/* <ControlledCarousel/> */}
       <Footer/>
     </div>
   );
