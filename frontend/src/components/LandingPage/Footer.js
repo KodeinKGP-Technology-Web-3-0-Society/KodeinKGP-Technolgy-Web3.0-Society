@@ -4,7 +4,7 @@ import Logo from './kik-final-logo.png';
 export default function Footer() {
     
     return (
-        <div id="footer" style={{color:"white"}}>
+        <div id="footer" >
             <div className="footerItems" id="footerItem1">
 
           <div className='footerHeader'>
@@ -42,37 +42,27 @@ export default function Footer() {
             </a>
           </div>
         </div>
-            <div className="footerItems" id="footerItem2">
-              <h1>Resources :</h1>
+        <div className="footerItems" id="footerItem2">
                 <div className="footerItemElement" id="footerItemElement1">
-                    <p>Blockchain:</p>
-                    <ul>
-                      <li>Link 1</li>
-                      <li>Link 2</li>
-                      <li>Link 3</li>
-                    </ul>
+                    Blockchain
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
-                <p>Blockchain:</p>
-                    <ul>
-                      <li>Link 1</li>
-                      <li>Link 2</li>
-                      <li>Link 3</li>
-                    </ul>
+                    Lorem, ipsum dolor.
                 </div>
                 <div className="footerItemElement" id="footerItemElement3">
-                <p>Blockchain:</p>
-                    <ul>
-                      <li>Link 1</li>
-                      <li>Link 2</li>
-                      <li>Link 3</li>
-                    </ul>
+                    Lorem, ipsum dolor.
+                </div>
+                <div className="footerItemElement" id="footerItemElement4">
+                    Lorem, ipsum dolor.
+                </div>
+                <div className="footerItemElement" id="footerItemElement5">
+                    Lorem, ipsum dolor.
                 </div>
                 
             </div>
             <div className="footerItems" id="footerItem3">
                 <div className="footerItemElement" id="footerItemElement1">
-                    Lorem, ipsum.
+                    Machine Learning
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
                     Lorem, ipsum dolor.
@@ -83,10 +73,14 @@ export default function Footer() {
                 <div className="footerItemElement" id="footerItemElement4">
                     Lorem, ipsum dolor.
                 </div>
+                <div className="footerItemElement" id="footerItemElement5">
+                    Lorem, ipsum dolor.
+                </div>
+                
             </div>
-            {/* <div className="footerItems" id="footerItem4">
+            <div className="footerItems" id="footerItem4">
                 <div className="footerItemElement" id="footerItemElement1">
-                    Lorem, ipsum.
+                    Web Development
                 </div>
                 <div className="footerItemElement" id="footerItemElement2">
                     Lorem, ipsum dolor.
@@ -97,7 +91,11 @@ export default function Footer() {
                 <div className="footerItemElement" id="footerItemElement4">
                     Lorem, ipsum dolor.
                 </div>
-            </div> */}
+                <div className="footerItemElement" id="footerItemElement5">
+                    Lorem, ipsum dolor.
+                </div>
+                
+            </div>
         </div>
     );
 }

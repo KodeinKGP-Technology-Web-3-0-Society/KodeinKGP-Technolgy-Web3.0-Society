@@ -12,21 +12,21 @@ const Card = () => {
         // <div>
         <div className="cards">
             <div className="card 1">
-                <img src={event1} alt="" />
+                <img src={event1} alt="" className="cardImage" />
                 <div className="about-card">
                     <h1>EVENT 1</h1>
                     <span>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</span>
                 </div>
             </div>
             <div className="card 2">
-                <img src={event2} alt="" />
+                <img src={event2} alt="" className="cardImage" />
                 <div className="about-card">
                     <h1>EVENT 2</h1>
                     <span>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</span>
                 </div>
             </div>
             <div className="card 3">
-                <img src={event3} alt="" />
+                <img src={event3} alt="" className="cardImage" />
                 <div className="about-card">
                     <h1>EVENT 3</h1>
                     <span>Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency.​</span>
