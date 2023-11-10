@@ -110,7 +110,7 @@ const EventsPage = () =>{
       </div>  
       
       <button className='applybtn'>
-          <Link to= '/apply'><span>Register Here</span></Link>
+          <Link to= '/events/apply'><span>Register Here</span></Link>
       </button>
 
     </section>

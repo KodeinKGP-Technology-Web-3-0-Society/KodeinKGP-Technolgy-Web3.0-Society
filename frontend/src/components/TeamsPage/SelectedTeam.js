@@ -78,6 +78,7 @@ const SelectedTeam = (props) =>{
           </>
         );
       }
+      
     return(
         <div>
             <h2 className='team_name'>{selectedData[1].teamName}</h2>
