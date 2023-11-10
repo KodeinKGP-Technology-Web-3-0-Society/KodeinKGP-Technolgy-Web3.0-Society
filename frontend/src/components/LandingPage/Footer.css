@@ -4,6 +4,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     /* border-radius: 8px 8px 0px 0px; */
     margin-top: 2rem;
@@ -18,7 +20,7 @@
 .footerItems {
     
     padding: 1rem;
-    margin: 1rem;
+    margin: 1rem 2.5rem;
 }
 .footerItemElement {
     margin: 1rem;
@@ -53,4 +55,10 @@ ion-icon {
 .footerLinks{
     text-decoration: none;
     color: wheat;
+}
+@media screen and (max-width: 700px) {
+    .footerItems{
+        margin: 0rem 1rem;
+        padding: 0.5rem 1rem;
+    }
 }
