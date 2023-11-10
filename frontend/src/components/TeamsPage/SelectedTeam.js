@@ -1,10 +1,15 @@
-import React from 'react';
+import React ,{useState , useEffect} from 'react';
 import WebTeam from "./WebTeam.json";
 import DesignTeam from "./DesignTeam.json";
 import EventTeam from "./EventTeam.json";
 import BlockchainTeam from "./BlockchainTeam.json";
 import AITeam from "./AITeam.json";
 import './SelectedTeam.css';
+import WebImage from '../../assets/Web search-rafiki.svg';
+import AIImage from "../../assets/Cool robot-cuate.svg";
+import BlockchainImage from "../../assets/Bitcoin P2P-amico.svg";
+import DesignImage from "../../assets/Designer girl-bro.svg";
+import EventsImage from "../../assets/Events-bro.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { faFacebook, faInstagram ,faLinkedin,faGithub} from '@fortawesome/free-brands-svg-icons';
@@ -19,14 +24,65 @@ const SelectedTeam = (props) =>{
     // console.log(selectedData);
     let memberDetails = selectedData[0];
     // console.log(memberDetails);
+
+    let teamImage;
+
+    switch (props.id-1) {
+        case 0:
+            teamImage = WebImage;
+            break;
+        case 1:
+            teamImage = AIImage;
+            break;
+        case 2:
+            teamImage = BlockchainImage;
+            break;
+        case 3:
+            teamImage = DesignImage;
+            break;
+        case 4:
+            teamImage = EventsImage;
+            break;
+        default:
+            teamImage = null;
+    }
+
+    function TeamContent() {
+        // Use state to store the window width
+        const [width, setWidth] = useState(window.innerWidth);
+      
+        // Define a function to handle window resize
+        const handleResize = () => {
+          setWidth(window.innerWidth);
+        };
+      
+        // Use useEffect to add and remove the event listener
+        useEffect(() => {
+          window.addEventListener("resize", handleResize);
+          return () => {
+            window.removeEventListener("resize", handleResize);
+          };
+        }, []);
+      
+        // Render the component based on the window width
+        return (
+          <>
+            {width >= 748 ? (
+              <div className="teamcontent">
+                <p className="team_content">{selectedData[1].content}</p>
+                <img src={teamImage} alt="img" className="team_image" />
+              </div>
+            ) : (
+              <></>
+            )}
+          </>
+        );
+      }
     return(
         <div>
-            <h2 className='teamttitle'>{selectedData[1].teamName}</h2>
+            <h2 className='team_name'>{selectedData[1].teamName}</h2>
             <div className='aboutteam'>
-                <div className='teamcontent'>
-                    <p className='team_content'>{selectedData[1].content}</p>
-                    <img src="../../../public/assets/ai-logo.png" alt ="img" className='team_image'/>
-                </div>
+                <TeamContent />
                 <div className='teammembers'>
                     {memberDetails.map(member=>{
                         return(

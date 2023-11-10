@@ -25,25 +25,28 @@
     background-color: #3DC4D4;
     color: #000;
 }
-.teamtitle{
-    font-size: 1rem;
+
+.team_name{
+    font-size: 2rem;
 }
 .aboutteam{ 
-    width: 90vw;
+    width: 80vw;
     margin: 2rem auto;
 }
 
 .teamcontent{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    /* align-items: center; */
 }
 
 .team_content{
     width: 55vw;
-    font-size: 1.25rem;
+    font-size: 1.5rem;
+    margin: 3rem 0;
 }
 .team_image{
-    width: 35vw;
+    width: 20rem;
 }
 .teammembers{
     display: flex;
@@ -60,5 +63,6 @@
     width: 200px;
     margin-top: 1rem;
 }
+
 
 

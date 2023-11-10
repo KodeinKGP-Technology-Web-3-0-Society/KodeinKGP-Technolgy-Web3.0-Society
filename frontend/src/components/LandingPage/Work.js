@@ -40,14 +40,7 @@ export default function Teams() {
                             inView ? "textAni" : ""
                         }`}>
                         <h1 className="workHeader">Web</h1>
-                        Weave your digital aspirations into reality through our
-                        dynamic Web solutions, fusing creativity with
-                        functionality. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Doloremque animi assumenda tenetur
-                        earum, voluptatibus autem temporibus quo ipsum minus vel
-                        in, error voluptatum, suscipit labore ea ex. Harum nihil
-                        debitis voluptatem magnam, mollitia nobis similique sit.
-                        Doloremque laborum architecto voluptate?
+Transform your digital dreams into reality with our versatile Web solutions, blending creativity and functionality. Whether you need a stunning website, a powerful app, or a captivating blog, we have the skills and tools to make it happen. Our Web solutions are tailored to your specific needs and goals, ensuring that you get the best results possible. We combine cutting-edge technology, innovative design, and user-friendly features to create Web solutions that stand out from the crowd. No matter what your digital aspirations are, we can help you achieve them with our dynamic Web solutions.
                     </div>
                 </div>
                 <div className="recentEvent" id="event2">
@@ -57,14 +50,7 @@ export default function Teams() {
                             inView1 ? "textAni" : ""
                         }`}>
                         <h1 className="workHeader">AI and Metaverse</h1>
-                        Enter a realm where AI drives immersive Metaverse
-                        encounters, pushing boundaries of what's possible. Lorem
-                        ipsum dolor sit amet consectetur adipisicing elit.
-                        Voluptatem iusto reiciendis ex vel minus quos
-                        accusantium, praesentium itaque molestiae excepturi
-                        neque saepe ullam qui dicta aperiam, nesciunt sapiente
-                        ut quod? Optio esse perspiciatis, hic quisquam
-                        necessitatibus itaque repellat illo amet?
+                        Imagine a world where AI creates immersive Metaverse experiences, transcending the limits of reality. In this world, you can explore, create, and connect with others in virtual spaces that are powered by AI. You can customize your avatar, interact with realistic objects and environments, and participate in exciting events and activities. You can also learn, work, and play in the Metaverse, using AI to enhance your skills, productivity, and fun. Whether you want to travel to distant planets, visit historical landmarks, or join a fantasy adventure, the Metaverse and AI can make it happen. This is not a dream, but a possibility that is within your reach. Join us in the Metaverse, where AI is your guide to infinite possibilities.
                     </div>
                     <div className="eventImage">
                         <img
@@ -93,14 +79,8 @@ export default function Teams() {
                             inView2 ? "textAni" : ""
                         }`}>
                         <h1 className="workHeader">Blockchain</h1>
-                        Transform transactions with our secure Blockchain
-                        solutions, rewriting the rules of trust and
-                        transparency. Lorem ipsum dolor sit amet consectetur
-                        adipisicing elit. Voluptatem iusto reiciendis ex vel
-                        minus quos accusantium, praesentium itaque molestiae
-                        excepturi neque saepe ullam qui dicta aperiam, nesciunt
-                        sapiente ut quod? Optio esse perspiciatis, hic quisquam
-                        necessitatibus itaque repellat illo amet?
+                        Blockchain technology is revolutionizing the way we exchange value and information. With our cutting-edge Blockchain solutions, you can create secure and transparent transactions that are verified by a network of peers. Whether you want to streamline your business processes, enhance your customer experience, or protect your data, we can help you achieve your goals with our Blockchain expertise. Trust us to deliver innovative and reliable Blockchain solutions that will transform your transactions and your industry.
+
                     </div>
                 </div>
             </div>
