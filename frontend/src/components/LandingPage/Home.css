@@ -174,4 +174,8 @@
   h1 span{
     font-size: 50px;
   }
+  .bottom-bar .text{
+    font-size: x-large;
+    font-weight: 600;
+  }
 }

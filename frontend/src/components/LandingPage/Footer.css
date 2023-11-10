@@ -7,6 +7,7 @@
     justify-content: space-evenly;
     justify-content: space-between;
     align-items: center;
+    text-align: left !important;
     /* border-radius: 8px 8px 0px 0px; */
     margin-top: 2rem;
     color: white;
@@ -23,7 +24,7 @@
     margin: 1rem 2.5rem;
 }
 .footerItemElement {
-    margin: 1rem;
+    margin: 1rem 0rem;
     /* padding: 1rem; */
 }
 #KiKLogo {
@@ -59,6 +60,10 @@ ion-icon {
 @media screen and (max-width: 700px) {
     .footerItems{
         margin: 0rem 1rem;
-        padding: 0.5rem 1rem;
+        padding: 0.5rem 0rem;
+    }
+    .footerItemElement {
+        margin: 0.6rem 0rem;
+        /* padding: 1rem; */
     }
 }
