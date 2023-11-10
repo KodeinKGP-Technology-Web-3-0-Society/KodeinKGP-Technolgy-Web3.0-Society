@@ -14,12 +14,14 @@ const Navbar = () => {
 
   return (
     <div className={`navbar ${showMenu ? 'show-menu' : ''}`}>
+      <div className='logo_menu'>
       <div className="logoo">
         <img src={Logo} alt="KodeinKGP Logo" />
         <h4>KodeinKGP</h4>
       </div>
       <div className="hamburger" onClick={toggleMenu}>
         &#9776; {/* Hamburger icon */}
+      </div>
       </div>
       <div className={`links ${showMenu ? 'show' : ''}`}>
         <span className='link-tag'>

@@ -32,11 +32,12 @@ const Home = () => {
       <div className="bottom-bar">
         <div className="text">260+ <span>Problems</span></div>
         <div className="text">260+ <span>Detailed Solutions</span></div>
-        <div className="text">10+ <span>Events Conducted</span></div>
+        <div className="text">1 <span>Platform</span></div>
+        <div className="text">1 <span>Vision</span></div>
       </div>
       {/* <RecentEvents/> */}
       <Work />
-      <Card />
+      {/* <Card /> */}
       {/* <ControlledCarousel/> */}
       <Footer/>
     </div>
