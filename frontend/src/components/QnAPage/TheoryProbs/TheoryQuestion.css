@@ -9,7 +9,7 @@ body {
     background-color: #222;
     color: #fff;
     padding: 20px;
-    margin: 20px auto;
+    margin: 20px 1rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -46,7 +46,7 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin: 10px;
+    margin: 1rem;
   }
   
   #toggleBtn:hover {
@@ -62,6 +62,7 @@ body {
   }
   
   .solution {
+    /* width: 1000px; */
     position: relative;
     display: flex;
     flex-direction: column;
@@ -76,7 +77,7 @@ body {
     border-radius: 5px;
     font-size: 1rem;
     cursor: pointer;
-    margin: 10px;
+    margin: 1rem;
   }
   
   .onlineEditor:hover {
@@ -94,5 +95,17 @@ body {
     padding: 1.9rem;
     margin: 0;
     border-radius: 10px;
+  }
+  @media screen and (max-width: 500px) {
+    .onlineEditor {
+      margin: 1rem 0.4rem;
+    }
+    .question {
+      margin:1rem 0.4rem;
+
+    }
+    #toggleBtn {
+      margin:1rem 0.4rem;
+    }
   }
   

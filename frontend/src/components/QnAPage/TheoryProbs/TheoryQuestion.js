@@ -43,7 +43,6 @@ export default function TheoryQuestion() {
                             customStyle={{
                                 padding: "1.9rem",
                                 margin: "0rem",
-                                // borderRadius: "1rem",
                             }}
                             wrapLongLines={true}
                         >
