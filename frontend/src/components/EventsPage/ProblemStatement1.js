@@ -44,7 +44,7 @@ The primary target users for this solution are small and medium-sized enterprise
 <span>5. Technical Implementation:</span> How well are AI techniques integrated into the solution?<br/>
 <span>6. Scalability:</span> Does the solution have the potential to scale and adapt to different SME requirements?<br/>
 <span>7. Sustainability and Responsibility:</span>Does the solution promote sustainability and ethical purchasing practices?<br/>
-
+<br />
 Join us in solving a critical challenge for SMEs and revolutionise the way they manage their purchasing operations with AI. Your solution can make a significant impact on businesses and sustainability practices. Good luck, and let's innovate together!
 </p>
         </div>
