@@ -1,12 +1,3 @@
-// import React from 'react';
-
-// const ProblemStatement2 = ({id}) =>{
-//     return (
-//         <div className='problem2' style={{color:"white"}}>Problem2</div>
-//     )
-// }
-
-// export default ProblemStatement2;
 import React from "react";
 
 const ProblemStatement2 = () => {
@@ -58,35 +49,6 @@ const ProblemStatement2 = () => {
             <br />
             <p className="problem_subheading">Data Sources</p>
             <br />
-            {/* <p className="problem_text">
-                Participants are encouraged to make use of a variety of data
-                sources and APIs to gather and process relevant information.
-                Suggested data sources include:
-   
-            <ul>
-                <li>
-                    Google Places API: For details about businesses and campus
-                    locations.
-                </li>
-                <li>
-                    Yelp Fusion API: For user reviews and ratings of local
-                    businesses.
-                </li>
-                <li>
-                    Twitter API: To capture real-time sentiment data related to
-                    individuals and locations.
-                </li>
-                <li>
-                    Local Crime Data: Access to crime statistics from local law
-                    enforcement agencies.
-                </li>
-                <li>
-                    Weather APIs: To consider the influence of weather on
-                    quality assessments.
-                </li>
-                <li>Geocoding Services: For precise location data.</li>
-            </ul>
-            </p> */}
             <p className="problem_text">
                 Participants are encouraged to make use of a variety of data
                 sources and APIs to gather and process relevant information.
@@ -137,13 +99,6 @@ const ProblemStatement2 = () => {
             <br />
             <p className="problem_subheading">Evaluation Criteria</p>
             <br />
-            {/* <p className='problem_text'>Judges will evaluate hackathon submissions based on the following criteria:</p>
-            <ol>
-                <li>Accuracy of Quality and Reliability Predictions.</li>
-                <li>Usability and User Interface Design.</li>
-                <li>Ethical Considerations and Data Privacy.</li>
-                <li>Innovation in Data Processing and Analysis.</li>
-            </ol> */}
             <p className="problem_text">
                 Judges will evaluate hackathon submissions based on the
                 following criteria:
