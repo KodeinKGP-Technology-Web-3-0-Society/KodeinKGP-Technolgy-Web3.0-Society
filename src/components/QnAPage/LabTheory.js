@@ -41,7 +41,9 @@ export default function LabTheory() {
         </div>
     </div>
 
-    <Footer />
+    <div className='foo'>
+      <Footer />
+    </div>
     </>
   )
 }
