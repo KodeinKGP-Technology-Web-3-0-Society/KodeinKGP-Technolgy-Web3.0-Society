@@ -95,7 +95,15 @@
     border-radius: 50%;
     object-fit: cover;
 }
-
+.twoSponContainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 1rem ;
+}
+.twoSpon{
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
 .apply_btns {
     display: flex;
     justify-content: space-between;

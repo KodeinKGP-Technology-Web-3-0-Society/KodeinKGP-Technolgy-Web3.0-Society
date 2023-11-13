@@ -191,13 +191,15 @@ In the preceding year, KodeinKGP's 'Blockchain Hackathon' emerged as an unparall
                     Sponsored by : 
                   </h5>
                 </div>
-                <div className='sponsor_name'>
+                <div className="twoSponContainer">
+                <div className='sponsor_name twoSpon'>
                   <img src={Concordialogo} />
                   <h4>Concordium</h4>
                 </div>
-                <div className='sponsor_name'>
+                <div className='sponsor_name twoSpon'>
                   <img src={GravitonLogo} />
                   <h4>Graviton</h4>
+                </div>
                 </div>
               </div>
             </div>
