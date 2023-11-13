@@ -1,5 +1,6 @@
 import React,{useState, useEffect} from 'react';
 import Navbar from '../LandingPage/Navbar';
+import Footer from '../LandingPage/Footer';
 import '../LandingPage/Navbar.css';
 import QuestionImg from './assets/question_mark.svg'
 import './LabTheory.css'
@@ -39,6 +40,8 @@ export default function LabTheory() {
             
         </div>
     </div>
+
+    <Footer />
     </>
   )
 }
