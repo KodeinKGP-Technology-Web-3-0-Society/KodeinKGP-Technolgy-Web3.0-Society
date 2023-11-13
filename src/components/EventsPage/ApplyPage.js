@@ -30,8 +30,8 @@ const ApplyPage = () =>{
             <div className='apply_content'>
                 <img src={Image} alt='event-image' className='event_image'/>
                 <h2 className='apply_title'>INNOVATE4SWADESHI</h2>
-                <p className='apply_details'><span>Registration deadline : </span>24th Nov 2023</p>
-                <p className='apply_details'><span>Submission deadline : </span>28th Nov 2023</p>
+                <p className='apply_details'><span>Registration deadline : </span>27th Nov 2023</p>
+                <p className='apply_details'><span>Submission deadline : </span>2nd Dec 2023</p>
                 {/* <p className=''></p> */}
                 <div className='classif-buttons'>
                     <button className={`team-button ${activeButton === '1' ? 'active' : ''}`} id='1' onClick={ButtonClicked}>Question 1</button>
