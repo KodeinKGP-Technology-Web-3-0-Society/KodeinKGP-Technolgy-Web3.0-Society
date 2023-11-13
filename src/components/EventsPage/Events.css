@@ -96,16 +96,31 @@
     object-fit: cover;
 }
 
+.apply_btns {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0.5rem auto;
+    padding: 0 2.5%;
+}
+
 .applybtn {
     border-radius: 5px;
     padding: 10px 25px;
     background: radial-gradient(64.18% 64.18% at 71.16% 35.69%,#def9fa .89%,#bef3f5 17.23%,#9dedf0 42.04%,#7de7eb 55.12%,#5ce1e6 71.54%,#33bbcf 100%);
-    margin: 1rem 12.5%;
+    /* margin: 1rem 12.5%; */
 }
 
+/* .register {
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: Roboto;
+    color: black;
+} */
 
 
-.applybtn span {
+
+.applybtn span, .register {
     color: black;
     font-size: 25px;
     font-family: 'Roboto Mono', monospace;

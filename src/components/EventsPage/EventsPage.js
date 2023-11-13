@@ -20,7 +20,7 @@ import GravitonLogo from './Images/graviton logo.jpg'
 import { Link } from 'react-router-dom';
 import Moveicon from './Images/move icon.jpg'
 import MoveEvent from './Images/move event.jpg'
-import RecentEvent from './Images/event.jpeg'
+import RecentEvent from './Images/Swadeshi_event.png'
 import './Events.css';
 
 const EventsPage = () =>{
@@ -110,9 +110,14 @@ const EventsPage = () =>{
         </div>
       </div>  
       
+      <div className='apply_btns'>
       <button className='applybtn'>
-          <Link to= '/events/apply'><span>Register Here</span></Link>
+          <Link to= '/events/apply'><span>Problem Statements</span></Link>
       </button>
+      <button className='applybtn register'>
+        <a target='_blank' href='https://forms.gle/kYJciNQFKKst15yV9'>Register</a>
+      </button>
+      </div>
 
     </section>
 

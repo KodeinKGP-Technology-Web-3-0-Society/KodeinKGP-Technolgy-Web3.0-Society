@@ -4,7 +4,7 @@ import Footer from '../LandingPage/Footer';
 import ProblemStatement1 from './ProblemStatement1';
 import ProblemStatement2 from './ProblemStatement2';
 import ProblemStatement3 from './ProblemStatement3';
-import Image from "./Images/event.jpeg";
+import Image from "./Images/Swadeshi_event.png";
 import './ApplyPage.css';
 
 const ApplyPage = () =>{
