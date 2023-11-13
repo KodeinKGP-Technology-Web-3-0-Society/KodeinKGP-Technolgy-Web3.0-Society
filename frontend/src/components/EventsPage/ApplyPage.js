@@ -29,7 +29,7 @@ const ApplyPage = () =>{
             <Navbar />
             <div className='apply_content'>
                 <img src={Image} alt='event-image' className='event_image'/>
-                <h2 className='apply_title'>Event Name</h2>
+                <h2 className='apply_title'>INNOVATE4SWADESHI</h2>
                 <p className='apply_details'><span>Registration deadline : </span>24th Nov 2023</p>
                 <p className='apply_details'><span>Submission deadline : </span>28th Nov 2023</p>
                 {/* <p className=''></p> */}

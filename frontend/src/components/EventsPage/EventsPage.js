@@ -20,6 +20,7 @@ import GravitonLogo from './Images/graviton logo.jpg'
 import { Link } from 'react-router-dom';
 import Moveicon from './Images/move icon.jpg'
 import MoveEvent from './Images/move event.jpg'
+import RecentEvent from './Images/event.jpeg'
 import './Events.css';
 
 const EventsPage = () =>{
@@ -101,7 +102,7 @@ const EventsPage = () =>{
 
 
       <div className='hackathon' style={{display: 'flex', flexDirection: 'column'}}>
-        <img src={BCH} style={{margin: "0 auto", maxHeight: "400px", width: "80%"}} alt='hack'/>
+        <img src={RecentEvent} style={{margin: "0 auto", maxHeight: "580px", width: "75%"}} alt='hack'/>
         <div className='hackaton_content'>
           {/* <h2 className='hackthon_heading'>
             Upcoming Hackathon
