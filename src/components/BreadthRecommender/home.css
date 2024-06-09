@@ -1,0 +1,81 @@
+.container {
+  background-image: url('bg.svg'); 
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-box {
+  background-image: url('card.svg'); 
+  background-size: cover;
+  background-position: center;
+  padding: 3vw;
+  width: 50vw; 
+  height: 30vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form1{
+  font-family: sans-serif;
+  text-align: center;
+  color:black;
+}
+
+h1 {
+  font-size: 4vw;
+  font-family: sans-serif;
+  font-weight: bolder;
+}
+
+p {
+  font-size: 2vw ;
+}
+
+input {
+  width: 20vw;
+  font-size: 1vw;
+  height: auto;
+  padding: 1vw;
+  margin-bottom: 2vw;
+  background-color: black;
+  color: white;
+  border-radius: 0.5vw;
+}
+
+button {
+  background-color: #dc3545;
+  font-size: 1vw;
+  color: white;
+  padding: 1vw 2vw;
+  border: none;
+  width: 10vw;
+  border-radius: 0.5vw;
+  cursor: pointer;
+}
+
+button:hover{
+  background-color: rgb(3, 119, 3);
+}
+
+.arrow {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 20px solid #fff;
+}
+
+@media only screen and (max-width: 414px) {
+  
+}
