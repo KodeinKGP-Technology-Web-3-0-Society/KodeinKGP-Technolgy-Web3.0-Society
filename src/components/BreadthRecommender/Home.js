@@ -16,7 +16,6 @@ const Home = () =>{
           <br/>
           <button type="submit">SUBMIT</button>
         </form>
-        <div className="arrow"></div>
           </div>
       </div>
     </div>
