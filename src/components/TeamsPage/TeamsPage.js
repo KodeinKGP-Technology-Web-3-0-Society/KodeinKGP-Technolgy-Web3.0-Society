@@ -13,17 +13,17 @@ const TeamsPage = () => {
     <Navbar />
     <div className="teamspage" style={{ backgroundColor:"rgb(1, 1, 27)",textAlign: "center",color:"white",fontFamily:"Montserrat"}}>
       <div className="members">
-        <h3 className="members_title">Advisors</h3>
+        <h3 className="members_title">Founders</h3>
         <Founders />
       </div>
       <div className="members"> 
         <h3 className="members_title">Heads</h3>
         <Heads /> 
       </div>     
-      <div className="teams">
+      {/* <div className="teams">
         <h3 className="members_title">Our Teams</h3>
         <Teams/>
-      </div>
+      </div> */}
       <Footer />
     </div>
     </>
