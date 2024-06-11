@@ -91,18 +91,21 @@ input {
   }
   .welcomeToPage {
     margin-top: -0.5vh;
-    font-size: 6vw;
-    font-weight: 800;
+    font-size: 4vw;
+    font-weight: bolder;
   }
   .askingForRollNumber {
-    font-size: 3vw ;
+    font-size: 2vw ;
   }
   input {
    margin: 0.75vh;
+   height: 2vh;
+   font-size: 1.3vh;
   }
   .submissionbuttonRollNumber{
     height: 3vh;
     width: 12vw;
+    font-size: 1.5vw;
   }
 }
 @media screen and (max-width: 525px) and (max-height: 1000px){
