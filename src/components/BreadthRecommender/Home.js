@@ -5,8 +5,9 @@ import Navbar from '../LandingPage/Navbar';
 
 const App = () =>{
     return (
-    <Navbar />
+    
     <div className="Roll_number_page">
+        <Navbar />
       <div className="welcome-card">
         <div className='formForAskingRollNumber'>
         <span className='welcomeToPage'>WELCOME</span>
