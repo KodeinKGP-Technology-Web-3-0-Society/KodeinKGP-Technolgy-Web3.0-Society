@@ -29,24 +29,30 @@
 }
 
 .welcomeToPage {
-  font-size: 4vw;
+  font-size: 3.9vw;
   font-family: sans-serif;
   font-weight: bolder;
+  padding:1vw;
+  margin-bottom:2vw;
 }
 
 .askingForRollNumber {
   font-size: 2vw ;
+  margin: 2vw;
+  
 }
 
 input {
   width: 20vw;
+  height: 5vw;
   font-size: 1vw;
+  padding:1vw;
   height: auto;
-  padding: 1vw;
-  margin-bottom: 2vw;
+  margin:2vw;
   background-color: black;
   color: white;
   border-radius: 0.5vw;
+  text-align: center;
 }
 
 .submissionbuttonRollNumber {
@@ -58,14 +64,22 @@ input {
   width: 10vw;
   border-radius: 0.5vw;
   cursor: pointer;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+  
 }
 .First_page{
   display: flex;
   justify-content: center;
   align-items: center;
+  
 }
 .submissionbuttonRollNumber:hover{
-  background-color: rgb(3, 119, 3);
+  background-color: #006e0b;
+  transition-duration: 0.1s;
+  transition-timing-function: ease-out;
+  
+  
 }
 
 @media screen and (max-width: 767px) and (max-height: 740px) {
