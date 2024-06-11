@@ -44,6 +44,10 @@ const Navbar = () => {
             Events
           </Link>
         </span>
+        <span className='link-tag'>
+        <link className='link' ro="/breadth-recommend" onClick={toggleMenu}>
+          Breath Recommend
+        </span>
       </div>
     </div>
   );
