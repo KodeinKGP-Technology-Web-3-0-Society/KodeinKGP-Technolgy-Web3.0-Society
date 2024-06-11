@@ -7,7 +7,7 @@ const App = () =>{
       <div className="welcome-card">
         <div className='formForAskingRollNumber'>
         <span className='welcomeToPage'>WELCOME</span>
-        <p className='askingForRollNumber'>Please enter your roll number</p>
+        <span className='askingForRollNumber'>Please enter your roll number</span>
         <form>
           <input
             type="text"
