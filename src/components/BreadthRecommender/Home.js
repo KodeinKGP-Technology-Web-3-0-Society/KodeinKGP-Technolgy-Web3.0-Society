@@ -1,13 +1,10 @@
 import React from 'react';
-import './home.css';
-import Navbar from '../LandingPage/Navbar';
-
+import './App.css';
 
 const App = () =>{
+  
     return (
-    
     <div className="Roll_number_page">
-        <Navbar />
       <div className="welcome-card">
         <div className='formForAskingRollNumber'>
         <span className='welcomeToPage'>WELCOME</span>
@@ -17,9 +14,20 @@ const App = () =>{
           <input
             type="text"
             placeholder="XXXXXXXXX"
+            id='impufy'
           />
           <br/>
-          <button type="submit" class="submissionbuttonRollNumber">SUBMIT</button>
+          <button type="submit" class="submissionbuttonRollNumber" onClick={()=>{
+              let val =document.getElementById("impufy").value;
+              let pattern=/^[0-9]{2}[A-Z]{2}[0-9]{5}$/;;
+              let result=pattern.test(val)
+              if(result){
+                window.alert("Success");
+              }
+              else{
+                window.alert("error");
+              }
+            }}>SUBMIT</button>
         </form>
           </div>
       </div>
@@ -28,3 +36,4 @@ const App = () =>{
 }
 
 export default App;
+
