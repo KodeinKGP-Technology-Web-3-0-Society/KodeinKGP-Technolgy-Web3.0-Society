@@ -1,0 +1,121 @@
+.ch-bg{
+    background-image: linear-gradient(to right, #488ED2, #E1E1F0);
+    display: flex;
+    flex-direction: column;
+    height: 60vh;
+    width: 70vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn-cover{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+}
+
+.btn-img{
+    scale: 0.5;
+}
+
+.btn{
+    background-image: linear-gradient(to right, #b5bdb9, #ECEEFB );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 2vh;
+    cursor: pointer;
+    border: solid #010101;
+    padding-left: 1rem;
+}
+
+.box-cover{
+    height: 70%;
+    display: flex;
+    gap: 10%;
+}
+
+.save-btn-cover{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left{
+    height: 95%;
+    background-color: white;
+    flex: 1;
+    border: solid #010101;
+}
+
+.box-right{
+    height: 95%;
+    background-color: white;
+    flex: 1;
+    border: solid #010101;
+}
+
+.save-btn {
+    background:#079437;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    border: #010101;
+}
+
+.save-btn-span{
+    display: block;
+    padding: 12px 42px;
+    font-size: 1.25rem;
+    background: #07A633;
+    color: white;
+    transform: translateY(-6px);
+}
+
+.save-btn:active .save-btn-span{
+    transform: translateY(-2px);
+}
+
+.box-left-text, .box-right-text{
+    color: #010101;
+    font-size: 2rem;
+    height: 3rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.box-left-courses{
+    height: calc(100% - 3rem);
+    overflow-y: scroll;
+    border-top: solid #010101;;
+}
+
+.courses-item{
+    color: #010101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.courses-name{
+    font-size: 1rem;
+}
+
+.courses-cg{
+    font-size: 1rem;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 2em;
+    height: 2em;
+    accent-color: #052268;
+}
