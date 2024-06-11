@@ -2,7 +2,7 @@ import React from 'react';
 import './home.css';
 import Navbar from '../LandingPage/Navbar';
 
-const App = () =>{
+const Home = () =>{
   
     return (
     <div className="Roll_number_page">
@@ -37,5 +37,5 @@ const App = () =>{
   );
 }
 
-export default App;
+export default Home;
 
