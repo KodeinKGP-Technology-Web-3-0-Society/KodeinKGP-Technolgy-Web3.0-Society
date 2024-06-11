@@ -9,6 +9,7 @@ import Footer from '../LandingPage/Footer'
 // import img6 from './Images/Blockchain-image.png';
 // import Images from './images.json';
 import LumosIcon from './Images/lumoslabs_logo.jpg'
+import Sane from './Images/Sane.png';
 import LumosEvent from './Images/Lumos_event.jpg'
 import DensityIcon from './Images/density.jpg'
 import Hackanintern from './Images/density_hackathon.jpg'
@@ -28,97 +29,10 @@ const EventsPage = () =>{
       <>
       <Navbar />
         <div>
-      {/* <div className = "heading"><span>Events</span></div>
-      <div className="container">
-      <div className="card">
-        <img src={img1} alt="Hackathon" />
-        <h2>Hackathons </h2>
-      </div>
-      <div className="card">
-      <img src={img2} alt="Github" />
-        <h2>GitHub Workshops</h2>
-      </div>
-      <div className="card">
-      <img src={img3} alt="Workshop" />
-      <h2>WorkShops</h2>
-      </div>
-    </div> */}
-    
-    {/* <div className="stc">
-      <h1>We are engaged in the following fields of expertise:</h1>
-    </div>
-    <div class="field-cards">
-      <div class="field-card card1 transition-1">
-        <img src={img4} alt="Web"></img>
-        <div className = "card_content">
-          <p className="field-heading">Web</p>
-          <p className="field-description">
-          Weave your digital aspirations into reality through our dynamic
-          Web solutions, fusing creativity with functionality.</p>
-        </div>
-      </div> */}
-         
-      {/* <div class="field-card card2 transition-2">
-        <img src={img5} alt="AI &amp; Metaverse"></img>
-        <div className = "card_content">
-          <p className="field-heading">AI &amp; Metaverse</p>
-          <p className="field-description"> Enter a realm where AI drives immersive
-          Metaverse encounters, pushing boundaries of what's possible.</p>
-        </div>
-      </div>
 
-      <div class="field-card card3 transition-3">
-        <img src={img6} alt="Blockchain"></img>
-        <div className = "card_content">
-          <p className="field-heading">Blockchain</p>
-          <p className="field-description">Transform transactions with our secure 
-          Blockchain solutions, rewriting the rules of trust and transparency.</p>
-        </div>
-      </div>
-    </div> */}
-
-    {/* <div>
-      <div className="gallerytag">
-      <div className="heading"><span>Gallery</span></div>
-        <h3 className="quote">CONGRATULATIONS TO THE WINNING TEAMS AND INTERN ACHIEVERS !!!</h3>
-      </div>
-      <div className = "container2">  
-      {Images.map(image => {
-        return (
-          <div className="galleryimg" key={image.id}>
-            <img src={image.img} alt="img" />
-          </div>
-        );
-      })}
-      </div>
-    </div> */}
 
     <section className='hackathon_con'>
-    {/* <h2 className='heading'>
-        Upcoming Hackathon
-      </h2> */}
-
-
-
-
-      <div className='hackathon' style={{display: 'flex', flexDirection: 'column'}}>
-        <img src={RecentEvent} style={{margin: "0 auto", maxHeight: "580px", width: "75%"}} alt='hack'/>
-        <div className='hackaton_content'>
-          {/* <h2 className='hackthon_heading'>
-            Upcoming Hackathon
-          </h2> */}
-        </div>
-      </div>  
-      
-      <div className='apply_btns'>
-      <button className='applybtn'>
-          <Link to= '/events/apply'><span>Problem Statements</span></Link>
-      </button>
-      <button className='applybtn register'>
-        <a target='_blank' href='https://forms.gle/kYJciNQFKKst15yV9'>Register</a>
-      </button>
-      </div>
-
+       
     </section>
 
     <section>
@@ -127,9 +41,28 @@ const EventsPage = () =>{
       </h2>
 
       <div className="events">
-
+        {/*EVENT 0*/}
+            <div className='event event1' >
+              <img src={RecentEvent} alt='hack'/>
+              <div className='event_content'>
+                <h3 className="event_heading">INNOVATE4SWADESHI</h3>
+                <p className="event_description">
+                </p>
+                <div className='sponsors'>
+                  <div className='sponsor_heading'>
+                    <h5>
+                      Sponsored by : 
+                    </h5>
+                  </div>
+                  <div className='sponsor_name'>
+                    <img src={Sane} />
+                    <h4>saneobserver</h4>
+                  </div>
+                </div>
+              </div>
+            </div> 
         {/* EVENT 1 */}
-          <div className='event event1'>
+          <div className='event event2'>
             <img src={Hackanintern} alt="lumos"></img>
             <div className = "event_content">
               <h3 className="event_heading">Hack-an-Intern</h3>
@@ -152,7 +85,7 @@ const EventsPage = () =>{
 
 
           {/* Event 2 */}
-          <div className='event event2'>
+          <div className='event event3'>
             <img src={BCH} alt="bch"></img>
             <div className = "event_content">
               <h3 className="event_heading">Blockchain Hackathon</h3>
@@ -176,7 +109,7 @@ In the preceding year, KodeinKGP's 'Blockchain Hackathon' emerged as an unparall
 
 
           {/* Event 3 */}
-          <div className='event event3'>
+          <div className='event event2'>
             <img src={Concordia} alt="bch"></img>
             <div className = "event_content">
               <h3 className="event_heading">Concordia</h3>
