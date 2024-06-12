@@ -1,9 +1,13 @@
 import React, { useEffect, useState } from 'react'
 import './Choices.css'
 import arrow from "../../../assets/arrow.png"
+import TimeSel from './TimeSel';
+import GoalSel from './GoalSel';
 
 function Choices() {
     const [data, setData] = useState([]);
+    const [goalVis, setGoalVis] = useState(false)
+    const [timeVis, settimeVis] = useState(false)
     useEffect(() => {
         var localData = []
         for(var i = 0; i < 10; i++){
@@ -59,6 +63,12 @@ function Choices() {
                     </span>
                 </button>
             </h1>
+            <div hidden={!goalVis}>
+                <GoalSel />
+            </div>
+            <div hidden={!timeVis}>
+                <TimeSel />
+            </div>
         </div>
     )
 }
