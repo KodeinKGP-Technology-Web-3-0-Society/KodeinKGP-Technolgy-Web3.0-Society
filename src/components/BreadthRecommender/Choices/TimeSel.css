@@ -1,0 +1,68 @@
+.ts-main{
+    background-color: white;
+    height: 30vh;
+    width: 68vw;
+    position: absolute;
+    top: 29vh;
+    left: 1vw;
+    border: solid #010101;
+    box-shadow: 5px 5px 15px 0px #1e1e2c;
+}
+
+.ts-opts{
+    height: 17%;
+    width: 100%;
+    border-bottom: solid #010101;
+}
+
+.ts-opts-title{
+    color: #010101;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.ts-contents{
+    height: 70%;
+    width: 100%;
+    border-bottom: solid #010101;
+}
+
+.ts-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+}
+
+.ts-cl-btn-wrap{
+    height: 100%;
+    flex: 1;
+}
+
+.ts-ap-btn-wrap{
+    height: 100%;
+    flex: 1;
+}
+
+.ts-cl-btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    border-right: solid #010101;
+    font-size: larger;
+}
+
+.ts-ap-btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #07c247;
+    font-weight: 600;
+    color: white;
+    font-size: larger;
+}
