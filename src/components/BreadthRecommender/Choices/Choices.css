@@ -113,6 +113,7 @@
     padding-bottom: 1rem;
     border-bottom: solid #010101;
     height: 15%;
+    align-items: center;
 }
 
 .courses-name{
