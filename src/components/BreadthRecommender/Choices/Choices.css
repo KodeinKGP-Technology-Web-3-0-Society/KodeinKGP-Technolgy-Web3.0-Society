@@ -1,3 +1,8 @@
+.ch-area{
+    height: 60vh;
+    width: 70vw;
+}
+
 .ch-bg{
     background-image: linear-gradient(to right, #488ED2, #E1E1F0);
     display: flex;
