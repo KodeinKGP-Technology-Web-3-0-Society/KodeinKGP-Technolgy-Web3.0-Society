@@ -1,6 +1,9 @@
 .ch-area{
     height: 60vh;
     width: 70vw;
+    position: absolute;
+    top: 10vh;
+    left: 5vh;
 }
 
 .ch-bg{
