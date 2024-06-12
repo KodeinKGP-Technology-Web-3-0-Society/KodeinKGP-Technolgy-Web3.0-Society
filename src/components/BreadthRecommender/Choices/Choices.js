@@ -16,7 +16,7 @@ function Choices() {
 
     return (
         <div className='ch-bg'>
-            <div className="btn-cover">
+            <h1 className="btn-cover">
                 <div className="btn-sel-goal-cover">
                     <button className='btn-sel-goal btn'>
                         SELECT GOALS
@@ -29,9 +29,9 @@ function Choices() {
                         <img src={arrow} className='btn-img'/>
                     </button>
                 </div>
-            </div>
+            </h1>
             <div className="box-cover">
-                <div className="box-left">
+                <h1 className="box-left">
                     <div className="box-left-text">COURSES</div>
                     <div className="box-left-courses">
                         {
@@ -44,21 +44,21 @@ function Choices() {
                             ))
                         }
                     </div>
-                </div>
+                </h1>
                 <div className="box-right">
-                    <div className="box-right-text">STATS</div>
+                    <h1 className="box-right-text">STATS</h1>
                     <div className="box-right-graphs">
                         The chart is present here
                     </div>
                 </div>
             </div>
-            <div className="save-btn-cover">
+            <h1 className="save-btn-cover">
                 <button className='save-btn'>
                     <span className='save-btn-span'>
                         SAVE CHANGES
                     </span>
                 </button>
-            </div>
+            </h1>
         </div>
     )
 }
