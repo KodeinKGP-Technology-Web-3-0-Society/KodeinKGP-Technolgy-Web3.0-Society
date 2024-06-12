@@ -1,7 +1,41 @@
 import React from 'react';
+import './home.css';
+import Navbar from '../LandingPage/Navbar';
 
 const Home = () =>{
-    return <h1>Home</h1>;
+  
+    return (
+    <div className="Roll_number_page">
+      <Navbar/>
+      <div className="welcome-card">
+        <div className='formForAskingRollNumber'>
+        <span className='welcomeToPage'>WELCOME</span>
+        <br/>
+        <span className='askingForRollNumber'>Please enter your roll number</span>
+        <form>
+          <input
+            type="text"
+            placeholder="XXXXXXXXX"
+            id='impufy'
+          />
+          <br/>
+          <button type="submit" class="submissionbuttonRollNumber" onClick={()=>{
+              let val =document.getElementById("impufy").value;
+              let pattern=/^[0-9]{2}[A-Z]{2}[0-9]{5}$/;;
+              let result=pattern.test(val)
+              if(result){
+                window.alert("Success");
+              }
+              else{
+                window.alert("error");
+              }
+            }}>SUBMIT</button>
+        </form>
+          </div>
+      </div>
+    </div>
+  );
 }
 
 export default Home;
+
