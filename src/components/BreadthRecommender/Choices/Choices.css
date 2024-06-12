@@ -89,9 +89,9 @@
 }
 
 .box-left-text, .box-right-text{
+    height: 15%;
     color: #010101;
     font-size: 2rem;
-    height: 3rem;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -99,7 +99,7 @@
 }
 
 .box-left-courses{
-    height: calc(100% - 3rem);
+    height: 85%;
     overflow-y: scroll;
     border-top: solid #010101;;
 }
@@ -111,14 +111,16 @@
     justify-content: space-evenly;
     padding-top: 1rem;
     padding-bottom: 1rem;
+    border-bottom: solid #010101;
+    height: 15%;
 }
 
 .courses-name{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 .courses-cg{
-    font-size: 1rem;
+    font-size: 1.25rem;
 }
 
 input[type=radio] {
