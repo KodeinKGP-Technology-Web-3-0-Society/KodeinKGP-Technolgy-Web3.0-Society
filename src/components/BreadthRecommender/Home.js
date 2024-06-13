@@ -1,7 +1,10 @@
 import React from 'react';
+import Choices from './Choices/Choices';
 
 const Home = () =>{
-    return <h1>Home</h1>;
+    return <div>
+        <Choices />
+    </div>;
 }
 
 export default Home;

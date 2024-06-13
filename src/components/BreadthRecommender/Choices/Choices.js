@@ -25,13 +25,13 @@ function Choices() {
                     <div className="btn-sel-goal-cover">
                         <button className='btn-sel-goal btn' onClick={() => setGoalVis(!goalVis)}>
                             SELECT GOALS
-                            <img src={arrow} className='btn-img'/>
+                            <img src={arrow} className='btn-img' alt=''/>
                         </button>
                     </div>
                     <div className="btn-sel-times-cover">
                         <button className='btn-sel-times btn' onClick={() => setTimeVis(!timeVis)}>
                             SELECT TIMESLOT
-                            <img src={arrow} className='btn-img'/>
+                            <img src={arrow} className='btn-img' alt=''/>
                         </button>
                     </div>
                 </h1>
@@ -64,6 +64,12 @@ function Choices() {
                         </span>
                     </button>
                 </h1>
+            </div>
+            <div className='close-btn-wrap' onClick={() => {setGoalVis(false); setTimeVis(false)}} hidden={!goalVis}>
+                <span className='close-btn'>&#10005;</span>
+            </div>
+            <div className='close-btn-wrap' onClick={() => {setGoalVis(false); setTimeVis(false)}} hidden={!timeVis}>
+                <span className='close-btn'>&#10005;</span>
             </div>
             <div hidden={!goalVis}>
                 <GoalSel />

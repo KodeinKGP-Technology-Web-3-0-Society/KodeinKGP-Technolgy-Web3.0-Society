@@ -93,7 +93,7 @@
     color: #010101;
     font-size: 2rem;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     align-items: center;
     padding-left: 2rem;
 }
@@ -129,4 +129,28 @@ input[type=radio] {
     width: 2em;
     height: 2em;
     accent-color: #052268;
+}
+
+.close-btn-wrap{
+    position: absolute;
+    top: 35%;
+    left: 62%;
+    border-radius: 50%;
+    height: 3.0rem;
+    width: 3.0rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    border: solid #010101 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
 }
