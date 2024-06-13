@@ -6,10 +6,10 @@ function TimeSel() {
     
     useEffect(()=>{
         var localTimes = []
-        for(var i = 8; i < 12; i+=2){
+        for(var i = 1; i < 12; i+=2){
             localTimes.push(`${i} AM`)
         }
-        for(var i = 1; i < 6; i+=2){
+        for(var i = 1; i < 12; i+=2){
             localTimes.push(`${i} PM`)
         }
         setAvailTimes(localTimes)
@@ -20,7 +20,15 @@ function TimeSel() {
             <div className="ts-opts">
                 <h1 className="ts-opts-title">SELECT TIMESLOT</h1>
             </div>
-            <div className="ts-contents"></div>
+            <div className="ts-contents">
+                {
+                    availTimes.map((data, index) => (
+                        <div className='ts-ele' key={index}>
+                            <div className="ts-ele-time">{data}</div>
+                        </div>
+                    ))
+                }
+            </div>
             <div className="ts-btn">
                 <div className="ts-cl-btn-wrap">
                     <button className='ts-cl-btn'>
