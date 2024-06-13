@@ -87,6 +87,6 @@
     margin-bottom: 2.5%;
 }
 
-.ts-ele:hover{
+.ts-ele-sel{
     background-image: linear-gradient(to right, #6fd7e2, #fefefe);
 }

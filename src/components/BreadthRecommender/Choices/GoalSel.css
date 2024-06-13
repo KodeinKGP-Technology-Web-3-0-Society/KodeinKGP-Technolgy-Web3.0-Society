@@ -88,6 +88,6 @@
     margin-bottom: 2.5%;
 }
 
-.gs-ele:hover{
+.gs-ele-sel{
     background-image: linear-gradient(to right, #6fd7e2, #fefefe);
 }
