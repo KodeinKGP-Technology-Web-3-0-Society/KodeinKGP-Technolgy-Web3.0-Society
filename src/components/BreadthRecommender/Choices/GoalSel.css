@@ -22,11 +22,6 @@
     padding-left: 1rem;
 }
 
-.gs-contents{
-    height: 70%;
-    width: 100%;
-    border-bottom: solid #010101;
-}
 
 .gs-btn{
     display: flex;
@@ -65,4 +60,35 @@
     background-color: #07c247;
     font-weight: 600;
     color: white;
+}
+
+.gs-contents{
+    padding: 2% 5% 2% 5%;
+    height: 70%;
+    width: 100%;
+    border-bottom: solid #010101;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+
+.gs-ele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 900;
+    height: 30%;
+    width: 20%;
+    background-image: linear-gradient(to right, #cecdce, #fefefe);
+    border: solid #010101;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+}
+
+.gs-ele:active{
+    background-image: linear-gradient(to right, #6fd7e2, #fefefe);
 }
