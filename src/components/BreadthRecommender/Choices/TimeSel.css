@@ -77,8 +77,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
-    font-weight: 900;
+    font-size: 100%;
+    font-weight: 600;
     height: 30%;
     width: 22%;
     background-image: linear-gradient(to right, #cecdce, #fefefe);
