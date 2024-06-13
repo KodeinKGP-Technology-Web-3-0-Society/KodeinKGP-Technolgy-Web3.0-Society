@@ -3,7 +3,8 @@ import './TimeSel.css'
 
 function TimeSel() {
     const [availTimes ,setAvailTimes] = useState([])
-    
+    const [selTimes, setSelTime] = useState([])
+
     useEffect(()=>{
         var localTimes = []
         for(var i = 1; i < 12; i+=2){
@@ -14,6 +15,14 @@ function TimeSel() {
         }
         setAvailTimes(localTimes)
     }, [])
+
+    const handleSel = (object) =>{
+        setSelTime((selGoals) => {
+            const elementsSet = new Set(selGoals);
+            elementsSet.add(object.data);
+            return Array.from(elementsSet);
+        })
+    }
     
     return (
         <div className='ts-main'>
@@ -23,7 +32,7 @@ function TimeSel() {
             <div className="ts-contents">
                 {
                     availTimes.map((data, index) => (
-                        <div className='ts-ele' key={index}>
+                        <div className='ts-ele' key={index} onClick={(event) => handleSel({data, event})}>
                             <div className="ts-ele-time">{data}</div>
                         </div>
                     ))
