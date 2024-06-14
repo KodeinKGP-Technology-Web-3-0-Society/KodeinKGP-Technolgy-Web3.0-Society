@@ -3,6 +3,7 @@ import './GoalSel.css'
 
 function GoalSel() {
     const [availGoals ,setAvailGoals] = useState([])
+    const [selGoals ,setSelGoals] = useState([])
     useState(() => {
         setAvailGoals([
             "Civil Engineer",
@@ -22,6 +23,15 @@ function GoalSel() {
             "Automotive Engineer"
         ])
     }, [])
+
+    const handleSel = (obj) => {
+        setSelGoals((goals) => {
+            const goalsSet = new Set(goals)
+            goalsSet.add(obj.data)
+            return Array.from(goalsSet)
+        })
+        obj.e.target.classList.add("gs-ele-active")
+    }
     return (
         <div className='gs-main'>
             <div className="gs-opts">
@@ -30,8 +40,8 @@ function GoalSel() {
             <div className="gs-contents">
             {
                     availGoals.map((data, index) => (
-                        <div className='gs-ele' key={index}>
-                            <div className="gs-ele-time">{data}</div>
+                        <div className='gs-ele' key={index} onClick={(e) => handleSel({data, e})}>
+                            {data}
                         </div>
                     ))
                 }
