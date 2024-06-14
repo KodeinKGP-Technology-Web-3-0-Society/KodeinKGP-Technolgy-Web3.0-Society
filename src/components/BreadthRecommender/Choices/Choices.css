@@ -154,3 +154,25 @@ input[type=radio] {
     align-items: center;
     font-size: x-large;
 }
+
+@media screen and (max-width: 800px) {
+    .btn-cover{
+        height: 15%;
+    }
+
+    .box-cover{
+        margin-top: 5%;
+        height: 75%;
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .box-left{
+        height: 50%;
+    }
+
+    .box-right{
+        height: 50%;
+    }
+
+}
