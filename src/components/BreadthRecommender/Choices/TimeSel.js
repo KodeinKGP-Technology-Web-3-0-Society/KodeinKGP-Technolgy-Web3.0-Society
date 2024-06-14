@@ -3,7 +3,8 @@ import './TimeSel.css'
 
 function TimeSel() {
     const [availTimes ,setAvailTimes] = useState([])
-    const [selTimes ,setSelTimes] = useState([])
+    const [selTimes, setSelTime] = useState([])
+
     useEffect(()=>{
         var localTimes = []
         for(var i = 1; i < 12; i+=2){
@@ -15,15 +16,12 @@ function TimeSel() {
         setAvailTimes(localTimes)
     }, [])
 
-    const handleSel = (obj) => {
-        setSelTimes((times) => {
-            if(times.length === 0) return [obj.data]
-            const timesSet = new Set(times)
-            timesSet.add(obj.data)
-            return Array.from(timesSet)
+    const handleSel = (object) =>{
+        setSelTime((selGoals) => {
+            const elementsSet = new Set(selGoals);
+            elementsSet.add(object.data);
+            return Array.from(elementsSet);
         })
-        obj.e.target.classList.add("gs-ele-active")
-        console.log(selTimes)
     }
     
     return (
@@ -34,8 +32,8 @@ function TimeSel() {
             <div className="ts-contents">
                 {
                     availTimes.map((data, index) => (
-                        <div className='ts-ele' key={index} onClick={(e) => handleSel({e, data})}>
-                            {data}
+                        <div className='ts-ele' key={index} onClick={(event) => handleSel({data, event})}>
+                            <div className="ts-ele-time">{data}</div>
                         </div>
                     ))
                 }
