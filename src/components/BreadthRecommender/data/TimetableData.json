@@ -1,0 +1,329 @@
+{
+    "departments": [
+        {
+            "name": "Computer Science and Engineering",
+            "timetable": {
+                "Monday": {
+                    "8 AM - 9 AM": "Data Structures",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "Algorithms",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Operating Systems",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Database Systems",
+                    "3 PM - 4 PM": "",
+                    "4 PM - 5 PM": "Computer Networks",
+                    "5 PM - 6 PM": ""
+                },
+                "Tuesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Algorithms",
+                    "10 AM - 11 AM": "Operating Systems",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Data Structures",
+                    "3 PM - 4 PM": "Database Systems",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Wednesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Computer Networks",
+                    "10 AM - 11 AM": "Data Structures",
+                    "11 AM - 12 PM": "Operating Systems",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Algorithms",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Thursday": {
+                    "8 AM - 9 AM": "Database Systems",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "Data Structures",
+                    "12 PM - 1 PM": "Computer Networks",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Algorithms",
+                    "3 PM - 4 PM": "Operating Systems",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Friday": {
+                    "8 AM - 9 AM": "Computer Networks",
+                    "9 AM - 10 AM": "Operating Systems",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Database Systems",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Data Structures",
+                    "4 PM - 5 PM": "Algorithms",
+                    "5 PM - 6 PM": ""
+                }
+            }
+        },
+        {
+            "name": "Mechanical Engineering",
+            "timetable": {
+                "Monday": {
+                    "8 AM - 9 AM": "Thermodynamics",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "Fluid Mechanics",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Material Science",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Heat Transfer",
+                    "3 PM - 4 PM": "",
+                    "4 PM - 5 PM": "Dynamics",
+                    "5 PM - 6 PM": ""
+                },
+                "Tuesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Material Science",
+                    "10 AM - 11 AM": "Thermodynamics",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Fluid Mechanics",
+                    "3 PM - 4 PM": "Heat Transfer",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Wednesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Dynamics",
+                    "10 AM - 11 AM": "Material Science",
+                    "11 AM - 12 PM": "Heat Transfer",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Thermodynamics",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Thursday": {
+                    "8 AM - 9 AM": "Fluid Mechanics",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "Material Science",
+                    "12 PM - 1 PM": "Heat Transfer",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Dynamics",
+                    "3 PM - 4 PM": "Thermodynamics",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Friday": {
+                    "8 AM - 9 AM": "Heat Transfer",
+                    "9 AM - 10 AM": "Thermodynamics",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Fluid Mechanics",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Material Science",
+                    "4 PM - 5 PM": "Dynamics",
+                    "5 PM - 6 PM": ""
+                }
+            }
+        },
+        {
+            "name": "Electrical Engineering",
+            "timetable": {
+                "Monday": {
+                    "8 AM - 9 AM": "Circuit Analysis",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "Electromagnetics",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Digital Systems",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Control Systems",
+                    "3 PM - 4 PM": "",
+                    "4 PM - 5 PM": "Power Systems",
+                    "5 PM - 6 PM": ""
+                },
+                "Tuesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Digital Systems",
+                    "10 AM - 11 AM": "Circuit Analysis",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Electromagnetics",
+                    "3 PM - 4 PM": "Control Systems",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Wednesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Power Systems",
+                    "10 AM - 11 AM": "Digital Systems",
+                    "11 AM - 12 PM": "Control Systems",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Circuit Analysis",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Thursday": {
+                    "8 AM - 9 AM": "Electromagnetics",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "Digital Systems",
+                    "12 PM - 1 PM": "Power Systems",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Control Systems",
+                    "3 PM - 4 PM": "Circuit Analysis",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Friday": {
+                    "8 AM - 9 AM": "Power Systems",
+                    "9 AM - 10 AM": "Circuit Analysis",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Electromagnetics",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Digital Systems",
+                    "4 PM - 5 PM": "Control Systems",
+                    "5 PM - 6 PM": ""
+                }
+            }
+        },
+        {
+            "name": "Civil Engineering",
+            "timetable": {
+                "Monday": {
+                    "8 AM - 9 AM": "Structural Analysis",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "Geotechnical Engineering",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Transportation Engineering",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Water Resources",
+                    "3 PM - 4 PM": "",
+                    "4 PM - 5 PM": "Construction Management",
+                    "5 PM - 6 PM": ""
+                },
+                "Tuesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Transportation Engineering",
+                    "10 AM - 11 AM": "Structural Analysis",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Geotechnical Engineering",
+                    "3 PM - 4 PM": "Water Resources",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Wednesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Construction Management",
+                    "10 AM - 11 AM": "Transportation Engineering",
+                    "11 AM - 12 PM": "Water Resources",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Structural Analysis",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Thursday": {
+                    "8 AM - 9 AM": "Geotechnical Engineering",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "Transportation Engineering",
+                    "12 PM - 1 PM": "Water Resources",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Construction Management",
+                    "3 PM - 4 PM": "Structural Analysis",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Friday": {
+                    "8 AM - 9 AM": "Water Resources",
+                    "9 AM - 10 AM": "Structural Analysis",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Geotechnical Engineering",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Transportation Engineering",
+                    "4 PM - 5 PM": "Construction Management",
+                    "5 PM - 6 PM": ""
+                }
+            }
+        },
+        {
+            "name": "Chemical Engineering",
+            "timetable": {
+                "Monday": {
+                    "8 AM - 9 AM": "Chemical Process Principles",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "Chemical Reaction Engineering",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Transport Phenomena",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Thermodynamics",
+                    "3 PM - 4 PM": "",
+                    "4 PM - 5 PM": "Process Dynamics",
+                    "5 PM - 6 PM": ""
+                },
+                "Tuesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Transport Phenomena",
+                    "10 AM - 11 AM": "Chemical Process Principles",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Chemical Reaction Engineering",
+                    "3 PM - 4 PM": "Thermodynamics",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Wednesday": {
+                    "8 AM - 9 AM": "",
+                    "9 AM - 10 AM": "Process Dynamics",
+                    "10 AM - 11 AM": "Transport Phenomena",
+                    "11 AM - 12 PM": "Thermodynamics",
+                    "12 PM - 1 PM": "",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Chemical Process Principles",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Thursday": {
+                    "8 AM - 9 AM": "Chemical Reaction Engineering",
+                    "9 AM - 10 AM": "",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "Transport Phenomena",
+                    "12 PM - 1 PM": "Thermodynamics",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "Process Dynamics",
+                    "3 PM - 4 PM": "Chemical Process Principles",
+                    "4 PM - 5 PM": "",
+                    "5 PM - 6 PM": ""
+                },
+                "Friday": {
+                    "8 AM - 9 AM": "Thermodynamics",
+                    "9 AM - 10 AM": "Chemical Process Principles",
+                    "10 AM - 11 AM": "",
+                    "11 AM - 12 PM": "",
+                    "12 PM - 1 PM": "Chemical Reaction Engineering",
+                    "1 PM - 2 PM": "Lunch Break",
+                    "2 PM - 3 PM": "",
+                    "3 PM - 4 PM": "Transport Phenomena",
+                    "4 PM - 5 PM": "Process Dynamics",
+                    "5 PM - 6 PM": ""
+                }
+            }
+        }
+    ]
+}

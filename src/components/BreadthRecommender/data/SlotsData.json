@@ -1,0 +1,13 @@
+{
+    "All-Slots": [
+        {
+            "name": "A",
+            "types": {
+                "slot": {
+                    "hours": "2",
+                    "schedule": {}
+                }
+            }
+        }
+    ]
+}
