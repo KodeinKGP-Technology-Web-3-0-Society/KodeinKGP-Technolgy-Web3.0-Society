@@ -3,7 +3,7 @@ import Choices from './Choices/Choices';
 
 const Home = () =>{
     return <div>
-        Home
+        <Choices />
     </div>;
 }
 
