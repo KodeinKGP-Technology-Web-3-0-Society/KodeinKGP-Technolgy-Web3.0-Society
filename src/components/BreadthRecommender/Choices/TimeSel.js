@@ -22,6 +22,7 @@ function TimeSel() {
             elementsSet.add(object.data);
             return Array.from(elementsSet);
         })
+        object.event.target.classList.add("ts-ele-sel")
     }
     
     return (
@@ -33,7 +34,7 @@ function TimeSel() {
                 {
                     availTimes.map((data, index) => (
                         <div className='ts-ele' key={index} onClick={(event) => handleSel({data, event})}>
-                            <div className="ts-ele-time">{data}</div>
+                            {data}
                         </div>
                     ))
                 }

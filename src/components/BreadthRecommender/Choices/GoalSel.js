@@ -30,6 +30,7 @@ function GoalSel() {
             elementsSet.add(object.data);
             return Array.from(elementsSet);
         })
+        object.event.target.classList.add("gs-ele-sel")
     }
 
     return (
@@ -41,7 +42,7 @@ function GoalSel() {
             {
                     availGoals.map((data, index) => (
                         <div className='gs-ele' key={index} onClick={(event) => handleSel({data, event})}>
-                            <div className="gs-ele-time">{data}</div>
+                            {data}
                         </div>
                     ))
                 }
