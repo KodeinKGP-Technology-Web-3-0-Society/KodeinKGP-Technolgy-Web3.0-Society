@@ -15,7 +15,6 @@ function Choices() {
         }
         setData(localData)
     }, [])
-    console.log(data)
 
 
     return (
