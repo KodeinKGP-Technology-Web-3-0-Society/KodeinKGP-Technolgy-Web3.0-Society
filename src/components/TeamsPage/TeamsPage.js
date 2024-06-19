@@ -1,6 +1,7 @@
 import React from "react";
 import Founders from "./Founders";
 import Heads from "./Heads.js";
+import OldHeads from "./OldHeads.js";
 import Teams from "./Teams.js";
 import Footer from "../LandingPage/Footer.js";
 import Navbar from "../LandingPage/Navbar.js";
@@ -15,6 +16,10 @@ const TeamsPage = () => {
       <div className="members">
         <h3 className="members_title">Founders</h3>
         <Founders />
+      </div>
+      <div className="members">
+        <h3 className="members_title">Advisors</h3>
+        <OldHeads />
       </div>
       <div className="members"> 
         <h3 className="members_title">Heads</h3>
