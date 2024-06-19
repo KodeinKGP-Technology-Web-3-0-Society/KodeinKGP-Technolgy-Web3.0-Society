@@ -77,10 +77,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 100%;
+    font-size: 150%;
     font-weight: 600;
     height: 30%;
-    width: 22%;
+    width: 25%;
     background-image: linear-gradient(to right, #cecdce, #fefefe);
     border: solid #010101;
     cursor: pointer;
@@ -90,4 +90,19 @@
 
 .ts-ele-sel{
     background-image: linear-gradient(to right, #6fd7e2, #fefefe);
+}
+
+@media screen and (max-width: 800px) {
+    .ts-main{
+        width: 78vw;
+    }
+
+    .ts-opts-title{
+        font-size: 1.5rem;
+    }
+
+    .ts-ele{
+        font-size: 70%;
+        width: 27%;
+    }
 }
