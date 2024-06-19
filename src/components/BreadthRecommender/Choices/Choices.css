@@ -31,7 +31,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 25px;
+    font-size: 50%;
     font-weight: 600;
     margin: 2vh;
     cursor: pointer;
@@ -91,7 +91,7 @@
 .box-left-text, .box-right-text{
     height: 15%;
     color: #010101;
-    font-size: 2rem;
+    font-size: 4rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -102,6 +102,11 @@
     height: 85%;
     overflow-y: scroll;
     border-top: solid #010101;;
+}
+.box-right-graphs{
+    height: 85%;
+    overflow-y: scroll;
+    border-top: solid #010101;
 }
 
 .courses-item{
@@ -117,11 +122,11 @@
 }
 
 .courses-name{
-    font-size: 25%;
+    font-size: 35%;
 }
 
 .courses-cg{
-    font-size: 22%;
+    font-size: 35%;
 }
 
 input[type=radio] {
@@ -156,13 +161,31 @@ input[type=radio] {
 }
 
 @media screen and (max-width: 800px) {
+    .ch-bg{
+        height: 80vh;
+        width: 80vw;
+    }
     .btn-cover{
         height: 15%;
+        flex-direction: column;
+        gap: 0%;
+        margin: 0%;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn{
+        height: 60%;
+        width: 60vw;
+        padding: 0%;
+        font-size: 25%;
+        margin: 0%;
     }
 
     .box-cover{
         margin-top: 5%;
-        height: 75%;
+        height: 70%;
         flex-direction: column;
         gap: 2%;
     }
@@ -171,8 +194,27 @@ input[type=radio] {
         height: 50%;
     }
 
+    .box-left-text, .box-right-text{
+        font-size: 1.5rem;
+    }
+
     .box-right{
         height: 50%;
     }
+    
+    .courses-name{
+        font-size: 15%;
+    }
+    
+    .courses-cg{
+        font-size: 15%;
+    }
 
+    .save-btn-cover{
+        height: 15%;
+    }
+
+    .save-btn-span{
+        font-size: 1rem;
+    }
 }
