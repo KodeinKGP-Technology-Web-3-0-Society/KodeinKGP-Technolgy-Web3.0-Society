@@ -1,16 +1,30 @@
-import React, { useEffect } from 'react';
+import React, { useState, useEffect } from 'react';
 import './home.css';
 import Navbar from '../LandingPage/Navbar';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import myImage from './bgpng.png'; 
+import image1 from './bgpng.png';
+import image2 from './bg2png.png'; 
 
-const Home = () =>{
-  // useEffect(() => {
-  //   background();
-  //   window.addEventListener('resize', background);
-  //   return () => window.removeEventListener('resize', background);
-  // }, []);
+const Home = () => {
+  const [myImage, setMyImage] = useState(window.innerWidth < 767 ? image2 : image1);
+  const [windowWidth, setWindowWidth] = useState(window.innerWidth);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setWindowWidth(window.innerWidth);
+    };
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    setMyImage(windowWidth < 767 ? image2 : image1);
+  }, [windowWidth]);
 
   const notify = (event) => {
     event.preventDefault();
@@ -27,7 +41,7 @@ const Home = () =>{
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+      });
     } else {
       toast.error('Error', {
         position: "bottom-right",
@@ -38,50 +52,45 @@ const Home = () =>{
         draggable: true,
         progress: undefined,
         theme: "light",
-        });
+      });
     }
   };
-            // const background = () => {
-            //   if (window.matchMedia('(max-width: 767px) and (max-height: 1000px)').matches) {
-            //     document.querySelector('.bgimg').src = './bg2png.png';
-            //   } else {
-            //     document.querySelector('.bgimg').src = './bgpng.png';
-            //   }
-            // };
-    return (
+
+  return (
     <div className="Roll_number_page">
-      <img src={myImage} className='bgimg' />
+      <img src={myImage} className='bgimg' alt="Background" />
       {/* <Navbar/> */}
       <div className="welcome-card">
         <div className='formForAskingRollNumber'>
-        <span className='welcomeToPage'>WELCOME</span>
-        <br/>
-        <span className='askingForRollNumber'>Please enter your roll number</span>
-        <form>
-          <input
-            type="text"
-            placeholder="XXXXXXXXX"
-            id='impufy'
-          />
-          <br/>
-          <button type="submit" class="submissionbuttonRollNumber" onClick={notify}
-            >SUBMIT</button>
+          <span className='welcomeToPage'>WELCOME</span>
+          <br />
+          <span className='askingForRollNumber'>Please enter your roll number</span>
+          <form>
+            <input
+              type="text"
+              placeholder="XXXXXXXXX"
+              id='impufy'
+            />
+            <br />
+            <button type="submit" className="submissionbuttonRollNumber" onClick={notify}>
+              SUBMIT
+            </button>
             <ToastContainer
-            position="bottom-right"
-            autoClose={5000}
-            hideProgressBar={false}
-            newestOnTop={false}
-            closeOnClick
-            rtl={false}
-            pauseOnFocusLoss
-            draggable
-            pauseOnHover
-            theme="light"
-              />
-        </form> 
-          </div>
+              position="bottom-right"
+              autoClose={5000}
+              hideProgressBar={false}
+              newestOnTop={false}
+              closeOnClick
+              rtl={false}
+              pauseOnFocusLoss
+              draggable
+              pauseOnHover
+              theme="light"
+            />
+          </form> 
+        </div>
       </div>
-     </div>
+    </div>
   );
 }
 
