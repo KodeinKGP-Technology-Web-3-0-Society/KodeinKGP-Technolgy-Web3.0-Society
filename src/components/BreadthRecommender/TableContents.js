@@ -57,82 +57,92 @@ const TableContents = ({ depData, elective }) => {
                             <th>Friday</th>
                         </tr>
                     </thead>
+
                     <tbody>
                         <tr>
                             <th>8 am - 8:55 am</th>
-                            <td>{depTable.timetable["Monday"]["8 AM - 9 AM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["8 AM - 9 AM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["8 AM - 9 AM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["8 AM - 9 AM"]}</td>
-                            <td>{depTable.timetable["Friday"]["8 AM - 9 AM"]}</td>
+                            <td>{depTable.timetable.A2 || depTable.timetable.A3}</td>
+                            <td>{depTable.timetable.B2 || depTable.timetable.B3}</td>
+                            <td>{depTable.timetable.C2 || depTable.timetable.C3 || depTable.timetable.C4}</td>
+                            <td>{depTable.timetable.D4}</td>
+                            <td>{depTable.timetable.G3}</td>
                         </tr>
+
                         <tr>
                             <th>9 am - 9:55 am</th>
-                            <td>{depTable.timetable["Monday"]["9 AM - 10 AM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["9 AM - 10 AM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["9 AM - 10 AM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["9 AM - 10 AM"]}</td>
-                            <td>{depTable.timetable["Friday"]["9 AM - 10 AM"]}</td>
+                            <td>{depTable.timetable.A2 || depTable.timetable.A3}</td>
+                            <td>{depTable.timetable.B2 || depTable.timetable.B3}</td>
+                            <td>{depTable.timetable.C2 || depTable.timetable.C3 || depTable.timetable.C4}</td>
+                            <td>{depTable.timetable.F3 || depTable.timetable.F4}</td>
+                            <td>{depTable.timetable.E2 || depTable.timetable.E3 || depTable.timetable.E4}</td>
                         </tr>
+
                         <tr>
                             <th>10 am - 10:55 am</th>
-                            <td>{depTable.timetable["Monday"]["10 AM - 11 AM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["10 AM - 11 AM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["10 AM - 11 AM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["10 AM - 11 AM"]}</td>
-                            <td>{depTable.timetable["Friday"]["10 AM - 11 AM"]}</td>
+                            <td>{depTable.timetable.C3 || depTable.timetable.C4 || depTable.timetable.Q}</td>
+                            <td>{depTable.timetable.D2 || depTable.timetable.D3 || depTable.timetable.D4 || depTable.timetable.K}</td>
+                            <td>{depTable.timetable.F3 || depTable.timetable.F4 || depTable.timetable.R}</td>
+                            <td>{depTable.timetable.C4 || depTable.timetable.M}</td>
+                            <td>{depTable.timetable.E2 || depTable.timetable.E4 || depTable.timetable.O}</td>
                         </tr>
+
                         <tr>
                             <th>11 am - 11:55 am</th>
-                            <td>{depTable.timetable["Monday"]["11 AM - 12 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["11 AM - 12 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["11 AM - 12 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["11 AM - 12 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["11 AM - 12 PM"]}</td>
+                            <td>{depTable.timetable.B3 || depTable.timetable.Q}</td>
+                            <td>{depTable.timetable.D2 || depTable.timetable.D3 || depTable.timetable.D4 || depTable.timetable.K}</td>
+                            <td>{depTable.timetable.G3 || depTable.timetable.R}</td>
+                            <td>{depTable.timetable.E3 || depTable.timetable.E4 || depTable.timetable.M}</td>
+                            <td>{depTable.timetable.F2 || depTable.timetable.F3 || depTable.timetable.F4 || depTable.timetable.O}</td>
                         </tr>
+
                         <tr>
                             <th>12 pm - 12:55 pm</th>
-                            <td>{depTable.timetable["Monday"]["12 PM - 1 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["12 PM - 1 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["12 PM - 1 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["12 PM - 1 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["12 PM - 1 PM"]}</td>
+                            <td>{depTable.timetable.D3 || depTable.timetable.D4 || depTable.timetable.Q}</td>
+                            <td>{depTable.timetable.A3 || depTable.timetable.K}</td>
+                            <td>{depTable.timetable.E3 || depTable.timetable.E4 || depTable.timetable.R}</td>
+                            <td>{depTable.timetable.G3 || depTable.timetable.M}</td>
+                            <td>{depTable.timetable.F2 || depTable.timetable.F4 || depTable.timetable.O}</td>
                         </tr>
+
                         <tr>
                             <th>1 pm - 1:55 pm</th>
                             <th colSpan={5}>LUNCH BREAK</th>
                         </tr>
+
                         <tr>
                             <th>2 pm - 2:55 pm</th>
-                            <td>{depTable.timetable["Monday"]["2 PM - 3 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["2 PM - 3 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["2 PM - 3 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["2 PM - 3 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["2 PM - 3 PM"]}</td>
+                            <td>{depTable.timetable.H3 || depTable.timetable.J}</td>
+                            <td>{depTable.timetable.U4 || depTable.timetable.L}</td>
+                            <td>{depTable.timetable.X4 || depTable.timetable.X}</td>
+                            <td>{depTable.timetable.I2 || depTable.timetable.N}</td>
+                            <td>{depTable.timetable.V4 || depTable.timetable.P}</td>
                         </tr>
+
                         <tr>
                             <th>3 pm - 3:55 pm</th>
-                            <td>{depTable.timetable["Monday"]["3 PM - 4 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["3 PM - 4 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["3 PM - 4 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["3 PM - 4 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["3 PM - 4 PM"]}</td>
+                            <td>{depTable.timetable.U3 || depTable.timetable.U4 || depTable.timetable.J}</td>
+                            <td>{depTable.timetable.U3 || depTable.timetable.U4 || depTable.timetable.L}</td>
+                            <td>{depTable.timetable.X4 || depTable.timetable.X}</td>
+                            <td>{depTable.timetable.V2 || depTable.timetable.V3 || depTable.timetable.V4 || depTable.timetable.N}</td>
+                            <td>{depTable.timetable.V3 || depTable.timetable.V4 || depTable.timetable.P}</td>
                         </tr>
+
                         <tr>
                             <th>4 pm - 4:55 pm</th>
-                            <td>{depTable.timetable["Monday"]["4 PM - 5 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["4 PM - 5 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["4 PM - 5 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["4 PM - 5 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["4 PM - 5 PM"]}</td>
+                            <td>{depTable.timetable.U3 || depTable.timetable.U4 || depTable.timetable.J}</td>
+                            <td>{depTable.timetable.H2 || depTable.timetable.H3 || depTable.timetable.L}</td>
+                            <td>{depTable.timetable.X4 || depTable.timetable.X}</td>
+                            <td>{depTable.timetable.V2 || depTable.timetable.V3 || depTable.timetable.V4 || depTable.timetable.N}</td>
+                            <td>{depTable.timetable.I2 || depTable.timetable.P}</td>
                         </tr>
+
                         <tr>
                             <th>5 pm - 5:55 pm</th>
-                            <td>{depTable.timetable["Monday"]["5 PM - 6 PM"]}</td>
-                            <td>{depTable.timetable["Tuesday"]["5 PM - 6 PM"]}</td>
-                            <td>{depTable.timetable["Wednesday"]["5 PM - 6 PM"]}</td>
-                            <td>{depTable.timetable["Thursday"]["5 PM - 6 PM"]}</td>
-                            <td>{depTable.timetable["Friday"]["5 PM - 6 PM"]}</td>
+                            <td>{depTable.timetable.S3}</td>
+                            <td>{depTable.timetable.H2 || depTable.timetable.H3}</td>
+                            <td>{depTable.timetable.X4}</td>
+                            <td>{depTable.timetable.S3}</td>
+                            <td>{depTable.timetable.S3}</td>
                         </tr>
                     </tbody>
                 </table>
