@@ -29,8 +29,8 @@ function GoalSel() {
             const elementsSet = new Set(selGoals);
             elementsSet.add(object.data);
             return Array.from(elementsSet);
-        })
-        object.event.target.classList.add("gs-ele-sel")
+        });
+        object.event.target.classList.toggle("gs-ele-sel")
     }
 
     return (

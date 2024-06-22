@@ -22,7 +22,7 @@ function TimeSel() {
             elementsSet.add(object.data);
             return Array.from(elementsSet);
         })
-        object.event.target.classList.add("ts-ele-sel")
+        object.event.target.classList.toggle("ts-ele-sel")
     }
     
     return (
