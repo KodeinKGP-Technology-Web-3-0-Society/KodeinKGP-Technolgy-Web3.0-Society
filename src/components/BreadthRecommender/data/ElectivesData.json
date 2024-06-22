@@ -2,28 +2,23 @@
     "Electives": [
         {
             "name": "Elective 1",
-            "day": "Monday",
-            "time": "9 AM - 10 AM"
+            "slot": "C3"
         },
         {
             "name": "Elective 2",
-            "day": "Tuesday",
-            "time": "11 AM - 12 PM"
+            "slot": "E2"
         },
         {
             "name": "Elective 3",
-            "day": "Wednesday",
-            "time": "5 PM - 6 PM"
+            "slot": "S3"
         },
         {
             "name": "Elective 4",
-            "day": "Thursday",
-            "time": "3 PM - 4 PM"
+            "slot": "V4"
         },
         {
             "name": "Elective 5",
-            "day": "Friday",
-            "time": "10 AM - 11 AM"
+            "slot": "H2"
         }
     ]
 }

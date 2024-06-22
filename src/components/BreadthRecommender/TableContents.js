@@ -3,45 +3,35 @@ import React, { useEffect, useState } from 'react';
 const TableContents = ({ depData, elective }) => {
 
     const [updatedDeps, setUpdatedDeps] = useState(depData);
-    const [elecAvail, setElecAvail] = useState(true);
-    const [elecDone, setElecDone] = useState(false);
+
+
+    const mergeElectives = (depData, elective) => {
+
+        return depData.map(dep => {
+
+            let updatedTimetable = { ...dep.timetable };
+
+            elective.forEach(elective => {
+                updatedTimetable[elective.slot] = elective.name;
+            });
+
+            return { ...dep, timetable: updatedTimetable };
+
+        });
+
+    };
 
 
     useEffect(() => {
 
-        setUpdatedDeps(depData.map(newDepTable => {
-            const newTimetable = { ...newDepTable.timetable };
+        const mergedData = mergeElectives(depData, elective);
+        setUpdatedDeps(mergedData);
 
-            elective.forEach(elec => {
-                const { name: elecName, day: elecDay, time: elecTime } = elec;
-
-                if (newTimetable[elecDay][elecTime] === "") {
-                    newTimetable[elecDay][elecTime] = elecName;
-                    setElecAvail(true);
-                    setElecDone(false);
-                }
-                else if (newTimetable[elecDay][elecTime] === elecName) {
-                    setElecAvail(true);
-                    setElecDone(true);
-                }
-                else {
-                    setElecAvail(false);
-                    setElecDone(false);
-                }
-            });
-
-            return { ...newDepTable, timetable: newTimetable };
-        }));
-
-    }, [elective, depData])
-
+    }, [depData, elective]);
 
 
     return (
         <div className="timetable-contents-true">
-
-            {!elecAvail && <p>Elective not Available...</p>}
-            {elecDone && <p>Elective Already Chosen...</p>}
 
             {updatedDeps.map(depTable => (
 
