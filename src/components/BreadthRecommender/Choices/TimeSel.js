@@ -17,12 +17,22 @@ function TimeSel() {
     }, [])
 
     const handleSel = (object) =>{
-        setSelTime((selGoals) => {
-            const elementsSet = new Set(selGoals);
+        
+        const elementsSet = new Set(selTimes);
+        if(elementsSet.has(object.data)){
+            elementsSet.delete(object.data);
+            object.event.target.classList.remove("ts-ele-sel");
+        }else{
             elementsSet.add(object.data);
-            return Array.from(elementsSet);
-        })
-        object.event.target.classList.toggle("ts-ele-sel")
+            object.event.target.classList.add("ts-ele-sel");
+        }
+        setSelTime(Array.from(elementsSet));
+    }
+
+    const handleClear = () => {
+        const elems = document.querySelectorAll(".ts-ele-sel");
+        elems.forEach((elem) => elem.classList.remove("ts-ele-sel"))
+        setSelTime([])
     }
     
     return (
@@ -41,7 +51,7 @@ function TimeSel() {
             </div>
             <div className="ts-btn">
                 <div className="ts-cl-btn-wrap">
-                    <button className='ts-cl-btn'>
+                    <button className='ts-cl-btn' onClick={() => handleClear()}>
                         Clear All
                     </button>
                 </div>

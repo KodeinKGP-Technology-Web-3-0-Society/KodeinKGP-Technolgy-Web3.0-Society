@@ -25,14 +25,24 @@ function GoalSel() {
     }, [])
 
     const handleSel = (object) =>{
-        setSelGoals((selGoals) => {
-            const elementsSet = new Set(selGoals);
+        
+        const elementsSet = new Set(selGoals);
+        if(elementsSet.has(object.data)){
+            elementsSet.delete(object.data);
+            object.event.target.classList.remove("gs-ele-sel");
+        }else{
             elementsSet.add(object.data);
-            return Array.from(elementsSet);
-        });
-        object.event.target.classList.toggle("gs-ele-sel")
+            object.event.target.classList.add("gs-ele-sel");
+        }
+        setSelGoals(Array.from(elementsSet));
     }
 
+    const handleClear = () => {
+        const elems = document.querySelectorAll(".gs-ele-sel");
+        elems.forEach((elem) => elem.classList.remove("gs-ele-sel"))
+        setSelGoals([])
+    }
+ 
     return (
         <div className='gs-main'>
             <div className="gs-opts">
@@ -49,7 +59,7 @@ function GoalSel() {
             </div>
             <div className="gs-btn">
                 <div className="gs-cl-btn-wrap">
-                    <button className='gs-cl-btn'>
+                    <button className='gs-cl-btn' onClick={() => handleClear()}>
                         Clear All
                     </button>
                 </div>
