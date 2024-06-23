@@ -1,0 +1,108 @@
+.ts-main{
+    background-color: white;
+    height: 40vh;
+    width: 88vw;
+    position: absolute;
+    top: 39vh;
+    left: 1vw;
+    border: solid #010101;
+    box-shadow: 5px 5px 15px 0px #1e1e2c;
+}
+
+.ts-opts{
+    height: 17%;
+    width: 100%;
+    border-bottom: solid #010101;
+}
+
+.ts-opts-title{
+    color: #010101;
+    font-size: 2.5rem;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+.ts-btn{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 13%;
+}
+
+.ts-cl-btn-wrap{
+    height: 100%;
+    flex: 1;
+}
+
+.ts-ap-btn-wrap{
+    height: 100%;
+    flex: 1;
+}
+
+.ts-cl-btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    font-weight: 600;
+    border-right: solid #010101;
+    font-size: larger;
+}
+
+.ts-ap-btn{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: #07c247;
+    font-weight: 600;
+    color: white;
+    font-size: larger;
+}
+
+.ts-contents{
+    padding: 2% 0% 2% 0%;
+    height: 70%;
+    width: 100%;
+    border-bottom: solid #010101;
+    overflow-y: scroll;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    gap: 5%;
+}
+
+.ts-ele{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 150%;
+    font-weight: 600;
+    height: 30%;
+    width: 25%;
+    background-image: linear-gradient(to right, #cecdce, #fefefe);
+    border: solid #010101;
+    cursor: pointer;
+    margin-bottom: 2.5%;
+    text-align: center;
+}
+
+.ts-ele-sel{
+    background-image: linear-gradient(to right, #6fd7e2, #fefefe);
+}
+
+@media screen and (max-width: 800px) {
+    .ts-main{
+        width: 78vw;
+    }
+
+    .ts-opts-title{
+        font-size: 1.5rem;
+    }
+
+    .ts-ele{
+        font-size: 70%;
+        width: 27%;
+    }
+}

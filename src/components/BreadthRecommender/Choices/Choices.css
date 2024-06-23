@@ -1,0 +1,220 @@
+.ch-area{
+    height: 80vh;
+    width: 70vw;
+    position: absolute;
+    top: 10vh;
+    left: 5vh;
+}
+
+.ch-bg{
+    background-image: linear-gradient(to right, #488ED2, #E1E1F0);
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 90vw;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.btn-cover{
+    display: flex;
+    flex-direction: row;
+    height: 20%;
+}
+
+.btn-img{
+    scale: 0.5;
+}
+
+.btn{
+    background-image: linear-gradient(to right, #b5bdb9, #ECEEFB );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 50%;
+    font-weight: 600;
+    margin: 2vh;
+    cursor: pointer;
+    border: solid #010101;
+    padding-left: 1rem;
+}
+
+.box-cover{
+    height: 70%;
+    display: flex;
+    gap: 10%;
+}
+
+.save-btn-cover{
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-left{
+    height: 95%;
+    background-color: white;
+    flex: 1;
+    border: solid #010101;
+}
+
+.box-right{
+    height: 95%;
+    background-color: white;
+    flex: 1;
+    border: solid #010101;
+}
+
+.save-btn {
+    background:#079437;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;
+    border: #010101;
+}
+
+.save-btn-span{
+    display: block;
+    padding: 12px 42px;
+    font-size: 1.25rem;
+    background: #07A633;
+    color: white;
+    transform: translateY(-6px);
+}
+
+.save-btn:active .save-btn-span{
+    transform: translateY(-2px);
+}
+
+.box-left-text, .box-right-text{
+    height: 15%;
+    color: #010101;
+    font-size: 4rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 2rem;
+}
+
+.box-left-courses{
+    height: 85%;
+    overflow-y: scroll;
+    border-top: solid #010101;;
+}
+.box-right-graphs{
+    height: 85%;
+    overflow-y: scroll;
+    border-top: solid #010101;
+}
+
+.courses-item{
+    color: #010101;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: solid #010101;
+    height: 15%;
+    align-items: center;
+}
+
+.courses-name{
+    font-size: 35%;
+}
+
+.courses-cg{
+    font-size: 35%;
+}
+
+input[type=radio] {
+    border: 0px;
+    width: 2em;
+    height: 2em;
+    accent-color: #052268;
+}
+
+.close-btn-wrap{
+    position: absolute;
+    top: 40%;
+    left: 62%;
+    border-radius: 50%;
+    height: 3.0rem;
+    width: 3.0rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #fefefe;
+    border: solid #010101 2px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.close-btn{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: x-large;
+}
+
+@media screen and (max-width: 800px) {
+    .ch-bg{
+        height: 80vh;
+        width: 80vw;
+    }
+    .btn-cover{
+        height: 15%;
+        flex-direction: column;
+        gap: 0%;
+        margin: 0%;
+        margin-top: 5%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .btn{
+        height: 60%;
+        width: 60vw;
+        padding: 0%;
+        font-size: 25%;
+        margin: 0%;
+    }
+
+    .box-cover{
+        margin-top: 5%;
+        height: 70%;
+        flex-direction: column;
+        gap: 2%;
+    }
+
+    .box-left{
+        height: 50%;
+    }
+
+    .box-left-text, .box-right-text{
+        font-size: 1.5rem;
+    }
+
+    .box-right{
+        height: 50%;
+    }
+    
+    .courses-name{
+        font-size: 15%;
+    }
+    
+    .courses-cg{
+        font-size: 15%;
+    }
+
+    .save-btn-cover{
+        height: 15%;
+    }
+
+    .save-btn-span{
+        font-size: 1rem;
+    }
+}
