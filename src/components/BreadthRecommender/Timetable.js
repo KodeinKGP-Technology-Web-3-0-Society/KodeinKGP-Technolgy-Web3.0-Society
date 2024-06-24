@@ -37,7 +37,7 @@ const Timetable = () => {
                 </div>
 
 
-                <div className={`timetable-contents-${dropDown ? 'expanded' : 'false'}`}>
+                <div className="timetable-contents">
                     {dropDown &&
 
                         (<div className="timetable-contents-true">

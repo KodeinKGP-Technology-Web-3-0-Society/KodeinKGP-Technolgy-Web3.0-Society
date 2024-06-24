@@ -84,22 +84,24 @@ body {
 
 .timetable-contents-true table {
     margin: 30px 30px;
-    min-height: 100vh;
     width: 70vw;
     border: 2px solid black;
 }
 
 .timetable-contents-true table th,
-td {
+.timetable-contents-true table td {
     border: 2px solid black;
-    width: 50vw;
     font-size: 1.2vw;
 }
 
-.timetable-contents-true th,
-td {
+.timetable-contents-true table th {
+    width: 50vw;
+}
+
+.timetable-contents-true table th,
+.timetable-contents-true table td {
     font-size: 1.3vw;
-    height: 50px;
+    padding: 10px 10px;
     text-align: center;
 }
 
@@ -108,7 +110,7 @@ td {
     font-size: 1.5vw;
 }
 
-@media screen and (max-width : 800px) {
+@media screen and (max-width : 1024px) {
 
     .timetable-header img {
         height: 7vh;
@@ -132,9 +134,8 @@ td {
     }
 
     .timetable-contents {
-        height: 50vh;
-        overflow-y: scroll;
-        margin-bottom: 0;
+        max-height: 50vh;
+        overflow: scroll;
     }
 
     .timetable-contents-true {
@@ -146,15 +147,10 @@ td {
         margin: 10px 10px;
     }
 
+    .timetable-contents-true table th,
     .timetable-contents-true table td {
-        font-size: 2.5vw;
-        height: 40px;
+        font-size: 2.1vw;
+        padding: 1px 1px;
     }
-
-    .timetable-contents-true table th {
-        height: 40px;
-        font-size: 2.2vw;
-    }
-
 
 }
