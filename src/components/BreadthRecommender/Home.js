@@ -5,9 +5,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import image1 from './bgpng.png';
 import image2 from './bg2png.png'; 
-
+import image3 from './bgimg3.png'
 const Home = () => {
-  const [myImage, setMyImage] = useState(window.innerWidth < 767 ? image2 : image1);
+  const [myImage, setMyImage] = useState(window.innerWidth < 767 ? (window.innerWidth<500 ? image3 :image2) : image1);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
 
   useEffect(() => {
@@ -23,7 +23,7 @@ const Home = () => {
   }, []);
 
   useEffect(() => {
-    setMyImage(windowWidth < 767 ? image2 : image1);
+    setMyImage(windowWidth < 767 ? (window.innerWidth<500 ? image3 :image2) : image1);
   }, [windowWidth]);
 
   const notify = (event) => {
