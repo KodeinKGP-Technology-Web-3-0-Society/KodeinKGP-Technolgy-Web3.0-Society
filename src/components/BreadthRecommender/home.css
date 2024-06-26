@@ -131,9 +131,56 @@ input {
   }
   input {
     width:35vw;
+    height: 4vmin;
   }
   .welcomeToPage{
     font-size:xx-large;
+  }
+  .submissionbuttonRollNumber {
+    width: 20vw;
+    height: 2.7vh;
+    font-size: 1.25vh;
+  }
+}
+
+@media screen and (max-width: 820px) and (max-height: 1180px) {
+  .welcome-card {
+    width: 80vw; 
+    height: 60vw;
+  }
+  .askingForRollNumber {
+    font-weight: 800;
+    font-size: 1.5vh;
+  }
+  input {
+    width:35vw;
+    height: 4vmin;
+  }
+  .welcomeToPage{
+    font-size: 2rem;
+  }
+  .submissionbuttonRollNumber {
+    width: 20vw;
+    height: 2.7vh;
+    font-size: 1.25vh;
+  }
+}
+
+@media screen and (max-width: 345px) and (max-height: 883px) {
+  .welcome-card {
+    width: 80vw; 
+    height: 60vw;
+  }
+  .askingForRollNumber {
+    font-weight: 800;
+    font-size: 2vh;
+  }
+  input {
+    width:35vw;
+    height: 4vmin;
+  }
+  .welcomeToPage{
+    font-size: 2rem;
   }
   .submissionbuttonRollNumber {
     width: 20vw;
