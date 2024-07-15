@@ -7,6 +7,7 @@ import Theory from "./components/QnAPage/TheoryProbs/Theory";
 import LabTopic from "./components/QnAPage/LabProbs/LabTopic";
 import LabQuestion from "./components/QnAPage/LabProbs/LabQuestion";
 import TheoryQuestion from './components/QnAPage/TheoryProbs/TheoryQuestion';
+import Selection from './Selection';
 
 import TheoryTopic from './components/QnAPage/TheoryProbs/TheoryTopic';
 import TeamsPage from "./components/TeamsPage/TeamsPage";
@@ -31,6 +32,7 @@ function App() {
         <Route path='/teams' element={<TeamsPage/>}></Route>
         <Route path='/events' element={<EventsPage/>}></Route>
         <Route path='/events/apply' element={<ApplyPage/>} ></Route>
+        <Route path='/selections' element={<Selection/>} ></Route>
       </Routes>
     </Router>
     </>

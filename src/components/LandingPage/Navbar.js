@@ -44,6 +44,11 @@ const Navbar = () => {
             Events
           </Link>
         </span>
+        <span className='link-tag'>
+          <Link className='link' to="/selections" onClick={toggleMenu}>
+            Selection Results
+          </Link>
+        </span>
       </div>
     </div>
   );
