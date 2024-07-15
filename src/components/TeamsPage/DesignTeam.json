@@ -1,9 +1,107 @@
 [
-[
-  
-   
-   
-],{
+  [
+    {
+        "id": 1,
+        "name": "Avi Kumar",
+        "Rollno": "23CH10015",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 2,
+        "name": "BRAJESH KUMAR SAHOO",
+        "Rollno": "23ME10019",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 3,
+        "name": "D Yuvan Gates",
+        "Rollno": "23CS10015",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 4,
+        "name": "Kavya Nagar",
+        "Rollno": "23MF3IM09",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 5,
+        "name": "Khushi Srivastava",
+        "Rollno": "23MT30015",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 6,
+        "name": "Prathwik Naik",
+        "Rollno": "23EC10022",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 7,
+        "name": "Saloni",
+        "Rollno": "23ME10074",
+        
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+        "id": 8,
+        "name": "Satakshi Chauhan",
+        "Rollno": "23MI10041",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    },
+    {
+         "id": 9,
+         "name": "Varun Nikam",
+        "Rollno": "23ME10095",
+        "mailid": "",
+        "facebook": "",
+        "instagram": "",
+        "linkedin": "",
+        "github": "",
+        "image_url": ""
+    }
+]
+,{
   "teamName":"Design and Media Team",
   "content" : "The design and media team is a group of creative professionals who are responsible for creating and managing the visual content of the society. The team consists of experts in various fields such as graphic design, illustration, animation, video production, and more.The design and media team ensures that the content is visually appealing, accessible, and consistent across different platforms and devices. ",
   "image_url":""
