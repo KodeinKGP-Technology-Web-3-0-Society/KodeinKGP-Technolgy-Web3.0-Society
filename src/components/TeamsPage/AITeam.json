@@ -1,69 +1,211 @@
 [
-[
-{
-    "name": "Yash Priyadarshy",
-    "id": "4",
-    "mailid": "yashpriyadarshy03@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "https://www.linkedin.com/in/yash-priyadarshy-60a27a26b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BtPT%2BTo5VTXaDez1gha8Uqw%3D%3D",
-    "github": "https://github.com/Yash123456789000",
-    "image_url":"https://drive.google.com/uc?export=view&id=1Z4dPI7pb3573cKPB0ljxKrCU9NF0th_3"
-  },
-{
-    "name": "Ayushi Pradhan ",
-    "id": "5",
-    "mailid": "ayushipradhanryp08@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1d7yRwVwHRW3XAhH_guECL4twd_Bpj1Fe    "
-  },
-{
-    "name": "Bhavesh Nareshkumar Pabnani",
-    "id": "7",
-    "mailid": "bhaveshpabnani@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087666813728",
-    "instagram": "https://www.instagram.com/bhaveshpabnani/",
-    "linkedin": "https://www.linkedin.com/in/bhavesh-pabnani-97a033250/",
-    "github": "https://github.com/bhaveshpabnani",
-    "image_url":"https://drive.google.com/uc?export=view&id=1iQFO2VhZcbALMwjj5LPcF98bi2Fus0J6"
-  },
-{
-    "name": "Parijat Sutradhar ",
-    "id": "8",
-    "mailid": "parijatsutradhar.slg04@gmail.com ",
-    "facebook": "https://www.facebook.com/profile.php?id=100086213054547",
-    "instagram": "https://www.instagram.com/parijat_sutradhar/",
-    "linkedin": "https://www.linkedin.com/in/parijat-sutradhar-9650b7202/",
-    "github": "https://github.com/ParijatSutradhar04",
-    "image_url":"https://drive.google.com/uc?export=view&id=14FzzAW67pQ920KNCMzS1F2D3gKNDZOUc"
-  },
-{
-    "name": "Agnij Biswas",
-    "id": "9",
-    "mailid": "biswasagnij@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1kIPrz6idxjUTx0THuoCNMmLGJLjM_axa"
-  },
-{
-    "name": "Mamidi Surya Teja",
-    "id": "11",
-    "mailid": "mamidisuryateja1601@gmail.com",
-    "facebook": "https://www.facebook.com/suryateja.mamidi.3?mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/surya_teja64?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/surya-teja-mamidi-747a2b254",
-    "github": "https://github.com/surya1601",
-    "image_url":"https://drive.google.com/uc?export=view&id=1MqeQoRpkDniuP3A7eERJFJA-FfqqFOmr    "
-  }
-],{
-    "teamName":"AI & Metaverse Team",
-    "content" : "The AI and metaverse team of a society is a group of passionate and talented individuals who share a common vision of exploring the possibilities and challenges of these emerging technologies. The team aims to learn and apply the latest research and developments in AI and metaverse, such as deep learning, computer vision, natural language processing, computer graphics, and virtual reality.Create and showcase innovative projects and applications ",
-    "image_url":""
-  }
-  ]
+  [
+      {
+          "id": 1,
+          "name": "Abhideep Shikhar",
+          "Rollno": "23HS10001",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 2,
+          "name": "Aditya Goyal",
+          "Rollno": "23IM10002",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 3,
+          "name": "Ankana Pari",
+          "Rollno": "23MA10008",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 4,
+          "name": "Atul Singh",
+          "Rollno": "23IE10010",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 5,
+          "name": "Daksh Sargiya",
+          "Rollno": "23IE10013",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 6,
+          "name": "M.Sai Pragnaan",
+          "Rollno": "23CS10043",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 7,
+          "name": "Manmath Mishra",
+          "Rollno": "23EC10043",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 8,
+          "name": "Paidi Geetesh Chandra",
+          "Rollno": "23MT10037",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 9,
+          "name": "Rushil Vora",
+          "Rollno": "23EE30022",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 10,
+          "name": "Saakshi Baranwal",
+          "Rollno": "23CH10055",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 11,
+          "name": "Samar Mahfooz",
+          "Rollno": "23MA10054",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 12,
+          "name": "Sharanya Baidya",
+          "Rollno": "23EC30047",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 13,
+          "name": "Sharvari Rajesh Karhe",
+          "Rollno": "23ME10078",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 14,
+          "name": "Shubham Kumar Mandal",
+          "Rollno": "23MI10044",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 15,
+          "name": "Sidhartha Sankar Swain",
+          "Rollno": "23MI31026",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 16,
+          "name": "Soumyashree Nayak",
+          "Rollno": "23NA10043",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 17,
+          "name": "Sourav Upadhyay",
+          "Rollno": "23IM10035",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      },
+      {
+          "id": 18,
+          "name": "Utsav Agarwal",
+          "Rollno": "23EC10083",
+          "mailid": "",
+          "facebook": "",
+          "instagram": "",
+          "linkedin": "",
+          "github": "",
+          "image_url": ""
+      }
   
+  
+  
+  
+  ],{
+      "teamName":"AI & Metaverse Team",
+      "content" : "The AI and metaverse team of a society is a group of passionate and talented individuals who share a common vision of exploring the possibilities and challenges of these emerging technologies. The team aims to learn and apply the latest research and developments in AI and metaverse, such as deep learning, computer vision, natural language processing, computer graphics, and virtual reality.Create and showcase innovative projects and applications ",
+      "image_url":""
+    }
+    ]
+    

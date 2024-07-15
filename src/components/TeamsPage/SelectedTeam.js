@@ -67,48 +67,61 @@ const SelectedTeam = (props) =>{
         // Render the component based on the window width
         return (
           <>
-            {width >= 748 ? (
+            {/* {width >= 748 ? (
               <div className="teamcontent">
                 <p className="team_content">{selectedData[1].content}</p>
                 <img src={teamImage} alt="img" className="team_image" />
               </div>
             ) : (
               <></>
-            )}
+            )} */}
           </>
         );
       }
       
     return(
         <div>
-            <h2 className='team_name'>{selectedData[1].teamName}</h2>
+            {/* <h2 className='team_name'>{selectedData[1].teamName}</h2> */}
             <div className='aboutteam'>
                 <TeamContent />
                 <div className='teammembers'>
+                  <table className='tab'>
+                    <tr>
+                       <th>Name</th>
+                       <th>Roll No.</th>
+                    </tr>
                     {memberDetails.map(member=>{
                         return(
-                            <Tilt
-                                className="parallax-effect-glare-scale"
-                                perspective={500}
-                                glareEnable={true}
-                                scale={1}
-                                gyroscope={true}>
-                                    <div className='member'>
-                                    <div className="photo-image">
-                                        <img src={member.image_url} alt="" />
-                                        <div className = "photo-details"> 
-                                            <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
-                                            <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
-                                            <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
-                                            <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
-                                            <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
-                                        </div>
-                                        </div>
-                                        <h5 className='photo-name'><strong>{member.name}</strong></h5>
-                                    </div>
-                            </Tilt>
+                          <>
+                          <tr>
+                           <td>{member.name}</td>
+                           <td>{member.Rollno}</td>
+                         </tr>
+                          </>
+                          //Tilt card with image
+                            // <Tilt
+                            //     className="parallax-effect-glare-scale"
+                            //     perspective={500}
+                            //     glareEnable={true}
+                            //     scale={1}
+                            //     gyroscope={true}>
+                            //         <div className='member'>
+                            //         <div className="photo-image">
+                            //             <img src={member.image_url} alt="" />
+                            //             <div className = "photo-details"> 
+                            //                 <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
+                            //                 <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
+                            //                 <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
+                            //                 <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
+                            //                 <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
+                            //             </div>
+                            //             </div>
+                            //             <h5 className='photo-name'><strong>{member.name}</strong></h5>
+                            //         </div>
+                            // </Tilt>
                         )
                     })}
+                    </table>
                 </div>
             </div>
         </div>

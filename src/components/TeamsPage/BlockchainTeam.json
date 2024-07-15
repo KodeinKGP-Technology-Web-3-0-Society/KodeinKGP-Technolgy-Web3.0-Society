@@ -1,106 +1,215 @@
-[
-[
-  {"teamId":2,
-    "name": "Swaraj Kumar Biswal ",
-    "id": "1",
-    "mailid": "biswalswaraj88@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1at9rJlZrI7padYIg8EEvPOl45AonCqf-"
+[[
+  {
+      "id": 1,
+      "name": "Akshat Tripathi",
+      "Rollno": "23GG10003",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Swadhin Kumar biswal",
-    "id": "3",
-    "mailid": "biswalswadhin505@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1nUZBLgn3fwnIH-_Z4EvreYzIbzsyppT6"
+  {
+      "id": 2,
+      "name": "Arnab Jena",
+      "Rollno": "23AE10007",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Aadishkumar Jain ",
-    "id": "4",
-    "mailid": "aadishkjain101004@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1IQPXuLQ2qGszDSIsiKZHHt9qtDQVm5Mw"
+  {
+      "id": 3,
+      "name": "Aryan Yadav",
+      "Rollno": "23CS10003",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Pritish Saha",
-    "id": "5",
-    "mailid": "pritish171@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085140945780",
-    "instagram": "https://www.instagram.com/the.lazy_astronaut/",
-    "linkedin": "linkedin.com/in/pritish-saha-436a1922a",
-    "github": "https://github.com/PritishSaha92",
-    "image_url":"https://drive.google.com/uc?export=view&id=1vS7xx0610GpWNoi5rSKRqN1T-k0wFnjI"
+  {
+      "id": 4,
+      "name": "Ashutosh Ranjan",
+      "Rollno": "23CS10004",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Ujjawal Agrawal",
-    "id": "6",
-    "mailid": "ujjawal13agrawal@kgpian.iitkgp.ac.in",
-    "facebook": "https://www.facebook.com/profile.php?id=100010598774189&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/ujjawal_agrawal_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/ujjawal-agrawal-892278177",
-    "github": "https://github.com/ujjagr",
-    "image_url":"https://drive.google.com/uc?export=view&id=1phQQIbKYa40swOPMYzv4PF-EuhCIcdG0"
+  {
+      "id": 5,
+      "name": "Atreya Bordoloi",
+      "Rollno": "23IM10006",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Golla Meghanandh Manvith Prabhash ",
-    "id": "8",
-    "mailid": "prabhashgolla2004@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085033546062",
-    "instagram": "https://www.instagram.com/prabhashgolla/",
-    "linkedin": "https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/",
-    "github": "https://github.com/prabhash-golla",
-    "image_url":"https://drive.google.com/uc?export=view&id=1KTM7qb34rw3MItiUvC_NRA62Fr1e24Jl"
+  {
+      "id": 6,
+      "name": "Bikram Ghuku",
+      "Rollno": "23CS30014",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Kanchi Ram Preetham",
-    "id": "9",
-    "mailid": "rampreethamkanchi@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085126419828&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/rampreethamkanchi?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/rampreetham-kanchi-0b8aa11b8",
-    "github": "https://github.com/rampreethamkanchi",
-    "image_url":"https://drive.google.com/uc?export=view&id=1qRR_cEBULu9xf-9z3xmFoAbtHTfpvEax"
+  {
+      "id": 7,
+      "name": "Devangan Mukherjee",
+      "Rollno": "23MT30007",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Makrawat Singh ",
-    "id": "10",
-    "mailid": "makrawatsingh@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087227336594&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/makrawat_22?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/i-am-makrawat",
-    "github": "https://github.com/Makrawatsingh",
-    "image_url":"https://drive.google.com/uc?export=view&id=1vK8qNBu2scVZm822mbugcmcebMlOMobr"
+  {
+      "id": 8,
+      "name": "Komanabelli Balaji",
+      "Rollno": "23IM10020",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Anurag Deshmukh",
-    "id": "11",
-    "mailid": "danurag983@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100088488510688&mibextid=9R9pXO",
-    "instagram": "https://instagram.com/anurag_deshmukh_549?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/anurag-deshmukh-95478b25b/",
-    "github": "https://github.com/anurag5764",
-    "image_url":"https://drive.google.com/uc?export=view&id=1_2119cZLV_KYU7sFZmiuER_jA5cn3m7H"
+  {
+      "id": 9,
+      "name": "Kshitij Roy",
+      "Rollno": "23MA10030",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Akash Manna",
-    "id": "12",
-    "mailid": "iamakashmanna@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":""
+  {
+      "id": 10,
+      "name": "NEHAL SINGH",
+      "Rollno": "23MI10030",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 11,
+      "name": "Om Singh Jadon",
+      "Rollno": "23IE10031",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 12,
+      "name": "Shankit Kumar Das",
+      "Rollno": "23CS10066",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 13,
+      "name": "Shashank Pandya",
+      "Rollno": "23CE10064",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 14,
+      "name": "SHAUNAK MAJUMDAR",
+      "Rollno": "23ME30056",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 15,
+      "name": "Shriya Sinha",
+      "Rollno": "23IE10038",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 16,
+      "name": "Suryansh Singh Parihar",
+      "Rollno": "23IM10037",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 17,
+      "name": "Syed Nasif Hossain",
+      "Rollno": "23EE10068",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 18,
+      "name": "Tridesh",
+      "Rollno": "23EC30008",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 19,
+      "name": "UDAY KESHAV",
+      "Rollno": "23CE10078",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   }
-],{
+]
+,{
     "teamName":"Blockchain Team",
     "content" : "The blockchain team is a group of passionate and innovative students who are interested in exploring the potential of blockchain technology.The Blockchain team aims to learn, share, and collaborate on blockchain projects that can benefit the society and the world. We also organize workshops, seminars, and hackathons to spread awareness and knowledge about blockchain among our peers and the public.",
     "image_url":""

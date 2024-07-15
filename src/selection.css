@@ -1,0 +1,39 @@
+.selcard{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.selcardel{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0.5rem solid white;
+}
+.people{
+    text-align: center;
+    color:white;
+    font-size: 1.5rem;
+    margin:1vw;
+}
+.people>p{
+  text-align: center;
+}
+.tab{
+    color:white;
+    padding: 1vw;
+}
+.tab>th, td {
+    padding:1vw 1vw 1vw 1vw;
+    text-align: center;
+}
+
+th{
+    font-size: 2.5rem;
+    font-weight: 700;
+    color:#56c3d5;
+}
+
+td{
+    font-size: 1.5rem;
+}

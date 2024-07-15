@@ -1,96 +1,117 @@
-[
-[
+[[
   {
-    "name": "Bishal Dalai",
-    "id": "1",
-    "mailid": "bishaldalai@kgpian.iitkgp.ac.in ",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1nm8-uhkHMXuT_RCxRuFWhgpOAWYIkieu"
+      "id": 1,
+      "name": "Kshitij Roy",
+      "Rollno": "23MA10030",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Yash Kumar",
-    "id": "2",
-    "mailid": "yashkumar1005@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087268251901",
-    "instagram": "https://www.instagram.com/yashh_kumarr_/",
-    "linkedin": "https://www.linkedin.com/in/yash-kumar-657121288/",
-    "github": "https://github.com/YashKumar1005",
-    "image_url":"https://drive.google.com/uc?export=view&id=1a9T9RwtBGbQbu_nkYR6WctXyBre2fTiD"
+  {
+      "id": 2,
+      "name": "Arnab Jena",
+      "Rollno": "23AE10007",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Aadishkumar Jain ",
-    "id": "3",
-    "mailid": "aadishkjain101004@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1I7CPdAJx99mAl5JBLr6xmheqE87ReKWM"
+  {
+      "id": 3,
+      "name": "Sharanya Baidya",
+      "Rollno": "23EC30047",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Vaibhav",
-    "id": "4",
-    "mailid": "Justvaibhavyadav@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":""
+  {
+      "id": 4,
+      "name": "Daksh Sargiya",
+      "Rollno": "23IE10013",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Nishtha Barnwal ",
-    "id": "5",
-    "mailid": "nishthabarnwal273@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087199856585&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/nishtha_barnwal_273?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/nishtha-barnwal-0090b2267",
-    "github": "https://github.com/n273b",
-    "image_url":"https://drive.google.com/uc?export=view&id=1kF3rertb4jZ-CXrwjmPLbOIlpwwZUiwl"
+  {
+      "id": 5,
+      "name": "Aditya Goyal",
+      "Rollno": "23IM10002",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Golla Meghanandh Manvith Prabhash ",
-    "id": "6",
-    "mailid": "prabhashgolla2004@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085033546062",
-    "instagram": "https://www.instagram.com/prabhashgolla/",
-    "linkedin": "https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/",
-    "github": "https://github.com/prabhash-golla",
-    "image_url":"https://drive.google.com/uc?export=view&id=1KPlo14fupn3g2AyFeXOzORqdRFuK9nZf"
+  {
+      "id": 6,
+      "name": "Tejas Rajput",
+      "Rollno": "23MA10050",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Makrawat Singh ",
-    "id": "7",
-    "mailid": "makrawatsingh@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087227336594&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/makrawat_22?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/i-am-makrawat",
-    "github": "https://github.com/Makrawatsingh",
-    "image_url":"https://drive.google.com/uc?export=view&id=1AyjETlP4Ups9kz8a7w7iMZH0WCFh0d4m"
+  {
+      "id": 7,
+      "name": "Subarna Maity",
+      "Rollno": "23MT10055",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Anurag Deshmukh",
-    "id": "8",
-    "mailid": "danurag983@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100088488510688&mibextid=9R9pXO",
-    "instagram": "https://instagram.com/anurag_deshmukh_549?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/anurag-deshmukh-95478b25b/",
-    "github": "https://github.com/anurag5764",
-    "image_url":"https://drive.google.com/uc?export=view&id=1_2119cZLV_KYU7sFZmiuER_jA5cn3m7H"
+  {
+      "id": 8,
+      "name": "Sujal Kaware",
+      "Rollno": "23CS30056",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   },
-{
-    "name": "Saketh Amballa",
-    "id": "10",
-    "mailid": "amballasaketh1121@gmail.com",
-    "facebook": "https://www.facebook.com/sakethlucky11",
-    "instagram": "www.instagram.com/sakethlucky11",
-    "linkedin": "https://www.linkedin.com/in/saketh-amballa-269727264",
-    "github": "www.github.com/sakethNep",
-    "image_url":"https://drive.google.com/uc?export=view&id=1ZQ692M1N_EAE7B_N-qEWBluinFLC74rT"
+  {
+      "id": 9,
+      "name": "Piyush Agrawal",
+      "Rollno": "23IE10032",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
+  },
+  {
+      "id": 10,
+      "name": "Aaradhya Bhor",
+      "Rollno": "23MT10017",
+      "mailid": "",
+      "facebook": "",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "image_url": ""
   }
-],{
+]
+
+,{
     "teamName":"Events Team",
     "content" : "The events team is responsible for organizing and managing the events of the society. The team works collaboratively to plan, promote, and execute various events such as conferences, workshops, seminars, socials, and more. he events team handles various aspects of event management, such as budgeting, scheduling, logistics, catering, entertainment, and safety",
     "image_url":""
