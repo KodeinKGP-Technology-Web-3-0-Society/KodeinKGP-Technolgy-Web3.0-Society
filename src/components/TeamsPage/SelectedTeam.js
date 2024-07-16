@@ -19,7 +19,7 @@ import { Tilt } from 'react-tilt';
 
 const SelectedTeam = (props) =>{
     let number = props.id-1;
-    let totalData = [WebTeam,AITeam,BlockchainTeam,DesignTeam,EventTeam];
+    let totalData = [WebTeam,AITeam,BlockchainTeam,EventTeam,DesignTeam];
     let selectedData= totalData[number]; 
     // console.log(selectedData);
     let memberDetails = selectedData[0];

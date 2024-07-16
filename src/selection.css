@@ -52,11 +52,47 @@ td {
   z-index: -1;
 }
 
+/* <<<<<..........................SCroll Bar Edit..............................>>>>>>> */
+
+::-webkit-scrollbar {
+  -webkit-appearance: none;
+  /* style the scrollbar */
+}
+
+::-webkit-scrollbar:vertical {
+  width: 5px;
+  /* width of the scrollbar */
+}
+
+::-webkit-scrollbar:horizontal {
+  height: 5px;
+  /* height of the scrollbar */
+}
+
+::-webkit-scrollbar-track {
+  background: #ffffff00;
+  /* color of the track */
+}
+
+
+::-webkit-scrollbar-thumb {
+  background: #56c3d5;
+  /* color of the scroll thumb */
+  border-radius: 6px;
+  /* roundness of the scroll thumb */
+  border: 0.5px solid #040000;
+  /* border of the scroll thumb */
+}
+
 @media screen and (max-width: 800px) {
   .teams::before {
     top: 15%;
     left: 15%;
     width: 70%;
     height: 70%;
+  }
+
+  .th{
+    font-size: 30px;
   }
 }

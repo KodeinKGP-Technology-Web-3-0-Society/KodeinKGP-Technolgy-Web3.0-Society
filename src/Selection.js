@@ -4,10 +4,10 @@ import Navbar from './components/LandingPage/Navbar';
 
 const Selection = ()=> {
     return(
-      <>
+      <div style={{marginBottom:'-20px'}}>
       {/* <Navbar/> */}
        <Teams/>
-      </>
+      </div>
     )
 };
 

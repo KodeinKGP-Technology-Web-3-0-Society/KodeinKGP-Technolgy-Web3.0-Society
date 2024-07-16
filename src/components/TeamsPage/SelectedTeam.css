@@ -50,12 +50,11 @@
 }
 .teammembers{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-around;
     width: 80vw;
-    margin: 3rem auto;
     flex-wrap: wrap;
-    gap: 30px;
+    /* gap: 30px; */
 }
 
 .member img{
