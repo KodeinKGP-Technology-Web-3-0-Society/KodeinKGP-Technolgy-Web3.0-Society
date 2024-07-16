@@ -30,7 +30,7 @@ td {
 }
 
 th {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   color: #56c3d5;
 }
@@ -109,9 +109,5 @@ td {
     left: 15%;
     width: 70%;
     height: 70%;
-  }
-
-  .th{
-    font-size: 30px;
   }
 }

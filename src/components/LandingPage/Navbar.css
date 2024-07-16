@@ -34,11 +34,13 @@
   display: none;
   cursor: pointer;
   font-size: 20px;
+  padding-top: 15px;
 }
 
 .links {
   display: flex;
   margin: 1px 0;
+  padding-top: 10px;
   text-align: center;
 }
 
@@ -91,7 +93,7 @@
   justify-content: space-between;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 850px) {
   .navbar {
     display: flex;
     flex-direction: column;
