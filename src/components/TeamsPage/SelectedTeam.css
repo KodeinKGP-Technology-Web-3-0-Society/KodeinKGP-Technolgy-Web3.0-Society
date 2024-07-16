@@ -56,6 +56,9 @@
     flex-wrap: wrap;
     /* gap: 30px; */
 }
+.teams{
+    margin-top: -20px;
+}
 
 .member img{
     object-fit: cover;
