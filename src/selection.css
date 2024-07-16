@@ -84,6 +84,25 @@ td {
   /* border of the scroll thumb */
 }
 
+/* Width */
+.scrollbar {
+  scrollbar-width: thin; /* "auto" or "thin" */
+  scrollbar-color: #56c3d5 transparent; /* thumb and track color */
+}
+
+/* Track */
+.scrollbar-track {
+  background: #ffffff00; /* color of the track */
+}
+
+/* Thumb */
+.scrollbar-thumb {
+  background-color: #56c3d5; /* color of the scroll thumb */
+  border-radius: 6px; /* roundness of the scroll thumb */
+  border: 0.5px solid #040000; /* border of the scroll thumb */
+}
+
+
 @media screen and (max-width: 800px) {
   .teams::before {
     top: 15%;
