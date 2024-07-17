@@ -241,7 +241,7 @@ body {
 }
 
 .link-tag1:hover::after{
-  width: 78%;
+  width: 76%;
   transition: width 0.3s linear;
 }
 
