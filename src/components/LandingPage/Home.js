@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar.js";
 import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
