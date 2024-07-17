@@ -508,11 +508,6 @@ body {
 
 /* <<<............hamburger css ends...............>>>> */
 
-
-
-
-
-
 @media only screen and (max-width:800px) {
 
   .MainPartNavBar.open {
@@ -528,13 +523,6 @@ body {
     width: 100%;
     z-index: 20;
   }
-  /* .navbar.open {
-    flex-direction: column;
-    height: 100vh;
-    width: 100%;
-    justify-content: center;
-  } */
-
 
   /* <..........Hamburger Css ................> */
   #hambutton {
