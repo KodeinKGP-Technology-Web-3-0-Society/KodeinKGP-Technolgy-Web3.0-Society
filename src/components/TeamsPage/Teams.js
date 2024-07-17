@@ -20,7 +20,7 @@ const Teams = () =>{
             <button className={`team-button ${activeButton === '5' ? 'active' : ''}`} id='5' onClick={ButtonClicked}>Design & Media Team</button>
         </div>
         <div>
-            <SelectedTeam id={activeButton} />
+            <SelectedTeam key={activeButton} id={activeButton} />
         </div>
         </div>
     );

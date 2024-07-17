@@ -24,7 +24,7 @@ const SelectedTeam = (props) =>{
     // console.log(selectedData);
     let memberDetails = selectedData[0];
     // console.log(memberDetails);
-
+    const [transition, setTransition] = useState(false);
     let teamImage;
 
     switch (props.id-1) {
@@ -46,6 +46,11 @@ const SelectedTeam = (props) =>{
         default:
             teamImage = null;
     }
+
+    useEffect(() => {
+      setTransition(false);
+      setTimeout(() => setTransition(true), 100); // Delay to allow CSS transition
+  }, [props.id]);
 
     function TeamContent() {
         // Use state to store the window width
@@ -80,11 +85,12 @@ const SelectedTeam = (props) =>{
       }
       
     return(
-        <div>
+        <div className={`selected-team-container ${transition ? 'active' : ''}`}>
             {/* <h2 className='team_name'>{selectedData[1].teamName}</h2> */}
             <div className='aboutteam'>
                 <TeamContent />
                 <div className='teammembers'>
+                <div className={`teamcontent ${transition ? 'active' : ''}`}>
                   <table className='tab'>
                     <tr>
                        <th>Name</th>
@@ -122,7 +128,7 @@ const SelectedTeam = (props) =>{
                         )
                     })}
                     </table>
-                </div>
+                </div></div>
             </div>
         </div>
     )

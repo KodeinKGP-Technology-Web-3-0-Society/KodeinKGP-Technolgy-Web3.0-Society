@@ -19,9 +19,11 @@
     border-radius: 10px;
     min-width: 10rem;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.active{
+.team-button.active{
+    transition: background-color 0.5s ease;
     background-color: #3DC4D4;
     color: #000;
 }
@@ -66,5 +68,28 @@
     margin-top: 1rem;
 }
 
+.selected-team-container {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+  
+.selected-team-container.active {
+opacity: 1;
+}
 
+.teamcontent {
+    opacity: 0;
+    transform: translateX(0%);
+    transition: opacity 3s ease, transform 5s ease-in-out;
+}
+
+.teamcontent.active {
+    opacity: 1;
+    transform: translateX(0%);
+    transition: opacity 4s ease, transform 0.5s ease-in;
+}
+
+.teammembers {
+    margin-top: 20px;
+}  
 
