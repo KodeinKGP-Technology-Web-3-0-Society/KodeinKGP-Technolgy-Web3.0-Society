@@ -254,7 +254,7 @@ body {
 }
 
 .navbar {
-  width: 100%;
+  max-width: 99%;
   min-height: 5rem;
   padding: 0 2rem;
   position: sticky;
@@ -268,13 +268,7 @@ body {
   z-index: 20;
 }
 
-.navbar.open {
-  flex-direction: column;
-  height: 100vh;
-  justify-content: center;
-  background-color: black;
-  z-index: 1;
-}
+
 
 
 /* <<<<............title css Starts............>>>> */
@@ -484,12 +478,6 @@ body {
   margin-right: -20px;
 }
 
-
-.MainPartNavBar.open {
-  flex-direction: column;
-  gap: 1rem;
-}
-
 .line {
   width: 30px;
   height: 3px;
@@ -526,12 +514,26 @@ body {
 
 
 @media only screen and (max-width:800px) {
+
+  .MainPartNavBar.open {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
   .navbar.open {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    z-index: 20;
+  }
+  /* .navbar.open {
     flex-direction: column;
     height: 100vh;
     width: 100%;
     justify-content: center;
-  }
+  } */
 
 
   /* <..........Hamburger Css ................> */
