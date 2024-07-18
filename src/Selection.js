@@ -5,8 +5,8 @@ import Navbar from './components/LandingPage/Navbar';
 const Selection = ()=> {
     return(
       <div>
-      <Navbar/>
-       <Teams/>
+        <Navbar/>
+        {/* <Teams/> */}
       </div>
     )
 };

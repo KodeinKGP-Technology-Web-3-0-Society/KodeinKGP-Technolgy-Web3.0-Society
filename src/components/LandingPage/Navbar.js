@@ -76,7 +76,7 @@ function Navbar() {
                                 </Link>
                                 </span>
                             </li>
-                            <li onClick={() => {
+                            {/* <li onClick={() => {
                                 if (isOpen) {
                                         toggleMenu()
                                     }
@@ -86,7 +86,7 @@ function Navbar() {
                                     Selection Results
                                 </Link>
                                 </span> 
-                            </li>
+                            </li> */}
                         </div>
 
                     </div>
