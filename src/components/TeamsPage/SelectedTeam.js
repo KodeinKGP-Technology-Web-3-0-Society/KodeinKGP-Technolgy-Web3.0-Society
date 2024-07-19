@@ -130,6 +130,7 @@ const SelectedTeam = (props) =>{
                     </table>
                 </div></div>
             </div>
+            <h4 style={{color:'white' ,position:'sticky',padding:"0 20px",bottom:'0',background:'rgba(1, 1, 27)',width:"99%",display:"flex",justifyContent:"space-between"}}><span>Aadish Jain : 9408168120 </span><span>G.M.M. Prabhash : 9818645848</span></h4>
         </div>
     )
 }

@@ -1,17 +1,27 @@
-import React, { useState } from "react";
+
 import Navbar from "./Navbar.js";
 import './Home.css';
 import aiLogo from './ai-logo.png';
 import Footer from "./Footer";
+import sets from './sets.png';
 // import RecentEvents from './RecentEvents';
 import Work from "./Work.js";
 import Card from "./Card.js";
 // import CarouselItem from "react-bootstrap/esm/CarouselItem.js";
 // import ControlledCarousel from "./Carousel.js";
 // import Carousel from 'react-bootstrap/Carousel';
-const Home = () => {
-  const [number, setNumber] = useState(null);
 
+import React, { useState, useEffect } from 'react';
+
+const LoadingScreen = () => {
+  return (
+      <div className="loading-container" style={{ display:"flex",alignItems:"center",justifyContent:"center"}}>
+          <img src={sets} alt="Loading" className="square-image"/>
+      </div>
+  );
+};
+
+const MainContent = () => {
   return (
     <div className="landing-page">
       <Navbar />
@@ -42,6 +52,27 @@ const Home = () => {
       <Footer/>
     </div>
   );
+};
+
+
+const Home = () => {
+  const [number, setNumber] = useState(null);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setLoading(false);
+      }, 2000); // Display the loading screen for 4 seconds
+
+      return () => clearTimeout(timer); // Clean up the timer
+  }, []);
+
+  return (
+    <div className="App">
+        {loading ? <LoadingScreen /> : <MainContent />}
+    </div>
+);
+
+  
 }
 
 export default Home;

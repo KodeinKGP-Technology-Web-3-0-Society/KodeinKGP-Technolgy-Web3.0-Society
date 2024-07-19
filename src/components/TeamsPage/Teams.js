@@ -1,15 +1,24 @@
-import React, { useState } from 'react';
-import SelectedTeam from "./SelectedTeam";
 
-const Teams = () =>{
+import SelectedTeam from "./SelectedTeam";
+import sets from "../LandingPage/sets.png"
+
+import React, { useState, useEffect } from 'react';
+
+const LoadingScreen = () => {
+  return (
+      <div className="loading-container" style={{ display:"flex",alignItems:"center",justifyContent:"center"}}>
+          <img src={sets} alt="Loading" className="square-image"/>
+      </div>
+  );
+};
+
+const MainContent = () => {
     const [activeButton, setActiveButton] = useState('1');
 
     const ButtonClicked = (e)=>{
         setActiveButton(e.target.id)
         // console.log(e.target.id);
     }
-
-    
     return(
         <div className='teams'>
         <div className='classif-buttons'>
@@ -24,6 +33,26 @@ const Teams = () =>{
         </div>
         </div>
     );
+}
+    
+
+const Teams = () =>{
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+      const timer = setTimeout(() => {
+          setLoading(false);
+      }, 2000); // Display the loading screen for 4 seconds
+
+      return () => clearTimeout(timer); // Clean up the timer
+  }, []);
+
+  return (
+    <div className="App">
+        {loading ? <LoadingScreen /> : <MainContent />}
+    </div>
+);
+    
+    
 }
 
 export default Teams;

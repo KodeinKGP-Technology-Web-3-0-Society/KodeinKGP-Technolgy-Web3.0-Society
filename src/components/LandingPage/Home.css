@@ -123,6 +123,27 @@
     width: 80vw;
     color: white;
 }
+
+/* App.css */
+#loadingContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.square-image {
+  top:0;
+  position: fixed;
+  height: 99%;
+  width: auto;
+  }
+
 @media screen and (max-width: 768px) {
   .bottom-bar{
     display: flex;
@@ -131,6 +152,12 @@
     text-align: left;
     justify-content: space-between;
     padding: 2rem;
+  }
+  .square-image {
+    margin-top:100px;
+    position: fixed;
+    height: auto;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1000px) {
