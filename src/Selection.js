@@ -1,14 +1,11 @@
-import './selection.css';
-import Teams from './components/TeamsPage/Teams';
-import Navbar from './components/LandingPage/Navbar';
-
-const Selection = ()=> {
-    return(
-      <div>
-        <Navbar/>
-        <Teams/>
-      </div>
-    )
+import "./selection.css";
+import Teams from "./components/TeamsPage/Teams";
+const Selection = () => {
+  return (
+    <div>
+      <Teams />
+    </div>
+  );
 };
 
-export default Selection; 
+export default Selection;

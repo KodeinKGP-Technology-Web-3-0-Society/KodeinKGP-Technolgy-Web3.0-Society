@@ -3,64 +3,48 @@ import Founders from "./Founders";
 import Heads from "./Heads.js";
 import OldHeads from "./OldHeads.js";
 import Teams from "./Teams.js";
-import Footer from "../LandingPage/Footer.js";
-import Navbar from "../LandingPage/Navbar.js";
 import "./TeamsPage.css";
 
 const TeamsPage = () => {
-  
   return (
     <>
-    <Navbar />
-    <div className="teamspage" style={{ backgroundColor:"rgb(1, 1, 27)",textAlign: "center",color:"white",fontFamily:"Montserrat"}}>
-      <div className="members">
-        <h3 className="members_title">Founders</h3>
-        <Founders />
-      </div>
-      <div className="members">
-        <h3 className="members_title">Advisors</h3>
-        <OldHeads />
-      </div>
-      <div className="members"> 
-        <h3 className="members_title">Heads</h3>
-        <Heads /> 
-      </div>     
-      {/* <div className="teams">
+      <div
+        className="teamspage"
+        style={{
+          backgroundColor: "rgb(1, 1, 27)",
+          textAlign: "center",
+          color: "white",
+          fontFamily: "Montserrat",
+        }}
+      >
+        <div className="members">
+          <h3 className="members_title">Founders</h3>
+          <Founders />
+        </div>
+        <div className="members">
+          <h3 className="members_title">Advisors</h3>
+          <OldHeads />
+        </div>
+        <div className="members">
+          <h3 className="members_title">Heads</h3>
+          <Heads />
+        </div>
+        {/* <div className="teams">
         <h3 className="members_title">Our Teams</h3>
         <Teams/>
       </div> */}
-      <Footer />
-    </div>
+      </div>
     </>
   );
 };
 
 export default TeamsPage;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // const indicator = (member) => {
 //   return (
 //  <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to={`${member.id-1 }`} className={member.id==1 ? "active":""} aria-label={`Slide ${member.id}`}></button>
 //      )
-   
+
 //  };
 //  const slide = (member) => {
 //    return (
@@ -102,7 +86,7 @@ export default TeamsPage;
 //     </article>
 //     </div >
 //   );
-  
+
 //  }
 //  const teams = (team)=>{
 //    return (
@@ -113,7 +97,7 @@ export default TeamsPage;
 //      {team[0].map(indicator)}
 //    </div>
 //    <div className="carousel-inner">
-//      {team[0].map(slide)}  
+//      {team[0].map(slide)}
 //    </div>
 //    <button className="carousel-control-prev" type="button" data-bs-target={`#carouselExampleRide${team[0][0].teamId}`} data-bs-slide="prev">
 //      <span className="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -123,7 +107,7 @@ export default TeamsPage;
 //      <span className="carousel-control-next-icon" aria-hidden="true"></span>
 //      <span className="visually-hidden">Next</span>
 //    </button>
-//  </div> 
+//  </div>
 //        </div>
 //        <div className="teamContent">
 //          {team[1].content}
