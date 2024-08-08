@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins");
+
+.article-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-heading {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 100px;
+  margin-left: 2.5vw;
+  line-height: 240px;
+  display: flex;
+  align-items: center;
+
+  background: linear-gradient(
+    298.19deg,
+    #11e3fb 30.71%,
+    #b5f6fd 46.29%,
+    #5be6ff 75.32%,
+    #11e3fb 97.09%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.articles-container {
+  display: flex;
+  gap: 5vw;
+  width: 95vw;
+  align-self: center;
+  justify-self: center;
+}
+
+.big-card {
+  width: 25vw;
+  height: 600px;
+  /* background: #393940; */
+  border: 4px solid #3dc4d4;
+  border-radius: 10px;
+}
+
+.small-cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 45px;
+  width: 65vw;
+  max-height: 600px;
+  overflow-y: auto;
+  border: 4px solid #3dc4d4;
+  border-radius: 10px;
+  padding: 15px;
+}
+
+.article-card {
+  display: flex;
+  width: 30vw;
+  height: 160px;
+  position: relative;
+  border: 4px solid #3dc4d4;
+  border-radius: 10px;
+}
+
+.article-card img {
+  margin-left: 2%;
+  width: 30%;
+  height: 80%;
+  align-self: center;
+  position: relative;
+}
+
+.article-details {
+  width: 65%;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+.article-card h1 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 19px;
+  line-height: 28px;
+  color: #ffffff;
+}
+
+.article-card h3 {
+  color: rgb(17, 227, 251);
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 22px;
+  color: #11e3fb;
+}
+
+.article-card::before {
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  bottom: -150px;
+  left: -150px;
+  background: #3dc4d4;
+  border-radius: 50%;
+  transition: 0.8s;
+}
+
+.article-card h1,
+h3 {
+  z-index: 10;
+}
+.article-card:hover h3 {
+  color: black;
+  font-weight: 900;
+  font-size: 18px;
+}
+
+.article-card:hover h1 {
+  font-weight: 900;
+  font-size: 21px;
+}
+
+.article-card {
+  overflow: hidden;
+}
+.article-card:hover::before {
+  width: 1000px;
+  height: 1000px;
+}

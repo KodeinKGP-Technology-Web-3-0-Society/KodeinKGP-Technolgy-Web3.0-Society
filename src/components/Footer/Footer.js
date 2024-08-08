@@ -38,6 +38,13 @@ export default function Footer() {
           >
             <ion-icon size="large" name="logo-instagram"></ion-icon>
           </a>
+          <a
+            target="_blank"
+            href="https://medium.com/@kodeinkgp"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-medium"></ion-icon>
+          </a>
         </div>
       </div>
       <div className="footerItems" id="footerItem2">
