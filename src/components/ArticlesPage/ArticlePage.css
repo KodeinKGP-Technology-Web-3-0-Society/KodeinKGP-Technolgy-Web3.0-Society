@@ -29,7 +29,7 @@
 
 .articles-container {
   display: flex;
-  gap: 5vw;
+  gap: 2vw;
   width: 95vw;
   align-self: center;
   justify-self: center;
@@ -46,8 +46,8 @@
 .small-cards {
   display: flex;
   flex-wrap: wrap;
-  gap: 45px;
-  width: 65vw;
+  gap: 25px;
+  width: 70vw;
   max-height: 600px;
   overflow-y: auto;
   border: 4px solid #3dc4d4;
@@ -57,7 +57,7 @@
 
 .article-card {
   display: flex;
-  width: 30vw;
+  width: 32vw;
   height: 160px;
   position: relative;
   border: 4px solid #3dc4d4;
@@ -66,7 +66,7 @@
 
 .article-card img {
   margin-left: 2%;
-  width: 30%;
+  width: 150px;
   height: 80%;
   align-self: center;
   position: relative;
@@ -87,7 +87,7 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 19px;
+  font-size: 17px;
   line-height: 28px;
   color: #ffffff;
 }
@@ -111,7 +111,7 @@
   left: -150px;
   background: #3dc4d4;
   border-radius: 50%;
-  transition: 0.8s;
+  transition: 1s;
 }
 
 .article-card h1,
@@ -121,12 +121,10 @@ h3 {
 .article-card:hover h3 {
   color: black;
   font-weight: 900;
-  font-size: 18px;
 }
 
 .article-card:hover h1 {
   font-weight: 900;
-  font-size: 21px;
 }
 
 .article-card {
