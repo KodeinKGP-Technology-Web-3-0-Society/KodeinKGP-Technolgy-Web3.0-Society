@@ -18,8 +18,8 @@ function ArticlePage() {
     <div className="article-content">
       <h1 className="article-heading">ARTICLES</h1>
       <div className="articles-container">
-        <div className="big-card"></div>
-        <div className="small-cards">{cards}</div>
+        <div className="big-card">{cards[0]}</div>
+        <div className="small-cards">{cards.slice(1)}</div>
       </div>
     </div>
   );
