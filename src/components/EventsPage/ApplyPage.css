@@ -48,7 +48,7 @@
     text-decoration: underline;
 }
 
-@meida screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     .apply_details {
         font-size: 1rem;
     }

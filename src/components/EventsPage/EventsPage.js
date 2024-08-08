@@ -22,12 +22,14 @@ import Moveicon from './Images/move icon.jpg'
 import MoveEvent from './Images/move event.jpg'
 import RecentEvent from './Images/Swadeshi_event.png'
 import './Events.css';
+import { RegistrationForm } from './RegistrationPage';
 
 const EventsPage = () =>{
     return (
       <>
       <Navbar />
         <div>
+          <RegistrationForm/>
       {/* <div className = "heading"><span>Events</span></div>
       <div className="container">
       <div className="card">
@@ -100,7 +102,6 @@ const EventsPage = () =>{
 
 
 
-
       <div className='hackathon' style={{display: 'flex', flexDirection: 'column'}}>
         <img src={RecentEvent} style={{margin: "0 auto", maxHeight: "580px", width: "75%"}} alt='hack'/>
         <div className='hackaton_content'>
@@ -120,6 +121,8 @@ const EventsPage = () =>{
       </div>
 
     </section>
+
+    
 
     <section>
       <h2 className='heading'>
