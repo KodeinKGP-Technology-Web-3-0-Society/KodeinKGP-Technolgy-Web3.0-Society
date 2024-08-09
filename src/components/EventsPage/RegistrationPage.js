@@ -1,5 +1,5 @@
    
-import  react, { useState } from 'react';
+import  react, { useEffect, useState } from 'react';
 import { DB_URL } from './DB_URL';
 
 export const RegistrationForm = () => {
@@ -11,6 +11,18 @@ export const RegistrationForm = () => {
   const [otherInvolvements, setOtherInvolvements] = useState('');
 
   
+  useEffect(() => {
+  
+    const handleBeforeUnload = () => {
+        window.scrollTo(0, 0);
+    };
+
+    window.addEventListener('beforeunload', handleBeforeUnload);
+
+    return () => {
+        window.removeEventListener('beforeunload', handleBeforeUnload);
+    };
+}, []);
 
   const handleSubmit = async(e)=>{
     e.preventDefault();
@@ -52,6 +64,7 @@ export const RegistrationForm = () => {
             onChange={(e) => setName(e.target.value)}
             className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input " 
             placeholder="Enter your name"
+            required
           /></div>
         </div>
         <div className="mb-4">
@@ -66,6 +79,7 @@ export const RegistrationForm = () => {
             onChange={(e) => setRollNumber(e.target.value)}
             className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input"  
             placeholder="Enter your roll number"
+            required
           /></div>
         </div>
         <div className="mb-4">
@@ -80,6 +94,7 @@ export const RegistrationForm = () => {
             onChange={(e) => setPersonalEmail(e.target.value)}
             className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input"
             placeholder="Enter your personal email"
+            required
           />
           </div>
         </div>
@@ -95,6 +110,7 @@ export const RegistrationForm = () => {
             onChange={(e) => setInstituteEmail(e.target.value)}
             className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input "
             placeholder="Enter your institute email"
+            required
           />
           </div>
         </div>
@@ -110,15 +126,22 @@ export const RegistrationForm = () => {
             onChange={(e) => setContactNumber(e.target.value)}
             className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input"
             placeholder="Enter your contact number"
+            required
           />
           </div>
         </div>
         <div className="mb-4">
       <label for="other-involvements" class="block text-gray-700 text-sm font-bold mb-2 label-padding">Other Involvements</label>
-      <div className='input'><textarea id="other-involvements" class="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input-other" placeholder="Enter any other involvements or activities"></textarea></div>
+      <div className='input'><input id="other-involvements"
+       class="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input-other"
+        placeholder="Enter any other involvements or activities"
+        value={otherInvolvements}
+        onChange={(e)=>setOtherInvolvements(e.target.value)}
+        required
+        ></input></div>
     </div>
     <div className='submit'>
-    <button type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring focus:border-blue-500 reg-btn" >Register</button>
+    <button  type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring focus:border-blue-500 reg-btn" >Register</button>
     </div>
   </form>
 </div>
