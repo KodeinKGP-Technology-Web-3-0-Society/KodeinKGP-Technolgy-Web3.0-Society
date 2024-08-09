@@ -49,7 +49,20 @@ body {
   background-color: #1c1a22;
   padding: 10px;
   border-radius: 0 0 10px 10px;
+  max-height: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  transform: translateY(-20px);
+  transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  opacity: 0;
 }
+
+.dropdown.open .dropdown-content {
+  transform: translateY(0);
+  max-height: 500px;
+  opacity: 1;
+}
+
 
 .LabTopicList {
   display: flex;
