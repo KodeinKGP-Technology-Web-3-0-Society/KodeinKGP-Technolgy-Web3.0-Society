@@ -1,7 +1,7 @@
 import React from 'react';
 import Navbar from '../LandingPage/Navbar';
 import Footer from '../LandingPage/Footer';
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 // import img1 from './Images/img1.jpg';
 // import img2 from './Images/img2.jpg';
 // import img3 from './Images/img3.jpg';
@@ -26,20 +26,6 @@ import './Events.css';
 import { RegistrationForm } from './RegistrationPage';
 
 const EventsPage = () =>{
-
-  useEffect(() => {
-    
-    const handleBeforeUnload = () => {
-        window.scrollTo(0, 0);
-    };
-    // Attach the event listener
-    window.addEventListener('beforeunload', handleBeforeUnload);
-
-    // Cleanup the event listener on component unmount
-    return () => {
-        window.removeEventListener('beforeunload', handleBeforeUnload);
-    };
-}, []);
     return (
       <>
       <Navbar />
