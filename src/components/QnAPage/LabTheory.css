@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: rgb(1, 1, 27);
-  font-family: 'Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -12,15 +12,21 @@ body {
 
 #LabTheory {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 20px;
 }
 
+.LabTheoryContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .LabTheoryItems {
   text-align: left;
-  min-width: 300px;
+  /* min-width: 300px; */
   border: 1px solid #555;
   padding: 20px;
   background-color: #444;
@@ -29,7 +35,7 @@ body {
   transition: transform 0.2s;
   margin: 1rem 10px;
   flex: 1;
-  font-family: 'Arial', sans-serif;
+  /* font-family: 'Arial', sans-serif; */
 }
 
 .LabTheoryItems:hover {
@@ -106,9 +112,17 @@ body {
   background: linear-gradient(-168.39deg,#ffffff -278.56%,#24248b -78.47%, #1d1b66 5.67%, #11101d 91.61%);
 }
 
+
+
+
 @media only screen and (min-width: 1200px) {
   .quesimg {
     display: block;
   }
 }
 
+@media only screen and (max-width: 1200px) {
+  .LabTheoryContainer{
+   flex-direction: column;
+  }
+}
