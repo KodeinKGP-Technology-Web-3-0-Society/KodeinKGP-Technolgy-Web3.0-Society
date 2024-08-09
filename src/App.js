@@ -39,7 +39,7 @@ function App() {
             <Route path="/teams" element={<TeamsPage />}></Route>
             <Route path="/events" element={<EventsPage />}></Route>
             <Route path="/events/apply" element={<ApplyPage />}></Route>
-            <Route path="/selections" element={<Selection />}></Route>
+            {/* <Route path="/selections" element={<Selection />}></Route> */}
           </Route>
         </Routes>
       </Router>

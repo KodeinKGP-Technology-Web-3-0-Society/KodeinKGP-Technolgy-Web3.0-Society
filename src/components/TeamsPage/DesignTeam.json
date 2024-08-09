@@ -1,95 +1,82 @@
 [
-  [
-    {
-        "id": 2,
-        "name": "Brajesh Kumar Sahoo",
-        "Rollno": "23ME10019",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 3,
-        "name": "D Yuvan Gates",
-        "Rollno": "23CS10015",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 4,
-        "name": "Kavya Nagar",
-        "Rollno": "23MF3IM09",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 5,
-        "name": "Khushi Srivastava",
-        "Rollno": "23MT30015",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 6,
-        "name": "Prathwik Naik",
-        "Rollno": "23EC10022",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 7,
-        "name": "Saloni",
-        "Rollno": "23ME10074",
-        
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-        "id": 8,
-        "name": "Satakshi Chauhan",
-        "Rollno": "23MI10041",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    },
-    {
-         "id": 9,
-         "name": "Varun Nikam",
-        "Rollno": "23ME10095",
-        "mailid": "",
-        "facebook": "",
-        "instagram": "",
-        "linkedin": "",
-        "github": "",
-        "image_url": ""
-    }
-]
+    [
+        {
+            "id": 1,
+            "name": "Saloni",
+            "Rollno": "",
+            "mailid": "shiwani9919@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=61550696962865&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/saloni.gahlaut?igsh=MXV0cWlrNXJjajR0aw==",
+            "linkedin": "https://www.linkedin.com/in/saloni-19962928a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/SaloniG2307",
+            "image_url": ""
+        },
+        {
+            "id": 2,
+            "name": "Kavya Nagar",
+            "Rollno": "",
+            "mailid": "kavyanagar@kgpian.iitkgp.ac.in",
+            "facebook": "https://www.facebook.com/share/m8oouFuiZGxpVhGT/?mibextid=qi2Omg",
+            "instagram": "https://www.instagram.com/kavyanagar04/",
+            "linkedin": "",
+            "github": "https://github.com/kavyanagar04",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG_20231227_222950_793.jpg?raw=true"
+        },
+        {
+            "id": 3,
+            "name": "Brajesh Kumar Sahoo",
+            "Rollno": "",
+            "mailid": "sahoobrajesh.99@gmail.com",
+            "facebook": "https://www.facebook.com/brajeshkumar.sahoo.1?mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/subu_105?igsh=MWVhdGNrOW95aGFmag==",
+            "linkedin": "https://www.linkedin.com/in/brajesh-kumar-sahoo-1315902a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "",
+            "image_url": ""
+        },
+        {
+            "id": 4,
+            "name": "Khushi Srivastava",
+            "Rollno": "",
+            "mailid": "khushi.srivastav462@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=100095619275674&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/_khushi__srivastava_?igsh=ZXc5b2Z4dHoxMzBv",
+            "linkedin": "https://www.linkedin.com/in/khushi-srivastava-7b6b772a6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "",
+            "image_url": ""
+        },
+        {
+            "id": 5,
+            "name": "Aryan Malhotra",
+            "Rollno": "",
+            "mailid": "malhotra.aryan.a01@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=61552083171510&mibextid=LQQJ4d",
+            "instagram": "https://www.instagram.com/aryan.malhotra2005?igsh=aWw5YTZ5eGIzYWZr&utm_source=qr",
+            "linkedin": "https://www.linkedin.com/in/aryan-malhotra-4664a1291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            "github": "",
+            "image_url": ""
+        },{
+            "id": 6,
+            "name": "Dharavath Prathwik Naik ",
+            "Rollno": "",
+            "mailid": "prathwiknaik08@gmail.com",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/invites/contact/?igsh=14tlsl1jvm4ye&utm_content=lrogcwd",
+            "linkedin": "https://www.linkedin.com/in/prathwik-naik-b1700a286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/prathwiknaik08",
+            "image_url": ""
+        },{
+            "id": 7,
+            "name": "D.Yuvan Gates",
+            "Rollno": "",
+            "mailid": "yuvangates025@gmail.com",
+            "facebook": "",
+            "instagram": "https://www.instagram.com/yuvangates?igsh=MTcxMW4wcHRneTBwNA==",
+            "linkedin": "https://www.linkedin.com/in/yuvan-gates-dake-65357a291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/Yuvangates",
+            "image_url": ""
+        }
+    ]
+    
 ,{
   "teamName":"Design and Media Team",
   "content" : "The design and media team is a group of creative professionals who are responsible for creating and managing the visual content of the society. The team consists of experts in various fields such as graphic design, illustration, animation, video production, and more.The design and media team ensures that the content is visually appealing, accessible, and consistent across different platforms and devices. ",

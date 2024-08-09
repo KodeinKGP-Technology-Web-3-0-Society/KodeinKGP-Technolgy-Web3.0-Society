@@ -29,10 +29,10 @@ const TeamsPage = () => {
           <h3 className="members_title">Heads</h3>
           <Heads />
         </div>
-        {/* <div className="teams">
+        <div className="teams">
         <h3 className="members_title">Our Teams</h3>
         <Teams/>
-      </div> */}
+      </div>
       </div>
     </>
   );

@@ -17,6 +17,7 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Tilt } from 'react-tilt';
 
 
+
 const SelectedTeam = (props) =>{
     let number = props.id-1;
     let totalData = [WebTeam,AITeam,BlockchainTeam,EventTeam,DesignTeam];
@@ -74,6 +75,7 @@ const SelectedTeam = (props) =>{
           <>
             {/* {width >= 748 ? (
               <div className="teamcontent">
+                {console.log(selectedData)}
                 <p className="team_content">{selectedData[1].content}</p>
                 <img src={teamImage} alt="img" className="team_image" />
               </div>
@@ -86,49 +88,53 @@ const SelectedTeam = (props) =>{
       
     return(
         <div className={`selected-team-container ${transition ? 'active' : ''}`}>
-            {/* <h2 className='team_name'>{selectedData[1].teamName}</h2> */}
-            <div className='aboutteam'>
+            <h2 className='team_name'>{selectedData[1].teamName}</h2>
+            <div className='heads'>
                 <TeamContent />
-                <div className='teammembers'>
-                <div className={`teamcontent ${transition ? 'active' : ''}`}>
-                  <table className='tab'>
+                {/* <div className='teammembers'> */}
+                {/* <div className={`teamcontent ${transition ? 'active' : ''}`}> */}
+                  {/* <table className='tab'>
                     <tr>
                        <th>Name</th>
                        <th>Roll No.</th>
-                    </tr>
+                    </tr> */}
                     {memberDetails.map(member=>{
                         return(
-                          <>
-                          <tr>
-                           <td>{member.name}</td>
-                           <td>{member.Rollno}</td>
-                         </tr>
-                          </>
+                        //   <>
+                        //   <tr>
+                        //    <td>{member.name}</td>
+                        //    <td>{member.Rollno}</td>
+                        //  </tr>
+                        //   </>
                           //Tilt card with image
-                            // <Tilt
-                            //     className="parallax-effect-glare-scale"
-                            //     perspective={500}
-                            //     glareEnable={true}
-                            //     scale={1}
-                            //     gyroscope={true}>
-                            //         <div className='member'>
-                            //         <div className="photo-image">
-                            //             <img src={member.image_url} alt="" />
-                            //             <div className = "photo-details"> 
-                            //                 <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
-                            //                 <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
-                            //                 <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
-                            //                 <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
-                            //                 <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
-                            //             </div>
-                            //             </div>
-                            //             <h5 className='photo-name'><strong>{member.name}</strong></h5>
-                            //         </div>
-                            // </Tilt>
+            
+                           member.image_url? ( <Tilt
+                            className="parallax-effect-glare-scale"
+                            perspective={500}
+                            glareEnable={true}
+                            scale={1}
+                            gyroscope={true}>
+                                <div className='member'>
+                                <div className="photo-image">
+                                    <img src={member.image_url} alt={member.name} />
+                                    <div className = "photo-details"> 
+                                        <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
+                                        <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
+                                        <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
+                                        <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
+                                        <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
+                                    </div>
+                                    </div>
+                                    <h5 className='photo-name'><strong>{member.name}</strong></h5>
+                                </div>
+                        </Tilt>):
+                        (<></>)
+                          
+                            
                         )
                     })}
-                    </table>
-                </div></div>
+                    {/* </table> */}
+                {/* </div></div> */}
             </div>
             {/* <h4 style={{color:'white' ,position:'sticky',padding:"0 20px",bottom:'0',background:'rgba(1, 1, 27)',width:"99%",display:"flex",justifyContent:"space-between"}}><span>Aadish Jain : 9408168120 </span><span>G.M.M. Prabhash : 9818645848</span></h4> */}
         </div>
