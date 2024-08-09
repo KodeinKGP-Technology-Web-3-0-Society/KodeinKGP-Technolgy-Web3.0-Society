@@ -15,22 +15,24 @@ export default function Lab() {
   };
 
   const topicMap = {
-    "initialBasics":"Intial Basics",
-    "loops":"Loops",
-    "ArrayAndStrings":"Array And String",
-    "functionsAndRecursions":"Functions And Recursions",
-    "structuresAndPointers":" Structs And Pointers",
-    "sortingAnd2dArrays":" Sorting And 2d Arrays",
-    "linkedList": "Linked List",
-
-  }
+    initialBasics: "Initial Basics",
+    loops: "Loops",
+    ArrayAndStrings: "Array And Strings",
+    functionsAndRecursions: "Functions And Recursions",
+    structuresAndPointers: "Structs And Pointers",
+    sortingAnd2dArrays: "Sorting And 2d Arrays",
+    linkedList: "Linked List",
+  };
 
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>
       <div id="Lab">
-        {Object.keys(dataJ).map((topic, index) => (
-          <div key={index} className="dropdown">
+        {Object.keys(topicMap).map((topic, index) => (
+          <div
+            key={index}
+            className={`dropdown ${openTopics.includes(topic) ? "open" : ""}`}
+          >
             <div
               className="dropdown-header"
               onClick={() => toggleTopic(topic)}
@@ -40,11 +42,9 @@ export default function Lab() {
                 {openTopics.includes(topic) ? "-" : "+"}
               </span>
             </div>
-            {openTopics.includes(topic) && (
-              <div className="dropdown-content">
-                <LabTopic topic={topic} />
-              </div>
-            )}
+            <div className="dropdown-content">
+              <LabTopic topic={topic} />
+            </div>
           </div>
         ))}
       </div>
