@@ -10,6 +10,8 @@ export const RegistrationForm = () => {
   const [contactNumber, setContactNumber] = useState('');
   const [otherInvolvements, setOtherInvolvements] = useState('');
 
+  
+
   const handleSubmit = async(e)=>{
     e.preventDefault();
     try {
