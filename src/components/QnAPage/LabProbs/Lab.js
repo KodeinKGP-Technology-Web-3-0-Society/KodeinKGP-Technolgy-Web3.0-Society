@@ -14,6 +14,17 @@ export default function Lab() {
     );
   };
 
+  const topicMap = {
+    "initialBasics":"Intial Basics",
+    "loops":"Loops",
+    "ArrayAndStrings":"Array And String",
+    "functionsAndRecursions":"Functions And Recursions",
+    "structuresAndPointers":" Structs And Pointers",
+    "sortingAnd2dArrays":" Sorting And 2d Arrays",
+    "linkedList": "Linked List",
+
+  }
+
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>
@@ -24,7 +35,7 @@ export default function Lab() {
               className="dropdown-header"
               onClick={() => toggleTopic(topic)}
             >
-              {topic.replace(/([a-z])([A-Z])/g, "$1 $2")}{" "}
+              {topicMap[topic]}{" "}
               <span className="dropdown-icon">
                 {openTopics.includes(topic) ? "-" : "+"}
               </span>
