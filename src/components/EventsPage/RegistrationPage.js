@@ -36,7 +36,6 @@ export const RegistrationForm = () => {
   return (
    
     <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md reg-heading">
-      
       <form onSubmit={handleSubmit} className='form'>
       <h5 className="text-lg font-bold mb-4 reg-header">Registration Form </h5>
         <div className="mb-4 all-labels">
