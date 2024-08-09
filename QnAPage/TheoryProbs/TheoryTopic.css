@@ -1,0 +1,16 @@
+
+.TheoryTopic {
+    justify-content: center;
+    padding: 20px;
+    background-color: rgb(1, 1, 27);
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+    margin: 1rem 2rem 1rem 0rem;
+  }
+  @media screen and (max-width: 500px) {
+    .TheoryTopic {
+      margin: 0rem;
+      padding: 0;
+      padding-right: 1.3rem;
+    }
+  }
