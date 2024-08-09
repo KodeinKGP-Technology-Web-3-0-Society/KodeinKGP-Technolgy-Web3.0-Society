@@ -5,6 +5,9 @@
 /.pnp
 .pnp.js
 
+#backend url
+/src/components/EventsPage/DB_URL.js
+
 # testing
 /coverage
 
