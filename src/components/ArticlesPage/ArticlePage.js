@@ -17,6 +17,7 @@ function ArticlePage() {
   return (
     <div className="article-content">
       <h1 className="article-heading">ARTICLES</h1>
+      <h3 className="read-now">READ NOW</h3>
       <div className="articles-container">
         <div className="big-card">{cards[0]}</div>
         <div className="small-cards">{cards.slice(1)}</div>

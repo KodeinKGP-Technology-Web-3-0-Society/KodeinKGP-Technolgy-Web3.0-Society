@@ -12,7 +12,7 @@
   font-size: 70px;
   margin-left: 2.5vw;
   line-height: 120px;
-  margin-bottom: 20px;
+  /* margin-bottom: 20px; */
   display: flex;
   align-items: center;
   letter-spacing: 0.1rem;
@@ -27,6 +27,15 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+}
+
+.read-now {
+  font-size: 27px;
+  color: #ffffff;
+  margin: 20px 2.5vw 40px 2.5vw;
+  padding: 15px 2px;
+  border-top: 2px solid #58e6ff;
+  border-bottom: 2px solid #58e6ff;
 }
 
 .articles-container {
@@ -45,18 +54,16 @@
   padding: 2px 12px 0px;
 }
 
-.big-card .article-card{
+.big-card .article-card {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
-  border: none;
   padding: 20px 12px;
   border-radius: 10px;
-  
 }
 
-.big-card .article-card img{
+.big-card .article-card img {
   width: 100%;
   height: 45%;
   align-self: center;
@@ -64,7 +71,7 @@
   margin: 0 0 18px;
 }
 
-.big-card .article-card h1{
+.big-card .article-card h1 {
   font-size: 22px;
   line-height: normal;
   width: 100%;
@@ -72,7 +79,7 @@
   top: 260px;
 }
 
-.big-card .article-card h3{
+.big-card .article-card h3 {
   font-size: 17px;
   position: absolute;
   top: 230px;
@@ -96,9 +103,9 @@
   width: 31vw;
   height: 140px;
   position: relative;
-  box-shadow: 0px 4px 10px #3dc4d4;
+  box-shadow: 0px 3px 10px #3dc4d4;
   border-radius: 10px;
-  
+  border: 4px solid transparent;
 }
 
 .article-card img {
@@ -144,10 +151,10 @@
   top: 15px;
 }
 
-.article-card:hover{
-  background: #393940;
+.article-card:hover {
+  background: #39394080;
   border: 4px solid #3dc4d4;
-  transition: 0.3s;
+  transition: 0.15s;
 }
 
 .article-card h1,
@@ -155,8 +162,8 @@ h3 {
   z-index: 10;
 }
 .article-card:hover h3 {
-  color: black;
-  font-weight: 900;
+  /* color: black; */
+  /* font-weight: 900; */
 }
 
 .article-card:hover h1 {
@@ -166,7 +173,46 @@ h3 {
 .article-card {
   overflow: hidden;
 }
-.article-card:hover::before {
-  width: 1000px;
-  height: 1000px;
+
+@media screen and (max-width: 1300px) {
+  .small-cards .article-card {
+    width: 50vw;
+  }
+  .big-card {
+    width: 40vw;
+  }
+  .article-card h3 {
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .small-cards {
+    width: 60vw;
+  }
+  .articles-container {
+    gap: 2vw;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .articles-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+  }
+  .small-cards {
+    max-height: none;
+  }
+  .small-cards .article-card {
+    width: 100%;
+  }
+
+  .small-cards {
+    width: 30rem;
+  }
+
+  .big-card {
+    width: 23rem;
+  }
 }
