@@ -9,9 +9,9 @@
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 75px;
+  font-size: 70px;
   margin-left: 2.5vw;
-  line-height: 130px;
+  line-height: 120px;
   margin-bottom: 20px;
   display: flex;
   align-items: center;
@@ -39,11 +39,10 @@
 
 .big-card {
   width: 25vw;
-  height: 580px;
-  background: linear-gradient(-168.39deg,#fff -278.56%,#24248b -78.47%,#1d1b66 5.67%,#11101d 91.61%);
+  height: 475px;
   border: none;
   border-radius: 10px;
-  padding: 25px 12px;
+  padding: 2px 12px 0px;
 }
 
 .big-card .article-card{
@@ -54,8 +53,7 @@
   border: none;
   padding: 20px 12px;
   border-radius: 10px;
-  border: 4px solid #3dc4d4;
-  background-color: #393940;
+  
 }
 
 .big-card .article-card img{
@@ -82,12 +80,10 @@
   flex-wrap: wrap;
   gap: 25px;
   width: 70vw;
-  max-height: 580px;
+  max-height: 480px;
   overflow-y: auto;
-  /* border: 4px solid #3dc4d4; */
-  background: linear-gradient(-168.39deg,#fff -278.56%,#24248b -78.47%,#1d1b66 5.67%,#11101d 91.61%);
   border-radius: 10px;
-  padding: 25px 1px;
+  padding: 3px 1px 6px;
   justify-content: center;
   margin-bottom: 40px;
 }
@@ -95,11 +91,10 @@
 .article-card {
   display: flex;
   width: 31vw;
-  height: 160px;
+  height: 140px;
   position: relative;
-  border: 4px solid #3dc4d4;
+  box-shadow: 0px 4px 10px #3dc4d4;
   border-radius: 10px;
-  background-color: #393940;
 }
 
 .article-card img {
@@ -140,16 +135,10 @@
   color: #11e3fb;
 }
 
-.article-card::before {
-  position: absolute;
-  content: "";
-  width: 0;
-  height: 0;
-  bottom: -150px;
-  left: -150px;
-  background: #3dc4d4;
-  border-radius: 50%;
-  transition: 1s;
+.article-card:hover{
+  background: #393940;
+  border: 4px solid #3dc4d4;
+  transition: 0.3s;
 }
 
 .article-card h1,
