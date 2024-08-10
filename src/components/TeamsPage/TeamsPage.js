@@ -30,9 +30,9 @@ const TeamsPage = () => {
           <Heads />
         </div>
         <div className="teams">
-        <h3 className="members_title">Our Teams</h3>
-        <Teams/>
-      </div>
+          <h3 className="members_title">Our Teams</h3>
+          <Teams/>
+        </div>
       </div>
     </>
   );

@@ -71,6 +71,7 @@
 .selected-team-container {
     opacity: 0;
     transition: opacity 0.5s ease;
+    margin: 1rem 0;
 }
   
 .selected-team-container.active {

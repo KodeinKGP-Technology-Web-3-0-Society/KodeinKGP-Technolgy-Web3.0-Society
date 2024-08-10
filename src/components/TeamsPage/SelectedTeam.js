@@ -90,7 +90,7 @@ const SelectedTeam = (props) =>{
         <div className={`selected-team-container ${transition ? 'active' : ''}`}>
             <h2 className='team_name'>{selectedData[1].teamName}</h2>
             <div className='heads'>
-                <TeamContent />
+                {/* <TeamContent /> */}
                 {/* <div className='teammembers'> */}
                 {/* <div className={`teamcontent ${transition ? 'active' : ''}`}> */}
                   {/* <table className='tab'>
