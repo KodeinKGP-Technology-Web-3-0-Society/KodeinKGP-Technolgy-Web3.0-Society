@@ -44,10 +44,11 @@
   width: 95vw;
   align-self: center;
   justify-self: center;
+  justify-content: center;
 }
 
 .big-card {
-  width: 25vw;
+  width: min(25vw, 420px);
   height: 475px;
   border: none;
   border-radius: 10px;
@@ -89,7 +90,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 25px;
-  width: 70vw;
+  width: min(70vw, 1250px);
   max-height: 480px;
   overflow-y: auto;
   border-radius: 10px;
@@ -100,7 +101,7 @@
 
 .article-card {
   display: flex;
-  width: 31vw;
+  width: min(31vw, 550px);
   height: 140px;
   position: relative;
   box-shadow: 0px 3px 10px #3dc4d4;
