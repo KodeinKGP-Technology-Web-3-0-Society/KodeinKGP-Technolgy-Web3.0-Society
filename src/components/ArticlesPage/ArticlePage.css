@@ -78,6 +78,7 @@
   width: 100%;
   position: absolute;
   top: 260px;
+  padding-right: 30px;
 }
 
 .big-card .article-card h3 {
@@ -162,10 +163,10 @@
 h3 {
   z-index: 10;
 }
-.article-card:hover h3 {
-  /* color: black; */
-  /* font-weight: 900; */
-}
+/* .article-card:hover h3 {
+  color: black;
+  font-weight: 900;
+} */
 
 .article-card:hover h1 {
   font-weight: 900;
@@ -180,7 +181,9 @@ h3 {
     width: 50vw;
   }
   .big-card {
-    width: 40vw;
+    /* width: 40vw; */
+    max-width: 360px;
+    min-width: 330px;
   }
   .article-card h3 {
     font-size: 15px;
@@ -188,8 +191,8 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
-  .small-cards {
-    width: 60vw;
+  .big-card .article-card{
+    max-width: 330px;
   }
   .articles-container {
     gap: 2vw;
@@ -214,6 +217,42 @@ h3 {
   }
 
   .big-card {
-    width: 23rem;
+    width: 20.5rem;
+  }
+  .big-card .article-card{
+    height: 420px;
+  }
+}
+
+@media screen and (max-width: 550px){
+  .big-card{
+    width: 19rem;
+    height: 385px;
+    display: flex;
+    justify-content: center;
+  }
+  .big-card .article-card{
+    width: 17.5rem;
+    height: 380px;
+  }
+  .big-card .article-card h1{
+    font-size: 19px;
+    top: 230px;
+  }
+  .big-card .article-card h3{
+    font-size: 13px;
+    top: 200px;
+  }
+  .big-card .article-card img{
+    height: 50%;
+  }
+  .small-cards .article-card{
+    margin: 0 35px;
+  }
+  .small-cards .article-card h1{
+    font-size: 15px;
+  }
+  .small-cards .article-card h3{
+    font-size: 12px;
   }
 }
