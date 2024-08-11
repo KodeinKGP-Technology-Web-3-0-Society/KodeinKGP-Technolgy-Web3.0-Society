@@ -20,6 +20,7 @@ import { Link } from "react-router-dom";
 import Moveicon from "./Images/move icon.jpg";
 import MoveEvent from "./Images/move event.jpg";
 import RecentEvent from "./Images/Swadeshi_event.png";
+import NationalScienceWeek from "./Images/nsw_hack.jpeg"
 import "./Events.css";
 
 const EventsPage = () => {
@@ -32,12 +33,46 @@ const EventsPage = () => {
           <h2 className="heading">Previous Hackathons</h2>
 
           <div className="events">
+            {/*EVENT */}
+            <div className="event event2">
+              <img src={NationalScienceWeek} alt="lumos"></img>
+              <div className="event_content">
+                <h3 className="event_heading">National Science Week Hackathon</h3>
+                <p className="event_description">
+                  Last year, KodeinKGP hosted the <b>'National Science Week Hackathon'</b>, 
+                  an extraordinary event that attracted over 400 participants from diverse domains. 
+                  Focused on a problem statement involving AI and web development, 
+                  the hackathon encouraged widespread participation and collaboration. 
+                  It became a melting pot of ideas, fostering innovation, problem-solving 
+                  skills, and cross-disciplinary teamwork. With a generous prize pool 
+                  of nearly 20,000 rupees, participants were both motivated and rewarded 
+                  for their hard work and groundbreaking solutions. This event truly 
+                  underscored the power of technology and the importance of collaboration
+                  in tackling real-world challenges.This event not only showcased the power of 
+                  technology and collaboration but also aligned with KodeinKGP vision of driving 
+                  innovation and advancing solutions that address real-world challenges.
+                </p>
+              </div>
+            </div>
+            
             {/*EVENT 0*/}
             <div className="event event1">
               <img src={RecentEvent} alt="hack" />
               <div className="event_content">
                 <h3 className="event_heading">INNOVATE4SWADESHI</h3>
-                <p className="event_description"></p>
+                <p className="event_description">
+                Last year, KodeinKGP proudly hosted <b>'INNOVATE4SWADESHI'</b> a landmark 
+                event that attracted over 300 talented participants for an exciting
+                hackathon centered on Artificial Intelligence. The competition 
+                featured challenging problem statements that pushed participants to 
+                innovate and demonstrate their technical prowess. With a prize pool 
+                exceeding 50,000 rupees, the event offered an exciting opportunity for 
+                participants to showcase their skills and be rewarded for their 
+                creativity. The overwhelming success of the event 
+                underscores our deep commitment to fostering a culture of innovation, 
+                empowering the tech community, and driving forward advancements in 
+                Artificial Intelligence and related technologies.
+                </p>
                 <div className="sponsors">
                   <div className="sponsor_heading">
                     <h5>Sponsored by :</h5>
