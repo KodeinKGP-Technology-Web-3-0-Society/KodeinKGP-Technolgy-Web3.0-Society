@@ -1,0 +1,105 @@
+import React, { useRef, useEffect, useState } from 'react'
+import { gsap, CSSPlugin } from 'gsap'
+import logo from './kik-final-logo.png'
+import { Bounce } from 'gsap/all';
+import { TypeAnimation } from 'react-type-animation';
+
+const Animation = ({ animate, setAnimate }) => {
+    const KRef = useRef(null);
+    const ballRef = useRef(null);
+    const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+
+    const [slide, setslide] = useState(false)
+
+    useEffect(() => {
+        // GSAP animation code
+        gsap.to(KRef.current, {
+            duration: 0.5,
+            x: 250,
+            repeat: 0,
+
+        });
+
+        gsap.to(".ball", {
+            y: 392,
+            duration: 2,
+            ease: "bounce.out",
+            yoyo: true,
+            repeat: 0,
+            delay: 0.3
+        });
+
+        gsap.to(".intro", {
+
+        })
+    }, []);
+
+
+    return (
+        <div className='intro'>
+            <div
+                ref={KRef}
+                style={{
+                    fontSize: '10rem',
+                    position: 'absolute',
+                    top: '50%',
+                    left: '0',
+                    transform: 'translateY(-50%)',
+                    color: "white",
+                    fontWeight: "bold"
+                }}
+            >
+                K
+            </div>
+            <div
+                ref={ballRef}
+                style={{
+                    width: '100px',            // Increase size to fit logo
+                    height: '100px',           // Increase size to fit logo
+                    backgroundColor: 'transparent',
+                    borderRadius: '50%',
+                    position: 'absolute',
+                    left: '31%',
+                    top: '-10%',
+                    transform: 'translate(-50%, -50%)',
+                    overflow: 'hidden',       // Hide overflow to ensure logo stays within the ball
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center'
+                }}
+                className='ball'
+            >
+                <img
+                    src={logo}          // Path to your logo
+                    alt="Logo"
+                    style={{
+                        width: '10rem',           // Adjust size of the logo
+                        height: '7rem',
+                    }}
+                />
+            </div>
+            <div>
+                <TypeAnimation
+                    cursor={false}
+                    className={CURSOR_CLASS_NAME}
+                    sequence={['deinKGP',
+                        (el) => el.classList.remove(CURSOR_CLASS_NAME),
+                        2000,
+                        () => { setslide(true) },
+                        1000,
+                        () => { setAnimate(false) }
+
+                    ]}
+                    speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
+                    style={{
+                        fontSize: '10rem', color: "white", fontWeight: "bold", position: 'absolute',
+                        left: '35%', top: "35%"
+                    }}
+                    repeat={0}
+                />
+            </div>
+        </div>
+    )
+}
+
+export default Animation
