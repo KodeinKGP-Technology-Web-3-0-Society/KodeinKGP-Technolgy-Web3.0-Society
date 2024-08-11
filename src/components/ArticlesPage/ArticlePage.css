@@ -256,3 +256,19 @@ h3 {
     font-size: 12px;
   }
 }
+
+@media screen and (max-width: 550px){
+  .article-heading{
+    font-size: 50px;
+    line-height: 100px;
+  }
+  .read-now{
+    font-size: 22px;
+  }
+  .articles-container{
+    overflow-x: hidden;
+  }
+  .small-cards .article-card{
+    margin: 0 40px;
+  }
+}
