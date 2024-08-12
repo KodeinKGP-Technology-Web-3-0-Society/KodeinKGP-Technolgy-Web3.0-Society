@@ -4,6 +4,8 @@ import event2 from "./event2.jpg"
 import event3 from "./event3.jpg"
 
 import './Card.css'
+import Lottie from "lottie-react"
+import Robot from './Robot.json'
 
 // import { PRODUCTS } from "./eventassets"
 
@@ -13,6 +15,7 @@ const Card = () => {
         <div className="cards">
             <div className="card 1">
                 <img src={event1} alt="" className="cardImage" />
+                {/* <Lottie animationData={Robot}/> */}
                 <div className="about-card">
                     <h1>EVENT 1</h1>
                     <span>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</span>

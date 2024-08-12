@@ -7,6 +7,7 @@ import { TypeAnimation } from 'react-type-animation';
 const Animation = ({ animate, setAnimate }) => {
     const KRef = useRef(null);
     const ballRef = useRef(null);
+    const wordRef = useRef(null);
     const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
     const [slide, setslide] = useState(false)
@@ -20,7 +21,7 @@ const Animation = ({ animate, setAnimate }) => {
 
         });
 
-        gsap.to(".ball", {
+        gsap.to(ballRef.current, {
             y: 392,
             duration: 2,
             ease: "bounce.out",
@@ -28,15 +29,24 @@ const Animation = ({ animate, setAnimate }) => {
             repeat: 0,
             delay: 0.3
         });
-
-        gsap.to(".intro", {
-
-        })
     }, []);
+
+    useEffect(() => {
+        if (slide) {
+            gsap.to(wordRef.current, {
+                duration: 2, // duration in seconds
+                opacity: 0,
+                ease: 'power1.out',
+            });
+        }
+    },
+        [slide])
+
+
 
 
     return (
-        <div className='intro'>
+        <div className='intro' ref={wordRef}>
             <div
                 ref={KRef}
                 style={{
@@ -84,7 +94,7 @@ const Animation = ({ animate, setAnimate }) => {
                     className={CURSOR_CLASS_NAME}
                     sequence={['deinKGP',
                         (el) => el.classList.remove(CURSOR_CLASS_NAME),
-                        2000,
+                        1500,
                         () => { setslide(true) },
                         1000,
                         () => { setAnimate(false) }

@@ -5,10 +5,13 @@ import { useInView } from "react-intersection-observer";
 import "./Work.css";
 // import './Team-Cards.css';
 
-import Web from "./web1.png";
+// import Web from "./web1.png";
 import AI from "./ai3.png";
 import BlockChain from "./blockchain2.png";
-
+import Robot from './Robot.json'
+import Lottie from "lottie-react";
+import WEBDEV from './WEB.json'
+import Blockchain from './Blockchain.json'
 export default function Teams() {
     // const [ref, inView] = useInView({
     //     threshold: 0,
@@ -115,17 +118,21 @@ export default function Teams() {
 
             <div className='field-cards'>
                 <div className='field-card card1'>
-                    <img src={Web} alt="Web" />
+                    {/* <img src={Web} alt="Web" /> */}
+                    <Lottie animationData={WEBDEV}/>
+
                     <p className='field-heading'>Web</p>
                     <p className='field-description'>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</p>
                 </div>
                 <div className='field-card card2'>
-                    <img src={AI} alt="AI & Metaverse" />
+                    {/* <img src={AI} alt="AI & Metaverse" /> */}
+                    <Lottie animationData={Robot}/>
                     <p className='field-heading'>AI & Metaverse</p>
                     <p className='field-description'> Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.</p>
                 </div>
                 <div className='field-card card3'>
-                    <img src={BlockChain} alt="Blockchain" />
+                    {/* <img src={BlockChain} alt="Blockchain" /> */}
+                    <Lottie animationData={Blockchain}/>
                     <p className='field-heading'>Blockchain</p>
                     <p className='field-description'>Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency.</p>
                 </div>
