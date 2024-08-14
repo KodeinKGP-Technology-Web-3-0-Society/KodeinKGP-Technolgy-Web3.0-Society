@@ -56,13 +56,13 @@ export default function Teams() {
             gsap.fromTo(
                 card,
                 {
-                    y: -300,
+                    // y: -300,
                     x: 0,
                     rotation: 0,
                     scale: 1,
                 },
                 {
-                    y: -300,
+                    // y: -300,
                     x: xOffset,
                     rotation: 0,
                     scale: 1.1,
@@ -99,7 +99,8 @@ export default function Teams() {
     // }, []);
 
     return (
-        <>
+        <div className="work-wrapper">
+
             <h2 id="recentHeader">Our Expertise</h2>
             {/* <div id="recentEvents">
                 <div className="recentEvent" id="event1">
@@ -182,6 +183,7 @@ export default function Teams() {
                 </div>
             </div>
 
-        </>
+            </div>
+
     );
 }

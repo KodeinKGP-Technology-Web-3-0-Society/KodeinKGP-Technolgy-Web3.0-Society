@@ -174,17 +174,21 @@
   }
 } */
 
+.work-wrapper{
+  position: relative;
+}
+
 .field-cards {
   margin-bottom: 40vh;
+  position: absolute;
 }
 
 .field-card {
   padding: 20px 0;
-  justify-content: center;
   background-color: rgba(54, 54, 54, 0.4);
   border-radius: 1.5vw;
   position: absolute;
-  top: 100%;
+  top: 70%;
   left: 50%;
   height: 90vh;
   transition: all 1s cubic-bezier(.63, .15, .03, 1.12);
