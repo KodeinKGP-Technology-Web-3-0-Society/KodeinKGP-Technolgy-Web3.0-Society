@@ -49,20 +49,7 @@ body {
   background-color: #1c1a22;
   padding: 10px;
   border-radius: 0 0 10px 10px;
-  max-height: 0;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  transform: translateY(-20px);
-  transition: transform 0.5s ease-in-out, max-height 0.5s ease-in-out, opacity 0.5s ease-in-out;
-  opacity: 0;
 }
-
-.dropdown.open .dropdown-content {
-  transform: translateY(0);
-  max-height: 500px;
-  opacity: 1;
-}
-
 
 .LabTopicList {
   display: flex;
@@ -74,14 +61,12 @@ body {
   padding: 15px;
   background-color: #333;
   color: #fff;
-  /* font-family: Arial, sans-serif; */
+  font-family: Arial, sans-serif;
   border-radius: 8px;
   transition: background-color 0.3s ease;
 }
 
-/* .LabTopic:hover {
-  background-color: #444;
-} */
+
 
 .labCards {
   text-decoration: none;
@@ -107,10 +92,28 @@ body {
   color: rgb(247, 239, 239);
   margin: 10px 0;
   line-height: 1.6;
-  font-size: 1.15rem; /* Increased font size */
+  font-size: 1.15rem;
 }
 
 .index {
   font-weight: bold;
   color: rgb(91, 230, 255);
 }
+
+
+@media (max-width: 480px) {
+  .header h1 {
+      font-size: 20px;
+  }
+
+  .dropdown-header {
+      font-size: 14px;
+      padding: 6px;
+  }
+
+  .dropdown-content p {
+      font-size: 12px;
+  }
+}
+
+

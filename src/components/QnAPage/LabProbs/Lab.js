@@ -1,53 +1,65 @@
 import React, { useState } from "react";
 import dataJ from "./data.json";
-import LabTopic from "./LabTopic";
+import LabSubtopic from "./LabSubtopic";
 import "./Lab.css";
 
 export default function Lab() {
   const [openTopics, setOpenTopics] = useState([]);
 
-  const toggleTopic = (topic) => {
+  const toggleTopic = (topicName) => {
     setOpenTopics((prevOpenTopics) =>
-      prevOpenTopics.includes(topic)
-        ? prevOpenTopics.filter((t) => t !== topic)
-        : [...prevOpenTopics, topic]
+      prevOpenTopics.includes(topicName)
+        ? prevOpenTopics.filter((t) => t !== topicName)
+        : [...prevOpenTopics, topicName]
     );
   };
 
-  const topicMap = {
-    initialBasics: "Initial Basics",
-    loops: "Loops",
-    ArrayAndStrings: "Array And Strings",
-    functionsAndRecursions: "Functions And Recursions",
-    structuresAndPointers: "Structs And Pointers",
-    sortingAnd2dArrays: "Sorting And 2d Arrays",
-    linkedList: "Linked List",
+  const renderTopicHeader = (type) => {
+    if (type === "initialBasics") {
+      return "Initial Basics";
+    } else if (type === "loops") {
+      return "Loops";
+    }
+    return "";
   };
+
+  const combinedTopics = [
+    { type: "initialBasics", data: dataJ.initialBasics },
+    { type: "loops", data: dataJ.loops }
+  ];
 
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>
       <div id="Lab">
-        {Object.keys(topicMap).map((topic, index) => (
-          <div
-            key={index}
-            className={`dropdown ${openTopics.includes(topic) ? "open" : ""}`}
-          >
+        {combinedTopics.map(({ type, data }, index) => (
+          <div key={index} className="dropdown">
             <div
               className="dropdown-header"
-              onClick={() => toggleTopic(topic)}
+              onClick={() => toggleTopic(type)}
             >
-              {topicMap[topic]}{" "}
+              {renderTopicHeader(type)}
               <span className="dropdown-icon">
-                {openTopics.includes(topic) ? "-" : "+"}
+                {openTopics.includes(type) ? "-" : "+"}
               </span>
             </div>
-            <div className="dropdown-content">
-              <LabTopic topic={topic} />
-            </div>
+            {openTopics.includes(type) && (
+              <div className="dropdown-content">
+                {data
+                  .filter(item => item.type === "lab")
+                  .map((topic, index) => (
+                    <LabSubtopic
+                      key={index}
+                      subtopicsArray={topic.subtopics} // Pass subtopics to LabSubtopic
+                      topic={renderTopicHeader(type)} // Display "Initial Basics" or "Loops"
+                    />
+                  ))}
+              </div>
+            )}
           </div>
         ))}
       </div>
     </div>
   );
 }
+

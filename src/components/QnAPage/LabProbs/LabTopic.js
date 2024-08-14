@@ -1,5 +1,3 @@
-
-
 import React from 'react';
 import dataJ from './data.json';
 import LabCard from './LabCard';
