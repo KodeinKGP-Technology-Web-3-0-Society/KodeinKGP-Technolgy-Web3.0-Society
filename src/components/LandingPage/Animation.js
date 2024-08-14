@@ -3,7 +3,7 @@ import { gsap, CSSPlugin } from 'gsap'
 import logo from './kik-final-logo.png'
 import { Bounce } from 'gsap/all';
 import { TypeAnimation } from 'react-type-animation';
-import anime from './anime.mp4'
+import anime from './anime.gif'
 import './anime.css'
 
 const Animation = ({ animate, setAnimate }) => {
@@ -12,7 +12,27 @@ const Animation = ({ animate, setAnimate }) => {
     const wordRef = useRef(null);
     // const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
-    const [disappear, setDisappear] = useState(false)
+    // const [disappear, setDisappear] = useState(false)
+
+
+    const [gifPlayed, setGifPlayed] = useState(false);
+    const gifDuration = 1600;
+
+
+    useEffect(() => {
+        const timer = setTimeout(() => {
+            setGifPlayed(true);
+        }, gifDuration);
+
+        return () => clearTimeout(timer); // Cleanup the timer on component unmount
+    },);
+
+    useEffect(() => {
+        if (gifPlayed) {
+            setAnimate(false)
+        }
+    }, [gifPlayed]);
+
 
     // useEffect(() => {
     //     // GSAP animation code
@@ -33,25 +53,25 @@ const Animation = ({ animate, setAnimate }) => {
     //     });
     // }, []);
 
-    useEffect(() => {
-        if (disappear) {
-            gsap.to(wordRef.current, {
-                duration: 2, // duration in seconds
-                opacity: 0,
-                ease: 'power1.out',
-                onComplete:()=>{
-                    setAnimate(false)
-                }
-            });
-        }
-    },
-        [disappear])
+    // useEffect(() => {
+    //     if (disappear) {
+    //         gsap.to(wordRef.current, {
+    //             duration: 2, // duration in seconds
+    //             opacity: 0,
+    //             ease: 'power1.out',
+    //             onComplete: () => {
+    //                 setAnimate(false)
+    //             }
+    //         });
+    //     }
+    // },
+    //     [disappear])
 
 
 
 
     return (
-        <div className='intro' ref={wordRef} style={{width:"99%", height:"90%"}}>
+        <div className='intro' ref={wordRef} style={{ width: "99%", height: "90%" }}>
             {/* <div
                 ref={KRef}
                 style={{
@@ -113,14 +133,12 @@ const Animation = ({ animate, setAnimate }) => {
                     repeat={0}
                 />
             </div> */}
-            <video
-                src={anime}
-                className="field-animation"
-                autoPlay
-                muted
-                playsInline
-                onEnded={()=>{setDisappear(true)}}
-            />
+            <div>
+                {!gifPlayed &&
+                    <img src={anime} alt="GIF" />
+                }
+            </div>
+
         </div>
     )
 }
