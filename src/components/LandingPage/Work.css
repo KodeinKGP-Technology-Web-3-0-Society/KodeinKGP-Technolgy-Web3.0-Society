@@ -175,8 +175,7 @@
 } */
 
 .field-cards {
-  margin-top: 15vh;
-  margin-bottom: 10vh;
+  margin-bottom: 40vh;
 }
 
 .field-card {
@@ -189,6 +188,7 @@
   left: 50%;
   height: 90vh;
   transition: all 1s cubic-bezier(.63, .15, .03, 1.12);
+  margin-top: 60vh;
 }
 
 
