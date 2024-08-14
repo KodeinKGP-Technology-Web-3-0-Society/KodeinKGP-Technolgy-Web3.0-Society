@@ -51,7 +51,7 @@ const Animation = ({ animate, setAnimate }) => {
 
 
     return (
-        <div className='intro' ref={wordRef} style={{width:"100%", height:"100%"}}>
+        <div className='intro' ref={wordRef} style={{width:"99%", height:"90%"}}>
             {/* <div
                 ref={KRef}
                 style={{

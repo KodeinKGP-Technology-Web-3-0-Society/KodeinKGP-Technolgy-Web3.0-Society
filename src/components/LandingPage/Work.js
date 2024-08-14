@@ -66,7 +66,7 @@ export default function Teams() {
                     x: xOffset,
                     rotation: 0,
                     scale: 1.1,
-                    duration: 0.5,
+                    duration: 0.1,
                     ease: 'power2.out',
                     scrollTrigger: {
                         trigger: card,
