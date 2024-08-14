@@ -3,57 +3,62 @@ import { gsap, CSSPlugin } from 'gsap'
 import logo from './kik-final-logo.png'
 import { Bounce } from 'gsap/all';
 import { TypeAnimation } from 'react-type-animation';
+import anime from './anime.mp4'
+import './anime.css'
 
 const Animation = ({ animate, setAnimate }) => {
-    const KRef = useRef(null);
-    const ballRef = useRef(null);
+    // const KRef = useRef(null);
+    // const ballRef = useRef(null);
     const wordRef = useRef(null);
-    const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+    // const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
-    const [slide, setslide] = useState(false)
+    const [disappear, setDisappear] = useState(false)
+
+    // useEffect(() => {
+    //     // GSAP animation code
+    //     gsap.to(KRef.current, {
+    //         duration: 0.5,
+    //         x: '18vw',
+    //         repeat: 0,
+
+    //     });
+
+    //     gsap.to(ballRef.current, {
+    //         y: '60vh',
+    //         duration: 2,
+    //         ease: "bounce.out",
+    //         yoyo: true,
+    //         repeat: 0,
+    //         delay: 0.3
+    //     });
+    // }, []);
 
     useEffect(() => {
-        // GSAP animation code
-        gsap.to(KRef.current, {
-            duration: 0.5,
-            x: 250,
-            repeat: 0,
-
-        });
-
-        gsap.to(ballRef.current, {
-            y: 392,
-            duration: 2,
-            ease: "bounce.out",
-            yoyo: true,
-            repeat: 0,
-            delay: 0.3
-        });
-    }, []);
-
-    useEffect(() => {
-        if (slide) {
+        if (disappear) {
             gsap.to(wordRef.current, {
                 duration: 2, // duration in seconds
                 opacity: 0,
                 ease: 'power1.out',
+                onComplete:()=>{
+                    setAnimate(false)
+                }
             });
         }
     },
-        [slide])
+        [disappear])
 
 
 
 
     return (
-        <div className='intro' ref={wordRef}>
-            <div
+        <div className='intro' ref={wordRef} style={{width:"100%", height:"100%"}}>
+            {/* <div
                 ref={KRef}
                 style={{
                     fontSize: '10rem',
                     position: 'absolute',
                     top: '50%',
-                    left: '0',
+                    left: '0%',
                     transform: 'translateY(-50%)',
                     color: "white",
                     fontWeight: "bold"
@@ -103,11 +108,19 @@ const Animation = ({ animate, setAnimate }) => {
                     speed={{ type: 'keyStrokeDelayInMs', value: 100 }}
                     style={{
                         fontSize: '10rem', color: "white", fontWeight: "bold", position: 'absolute',
-                        left: '35%', top: "35%"
+                        left: '36vw', top: "36vh"
                     }}
                     repeat={0}
                 />
-            </div>
+            </div> */}
+            <video
+                src={anime}
+                className="field-animation"
+                autoPlay
+                muted
+                playsInline
+                onEnded={()=>{setDisappear(true)}}
+            />
         </div>
     )
 }

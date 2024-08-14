@@ -9,6 +9,8 @@ import Card from "./Card.js";
 // import Carousel from 'react-bootstrap/Carousel';
 
 import React, { useState, useEffect } from "react";
+import main from './main.json'
+import Lottie from "lottie-react";
 
 // Loading screen with selections poster
 // const LoadingScreen = () => {
@@ -54,6 +56,7 @@ const MainContent = () => {
         </div>
         <div className="left">
           <img src={aiLogo} alt="ai-image" />
+          {/* <Lottie animationData={main} width={1000}/> */}
         </div>
       </div>
       <div className="bottom-bar">

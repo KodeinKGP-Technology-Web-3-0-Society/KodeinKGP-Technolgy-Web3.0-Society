@@ -8,10 +8,15 @@ import "./Work.css";
 // import Web from "./web1.png";
 import AI from "./ai3.png";
 import BlockChain from "./blockchain2.png";
-import Robot from './Robot.json'
+import Robot from './Robo.json'
 import Lottie from "lottie-react";
 import WEBDEV from './WEB.json'
 import Blockchain from './Blockchain.json'
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
+
 export default function Teams() {
     // const [ref, inView] = useInView({
     //     threshold: 0,
@@ -33,26 +38,65 @@ export default function Teams() {
         }
     }
 
-    useEffect(() => {
-        // Create an Intersection Observer instance
-        const sectionObserver = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    fieldCardAnimate(); // Trigger animation when the section is in viewport
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, {
-            root: null, // Use the viewport as the root
-            threshold: 0.8, // Trigger when 80% of the section is visible
-        });
+    const cardRefs = useRef([]);
 
-        // Observe the target section
-        const targetSection = document.querySelector('.field-cards');
-        if (targetSection) {
-            sectionObserver.observe(targetSection);
-        }
+    useEffect(() => {
+        cardRefs.current.forEach((card, index) => {
+            let xOffset;
+
+            // Adjust the xOffset based on screen width
+            if (window.innerWidth < 768) {
+                // For smaller screens, use a smaller offset
+                xOffset = index === 0 ? '-100vw' : index === 1 ? '0vw' : '100vw';
+            } else {
+                // For larger screens, use a larger offset
+                xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+            }
+
+            gsap.fromTo(
+                card,
+                {
+                    y: -300,
+                    x: 0,
+                    rotation: 0,
+                    scale: 1,
+                },
+                {
+                    y: -300,
+                    x: xOffset,
+                    rotation: 0,
+                    scale: 1.1,
+                    duration: 0.5,
+                    ease: 'power2.out',
+                    scrollTrigger: {
+                        trigger: card,
+                        start: 'top 80%', // Start the animation when the top of the card reaches 80% of the viewport
+                        toggleActions: 'play none none reverse', // Animation actions on enter/leave
+                    },
+                }
+            );
+        });
     }, []);
+    // useEffect(() => {
+    //     // Create an Intersection Observer instance
+    //     const sectionObserver = new IntersectionObserver((entries, observer) => {
+    //         entries.forEach(entry => {
+    //             if (entry.isIntersecting) {
+    //                 fieldCardAnimate(); // Trigger animation when the section is in viewport
+    //                 observer.unobserve(entry.target);
+    //             }
+    //         });
+    //     }, {
+    //         root: null, // Use the viewport as the root
+    //         threshold: 0.8, // Trigger when 80% of the section is visible
+    //     });
+
+    //     // Observe the target section
+    //     const targetSection = document.querySelector('.field-cards');
+    //     if (targetSection) {
+    //         sectionObserver.observe(targetSection);
+    //     }
+    // }, []);
 
     return (
         <>
@@ -117,22 +161,22 @@ export default function Teams() {
 
 
             <div className='field-cards'>
-                <div className='field-card card1'>
+                <div className='field-card card1' ref={(el) => (cardRefs.current[0] = el)}>
                     {/* <img src={Web} alt="Web" /> */}
-                    <Lottie animationData={WEBDEV}/>
+                    <Lottie animationData={WEBDEV} />
 
                     <p className='field-heading'>Web</p>
                     <p className='field-description'>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</p>
                 </div>
-                <div className='field-card card2'>
+                <div className='field-card card2' ref={(el) => (cardRefs.current[1] = el)}>
                     {/* <img src={AI} alt="AI & Metaverse" /> */}
-                    <Lottie animationData={Robot}/>
+                    <Lottie animationData={Robot} height={10} />
                     <p className='field-heading'>AI & Metaverse</p>
                     <p className='field-description'> Enter a realm where AI drives immersive Metaverse encounters, pushing boundaries of what's possible.</p>
                 </div>
-                <div className='field-card card3'>
+                <div className='field-card card3' ref={(el) => (cardRefs.current[2] = el)}>
                     {/* <img src={BlockChain} alt="Blockchain" /> */}
-                    <Lottie animationData={Blockchain}/>
+                    <Lottie animationData={Blockchain} />
                     <p className='field-heading'>Blockchain</p>
                     <p className='field-description'>Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency.</p>
                 </div>
