@@ -46,8 +46,8 @@ td {
   left: 20%;
   width: 60%;
   height: 60%;
-  background: url("../public/KIK_logo-removebg.png") no-repeat center
-    center/contain;
+  /* background: url("../public/KIK_logo-removebg.png") no-repeat center
+    center/contain; */
   opacity: 0.3;
   z-index: -1;
 }
