@@ -1,59 +1,37 @@
 import React, { useState } from "react";
 import dataJ from "./data.json";
-import LabSubtopic from "./LabSubtopic";
+import LabTopic from "./LabTopic";
 import "./Lab.css";
 
 export default function Lab() {
   const [openTopics, setOpenTopics] = useState([]);
 
-  const toggleTopic = (topicName) => {
+  const toggleTopic = (topic) => {
     setOpenTopics((prevOpenTopics) =>
-      prevOpenTopics.includes(topicName)
-        ? prevOpenTopics.filter((t) => t !== topicName)
-        : [...prevOpenTopics, topicName]
+      prevOpenTopics.includes(topic)
+        ? prevOpenTopics.filter((t) => t !== topic)
+        : [...prevOpenTopics, topic]
     );
   };
-
-  const renderTopicHeader = (type) => {
-    if (type === "initialBasics") {
-      return "Initial Basics";
-    } else if (type === "loops") {
-      return "Loops";
-    }
-    return "";
-  };
-
-  const combinedTopics = [
-    { type: "initialBasics", data: dataJ.initialBasics },
-    { type: "loops", data: dataJ.loops }
-  ];
 
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>
       <div id="Lab">
-        {combinedTopics.map(({ type, data }, index) => (
+        {Object.keys(dataJ).map((topic, index) => (
           <div key={index} className="dropdown">
             <div
               className="dropdown-header"
-              onClick={() => toggleTopic(type)}
+              onClick={() => toggleTopic(topic)}
             >
-              {renderTopicHeader(type)}
+              {topic.replace(/([a-z])([A-Z])/g, "$1 $2")}{" "}
               <span className="dropdown-icon">
-                {openTopics.includes(type) ? "-" : "+"}
+                {openTopics.includes(topic) ? "-" : "+"}
               </span>
             </div>
-            {openTopics.includes(type) && (
+            {openTopics.includes(topic) && (
               <div className="dropdown-content">
-                {data
-                  .filter(item => item.type === "lab")
-                  .map((topic, index) => (
-                    <LabSubtopic
-                      key={index}
-                      subtopicsArray={topic.subtopics} // Pass subtopics to LabSubtopic
-                      topic={renderTopicHeader(type)} // Display "Initial Basics" or "Loops"
-                    />
-                  ))}
+                <LabTopic topic={topic} />
               </div>
             )}
           </div>
@@ -62,4 +40,7 @@ export default function Lab() {
     </div>
   );
 }
+
+
+
 

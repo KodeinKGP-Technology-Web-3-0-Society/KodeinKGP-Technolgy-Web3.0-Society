@@ -33,7 +33,7 @@ function App() {
             <Route path="/pds/theory/:topic" element={<TheoryTopic />} />
             <Route path="/pds/lab/:topic/:ind" element={<LabQuestion />} />
             <Route
-              path="/pds/theory/:topic/:subtopicName/:ind"
+              path="/pds/theory/:topic/:ind"
               element={<TheoryQuestion />}
             />
             <Route path="/teams" element={<TeamsPage />}></Route>
