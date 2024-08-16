@@ -8,7 +8,7 @@ import LabTopic from "./components/QnAPage/LabProbs/LabTopic";
 import LabQuestion from "./components/QnAPage/LabProbs/LabQuestion";
 import TheoryQuestion from "./components/QnAPage/TheoryProbs/TheoryQuestion";
 import Selection from "./Selection";
-
+import ArticlePage from "./components/ArticlesPage/ArticlePage";
 import TheoryTopic from "./components/QnAPage/TheoryProbs/TheoryTopic";
 import TeamsPage from "./components/TeamsPage/TeamsPage";
 import EventsPage from "./components/EventsPage/EventsPage";
@@ -22,7 +22,7 @@ function App() {
   return (
     <>
       <Router>
-        <ScrollToTop/>
+        <ScrollToTop />
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route path="" element={<Home />} />
@@ -39,7 +39,7 @@ function App() {
             <Route path="/teams" element={<TeamsPage />}></Route>
             <Route path="/events" element={<EventsPage />}></Route>
             <Route path="/events/apply" element={<ApplyPage />}></Route>
-            {/* <Route path="/selections" element={<Selection />}></Route> */}
+            <Route path="/articles" element={<ArticlePage />}></Route>
           </Route>
         </Routes>
       </Router>

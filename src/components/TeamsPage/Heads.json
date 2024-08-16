@@ -1,8 +1,13 @@
 [
     {
         "id": "1",
+<<<<<<< HEAD
         "name": "Aadishkumar Jain ",
         "image_url": "https://github.com/kodeinkgp/Photos/blob/main/aadish.jpg?raw=true",
+=======
+        "name": "Aadish Jain ",
+        "image_url": "https://media.licdn.com/dms/image/D5603AQFrBw1Blnv5SQ/profile-displayphoto-shrink_800_800/0/1709997953099?e=1723680000&v=beta&t=Jtthv5QwwdwX8VblylV59mJ0587Bqu4-_1NTqEpUGNQ",
+>>>>>>> 184d7f2861e8dcdc7aec08307fcb43342b7eab78
         "facebook": "",
         "mailid": "mailto:aadishkjain101004@gmail.com",
         "instagram": "",
