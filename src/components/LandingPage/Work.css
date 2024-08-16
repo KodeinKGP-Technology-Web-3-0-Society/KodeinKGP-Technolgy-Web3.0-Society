@@ -24,12 +24,13 @@
 
 #recentHeader {
   margin: 2rem 0rem 1rem 0rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: 'Monteserrat';
   text-align: center;
-  color: #fff;
-  /* font-size: 2em; */
+  color: transparent;
+  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+  background-clip: text;
+  -webkit-background-clip: text;
   font-size: 48px;
-
 }
 
 /* #event1,
@@ -174,7 +175,7 @@
   }
 } */
 
-.work-wrapper{
+.work-wrapper {
   position: relative;
 }
 
