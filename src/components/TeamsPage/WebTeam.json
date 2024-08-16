@@ -1,89 +1,146 @@
 [
-[
-  {
-    "name": "Adarsh Tadiparthi",
-    "id": "1",
-    "mailid": "adarshtadiparthi30@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087676355082&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/adarsh_tadiparthi?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/adarsh-tadiparthi-1b9962268",
-    "github": "https://github.com/adarshtadiparthi",
-    "image_url":"https://drive.google.com/uc?export=view&id=1zZDHDikzuGnLlPzLf8t8ZofV7x0i-U2y    "
-  },
-  {
-    "name": "Chittibabu Mariserla",
-    "id": "2",
-    "mailid": "chittibabumariserla4@gmail.com",
-    "facebook": "https://www.facebook.com/chittibabu.mariserla.1?mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/cb_mariserla?utm_source=qr&igshid=NGExMmI2YTkyZg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/cb-mariserla-206198204",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1EWLPTcfx4o6pk4UxdWerLMrqVvkbjT6b"
-  },
-{
-    "name": "Dipesh Goel",
-    "id": "3",
-    "mailid": "dipeshgoel@kgpian.iitkgp.ac.in",
-    "facebook": "https://www.facebook.com/profile.php?id=100084339667880",
-    "instagram": "https://www.instagram.com/dipeshgoel27/",
-    "linkedin": "https://www.linkedin.com/in/dipeshgoel27/",
-    "github": "https://github.com/DIPESHGOEL27",
-    "image_url":"https://drive.google.com/uc?export=view&id=1tElnqR7G73QuaoLDDMOjjsDRouHODamO    "
-  },
-  {
-    "name": "Hindvee Vispute",
-    "id": "9",
-    "mailid": "hindveevispute@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087801540010&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/hindvee_vispute?igshid=YmMyMTA2M2Y=",
-    "linkedin": "https://www.linkedin.com/in/hindvee-vispute-4589b2257",
-    "github": "https://github.com/Hindvee2003",
-    "image_url":"https://drive.google.com/uc?export=view&id=1J9hvkto92-5FcQPfejrl5EBzKaE3BsMY"
-  },
-  {
-    "name": "Kanchi Ram Preetham",
-    "id": "8",
-    "mailid": "rampreethamkanchi@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085126419828&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/rampreethamkanchi?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/rampreetham-kanchi-0b8aa11b8",
-    "github": "https://github.com/rampreethamkanchi",
-    "image_url":"https://drive.google.com/uc?export=view&id=1qUi_l0cnHo8pEQoCVHYJShftIPbGHvyq    "
-  },
-{
-    "name": "Nishtha Barnwal ",
-    "id": "5",
-    "mailid": "nishthabarnwal273@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087199856585&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/nishtha_barnwal_273?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/nishtha-barnwal-0090b2267",
-    "github": "https://github.com/n273b",
-    "image_url":"https://drive.google.com/uc?export=view&id=1kQPBPK-fPr_rqKH-q9znSTGVUrdZ0HiM    "
-  },
-  {
-    "name": "Mamidi Surya Teja",
-    "id": "12",
-    "mailid": "mamidisuryateja1601@gmail.com",
-    "facebook": "https://www.facebook.com/suryateja.mamidi.3?mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/surya_teja64?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/surya-teja-mamidi-747a2b254",
-    "github": "https://github.com/surya1601",
-    "image_url":"https://drive.google.com/uc?export=view&id=1MqeQoRpkDniuP3A7eERJFJA-FfqqFOmr    "
-  },
-{
-    "name": "Yash Priyadarshy",
-    "id": "7",
-    "mailid": "yashpriyadarshy03@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "https://www.linkedin.com/in/yash-priyadarshy-60a27a26b/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BtPT%2BTo5VTXaDez1gha8Uqw%3D%3D",
-    "github": "https://github.com/Yash123456789000",
-    "image_url":"https://drive.google.com/uc?export=view&id=1tnptqHwf-Lx52p3X9OYZ4nm6nXMOS3EK    "
-  }
-],{
-    "teamName":"Tech Team",
-    "content" :"The Tech team consists of skilled and creative individuals who have expertise in various aspects of web development.The Tech team works on various aspects of web development, such as designing, coding, testing, debugging, and updating the website and its content. The Tech team also ensures that the website is user-friendly, accessible, secure, and compatible with different devices and browsers",
-    "image_url":"../../../public/assets/ai-metaverse.png"
-  }
-  ]
-  
+    [
+        {
+          "id": "1",
+          "name": "Om Singh Jadon",
+          "Rollno": "",
+          "mailid": "omj000080@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=100095001103414",
+          "instagram": "https://www.instagram.com/om.sj_/",
+          "linkedin": "https://www.linkedin.com/in/om-jadon-b738b9284",
+          "github": "https://github.com/Om-Jadon",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG-20240811-WA0148.jpg?raw=true"
+        },
+        {
+          "id": "2",
+          "name": "Arumilli Thanvi Sree",
+          "Rollno": "",
+          "mailid": "thanvisreearumilli@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=61551797131906&mibextid=kFxxJD",
+          "instagram": "https://www.instagram.com/thanvi_7606",
+          "linkedin": "https://www.linkedin.com/in/thanvi-sree-arumilli-bb49392b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "github": "https://github.com/068677",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/thanvi.jpg.jpg?raw=true"
+
+         
+
+        
+        },
+        {
+          "id": "3",
+          "name": "Shaurya Raj",
+          "Rollno": "",
+          "mailid": "shauryaraj694@gmail.com",
+          "facebook": "",
+          "instagram": "https://www.instagram.com/_shaurya.raj_/",
+          "linkedin": "https://www.linkedin.com/in/shaurya-raj-921261298/",
+          "github": "https://github.com/shauryaraj-kgp",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/shaurya-raj.jpg?raw=true"
+        },
+        {
+          "id": "4",
+          "name": "Uditangshu Chakraborty",
+          "Rollno": "",
+          "mailid": "uditangshuchakraborty@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=61550094626579",
+          "instagram": "_uditangshu__",
+          "linkedin": "https://www.linkedin.com/in/uditangshu-chakraborty-3a551a280/",
+          "github": "https://github.com/uditangshu",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/ktj_profile.jpg?raw=true"
+        },
+        {
+          "id": "5",
+          "name": "Sudhanshu",
+          "Rollno": "",
+          "mailid": "sudhanshumahar2401@gmail.com",
+          "facebook": "",
+          "instagram": "https://www.instagram.com/sudhanshu_mahar?igsh=MXVwY2VyaWxmN2ZtcA==",
+          "linkedin": "https://www.linkedin.com/in/sudhanshu-3174a9294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "github": "https://github.com/Sudhanshumahar7",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG_20240806_013533.jpg?raw=true"
+        },
+        {
+          "id": "6",
+          "name": "Harsh Dalmia",
+          "Rollno": "",
+          "mailid": "harshdalmia20212081@gmail.com",
+          "facebook": "",
+          "instagram": "https://www.instagram.com/harsh_dalmia2005?igsh=MXZycHhkM3pkYWhjMQ==",
+          "linkedin": "www.linkedin.com/in/harsh-dalmia2005",
+          "github": "https://github.com/HarshDalmia2005",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/HD.jpeg?raw=true"
+        },
+        {
+          "id": "7",
+          "name": "Shubhraj Singh Dodiya",
+          "Rollno": "",
+          "mailid": "shubhrajput19194@gmail.com",
+          "facebook": "",
+          "instagram": "https://www.instagram.com/shubhraj_singh_dodiya?igsh=YzI1bDdxOHc2MnY0",
+          "linkedin": "https://www.linkedin.com/in/shubhraj-singh-dodiya-ba805b288?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "github": "https://github.com/Shubhraj-Shubh",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG_20240223_174241_514.jpg?raw=true"
+        },
+        {
+          "id": "8",
+          "name": "Jayanshu Jena",
+          "Rollno": "",
+          "mailid": "jayanshujubujena@gmail.com",
+          "facebook": "https://www.facebook.com/Jubu.Jayanshu.7",
+          "instagram": "https://www.instagram.com/jsquare_69_420/",
+          "linkedin": "https://www.linkedin.com/in/jayanshu-jena-289a77286/",
+          "github": "https://github.com/JoyBoyIsHere-D",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/20240126_152652.jpg?raw=true"
+        },
+        {
+          "id": "9",
+          "name": "Zoya Alam",
+          "Rollno": "",
+          "mailid": "alamzoya2004@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=61550575391682&mibextid=ZbWKwL",
+          "instagram": "https://www.instagram.com/zeemofukaa_?igsh=MXkyZWxoZzRsNGE4Ng==",
+          "linkedin": "https://www.linkedin.com/in/zoya-alam-a02914297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "github": "https://github.com/zeemofukaa",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/photo.jpg?raw=true"
+        },
+        {
+          "id": "10",
+          "name": "Aliva Patro",
+          "Rollno": "",
+          "mailid": "snehakch@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=61562000387700&mibextid=ZbWKwL",
+          "instagram": "https://www.instagram.com/alivapatro_?igsh=MWt5Z2k0aDE3c3dmNQ==",
+          "linkedin": "https://www.linkedin.com/in/aliva-patro-a3a5912b3?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+          "github": "https://github.com/alivapatro",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG-20240811-WA0054.jpg?raw=true"
+        },
+        {
+          "id": "11",
+          "name": "Bikram Ghuku",
+          "Rollno": "",
+          "mailid": "bikramghuku05@gmail.com",
+          "facebook": "https://www.facebook.com/bikram.ghuku.3/",
+          "instagram": "https://www.instagram.com/bikramghuku05",
+          "linkedin": "https://www.linkedin.com/in/bikram-ghuku/",
+          "github": "http://github.com/bikram-ghuku/",
+          "image_url": "https://github.com/kodeinkgp/Photos/blob/main/bikram.jpeg?raw=true"
+        },
+        {
+          "id": "12",
+          "name": "Saketh Akella",
+          "Rollno": "",
+          "mailid": "sakethakella05@gmail.com",
+          "facebook": "https://www.facebook.com/profile.php?id=100095389813923",
+          "instagram": "https://www.instagram.com/thesaketh07/",
+          "linkedin": "https://www.linkedin.com/in/saketh-akella-aa7886270/",
+          "github": "https://github.com/sakethakella",
+          "image_url": ""
+        }
+      ]
+      ,{
+      "teamName":"Tech Team",
+      "content" :"The Tech team consists of skilled and creative individuals who have expertise in various aspects of web development.The Tech team works on various aspects of web development, such as designing, coding, testing, debugging, and updating the website and its content. The Tech team also ensures that the website is user-friendly, accessible, secure, and compatible with different devices and browsers",
+      "image_url":"../../../public/assets/ai-metaverse.png"
+    }
+    ]
+    

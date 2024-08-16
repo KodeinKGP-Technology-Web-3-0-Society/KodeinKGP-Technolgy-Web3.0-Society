@@ -9,6 +9,7 @@
 .members_title{
     font-family: Montserrat;
     font-size: 2rem;
+    margin: 2.5rem 0;
     color: #3DC4D4;
 }
 
@@ -17,17 +18,24 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    gap: 50px;
+    gap: 25px;
 }
 
 .founders{
-    width: 60vw;
+    width: 50vw;
     margin: 2rem auto;
 }
 
+@media screen and (max-width: 800px){
+    .founders{
+        width: 90vw;
+        margin: 2rem auto;
+    }
+}
+
 .heads{
-    width: 80vw;
-    margin: 3rem auto;
+    width: 90vw;
+    margin: 2rem auto;
 }
 
 .parallax-effect-glare-scale{

@@ -1,0 +1,595 @@
+/* 
+
+.navbar {
+  display: flex;
+  align-items: center;
+  color: white;
+  padding: 0px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: rgba(1, 1, 27, 0.6);
+}
+
+.logoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.logoo img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+.logoo h4 {
+  color: white;
+}
+
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 20px;
+  padding-top: 15px;
+}
+
+.links {
+  display: flex;
+  margin: 1px 0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.link-tag,.link-tag1{
+  display: flex;
+  flex-direction: column;
+}
+
+.link-tag::after,.link-tag1::after{
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: relative;
+  left: 15px;
+  bottom: 15px;
+  background-color: rgb(17, 227, 251);
+  transition: width 0.3s linear;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  padding: 25px;
+  padding-top: 10px;
+  letter-spacing: 0.5px;
+}
+
+.link-tag:hover::after{
+  width: 70%;
+  transition: width 0.3s linear;
+}
+
+.link-tag1:hover::after{
+  width: 80%;
+  transition: width 0.3s linear;
+}
+
+.link:hover{
+  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+  -webkit-background-clip: text;
+  color: whitesmoke;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 850px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 1% 1% 2% 2%;
+    margin-right: 10px;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .logo_menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .links {
+    display: none;
+    width: 30%;
+    text-align: center;
+  }
+
+  .link-tag {
+    margin: 5% 5% 5% 5%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .link {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease-in-out;
+    font-weight: 500;
+    padding: 2px;
+    padding-top: 1px;
+    letter-spacing: 0.5px;
+  }
+
+  .links.show {
+    display: flex;
+    flex-direction: column;
+    margin: 1% 1% 1% 1%;
+  }
+
+  .link-tag::after{
+    content: "";
+    height: 1px;
+    width: 0%;
+    position: relative;
+    left: 1px;
+    bottom: 1px;
+    background-color: rgb(17, 227, 251);
+    transition: width 0.3s linear;
+  }
+  
+  
+  .link-tag:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+  }
+  .link:hover{
+    background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+    -webkit-background-clip: text;
+    color: whitesmoke;
+    background-clip: text;
+    font-weight: 500;
+  }
+
+  .hamburger.show-menu {
+    color: #ddd; 
+  }
+} */
+
+
+/* new navbar csss */
+.logoo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 1.2rem;
+}
+
+.logoo img{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}
+
+.logoo h4 {
+  color: white;
+}
+
+body {
+  /* height: 1267px; */
+  padding: 0px;
+  margin: 0px;
+  /* overflow: hidden; */
+}
+
+.links {
+  display: flex;
+  margin: 1px 0;
+  padding-top: 10px;
+  text-align: center;
+}
+
+.link-tag,.link-tag1,.link-tag2{
+  display: flex;
+  flex-direction: column;
+}
+
+.link-tag::after,.link-tag1::after,.link-tag2::after{
+  content: "";
+  height: 2px;
+  width: 0%;
+  position: relative;
+  left: 24px;
+  bottom: 0px;
+  background-color: rgb(17, 227, 251);
+  transition: width 0.3s linear;
+}
+
+.link {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease-in-out;
+  font-weight: 500;
+  padding: 25px;
+  padding-top: 20px;
+  letter-spacing: 0.5px;
+}
+
+.link-tag:hover::after{
+  width: 55%;
+  transition: width 0.3s linear;
+}
+
+.link-tag2:hover::after{
+  width: 65%;
+  transition: width 0.3s linear;
+}
+
+.link-tag1:hover::after{
+  width: 76%;
+  transition: width 0.3s linear;
+}
+
+.link:hover{
+  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
+  -webkit-background-clip: text;
+  color: whitesmoke;
+  background-clip: text;
+  font-weight: 500;
+}
+
+.navbar {
+  max-width: 99%;
+  min-height: 5rem;
+  padding: 0 2rem;
+  position: sticky;
+  top:0;
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(1, 1, 27, 0.6);
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 20;
+}
+
+
+
+
+/* <<<<............title css Starts............>>>> */
+.TitleOfPlatform {
+  display: flex;
+  flex-direction: row;
+  height: initial;
+  align-items: center;
+  margin-left: 1.5vw;
+  min-width: 20vw;
+}
+
+.TiltleOfPlatforms {
+  display: block;
+}
+
+.TitleOfPlatforms.open {
+  display: block;
+}
+
+#name1 {
+  color: red;
+  font-weight: 800;
+  font-size: 49.2px;
+  margin-right: 5px;
+}
+
+
+#name2 {
+  font-weight: 800;
+  font-size: 49.2px;
+}
+
+#After600px {
+  display: none;
+}
+
+/* <<<<.........title css ends.........>>>> */
+
+.navbar-profile-picture {
+  background-size: cover;
+  aspect-ratio: 1;
+  border: 2px solid white;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  overflow: hidden;
+  transition-duration: 0.3s;
+  margin-right: 1rem;
+}
+
+.navbar-profile-picture:hover {
+  box-shadow: 0px 0px 10px 0px white;
+  transition: ease-in-out;
+  transition-duration: 0.1s;
+}
+
+.navbar-profile-picture img {
+  aspect-ratio: 1;
+  width: 2rem;
+}
+
+/* <<<<.........  NAVIGATION STARTS.........>>>> */
+
+.Navigation {
+  display: block;
+  min-width: 26vw;
+  margin-left: auto;
+}
+
+.profile-buttons-navbar {
+  display: flex;
+  padding: 0 2rem;
+  align-items: center;
+}
+
+.profile-buttons-navbar.open {
+  flex-direction: column;
+}
+
+.NavigatingOptions {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4rem;
+}
+
+.NavigatingOptions li {
+  list-style: none;
+}
+
+.NavigatingOptions li a {
+  font-weight: 1;
+  font-size: 1.2rem;
+  text-decoration: none;
+  padding: 0 1.5rem;
+}
+
+.profile-buttons-logout{
+  color: red ;
+  border-color: red;
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 3px 10px ;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  background-color: transparent;
+  transition: 0.5s;
+}
+.profile-buttons-logout:hover{
+  background-color: red;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.profile-button-upgrade{
+  color: white;
+  padding: 3px 10px ;
+  border-radius: 5px;
+  border-color: red;
+  border-style: solid;
+  border-width: 3px;
+  margin-left: 10px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 1;
+  background-color: red;
+  transition: 0.5s;
+}
+.profile-button-upgrade:hover{
+  background-color: transparent;
+  border-color: red;
+  border-width: 3px;
+  border-radius: 5px;
+  border-style: solid;
+  padding: 3px 10px;
+  color: red;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+/* <<<<<.................Navigation Ends..............>>> */
+
+.navbar {
+  padding: 0 1rem;
+}
+
+.Searchcontainer,
+.Searchcontainer.open {
+  display: block;
+}
+
+.SearchBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  min-width: 32vw;
+  margin-right: 1.5vw;
+}
+
+.SearchBar input {
+  width: 27vw;
+  height: 53px;
+  color: black;
+  font-size: 21px;
+  padding-left: 10px;
+  background-color: white;
+  border: 0px solid white;
+  border-right: 2px solid grey;
+}
+
+
+/* <..........Hamburger Css ................> */
+#hambutton {
+  display: none;
+}
+
+.hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 25px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.SigupNavBar{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10px;
+
+  height: 50px;
+  background-color: red;
+  color: white;
+  border-radius: 5px;
+  transition-duration: 0.5s;
+
+}
+
+.MainPartNavBar{
+  display: flex;
+  margin-right: -20px;
+}
+
+.line {
+  width: 30px;
+  height: 3px;
+  background: #eeeeee;
+  transition: all 0.3s ease;
+}
+
+.hamburger.open .line:nth-child(1) {
+  transform: translateX(10px) translateY(18.2px) rotate(45deg);
+  transform-origin: center;
+}
+
+.hamburger.open .line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.open .line:nth-child(3) {
+  transform: translateX(10px)  translateY(-2.2px) rotate(-45deg);
+  transform-origin: center;
+}
+
+.hamburger.open {
+  position: fixed;
+  left: 82vw;
+  top: 15px;
+}
+
+
+/* <<<............hamburger css ends...............>>>> */
+
+@media only screen and (max-width:800px) {
+
+  .MainPartNavBar.open {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .navbar.open {
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    background-color: black;
+    width: 100%;
+    z-index: 20;
+  }
+
+  /* <..........Hamburger Css ................> */
+  #hambutton {
+    display: flex;
+  }
+
+  /* <<<............hamburger css ends...............>>>> */
+
+
+
+
+  /* <<<<.........title css Starts.........>>>> */
+  .TitleOfPlatforms.open {
+    display: none;
+  }
+
+  #After600px {
+    display: flex;
+  }
+
+  #Before600px {
+    display: none;
+  }
+
+  /* <<<<.........title css Ends.........>>>> */
+
+
+
+  /* <<<<.........NAVIGATION STARTS.........>>>> */
+
+  .Navigation {
+    display: none;
+  }
+
+  .Navigation {
+
+    min-width: 20vw;
+    margin: auto;
+  }
+
+  .Navigation.open {
+    display: block;
+  }
+
+  .NavigatingOptions.open {
+    flex-direction: column;
+  }
+
+  .NavigatingOptions.open li {
+    padding: 20px;
+  }
+
+  /* <<<<.........navigation Ends...........>>>>> */
+
+  .link-tag:hover::after{
+    width: 28%;
+    transition: width 0.3s linear;
+  }
+  
+  .link-tag2:hover::after{
+    width: 45%;
+    transition: width 0.3s linear;
+  }
+  
+  .link-tag1:hover::after{
+    width: 78%;
+    transition: width 0.3s linear;
+  }
+
+}

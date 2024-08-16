@@ -367,5 +367,41 @@
       "instagram": "https://instagram.com/surya_teja64?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
       "linkedin": "https://www.linkedin.com/in/surya-teja-mamidi-747a2b254",
       "github": "https://github.com/surya1601"
-    }
+    },
+    {
+        "id": "7",
+        "name": "Neeraj Patel",
+        "image_url": "https://drive.google.com/uc?export=view&id=1XxNSQVjBbNGrAWKmTueKPM9sYSu_KP1c",
+        "facebook": "https://www.facebook.com/profile.php?id=100075286177788&mibextid=ZbWKwL",
+        "mailid": "neeraj.patel2703@gmail.com ",
+        "instagram": "https://instagram.com/neeraz_patel?igshid=MzMyNGUyNmU2YQ==",
+        "linkedin": "https://www.linkedin.com/in/neerazpatel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "",
+        "role": "Events and Finance Head" 
+    },
+    {
+      "id": "7",
+      "name": "Swadhin Kumar biswal",
+      "image_url":"https://drive.google.com/uc?export=view&id=1nUZBLgn3fwnIH-_Z4EvreYzIbzsyppT6",
+      "facebook": "",
+      "mailid": "mailto:biswalswadhin505@gmail.com",
+      "instagram": "",
+      "linkedin": "",
+      "github": "",
+      "role": "Blockchain Head"
+    },
+    {
+      "id": "6",
+      "name": "Shivshankar Verma",
+      "image_url": "https://media.licdn.com/dms/image/D5635AQHBbm97z94CrQ/profile-framedphoto-shrink_400_400/0/1714589867470?e=1721818800&v=beta&t=l3vOPpDAeHDmZgs3FjHvTesGbC6RTF-5zoxtBHgx9IA",
+      "facebook": "https://www.facebook.com/rockingham.shiv/",
+      "mailid": "",
+      "instagram": "https://www.instagram.com/shivverma_here/",
+      "linkedin": "https://www.linkedin.com/in/shivshankar-verma-21207b230/",
+      "github": "https://github.com/Shivverma1",
+      "role": "Design and Media Head"
+  }
+    
    ]
+  
+   

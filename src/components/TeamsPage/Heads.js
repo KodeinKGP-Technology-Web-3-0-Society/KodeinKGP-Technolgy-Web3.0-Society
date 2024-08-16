@@ -27,7 +27,7 @@ const Heads = () => {
                 <div className = "photo-details">
                   <span><a href={head.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
                   <span><a href={head.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
-                  <span><a href="#" target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
+                  <span><a href={head.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
                   <span><a href={head.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
                   <span><a href={head.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
                 </div>

@@ -1,0 +1,69 @@
+[
+    {
+        "id": "1",
+        "name": "Kunal Agarwal",
+        "image_url": "https://user-images.githubusercontent.com/100255314/224534893-1e266b51-8ed3-43b2-a075-bec91bebe86f.jpg",
+        "facebook": "https://www.facebook.com/Kunal.TheEnigma",
+        "mailid": "mailto:kunal.soulrocker@gmail.com",
+        "instagram": "https://www.instagram.com/k.u.n.a.al/?hl=en",
+        "linkedin": "https://www.linkedin.com/in/kunal-agarwal-10b62b223/",
+        "github": "https://github.com/theenigmaticsoul",
+        "role": "Executive Head"
+    },
+    {
+        "id": "2",
+        "name": "Sumit Kumar Sharma",
+        "image_url": "https://user-images.githubusercontent.com/100255314/224534157-11ae3439-e8c2-40e0-9c3d-9a6be5d34a14.jpg",
+        "facebook": "https://m.facebook.com/100035109126896/",
+        "mailid": "mailto:sumitkumarsharma372@gmail.com",
+        "instagram": "https://www.instagram.com/__sumitsharma/",
+        "linkedin": "https://www.linkedin.com/in/sumit-sharma-b8a396227",
+        "github": "https://github.com/sumitsharma372",
+        "role": "Tech Head"
+    },
+    {
+        "id": "3",
+        "name": "Priyanshu Ranjan",
+        "image_url": "https://user-images.githubusercontent.com/100255314/224537545-1522c331-1b61-4325-a992-6520775b6403.JPG",
+        "facebook": "https://www.facebook.com/prrockzed/",
+        "mailid": "mailto:prrockzed@pm.me",
+        "instagram": "https://www.instagram.com/prrockzed/",
+        "linkedin": "https://www.linkedin.com/in/prrockzed/",
+        "github": "https://github.com/prrockzed",
+        "role": "Tech Head"
+    },
+    {
+        "id": "4",
+        "name": "Hemanth Sai Krishna",
+        "image_url": "https://user-images.githubusercontent.com/100255314/224534776-b535311c-5dc8-4460-ab2f-1014be79d279.jpg",
+        "facebook": "https://m.facebook.com/100064758920758/",
+        "mailid": "mailto:hemanthsaikrishna48@gmail.com ",
+        "instagram": "https://instagram.com/im_hemanth_2.0?igshid=ZDdkNTZiNTM=",
+        "linkedin": "https://www.linkedin.com/in/hemanth-sai-krishna-nali-b6910b232",
+        "github": "https://github.com/hemanth17sai",
+        "role": "AI and Metaverse Head"
+    },
+    {
+        "id": "5",
+        "name": "Soukhin Nayek",
+        "image_url": "https://user-images.githubusercontent.com/100255314/224534025-05469f4b-5518-462e-90b9-10f6cf214daa.jpg",
+        "facebook": "https://www.facebook.com/profile.php?id=100075679234601",
+        "mailid": "mailto:soukhinkgp2@gmail.com",
+        "instagram": "https://www.instagram.com/_soukhin/",
+        "linkedin": "https://www.linkedin.com/in/soukhin-nayek-96b68b249/",
+        "github": "https://github.com/Soukhin-Nayek",
+        "role": "Blockchain Head"
+    },
+    
+    {
+        "id": "7",
+        "name": "Neeraj Patel",
+        "image_url": "https://github.com/kodeinkgp/Photos/blob/main/neerajPatel.jpg?raw=true",
+        "facebook": "https://www.facebook.com/profile.php?id=100075286177788&mibextid=ZbWKwL",
+        "mailid": "neeraj.patel2703@gmail.com ",
+        "instagram": "https://instagram.com/neeraz_patel?igshid=MzMyNGUyNmU2YQ==",
+        "linkedin": "https://www.linkedin.com/in/neerazpatel?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+        "github": "",
+        "role": "Events and Finance Head" 
+    }
+]

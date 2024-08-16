@@ -17,14 +17,15 @@ import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { Tilt } from 'react-tilt';
 
 
+
 const SelectedTeam = (props) =>{
     let number = props.id-1;
-    let totalData = [WebTeam,AITeam,BlockchainTeam,DesignTeam,EventTeam];
+    let totalData = [WebTeam,AITeam,BlockchainTeam,EventTeam,DesignTeam];
     let selectedData= totalData[number]; 
     // console.log(selectedData);
     let memberDetails = selectedData[0];
     // console.log(memberDetails);
-
+    const [transition, setTransition] = useState(false);
     let teamImage;
 
     switch (props.id-1) {
@@ -47,6 +48,11 @@ const SelectedTeam = (props) =>{
             teamImage = null;
     }
 
+    useEffect(() => {
+      setTransition(false);
+      setTimeout(() => setTransition(true), 100); // Delay to allow CSS transition
+  }, [props.id]);
+
     function TeamContent() {
         // Use state to store the window width
         const [width, setWidth] = useState(window.innerWidth);
@@ -67,50 +73,70 @@ const SelectedTeam = (props) =>{
         // Render the component based on the window width
         return (
           <>
-            {width >= 748 ? (
+            {/* {width >= 748 ? (
               <div className="teamcontent">
+                {console.log(selectedData)}
                 <p className="team_content">{selectedData[1].content}</p>
                 <img src={teamImage} alt="img" className="team_image" />
               </div>
             ) : (
               <></>
-            )}
+            )} */}
           </>
         );
       }
       
     return(
-        <div>
+        <div className={`selected-team-container ${transition ? 'active' : ''}`}>
             <h2 className='team_name'>{selectedData[1].teamName}</h2>
-            <div className='aboutteam'>
-                <TeamContent />
-                <div className='teammembers'>
+            <div className='heads'>
+                {/* <TeamContent /> */}
+                {/* <div className='teammembers'> */}
+                {/* <div className={`teamcontent ${transition ? 'active' : ''}`}> */}
+                  {/* <table className='tab'>
+                    <tr>
+                       <th>Name</th>
+                       <th>Roll No.</th>
+                    </tr> */}
                     {memberDetails.map(member=>{
                         return(
-                            <Tilt
-                                className="parallax-effect-glare-scale"
-                                perspective={500}
-                                glareEnable={true}
-                                scale={1}
-                                gyroscope={true}>
-                                    <div className='member'>
-                                    <div className="photo-image">
-                                        <img src={member.image_url} alt="" />
-                                        <div className = "photo-details"> 
-                                            <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
-                                            <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
-                                            <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
-                                            <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
-                                            <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
-                                        </div>
-                                        </div>
-                                        <h5 className='photo-name'><strong>{member.name}</strong></h5>
+                        //   <>
+                        //   <tr>
+                        //    <td>{member.name}</td>
+                        //    <td>{member.Rollno}</td>
+                        //  </tr>
+                        //   </>
+                          //Tilt card with image
+            
+                           member.image_url? ( <Tilt
+                            className="parallax-effect-glare-scale"
+                            perspective={500}
+                            glareEnable={true}
+                            scale={1}
+                            gyroscope={true}>
+                                <div className='member'>
+                                <div className="photo-image">
+                                    <img src={member.image_url} alt={member.name} />
+                                    <div className = "photo-details"> 
+                                        <span><a href={member.facebook} target = "_blank"><FontAwesomeIcon icon={['fab', 'facebook']} /></a></span>
+                                        <span><a href={member.mailid} target = "_blank"><FontAwesomeIcon icon='envelope' /></a></span>
+                                        <span><a href={member.instagram} target = "_blank"><FontAwesomeIcon icon={['fab', 'instagram']} /></a></span>
+                                        <span><a href={member.linkedin} target = "_blank"><FontAwesomeIcon icon={['fab', 'linkedin']} /></a></span>
+                                        <span><a href={member.github} target = "_blank"><FontAwesomeIcon icon={['fab' , 'github']}/></a></span>
                                     </div>
-                            </Tilt>
+                                    </div>
+                                    <h5 className='photo-name'><strong>{member.name}</strong></h5>
+                                </div>
+                        </Tilt>):
+                        (<></>)
+                          
+                            
                         )
                     })}
-                </div>
+                    {/* </table> */}
+                {/* </div></div> */}
             </div>
+            {/* <h4 style={{color:'white' ,position:'sticky',padding:"0 20px",bottom:'0',background:'rgba(1, 1, 27)',width:"99%",display:"flex",justifyContent:"space-between"}}><span>Aadish Jain : 9408168120 </span><span>G.M.M. Prabhash : 9818645848</span></h4> */}
         </div>
     )
 }

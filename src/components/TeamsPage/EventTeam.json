@@ -1,96 +1,122 @@
 [
-[
-  {
-    "name": "Bishal Dalai",
-    "id": "1",
-    "mailid": "bishaldalai@kgpian.iitkgp.ac.in ",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1nm8-uhkHMXuT_RCxRuFWhgpOAWYIkieu"
-  },
-{
-    "name": "Yash Kumar",
-    "id": "2",
-    "mailid": "yashkumar1005@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087268251901",
-    "instagram": "https://www.instagram.com/yashh_kumarr_/",
-    "linkedin": "https://www.linkedin.com/in/yash-kumar-657121288/",
-    "github": "https://github.com/YashKumar1005",
-    "image_url":"https://drive.google.com/uc?export=view&id=1a9T9RwtBGbQbu_nkYR6WctXyBre2fTiD"
-  },
-{
-    "name": "Aadishkumar Jain ",
-    "id": "3",
-    "mailid": "aadishkjain101004@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":"https://drive.google.com/uc?export=view&id=1I7CPdAJx99mAl5JBLr6xmheqE87ReKWM"
-  },
-{
-    "name": "Vaibhav",
-    "id": "4",
-    "mailid": "Justvaibhavyadav@gmail.com",
-    "facebook": "",
-    "instagram": "",
-    "linkedin": "",
-    "github": "",
-    "image_url":""
-  },
-{
-    "name": "Nishtha Barnwal ",
-    "id": "5",
-    "mailid": "nishthabarnwal273@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087199856585&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/nishtha_barnwal_273?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/nishtha-barnwal-0090b2267",
-    "github": "https://github.com/n273b",
-    "image_url":"https://drive.google.com/uc?export=view&id=1kF3rertb4jZ-CXrwjmPLbOIlpwwZUiwl"
-  },
-{
-    "name": "Golla Meghanandh Manvith Prabhash ",
-    "id": "6",
-    "mailid": "prabhashgolla2004@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100085033546062",
-    "instagram": "https://www.instagram.com/prabhashgolla/",
-    "linkedin": "https://www.linkedin.com/in/golla-meghanandh-manvith-prabhash-b643b725a/",
-    "github": "https://github.com/prabhash-golla",
-    "image_url":"https://drive.google.com/uc?export=view&id=1KPlo14fupn3g2AyFeXOzORqdRFuK9nZf"
-  },
-{
-    "name": "Makrawat Singh ",
-    "id": "7",
-    "mailid": "makrawatsingh@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100087227336594&mibextid=ZbWKwL",
-    "instagram": "https://instagram.com/makrawat_22?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/i-am-makrawat",
-    "github": "https://github.com/Makrawatsingh",
-    "image_url":"https://drive.google.com/uc?export=view&id=1AyjETlP4Ups9kz8a7w7iMZH0WCFh0d4m"
-  },
-{
-    "name": "Anurag Deshmukh",
-    "id": "8",
-    "mailid": "danurag983@gmail.com",
-    "facebook": "https://www.facebook.com/profile.php?id=100088488510688&mibextid=9R9pXO",
-    "instagram": "https://instagram.com/anurag_deshmukh_549?utm_source=qr&igshid=ZDc4ODBmNjlmNQ%3D%3D",
-    "linkedin": "https://www.linkedin.com/in/anurag-deshmukh-95478b25b/",
-    "github": "https://github.com/anurag5764",
-    "image_url":"https://drive.google.com/uc?export=view&id=1_2119cZLV_KYU7sFZmiuER_jA5cn3m7H"
-  },
-{
-    "name": "Saketh Amballa",
-    "id": "10",
-    "mailid": "amballasaketh1121@gmail.com",
-    "facebook": "https://www.facebook.com/sakethlucky11",
-    "instagram": "www.instagram.com/sakethlucky11",
-    "linkedin": "https://www.linkedin.com/in/saketh-amballa-269727264",
-    "github": "www.github.com/sakethNep",
-    "image_url":"https://drive.google.com/uc?export=view&id=1ZQ692M1N_EAE7B_N-qEWBluinFLC74rT"
-  }
-],{
+    [
+        {
+            "id": 1,
+            "name": "Kavya Nagar",
+            "Rollno": "",
+            "mailid": "kavyanagar@kgpian.iitkgp.ac.in",
+            "facebook": "https://www.facebook.com/share/m8oouFuiZGxpVhGT/?mibextid=qi2Omg",
+            "instagram": "https://www.instagram.com/kavyanagar04/",
+            "linkedin": "",
+            "github": "https://github.com/kavyanagar04",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG_20231227_222950_793.jpg?raw=true"
+        },
+        {
+            "id": 2,
+            "name": "Aditya Goyal",
+            "Rollno": "",
+            "mailid": "adityagoyaldaksh@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=100032622210249&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/aditya_goyal_03?igsh=MXV4NG90dDhidmkybQ==",
+            "linkedin": "https://www.linkedin.com/in/aditya-goyal-a83653293",
+            "github": "https://github.com/its-adityagoyal",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG-20240603-WA0037%20(1).jpg?raw=true"
+        },
+        {
+            "id": 3,
+            "name": "Kshitij Roy",
+            "Rollno": "",
+            "mailid": "kshitijroy1612@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=61550115632140&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/kshitij.roy47?igsh=MTg5OWMzZ2dhcWlwcA==",
+            "linkedin": "https://www.linkedin.com/in/kshitij-roy-bb7a63286?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/kshitijroy47",
+            "image_url": ""
+        },
+        {
+            "id": 4,
+            "name": "Tejas Sushil Rajput",
+            "Rollno": "",
+            "mailid": "tejas2332rajput@gmail.com",
+            "facebook": "NA",
+            "instagram": "NA",
+            "linkedin": "https://www.linkedin.com/in/tejas-rajput-9a427b272",
+            "github": "",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG-20240720-WA0000.jpg?raw=true"
+        },
+        {
+            "id": 5,
+            "name": "Anirban Pal",
+            "Rollno": "",
+            "mailid": "anirbanpal511@gmail.com",
+            "facebook": "https://www.facebook.com/anirban.pal.96155?mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/anir_banpal?igsh=a2dlcW5saG5sbGRr",
+            "linkedin": "www.linkedin.com/in/anirban-pal5",
+            "github": "",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG_20230801_155048.jpg?raw=true"
+        },
+        {
+            "id": 6,
+            "name": "Jiya Manjari",
+            "Rollno": "",
+            "mailid": "jiyamanjari4@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=61550093002137&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/2394_jiya?igsh=MTUyZGoyd3FkaGlvZQ==",
+            "linkedin": "https://www.linkedin.com/in/jiya-manjari-8b8150289?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/Jiya2394",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/Jiya_Manjari.jpg?raw=true"
+        },
+        {
+            "id": 7,
+            "name": "Daksh Sargiya",
+            "Rollno": "",
+            "mailid": "dakshsargiya2005@gmail.com",
+            "facebook": "https://www.facebook.com/profile.php?id=61550071490743&mibextid=ZbWKwL",
+            "instagram": "https://www.instagram.com/sargiyadaksh?igsh=c3JzenV6ZHJkYzRp",
+            "linkedin": "https://www.linkedin.com/in/daksh-sargiya-b6aa14297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "https://github.com/DakshSargiya",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/Daksh_Sargiya.jpg?raw=true"
+        },
+        {
+            "id": 8,
+            "name": "Aaradhya Bhor",
+            "Rollno": "",
+            "mailid": "aaradhya.19bhor@gmail.com",
+            "facebook": "NA",
+            "instagram": "NA",
+            "linkedin": "https://www.linkedin.com/in/aaradhya-bhor-1650262b5/",
+            "github": "https://github.com/Aaradhya121914",
+            "image_url": ""
+        },
+        {
+            "id": 9,
+            "name": "Arnab Jena",
+            "Rollno": "",
+            "mailid": "arnabjena4@gmail.com",
+            "facebook": "NA",
+            "instagram": "https://www.instagram.com/arnabara04_?igsh=MWVwZHdhcngxYWtyZw%3D%3D&utm_source=qr",
+            "linkedin": "https://www.linkedin.com/in/arnab-jena-2214a3297?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
+            "github": "https://github.com/arnabara4",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/WhatsApp%20Image%202024-08-11%20at%2016.05.21.jpeg?raw=true"
+        },
+        {
+            "id": 10,
+            "name": "Sujal Kaware",
+            "Rollno": "",
+            "mailid": "sujalkaware921@gmail.com",
+            "facebook": "NA",
+            "instagram": "https://www.instagram.com/sujal.kaware/",
+            "linkedin": "https://www.linkedin.com/in/sujal-kaware-962912295?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
+            "github": "",
+            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/DSC_0318.jpg?raw=true"
+        }
+    ]
+    
+        
+    
+
+
+,{
     "teamName":"Events Team",
     "content" : "The events team is responsible for organizing and managing the events of the society. The team works collaboratively to plan, promote, and execute various events such as conferences, workshops, seminars, socials, and more. he events team handles various aspects of event management, such as budgeting, scheduling, logistics, catering, entertainment, and safety",
     "image_url":""
