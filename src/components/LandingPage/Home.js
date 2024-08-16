@@ -198,12 +198,12 @@ const MainContent = () => {
       <div className="content">
         <div className="right">
           <h1 className="wel">
-            Welcome to <br></br>
-          <span>KodeinKGP</span>
+            <div className="Welcome">Welcome to</div>
+            <span>KodeinKGP</span>
           </h1>
           <p className="vision">
             “The Web as I envisaged it, we have not seen it yet. The future is
-            still so much bigger than the past”
+            still so much bigger than the past.”
           </p>
           <p className="vision-depth">
             A student-run society that aims to spread awareness and educate
