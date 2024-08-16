@@ -64,6 +64,19 @@ function Navbar() {
                 }
               }}
             >
+              <span className="link-tag2">
+                <Link className="link" to="/articles" onClick={toggleMenu}>
+                  Articles
+                </Link>
+              </span>
+            </li>
+            <li
+              onClick={() => {
+                if (isOpen) {
+                  toggleMenu();
+                }
+              }}
+            >
               <span className="link-tag">
                 <Link className="link" to="/teams" onClick={toggleMenu}>
                   Teams
