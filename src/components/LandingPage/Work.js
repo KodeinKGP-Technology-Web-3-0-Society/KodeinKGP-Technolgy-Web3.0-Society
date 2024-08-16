@@ -43,14 +43,17 @@ export default function Teams() {
     useEffect(() => {
         cardRefs.current.forEach((card, index) => {
             let xOffset;
+            let angle;
 
             // Adjust the xOffset based on screen width
             if (window.innerWidth < 768) {
                 // For smaller screens, use a smaller offset
                 xOffset = index === 0 ? '-100vw' : index === 1 ? '0vw' : '100vw';
+                angle = index === 0 ? -45 : index === 1 ? 0 : 45;
             } else {
                 // For larger screens, use a larger offset
                 xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+                angle = index === 0 ? -45 : index === 1 ? 0 : 45;
             }
 
             gsap.fromTo(
@@ -66,17 +69,116 @@ export default function Teams() {
                     x: xOffset,
                     rotation: 0,
                     scale: 1.1,
-                    duration: 0.1,
+                    duration:0.1,
                     ease: 'power2.out',
                     scrollTrigger: {
                         trigger: card,
-                        start: 'top 80%', // Start the animation when the top of the card reaches 80% of the viewport
-                        toggleActions: 'play none none reverse', // Animation actions on enter/leave
+                        start: "top 80%",
+                        toggleActions: 'play none none reverse'
+                        // end: "top 0",
+                        // scrub: 1,
                     },
                 }
             );
         });
     }, []);
+
+    // useEffect(() => {
+
+    //     let xOffset;
+
+    //     // if (window.innerWidth < 768) {
+    //     //     // For smaller screens, use a smaller offset
+    //     //     xOffset = index === 0 ? '-100vw' : index === 1 ? '0vw' : '100vw';
+    //     // } else {
+    //     //     // For larger screens, use a larger offset
+    //     //     xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+    //     // }
+
+    //     var t1 = gsap.timeline();
+
+    //     t1.fromTo(".field-cards .card1",
+    //         {
+    //             x: 0,
+    //             rotation:0,
+    //             scale: 1
+    //         },
+    //         {
+    //             x: '30vw',
+    //             rotation: 0,
+    //             scale: 1.1,
+    //             duration: 1,
+    //             // stagger:0.2,
+    //             ease: 'power2.out',
+    //             scrollTrigger: {
+    //                 trigger: ".field-cards .card1",
+    //                 start: "top 80%",
+    //                 end: "top 0",
+    //                 scrub: 2,
+    //             }
+
+    //         })
+
+    //     var t2 = gsap.timeline();
+
+    //     t2.fromTo(".field-cards .card3",
+    //         {
+    //             x: 0,
+    //             rotation:0,
+    //             scale: 1
+    //         },
+    //         {
+    //             x: '-30vw',
+    //             rotation: 0,
+    //             scale: 1.1,
+    //             duration: 1,
+    //             // stagger:0.2,
+    //             // ease: 'power2.out',
+    //             scrollTrigger: {
+    //                 trigger: ".field-cards .card3",
+    //                 start: "top 80%",
+    //                 end: "top 0",
+    //                 scrub: 2,
+    //                 // markers: true
+    //             }
+
+    //         })
+
+    //         var t3 = gsap.timeline();
+
+    //     t3.fromTo(".field-cards .card2",
+    //         {
+    //             x: 0,
+    //             rotation:0,
+    //             scale: 1
+    //         },
+    //         {
+    //             x: 0,
+    //             rotation: 0,
+    //             scale: 1.1,
+    //             duration: 1,
+    //             // stagger:0.2,
+    //             ease: 'power2.out',
+    //             scrollTrigger: {
+    //                 trigger: ".field-cards .card2",
+    //                 start: "top 80%",
+    //                 end: "top 0",
+    //                 scrub: 2,
+    //                 markers:true
+    //             }
+
+    //         })
+
+    // }, [])
+
+
+
+
+
+
+
+
+
     // useEffect(() => {
     //     // Create an Intersection Observer instance
     //     const sectionObserver = new IntersectionObserver((entries, observer) => {
@@ -183,7 +285,7 @@ export default function Teams() {
                 </div>
             </div>
 
-            </div>
+        </div>
 
     );
 }

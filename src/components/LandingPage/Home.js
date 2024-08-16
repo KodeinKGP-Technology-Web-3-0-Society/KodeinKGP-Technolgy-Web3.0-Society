@@ -11,6 +11,8 @@ import Card from "./Card.js";
 import React, { useState, useEffect } from "react";
 import main from './main.json'
 import Lottie from "lottie-react";
+import { gsap } from 'gsap';
+import ScrollTrigger from "gsap/ScrollTrigger.js";
 
 // Loading screen with selections poster
 // const LoadingScreen = () => {
@@ -28,14 +30,176 @@ import Lottie from "lottie-react";
 //   );
 // };
 
+
+
+
+
 const MainContent = () => {
+  useEffect(() => {
+    var tl = gsap.timeline();
+
+    tl.fromTo(".navbar .logoo",
+      {
+        x: -30,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      }
+    )
+
+    tl.fromTo(".navbar .MainPartNavBar li",
+      {
+        y: -30,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        stagger: 0.15,
+        ease: "power2.out"
+      }, "-=1.5"
+    );
+
+    tl.fromTo(".right .Welcome",
+      {
+        x: -100,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      }, "-=1.5"
+    )
+
+    tl.fromTo(".right span",
+      {
+        x: 0,
+        opacity: 0
+      },
+      {
+        x: 100,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        ease: "power2.out"
+      }, "-=1.5"
+    )
+
+    tl.fromTo(".right .vision",
+      {
+        x: -100,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.5,
+        delay: 1,
+        ease: "power2.out"
+      }, "-=1.5"
+    )
+
+    tl.fromTo(".right .vision-depth",
+      {
+        x: -100,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.5,
+        delay: 1,
+        ease: "power2.out"
+      }, "-=1"
+    )
+
+    tl.fromTo(".left",
+      {
+        // x: -100,        
+        opacity: 0
+      },
+      {
+        // x: 0,        
+        opacity: 1,
+        duration: 1.5,
+        delay: 1,
+        ease: "power2.out"
+      }, "-=1.2"
+    )
+
+    var t2 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".bottom-bar .text",
+        start: "top 90%",
+        end: "top 30%",
+        scrub: 1,
+        scroller: "body",
+      }
+    })
+
+    t2.fromTo(".bottom-bar .text",
+      {
+        y: 30,
+        opacity: 0
+      },
+      {
+        y: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+
+      },
+    )
+
+    var t3 = gsap.timeline({
+      scrollTrigger: {
+        trigger: "#recentHeader",
+        start: "top 80%",
+        end: "top 0",
+        scrub: 1,
+        scroller: "body",
+      }
+    })
+
+    t3.fromTo("#recentHeader",
+      {
+        x: -300,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 1,
+        delay: 1,
+        stagger: 0.2,
+        ease: "power2.out",
+
+      },
+    )
+
+
+
+
+  }, [])
   return (
     <div className="landing-page">
       <div className="content">
         <div className="right">
           <h1 className="wel">
-            Welcome to <br></br>
-            <span>KodeinKGP.</span>
+            <div className="Welcome">Welcome to</div>
+            <span>KodeinKGP</span>
           </h1>
           <p className="vision">
             “The Web as I envisaged it, we have not seen it yet. The future is
@@ -55,8 +219,11 @@ const MainContent = () => {
           </p>
         </div>
         <div className="left">
-          <img src={aiLogo} alt="ai-image" />
-          {/* <Lottie animationData={main} width={1000}/> */}
+          {/* <img src={aiLogo} alt="ai-image" /> */}
+          <Lottie animationData={main}
+            height={300} // Set height here
+            width={300}  // Set width here
+          />
         </div>
       </div>
       <div className="bottom-bar">
