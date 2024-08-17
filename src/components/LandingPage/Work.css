@@ -180,14 +180,14 @@
 }
 
 .field-cards {
-  margin-bottom: 40vh;
+  margin-bottom: 20vw;
 }
 
 .field-card {
   padding: 0;
   background-color: rgba(54, 54, 54, 0.4);
   border-radius: 2.5vw;
-  height: 90vh;
+  height: 40vw;
   transition: all 1s cubic-bezier(.63, .15, .03, 1.12);
   margin-top: 20px;
 }
@@ -233,7 +233,7 @@
 
   .field-cards {
     position: relative;
-    height: 35vw;
+    height: 30vw;
   }
 
   .card1 {

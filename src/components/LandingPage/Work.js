@@ -72,10 +72,11 @@ export default function Teams() {
                 var t3 = gsap.timeline({
                     scrollTrigger: {
                         trigger: card,
-                        start: "20% bottom",
-                        end: "50% center",
+                        start: "top bottom",
+                        end: "top center",
                         scrub: true,
                         scroller: "body",
+                        immediateRender: true
                     }
                 })
 
