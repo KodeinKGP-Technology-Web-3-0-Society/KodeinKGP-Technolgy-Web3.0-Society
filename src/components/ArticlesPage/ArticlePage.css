@@ -54,7 +54,66 @@
   border-radius: 10px;
   padding: 2px 12px 0px;
 }
+.badge{
+  position: relative;
+}
 
+
+
+
+.ribbon {
+  width: 156px;
+  height: 121px;
+  overflow: hidden;
+  position: absolute;
+  top: 2px;
+  right: 163px;
+}
+
+.rib {
+  position: absolute;
+  display: block;
+  width: 248px;
+  padding: 14px 0;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  top: 53px;
+  right: 39px;
+}
+
+.rib span{
+  position:absolute;
+  top: 4px;
+  right: 54px;
+}
+@media screen and (max-width: 551px) {
+  .ribbon {
+      width:143px;
+  }
+  .rib span {
+    right: 47px;
+}
+}
+
+
+
+@media screen and (min-width: 1325px) {
+  .ribbon {
+      width:175px;
+  }
+  .rib span {
+    right: 70px;
+    top:6px;
+}
+.rib{
+  padding:16px 0px;
+}
+}
 .big-card .article-card {
   display: block;
   width: 100%;
@@ -100,6 +159,14 @@
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 430px) {
+  /* .articles-container{
+   width:70vw;
+  } */
+   .small-cards .article-card {
+       width:64%;
+    }
+ }
 .article-card {
   display: flex;
   width: min(31vw, 550px);
@@ -163,10 +230,7 @@
 h3 {
   z-index: 10;
 }
-/* .article-card:hover h3 {
-  color: black;
-  font-weight: 900;
-} */
+
 
 .article-card:hover h1 {
   font-weight: 900;
@@ -199,7 +263,7 @@ h3 {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 800px)  {
   .articles-container {
     flex-direction: column;
     align-items: center;
@@ -271,4 +335,17 @@ h3 {
   .small-cards .article-card{
     margin: 0 40px;
   }
+}
+@media screen and (max-width: 430px) {
+  .small-cards .article-card {
+      width: 65%;
+  }
+  .article-card img {
+   
+    width: 110px;
+   
+}
+.small-cards .article-card h1 {
+  font-size: 11px;
+}
 }
