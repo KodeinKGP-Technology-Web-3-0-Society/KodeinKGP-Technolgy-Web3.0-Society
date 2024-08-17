@@ -142,6 +142,8 @@ const MainContent = () => {
         trigger: ".bottom-bar .text",
         start: "top 90%",
         end: "top 30%",
+        // start: "20% bottom",
+        // end: "50% center",
         scrub: 1,
         scroller: "body",
       }
@@ -166,8 +168,10 @@ const MainContent = () => {
     var t3 = gsap.timeline({
       scrollTrigger: {
         trigger: "#recentHeader",
-        start: "top 80%",
-        end: "top 0",
+        start: "top 90%",
+        end: "top 30%",
+        // start: "20% bottom",
+        // end: "50% center",
         scrub: 1,
         scroller: "body",
       }
@@ -182,7 +186,7 @@ const MainContent = () => {
         x: 0,
         opacity: 1,
         duration: 1,
-        delay: 1,
+        // delay: 1,
         stagger: 0.2,
         ease: "power2.out",
 
@@ -203,7 +207,7 @@ const MainContent = () => {
           </h1>
           <p className="vision">
             “The Web as I envisaged it, we have not seen it yet. The future is
-            still so much bigger than the past.”
+            still so much bigger than the past”
           </p>
           <p className="vision-depth">
             A student-run society that aims to spread awareness and educate

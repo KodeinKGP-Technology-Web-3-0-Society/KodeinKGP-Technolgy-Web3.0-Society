@@ -6,8 +6,8 @@ import "./Work.css";
 // import './Team-Cards.css';
 
 // import Web from "./web1.png";
-import AI from "./ai3.png";
-import BlockChain from "./blockchain2.png";
+// import AI from "./ai3.png";
+// import BlockChain from "./blockchain2.png";
 import Robot from './Robo.json'
 import Lottie from "lottie-react";
 import WEBDEV from './WEB.json'
@@ -31,57 +31,72 @@ export default function Teams() {
     //     triggerOnce: true,
     // });
 
-    function fieldCardAnimate() {
-        let cards = document.getElementsByClassName('field-card');
-        for (let i = 0; i < cards.length; i++) {
-            cards[i].classList.add(`transition-${i + 1}`);
-        }
-    }
+    // function fieldCardAnimate() {
+    //     let cards = document.getElementsByClassName('field-card');
+    //     for (let i = 0; i < cards.length; i++) {
+    //         cards[i].classList.add(`transition-${i + 1}`);
+    //     }
+    // }
 
     const cardRefs = useRef([]);
 
     useEffect(() => {
         cardRefs.current.forEach((card, index) => {
-            let xOffset;
-            let angle;
+            if (window.innerWidth > 768) {
+                let xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+                let angle = index === 0 ? -10 : index === 1 ? 0 : 10;
 
-            // Adjust the xOffset based on screen width
-            if (window.innerWidth < 768) {
-                // For smaller screens, use a smaller offset
-                xOffset = index === 0 ? '-100vw' : index === 1 ? '0vw' : '100vw';
-                angle = index === 0 ? -45 : index === 1 ? 0 : 45;
-            } else {
-                // For larger screens, use a larger offset
-                xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
-                angle = index === 0 ? -45 : index === 1 ? 0 : 45;
-            }
-
-            gsap.fromTo(
-                card,
-                {
-                    // y: -300,
-                    x: 0,
-                    rotation: 0,
-                    scale: 1,
-                },
-                {
-                    // y: -300,
-                    x: xOffset,
-                    rotation: 0,
-                    scale: 1.1,
-                    duration:0.1,
-                    ease: 'power2.out',
+                gsap.timeline({
                     scrollTrigger: {
                         trigger: card,
-                        start: "top 80%",
-                        toggleActions: 'play none none reverse'
-                        // end: "top 0",
-                        // scrub: 1,
+                        start: "20% bottom",
+                        end: "center center",
+                        scrub: true,
+                    }
+                })
+                    .fromTo(
+                        card,
+                        {
+                            x: 0,
+                            rotation: angle,
+                            scale: 1,
+                        },
+                        {
+                            x: xOffset,
+                            rotation: 0,
+                            scale: 1.1,
+                        }
+                    );
+            }
+            else {
+                var t3 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "top bottom",
+                        end: "top center",
+                        scrub: true,
+                        scroller: "body",
+                        immediateRender: true
+                    }
+                })
+
+                t3.fromTo(card,
+                    {
+                        x: -300,
+                        opacity: 0
                     },
-                }
-            );
+                    {
+                        x: 0,
+                        opacity: 1,
+                        stagger: 0.2,
+                        ease: "linear"
+                    },
+                )
+            }
         });
     }, []);
+
+
 
     // useEffect(() => {
 
