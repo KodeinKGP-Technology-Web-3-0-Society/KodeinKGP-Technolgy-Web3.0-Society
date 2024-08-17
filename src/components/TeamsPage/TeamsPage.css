@@ -1,106 +1,120 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
 
-.members{
-    margin: 0 0 1rem 0;
+.members {
+  margin: 0 0 1rem 0;
 }
 
-.members_title{
-    font-family: Montserrat;
-    font-size: 2rem;
-    margin: 2.5rem 0;
-    color: #3DC4D4;
+.members_title {
+  font-family: Montserrat;
+  font-size: 2rem;
+  margin: 2.5rem 0;
+  color: #3dc4d4;
 }
 
-.founders,.heads{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    gap: 25px;
+.founders,
+.heads {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
 }
 
-.founders{
-    width: 50vw;
-    margin: 2rem auto;
+.founders {
+  width: 50vw;
+  margin: 2rem auto;
 }
 
-@media screen and (max-width: 800px){
-    .founders{
-        width: 90vw;
-        margin: 2rem auto;
-    }
-}
-
-.heads{
+@media screen and (max-width: 800px) {
+  .founders {
     width: 90vw;
     margin: 2rem auto;
+  }
 }
 
-.parallax-effect-glare-scale{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    /* height: 325px; */
-    padding: 10px 10px;
-    border-radius: 10px;
-    margin: 0.75rem;
-    border: 4px solid #3DC4D4;
-    background-color: #393940;
-    transform-style: preserve-3d;
+.heads {
+  width: 90vw;
+  margin: 2rem auto;
 }
 
-.parallax-effect-glare-scale:hover{
-    box-shadow: 0px 0px 5px #3DC4D4;
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* height: 325px; */
+  padding: 10px 10px;
+  margin: 0.75rem;
+  border: 4px solid;
+  border-image: linear-gradient(
+      to bottom right,
+      rgb(17, 227, 251),
+      rgb(91, 230, 255),
+      rgb(181, 246, 253),
+      rgb(17, 227, 251)
+    )
+    1;
+  border-radius: 10px;
+  background: #01011b;
+  position: relative;
+  transform-style: preserve-3d;
 }
 
-.parallax-effect-glare-scale:hover .founder,.parallax-effect-glare-scale:hover .member{
-    transform: translateZ(20px);
+.member:hover {
+  box-shadow: 0px 0px 5px #3dc4d4;
+  background-color: #39394080;
 }
 
-.founder,.member{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 250px;
+.member:hover .founder,
+.member:hover .member {
+  transform: translateZ(20px);
 }
 
-.photo-image img{
-    object-fit: cover;
-    max-width: 200px;
-    height: 250px;
-}
- 
-.photo-details{
-    opacity: 0;
+.founder,
+.member {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 250px;
 }
 
-.photo-details{
-    width: 60%;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
+.photo-image img {
+  object-fit: cover;
+  max-width: 200px;
+  height: 250px;
 }
 
-.photo-details a{
-    color: #3DC4D4;
-    font-size: 20px;
+.photo-details {
+  opacity: 0;
 }
 
-.founder:hover .photo-details,.member:hover .photo-details{
-    opacity: 1;
+.photo-details {
+  width: 60%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
 }
 
-.photo-name{
-    color: #fff;
-    font-size: 1.25rem;
-    font-family: Montserrat;
+.photo-details a {
+  color: #3dc4d4;
+  font-size: 20px;
 }
 
-.photo-role{
-    color: #3DC4D4;
-    font-size: 1.25rem;
-    margin: 4px 0 8px;
-    font-family: Montserrat;
+.founder:hover .photo-details,
+.member:hover .photo-details {
+  opacity: 1;
+}
+
+.photo-name {
+  color: #fff;
+  font-size: 1.25rem;
+  font-family: Montserrat;
+}
+
+.photo-role {
+  color: #3dc4d4;
+  font-size: 1.25rem;
+  margin: 4px 0 8px;
+  font-family: Montserrat;
 }
