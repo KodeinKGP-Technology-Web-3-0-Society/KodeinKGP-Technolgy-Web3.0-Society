@@ -8,9 +8,15 @@
 
 .members_title {
   font-family: Montserrat;
-  font-size: 2rem;
-  margin: 2.5rem 0;
+  font-size: 2.5rem;
+  margin: 6.5rem 0 2.5rem;
   color: #3dc4d4;
+  /* padding-top: 4rem; */
+}
+
+.founders_title{
+  margin: 2.5rem 0;
+  padding: 5px;
 }
 
 .founders,
@@ -59,12 +65,17 @@
   background: #01011b;
   position: relative;
   transform-style: preserve-3d;
+  transition: .3s ease-in;
 }
 
+
 .member:hover {
-  box-shadow: 0px 0px 5px #3dc4d4;
+  /* box-shadow: 0px 0px 5px #3dc4d4; */
+  box-shadow: 0px 2px 10px #3dc4d4;
   background-color: #39394080;
+  transform: translateY(-5px) scale(1.005) translateZ(0);
 }
+
 
 .member:hover .founder,
 .member:hover .member {
@@ -97,7 +108,7 @@
 }
 
 .photo-details a {
-  color: #3dc4d4;
+  color: rgb(91, 230, 255);
   font-size: 20px;
 }
 
