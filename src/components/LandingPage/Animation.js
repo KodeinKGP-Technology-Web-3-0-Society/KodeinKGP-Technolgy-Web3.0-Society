@@ -71,7 +71,7 @@ const Animation = ({ animate, setAnimate }) => {
 
 
     return (
-        <div className='intro' ref={wordRef} style={{ width: "99%", height: "90%" }}>
+        <div className='intro' ref={wordRef}>
             {/* <div
                 ref={KRef}
                 style={{
@@ -133,12 +133,12 @@ const Animation = ({ animate, setAnimate }) => {
                     repeat={0}
                 />
             </div> */}
-            <div>
+
+            <div className='loading-gif'>
                 {!gifPlayed &&
                     <img src={anime} alt="GIF" />
                 }
             </div>
-
         </div>
     )
 }

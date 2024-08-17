@@ -1,6 +1,11 @@
-.field-animation {
-    width: 100vw;
-    height: 100vh;
+.loading-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     object-fit: cover;
-    z-index: 1;
+    height: 90vh;
+}
+
+.loading-gif img {
+    max-height: fit-content;
 }

@@ -193,10 +193,9 @@ const MainContent = () => {
       },
     )
 
-
-
-
   }, [])
+
+
   return (
     <div className="landing-page">
       <div className="content">
