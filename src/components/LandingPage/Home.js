@@ -142,6 +142,8 @@ const MainContent = () => {
         trigger: ".bottom-bar .text",
         start: "top 90%",
         end: "top 30%",
+        // start: "20% bottom",
+        // end: "50% center",
         scrub: 1,
         scroller: "body",
       }
@@ -166,8 +168,10 @@ const MainContent = () => {
     var t3 = gsap.timeline({
       scrollTrigger: {
         trigger: "#recentHeader",
-        start: "top 80%",
-        end: "top 0",
+        start: "top 90%",
+        end: "top 30%",
+        // start: "20% bottom",
+        // end: "50% center",
         scrub: 1,
         scroller: "body",
       }

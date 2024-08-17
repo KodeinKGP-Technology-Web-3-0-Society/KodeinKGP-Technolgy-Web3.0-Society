@@ -181,21 +181,16 @@
 
 .field-cards {
   margin-bottom: 40vh;
-  position: absolute;
 }
 
 .field-card {
-  padding: 20px 0;
+  padding: 0;
   background-color: rgba(54, 54, 54, 0.4);
-  border-radius: 1.5vw;
-  position: absolute;
-  top: 70%;
-  left: 50%;
+  border-radius: 2.5vw;
   height: 90vh;
   transition: all 1s cubic-bezier(.63, .15, .03, 1.12);
-  margin-top: 0vh;
+  margin-top: 20px;
 }
-
 
 .field-card img {
   width: 5vw;
@@ -220,11 +215,12 @@
   font-family: "Montserrat";
 }
 
-
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 769px) {
   .field-card {
     width: 20vw;
-
+    position: absolute;
+    top: 70%;
+    left: 50%;
   }
 
   .field-card img {
@@ -257,80 +253,51 @@
     transform: translate(-50%, -50%) rotateZ(-2deg);
   }
 
-  .transition-1 {
-    transform: translate(-200%, -50%) rotateZ(0deg)
-  }
-
-  .transition-2 {
-    transform: translate(-50%, -50%) rotateZ(0deg)
-  }
-
-  .transition-3 {
-    transform: translate(100%, -50%) rotateZ(0deg)
-  }
-
   .field-description {
     width: 19vw;
     margin: 0 auto;
     padding-bottom: 1vw;
     font-size: 1.25vw;
   }
-
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
+
+  #recentHeader {
+    font-size: 10vw;
+  }
+
   .field-card {
-    width: 60vw;
+    width: 70vw;
+    height: 130vw;
+    position: relative;
+    left: 0;
+    top: 0;
+    transform: translate(0, 0);
+    margin-bottom: 20px;
   }
 
   .field-card img {
-    width: 60vw;
+    height: 40vh;
   }
 
   .field-heading {
-    font-size: 5vw;
+    font-size: 7vw;
+    margin-top: 5vw;
   }
 
   .field-cards {
     position: relative;
-    height: 210vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: fit-content;
+    margin-bottom: 5vh;
   }
 
   .field-description {
-    width: 59vw;
-    margin: 0 auto;
-    padding-bottom: 1vw;
-    font-size: 2.5vw;
+    width: 100%;
+    padding: 10px 30px;
+    font-size: 3.8vw;
   }
-
-  .card1 {
-    z-index: 1;
-    transform: translate(-50%, -50%) rotateZ(5deg);
-    transition-delay: 0.1s;
-  }
-
-  .card2 {
-    z-index: 2;
-    transform: translate(-50%, -50%) rotateZ(-7deg);
-    transition-delay: 0.05s;
-  }
-
-  .card3 {
-    z-index: 3;
-    transform: translate(-50%, -50%) rotateZ(-2deg);
-  }
-
-  .transition-1 {
-    transform: translate(-50%, -160%) rotateZ(0deg)
-  }
-
-  .transition-2 {
-    transform: translate(-50%, -50%) rotateZ(0deg)
-  }
-
-  .transition-3 {
-    transform: translate(-50%, 60%) rotateZ(0deg)
-  }
-
-
 }

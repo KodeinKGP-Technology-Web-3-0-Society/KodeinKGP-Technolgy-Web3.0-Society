@@ -42,39 +42,59 @@ export default function Teams() {
 
     useEffect(() => {
         cardRefs.current.forEach((card, index) => {
-            let xOffset;
-            let angle = index === 0 ? -10 : index === 1 ? 0 : 10;
+            if (window.innerWidth > 768) {
+                let xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+                let angle = index === 0 ? -10 : index === 1 ? 0 : 10;
 
-            // Adjust the xOffset based on screen width
-            if (window.innerWidth < 768) {
-                xOffset = index === 0 ? '-100vw' : index === 1 ? '0vw' : '100vw';
-            } else {
-                xOffset = index === 0 ? '-30vw' : index === 1 ? '0vw' : '30vw';
+                gsap.timeline({
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "20% bottom",
+                        end: "center center",
+                        scrub: true,
+                    }
+                })
+                    .fromTo(
+                        card,
+                        {
+                            x: 0,
+                            rotation: angle,
+                            scale: 1,
+                        },
+                        {
+                            x: xOffset,
+                            rotation: 0,
+                            scale: 1.1,
+                        }
+                    );
             }
+            else {
+                var t3 = gsap.timeline({
+                    scrollTrigger: {
+                        trigger: card,
+                        start: "20% bottom",
+                        end: "50% center",
+                        scrub: true,
+                        scroller: "body",
+                    }
+                })
 
-            gsap.timeline({
-                scrollTrigger: {
-                    trigger: card,
-                    start: "20% bottom",  // Start the animation when the top of the card hits the bottom of the viewport
-                    end: "center center", // End the animation when the center of the card aligns with the center of the viewport
-                    scrub: true, // Smoothly link the animation to the scrollbar's position
-                }
-            })
-                .fromTo(
-                    card,
+                t3.fromTo(card,
                     {
-                        x: 0,
-                        rotation: angle,
-                        scale: 1,
+                        x: -300,
+                        opacity: 0
                     },
                     {
-                        x: xOffset,
-                        rotation: 0,
-                        scale: 1.1,
-                    }
-                );
+                        x: 0,
+                        opacity: 1,
+                        stagger: 0.2,
+                        ease: "linear"
+                    },
+                )
+            }
         });
     }, []);
+
 
 
     // useEffect(() => {
