@@ -50,9 +50,9 @@ export const RegistrationForm = () => {
   return (
    
     <div className="max-w-md mx-auto p-4 bg-white rounded-lg shadow-md reg-heading">
-      <form onSubmit={handleSubmit} className='form'>
       <h5 className="text-lg font-bold mb-4 reg-header">Registration Form </h5>
-        <div className="mb-4 all-labels">
+      <form onSubmit={handleSubmit} className='form'>
+        {/* <div className="mb-4 all-labels"> */}
           <label htmlFor="name" className="block text-gray-700 text-sm font-bold mb-2 label-padding">
             Name
           </label>
@@ -66,8 +66,8 @@ export const RegistrationForm = () => {
             placeholder="Enter your name"
             required
           /></div>
-        </div>
-        <div className="mb-4">
+        {/* </div> */}
+        {/* <div className="mb-4"> */}
           <label htmlFor="roll-number" className="block text-gray-700 text-sm font-bold mb-2 label-padding">
             Roll Number
           </label>
@@ -81,8 +81,8 @@ export const RegistrationForm = () => {
             placeholder="Enter your roll number"
             required
           /></div>
-        </div>
-        <div className="mb-4">
+        {/* </div> */}
+        {/* <div className="mb-4"> */}
           <label htmlFor="personal-email" className="block text-gray-700 text-sm font-bold mb-2 label-padding">
             Personal Email
           </label>
@@ -97,8 +97,8 @@ export const RegistrationForm = () => {
             required
           />
           </div>
-        </div>
-        <div className="mb-4">
+        {/* </div> */}
+        {/* <div className="mb-4"> */}
           <label htmlFor="institute-email" className="block text-gray-700 text-sm font-bold mb-2 label-padding">
             Institute Email
           </label>
@@ -113,8 +113,8 @@ export const RegistrationForm = () => {
             required
           />
           </div>
-        </div>
-        <div className="mb-4">
+        {/* </div> */}
+        {/* <div className="mb-4"> */}
           <label htmlFor="contact-number" className="block text-gray-700 text-sm font-bold mb-2 label-padding">
             Contact Number
           </label>
@@ -129,21 +129,35 @@ export const RegistrationForm = () => {
             required
           />
           </div>
-        </div>
-        <div className="mb-4">
+        {/* </div> */}
+        {/* <div className="mb-4"> */}
       <label for="other-involvements" class="block text-gray-700 text-sm font-bold mb-2 label-padding">Other Involvements</label>
-      <div className='input'><input id="other-involvements"
+      <div className='input'>
+      <input
+            type="tel"
+            id="contact-number"
+            value={contactNumber}
+            onChange={(e) => setContactNumber(e.target.value)}
+            className="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input"
+            placeholder="Enter your contact number"
+            required
+          />
+          
+      {/* <input 
+        type = "text"
+        id="other-involvements"
        class="block w-full p-2 pl-10 text-sm text-gray-700 rounded-lg focus:outline-none focus:ring focus:border-blue-500 input-other"
         placeholder="Enter any other involvements or activities"
         value={otherInvolvements}
         onChange={(e)=>setOtherInvolvements(e.target.value)}
         required
-        ></input></div>
-    </div>
-    <div className='submit'>
+        /> */}
+        </div>
+    {/* </div> */}
+  </form>
+      <div className='submit'>
     <button  type="submit" className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-lg focus:outline-none focus:ring focus:border-blue-500 reg-btn" >Register</button>
     </div>
-  </form>
 </div>
   )
 }

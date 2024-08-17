@@ -14,6 +14,7 @@ import EventsPage  from './components/EventsPage/EventsPage';
 import Home from "./components/LandingPage/Home";
 import ApplyPage from './components/EventsPage/ApplyPage';
 import BreadthRecommender from './components/BreadthRecommender/Home';
+import  RegistrationForm  from './components/Registrationpage/regform';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import './App.css';
 function App() {
@@ -30,6 +31,7 @@ function App() {
         <Route path='/pds/lab/:topic/:ind' element={<LabQuestion/>} />
         <Route path='/pds/theory/:topic/:ind' element={<TheoryQuestion/>} />
         <Route path='/teams' element={<TeamsPage/>}></Route>
+        <Route path='/regform' element={<RegistrationForm/>}></Route>
         <Route path='/events' element={<EventsPage/>}></Route>
         <Route path='/events/apply' element={<ApplyPage/>} ></Route>
         <Route path='/breadth-recommend' element={<BreadthRecommender/>} ></Route>
