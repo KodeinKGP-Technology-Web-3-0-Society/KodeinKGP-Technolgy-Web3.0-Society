@@ -12,6 +12,11 @@ const RegistrationForm = () => {
   const [contactNumber, setContactNumber] = useState("");
   const [otherInvolvements, setOtherInvolvements] = useState("");
 
+  const rollNoChk = /^\d{2}.{2}\d{5}$/;
+  const emailChk = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+  const insEmChk = /^[a-zA-Z0-9._%+-]+@kgpian\.iitkgp\.ac\.in$/;
+  const phoneRegex = /^\d{10}$/;
+
   useEffect(() => {
     const handleBeforeUnload = () => {
       window.scrollTo(0, 0);
@@ -24,8 +29,41 @@ const RegistrationForm = () => {
     };
   }, []);
 
+
+
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+
+    if(!rollNoChk.test(rollNumber)){
+      alert("Enter a valid roll number");
+      return;
+    }
+
+    if(!emailChk.test(personalEmail)){
+      alert("Enter a valid Personal Email");
+      return;
+    }
+
+    if(!insEmChk.test(instituteEmail)){
+      alert("Entter a valid Institute Email");
+      return;
+    }
+
+    if(!phoneRegex.test(contactNumber)){
+      alert("Enter a valid Contact Number");
+      return;
+    }
+
+    console.log(JSON.stringify({
+      nme,
+      rollNumber,
+      personalEmail,
+      instituteEmail,
+      contactNumber,
+      otherInvolvements,
+    }))
+
     try {
       const response = await fetch(`${DB_URL}`, {
         method: "POST",
@@ -116,7 +154,7 @@ const RegistrationForm = () => {
             />
           </form>
           <div className="submit">
-            <button type="submit" className="reg-btn">
+            <button type="submit" className="reg-btn" onClick={handleSubmit}>
               Register
             </button>
           </div>
