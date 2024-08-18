@@ -9,13 +9,13 @@ export default function LabTopic({ topic }) {
 
   if (topic === "labTest") {
     const topicArray = [
-      "initialBasics",
-      "loops",
+      "InitialBasics",
+      "Loops",
       "ArrayAndStrings",
-      "functionsAndRecursions",
-      "structuresAndPointers",
-      "sortingAnd2dArrays",
-      "linkedList",
+      "FunctionsAndRecursions",
+      "StructuresAndPointers",
+      "SortingAnd2dArrays",
+      "LinkedList",
     ];
     topicArray.forEach((element) => {
       arr = arr.concat(data[element][2].Elements);
@@ -26,7 +26,7 @@ export default function LabTopic({ topic }) {
 
   return (
     <div className="LabTopicList">
-      <table>
+      <table className="ques-table">
         {arr.map((ele, ind) => (
           <LabCard key={ind} qna={arr[ind]} topic={topic} ind={ind} />
         ))}

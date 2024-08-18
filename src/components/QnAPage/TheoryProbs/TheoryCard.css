@@ -4,7 +4,7 @@
 
 .cardDiv {
   border: 1px solid #555;
-  background-color: #01011b70;
+  background-color: rgb(91, 230, 255, 0.04);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.3s;
   max-width: 100%;

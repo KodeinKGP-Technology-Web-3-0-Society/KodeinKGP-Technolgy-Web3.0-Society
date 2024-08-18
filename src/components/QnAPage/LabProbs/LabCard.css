@@ -5,7 +5,7 @@
 
 .cardDiv {
   border: 1px solid #555;
-  background-color: #01011b70;
+  background-color: rgb(91, 230, 255, 0.04);
   padding: 0px;
   border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -32,12 +32,12 @@
 
 .cardDiv .index {
   font-weight: bold;
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   color: rgb(91, 230, 255);
   vertical-align: middle;
   text-align: center;
-  min-width: 3.5rem;
-  max-width: 3.5rem;
+  min-width: 3.7rem;
+  max-width: 3.7rem;
 }
 
 .quest {
@@ -49,14 +49,18 @@
 .cardDiv tr {
   height: fit-content;
 }
+.cardDiv td {
+  white-space: nowrap;
+}
 
 .lc-ques {
-  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
   color: #fff;
   vertical-align: middle;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   text-align: left;
-  width: calc(100vw - 8rem);
+  /* width: calc(100vw - 8rem); */
+  width: 100%;
 }
 
 .lc-link {
