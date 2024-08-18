@@ -103,6 +103,19 @@ function Navbar() {
                 }
               }}
             >
+              <span className="link-tag">
+                <Link className="link" to="/regform" onClick={toggleMenu}>
+                  Registration Form
+                </Link>
+              </span>
+            </li> */}
+            {/* <li
+              onClick={() => {
+                if (isOpen) {
+                  toggleMenu();
+                }
+              }}
+            >
               <span className="link-tag1">
                 <Link className="link" to="/selections" onClick={toggleMenu}>
                   Selection Results
