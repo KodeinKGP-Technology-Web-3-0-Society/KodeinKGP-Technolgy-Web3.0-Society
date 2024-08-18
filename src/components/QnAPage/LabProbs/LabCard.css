@@ -4,20 +4,20 @@
 
 .cardDiv {
   border: 1px solid #555;
-  padding: 10px;
   background-color: #444;
-  border-radius: 10px;
+  padding: 0px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.3s;
-  margin: 20px 10px;
+  /* margin: 20px 10px; */
   max-width: 100%;
   width: 100%;
 }
 
-.cardDiv:hover {
+/* .cardDiv:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 1px 1px #FFD700;
-}
+  box-shadow: 0 0 1px 1px #ffd700;
+} */
 
 .text {
   color: rgb(247, 239, 239);
@@ -29,16 +29,19 @@
   line-height: 1.4;
 }
 
-.index {
+.cardDiv .index {
   font-weight: bold;
+  font-size: 25px;
   color: rgb(91, 230, 255);
+  padding: 0px 20px;
 }
 
+.quest {
+  color: rgb(247, 239, 239);
+  font-size: 25px;
+  text-decoration: none;
+}
 
-
-
-
-
-
-
-
+.cardDiv tr {
+  height: 50px;
+}
