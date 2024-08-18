@@ -1,5 +1,6 @@
 .labCards {
   text-decoration: none;
+  width: 100%;
 }
 
 .cardDiv {
@@ -31,9 +32,12 @@
 
 .cardDiv .index {
   font-weight: bold;
-  font-size: 25px;
+  font-size: 1.25rem;
   color: rgb(91, 230, 255);
-  padding: 0px 20px;
+  vertical-align: middle;
+  text-align: center;
+  min-width: 3.5rem;
+  max-width: 3.5rem;
 }
 
 .quest {
@@ -43,5 +47,18 @@
 }
 
 .cardDiv tr {
-  height: 50px;
+  height: fit-content;
+}
+
+.lc-ques{
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  width: calc(100vw - 8rem);
+}
+
+.lc-link{
+  min-height: 5rem;
+  max-width: 5rem;
+  vertical-align: middle;
 }
