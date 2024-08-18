@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import ProblemStatement1 from "./ProblemStatement1";
 import ProblemStatement2 from "./ProblemStatement2";
 import ProblemStatement3 from "./ProblemStatement3";
-import Image from "./Images/Swadeshi_event.png";
+// import Image from "/EventsImages/Swadeshi_event.png";
 import "./ApplyPage.css";
 
 const ApplyPage = () => {
@@ -32,7 +32,7 @@ const ApplyPage = () => {
   return (
     <div className="applyPage">
       <div className="apply_content">
-        <img src={Image} alt="event-image" className="event_image" />
+        <img src="/EventsImages/Swadeshi_event.png" alt="event-image" className="event_image" />
         <h2 className="apply_title">INNOVATE4SWADESHI</h2>
         <p className="apply_details">
           <span>Registration deadline : </span>27th Nov 2023

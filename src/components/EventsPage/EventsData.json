@@ -1,0 +1,60 @@
+
+
+[
+  {
+    "id":1,
+    "heading": "National Science Week Hackathon",
+    "description": "Last year, KodeinKGP hosted the <b>'National Science Week Hackathon'</b>, an extraordinary event that attracted over 400 participants from diverse domains. Focused on a problem statement involving AI and web development, the hackathon encouraged widespread participation and collaboration. It became a melting pot of ideas, fostering innovation, problem-solving skills, and cross-disciplinary teamwork. With a generous prize pool of nearly 20,000 rupees, participants were both motivated and rewarded for their hard work and groundbreaking solutions. This event truly underscored the power of technology and the importance of collaboration in tackling real-world challenges. This event not only showcased the power of technology and collaboration but also aligned with KodeinKGP's vision of driving innovation and advancing solutions that address real-world challenges.",
+    "sponsor":"",
+    "image":"/EventsImages/nsw_hack.jpeg",
+    "sponsor_img":""
+  },
+  {
+    "id":2,
+    "heading": "INNOVATE4SWADESHI",
+    "description": "Last year, KodeinKGP proudly hosted <b>'INNOVATE4SWADESHI'</b>, a landmark event that attracted over 300 talented participants for an exciting hackathon centered on Artificial Intelligence. The competition featured challenging problem statements that pushed participants to innovate and demonstrate their technical prowess. With a prize pool exceeding 50,000 rupees, the event offered an exciting opportunity for participants to showcase their skills and be rewarded for their creativity. The overwhelming success of the event underscores our deep commitment to fostering a culture of innovation, empowering the tech community, and driving forward advancements in Artificial Intelligence and related technologies.",
+    "sponsor":["saneobserver"],
+    "image":"/EventsImages/Swadeshi_event.png",
+    "sponsor_img":["/EventsImages/Sane.png"]
+  },
+  {
+    "id":3,
+    "heading": "Hack-an-Intern",
+    "description": "Last year, KodeinKGP hosted 'Hack an Intern,' a groundbreaking event that attracted a staggering 300+ participants. This tech extravaganza provided a dynamic platform for aspiring talents to showcase their skills in blockchain, AI, and various cutting-edge technologies. With prizes totaling 2 lakhs INR,'Hack an Intern' not only nurtured innovation but also celebrated the spirit of technology enthusiasts. The event's resounding success reflects our commitment to fostering talent and innovation within the tech community. As we look back on this exceptional event, it serves as a testament to our dedication to creating opportunities for learning,    collaboration, and the continuous evolution of the tech landscape.",
+    "sponsor":["Density"],
+    "image":"/EventsImages/density_hackathon.jpg",
+    "sponsor_img":["/EventsImages/density.jpg"]
+  },
+  {
+    "id":4,
+    "heading": "Blockchain Hackathon",
+    "description": "In the preceding year, KodeinKGP's 'Blockchain Hackathon' emerged as an unparalleled success, drawing a remarkable 400 participants organized into 50 teams. This event became a beacon of innovation and collaboration in the tech realm, embodying the spirit of creative problem-solving. Boasting an impressive prize pool exceeding 40k INR, the hackathon not only incentivized inventive solutions but also cultivated a strong sense of community among participants. 'Blockchain Hackathon' served as a testament to our unwavering commitment to advancing blockchain technology and nurturing a vibrant ecosystem of tech enthusiasts. As we reflect on this achievement, it reinforces our dedication to fostering an environment that encourages learning, collaboration, and the continuous evolution of the tech landscape.",
+    "sponsor":["Nuvepro"],
+    "image":"/EventsImages/blockchain_hackathon.jpg",
+    "sponsor_img":["/EventsImages/nuvepro logo.jpg"]
+  },
+  {
+    "id":5,
+    "heading": "Concordia",
+    "description": "KodeinKGP's 'Concordia' event was a spectacular showcase of innovation, featuring 60 enthusiastic teams engaged in fierce competition. With an impressive prize pool surpassing $100k, 'Concordia' exemplified our steadfast dedication to nurturing innovation and promoting healthy competition within the tech community. This event stands as a testament to our unwavering commitment to empowering tech enthusiasts and driving progress in the industry. As we reflect on the success of 'Concordia,' it reinforces our belief that fostering a collaborative and competitive environment is crucial for advancing technology and inspiring the next generation of innovators.",
+    "sponsor":["Concordium", "Gravity"],
+    "image":"/EventsImages/concordia.jpg",
+    "sponsor_img":["/EventsImages/concordium_logo.jpg", "/EventsImages/graviton logo.jpg"]
+  },
+  {
+    "id":6,
+    "heading": "Web3.0 Summer Training Program",
+    "description": "In a recent collaboration, KodeinKGP joined forces with 'Lumos' to organize an immersive 'Web 3.0 Summer Training Program.' Conducted in the past months, this program aimed to empower participants in mastering full-stack development, providing them with cutting-edge skills and insights into the ever-evolving Web 3.0 landscape. The initiative underlines our dedication to fostering practical knowledge and remaining at the forefront of technology education. By delivering valuable tools and resources, we strive to equip aspiring developers with what they need to thrive in the digital age. This collaborative effort represents our ongoing commitment to staying ahead in the dynamic and rapidly evolving field of technology.",
+    "sponsor":["Lumos"],
+    "image":"/EventsImages/Lumos_event.jpg",
+    "sponsor_img":["/EventsImages/lumoslabs_logo.jpg"]
+  },
+  {
+    "id":7,
+    "heading": "Web3 & Aptos Session",
+    "description": "Only two months ago, KodeinKGP orchestrated an enlightening 'Web3 and Aptos Session,' proudly sponsored by 'Move Developers.' With an impressive turnout of 300 eager participants, this event epitomized our dedication to staying at the forefront of technological innovation. The session provided an immersive dive into the realms of Web3 and Aptos, empowering attendees with valuable insights and practical knowledge. This gathering underscored our mission to bridge the gap between emerging technologies and aspiring tech enthusiasts, fostering a dynamic and ever-evolving tech ecosystem.",
+    "sponsor":["Move Developers"],
+    "image":"/EventsImages/move event.jpg",
+    "sponsor_img":["/EventsImages/move icon.jpg"]
+  }
+]
