@@ -240,6 +240,37 @@ h3 {
   overflow: hidden;
 }
 
+
+
+@media screen and (min-width: 1325px) {
+  .ribbon {
+      width: 178px;
+      top: 2px;
+      right: 145px;
+  }
+ 
+}
+@media screen and (min-width: 1355px) {
+  .ribbon {
+    width: 44%;
+    top: 2px;
+    right: 53%;
+  }
+  .rib span {
+    right: 23%;
+    top: 6px;
+}
+}
+
+@media screen and (min-width: 1500px) { 
+  .rib span {
+    right: 27%;
+    top: 6px;
+}
+}
+
+
+
 @media screen and (max-width: 1300px) {
   .small-cards .article-card {
     width: 50vw;
@@ -314,7 +345,7 @@ h3 {
     margin: 0 35px;
   }
   .small-cards .article-card h1{
-    font-size: 15px;
+    font-size: 14px;
   }
   .small-cards .article-card h3{
     font-size: 12px;
@@ -349,3 +380,18 @@ h3 {
   font-size: 11px;
 }
 }
+/* @media screen and (min-width:1400px) and (max-width:1325px) {
+  .ribbon {
+    width: 185px;
+}
+}
+
+.ribbon {
+
+height: 121px;
+overflow: hidden;
+position: absolute;
+top: -2px;
+right: 224px;
+  
+} */
