@@ -6,12 +6,16 @@ import { faNewspaper } from "@fortawesome/free-solid-svg-icons";
 
 export default function LabCard({ qna, topic, ind }) {
   let path = `/pds/lab/${topic}/${ind}`;
+  let question_words = qna.Question.split(" ").slice(0, 13).join(" ") + "...";
+  let question_chars = qna.Question.slice(0, 100) + "...";
   return (
     <div className="labCards">
       <tr className="cardDiv">
         <td className="index">{ind + 1}</td>{" "}
         <td className="lc-ques">
-          {qna.Question.split(" ").slice(0, 13).join(" ") + "..."}
+          {question_words.length > question_chars.length
+            ? question_chars
+            : question_words}
         </td>
         <td className="lc-link">
           <Link to={path} className="quest">

@@ -1,5 +1,5 @@
 {
-    "initialBasics": [
+    "InitialBasics": [
         {
             "type": "lab",
             "Elements": [
@@ -288,7 +288,7 @@
             ]
         }
     ],
-    "loops": [
+    "Loops": [
         {
             "type": "lab",
             "Elements": [
@@ -740,7 +740,7 @@
             ]
         }
     ],
-    "functionsAndRecursions": [
+    "FunctionsAndRecursions": [
         {
             "type": "lab",
             "Elements": [
@@ -966,7 +966,7 @@
             ]
         }
     ],
-    "structuresAndPointers": [
+    "StructuresAndPointers": [
         {
             "type": "lab",
             "Elements": [
@@ -1066,7 +1066,7 @@
             ]
         }
     ],
-    "sortingAnd2dArrays": [
+    "SortingAnd2dArrays": [
         {
             "type": "lab",
             "Elements": [
@@ -1129,7 +1129,7 @@
             ]
         }
     ],
-    "linkedList": [
+    "LinkedList": [
         {
             "type": "lab",
             "Elements": [

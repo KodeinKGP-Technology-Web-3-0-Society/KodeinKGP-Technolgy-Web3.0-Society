@@ -9,13 +9,13 @@ export default function LabTopic({ topic }) {
 
   if (topic === "labTest") {
     const topicArray = [
-      "InitialBasics",
-      "Loops",
+      "initialBasics",
+      "loops",
       "ArrayAndStrings",
-      "FunctionsAndRecursions",
-      "StructuresAndPointers",
-      "SortingAnd2dArrays",
-      "LinkedList",
+      "functionsAndRecursions",
+      "structuresAndPointers",
+      "sortingAnd2dArrays",
+      "linkedList",
     ];
     topicArray.forEach((element) => {
       arr = arr.concat(data[element][2].Elements);

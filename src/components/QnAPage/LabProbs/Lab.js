@@ -20,10 +20,7 @@ export default function Lab() {
       <div id="Lab">
         {Object.keys(dataJ).map((topic, index) => (
           <div key={index} className="dropdown">
-            <div
-              className="dropdown-header"
-              onClick={() => toggleTopic(topic)}
-            >
+            <div className="dropdown-header" onClick={() => toggleTopic(topic)}>
               {topic.replace(/([a-z])([A-Z])/g, "$1 $2")}{" "}
               <span className="dropdown-icon">
                 {openTopics.includes(topic) ? "-" : "+"}
@@ -40,7 +37,3 @@ export default function Lab() {
     </div>
   );
 }
-
-
-
-
