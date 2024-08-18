@@ -1,9 +1,10 @@
 import React, { useRef, useEffect, useState } from 'react'
-import { gsap, CSSPlugin } from 'gsap'
-import logo from './kik-final-logo.png'
-import { Bounce } from 'gsap/all';
-import { TypeAnimation } from 'react-type-animation';
+// import { gsap, CSSPlugin } from 'gsap'
+// import logo from './kik-final-logo.png'
+// import { Bounce } from 'gsap/all';
+// import { TypeAnimation } from 'react-type-animation';
 import anime from './anime.gif'
+import animeMob from './animeMob.gif'
 import './anime.css'
 
 const Animation = ({ animate, setAnimate }) => {
@@ -136,7 +137,7 @@ const Animation = ({ animate, setAnimate }) => {
 
             <div className='loading-gif'>
                 {!gifPlayed &&
-                    <img src={anime} alt="GIF" />
+                    <img src={window.innerWidth < 768 ? animeMob : anime} alt="GIF" />
                 }
             </div>
         </div>

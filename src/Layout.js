@@ -7,15 +7,26 @@ import Animation from "./components/LandingPage/Animation";
 function Layout() {
 
   const [animate, setAnimate] = useState(true)
-  if (animate) return <Animation animate={animate} setAnimate={setAnimate} />
+  const [loading, setLoading] = useState(false);
+
+
+  // setTimeout(() => {
+  //   setLoading(false);
+  // }, 5000);
 
   return (
     <>
-      <Navbar />
-      <Outlet />
-      <Footer />
+      {!animate && !loading && (
+        <>
+          <Navbar />
+          <Outlet />
+          <Footer />
+        </>
+      )}
+      {animate && <Animation animate={animate} setAnimate={setAnimate} />}
     </>
   );
+
 }
 
 export default Layout;
