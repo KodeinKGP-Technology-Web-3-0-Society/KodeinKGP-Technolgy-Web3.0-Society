@@ -4,12 +4,9 @@
 
 .cardDiv {
   border: 1px solid #555;
-  /* padding:   10px; */
-  background-color: #444;
-  /* border-radius: 10px; */
+  background-color: #01011b70;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.3s;
-  /* margin: 20px 10px; */
   max-width: 100%;
   width: 100%;
 }

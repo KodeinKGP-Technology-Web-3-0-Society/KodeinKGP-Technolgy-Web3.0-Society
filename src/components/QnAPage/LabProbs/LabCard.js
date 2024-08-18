@@ -11,7 +11,7 @@ export default function LabCard({ qna, topic, ind }) {
       <tr className="cardDiv">
         <td className="index">{ind + 1}</td>{" "}
         <td className="lc-ques">
-            {qna.Question}
+          {qna.Question.split(" ").slice(0, 13).join(" ") + "......."}
         </td>
         <td className="lc-link">
           <Link to={path} className="quest">
