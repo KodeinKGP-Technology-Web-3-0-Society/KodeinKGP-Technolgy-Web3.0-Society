@@ -1,23 +1,24 @@
 .labCards {
   text-decoration: none;
+  width: 100%;
 }
 
 .cardDiv {
   border: 1px solid #555;
-  padding: 10px;
-  background-color: #444;
-  border-radius: 10px;
+  background-color: rgb(91, 230, 255, 0.04);
+  padding: 0px;
+  border-radius: 0px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.2s, box-shadow 0.3s;
-  margin: 20px 10px;
+  /* margin: 20px 10px; */
   max-width: 100%;
   width: 100%;
 }
 
-.cardDiv:hover {
+/* .cardDiv:hover {
   transform: translateY(-5px);
-  box-shadow: 0 0 1px 1px #FFD700;
-}
+  box-shadow: 0 0 1px 1px #ffd700;
+} */
 
 .text {
   color: rgb(247, 239, 239);
@@ -29,7 +30,41 @@
   line-height: 1.4;
 }
 
-.index {
+.cardDiv .index {
   font-weight: bold;
+  font-size: 1.2rem;
   color: rgb(91, 230, 255);
+  vertical-align: middle;
+  text-align: center;
+  min-width: 3.7rem;
+  max-width: 3.7rem;
+}
+
+.quest {
+  color: rgb(247, 239, 239);
+  font-size: 30px;
+  text-decoration: none;
+}
+
+.cardDiv tr {
+  height: fit-content;
+}
+.cardDiv td {
+  white-space: nowrap;
+}
+
+.lc-ques {
+  padding: 0.5rem 0.5rem 0.5rem 0.7rem;
+  color: #fff;
+  vertical-align: middle;
+  font-size: 1.2rem;
+  text-align: left;
+  /* width: calc(100vw - 8rem); */
+  width: 100%;
+}
+
+.lc-link {
+  min-height: 5rem;
+  max-width: 5rem;
+  vertical-align: middle;
 }
