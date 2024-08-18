@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+
+
 .landing-page{
   background-color: rgb(1, 1, 27);
   display: flex;
@@ -77,10 +79,12 @@
   .left{
     position: relative;
     bottom: 30px;
+    width: 30%;
   }
-  .content .left img{
-    height: 500px;
-    width: 600px;
+  .content .left {
+    height: 70%;
+    width: 5000px;
+    margin-top: 80px;
   }
   .bottom-bar .text{
     color: white;
@@ -168,7 +172,7 @@
     padding: 20px;
     padding-left: 40px;
   }
-  .content .left img{
+  .content .left{
     height: auto;
     width: 100%;
   }

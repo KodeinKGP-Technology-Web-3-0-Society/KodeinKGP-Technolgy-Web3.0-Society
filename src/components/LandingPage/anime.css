@@ -1,0 +1,11 @@
+.loading-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    height: 90vh;
+}
+
+.loading-gif img {
+    max-height: fit-content;
+}
