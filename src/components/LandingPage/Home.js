@@ -253,19 +253,24 @@ const MainContent = () => {
 
 const Home = () => {
   // const [number, setNumber] = useState(null);
-  // const [loading, setLoading] = useState(true);
-  // useEffect(() => {
-  //   const timer = setTimeout(() => {
-  //     setLoading(false);
-  //   }, 2000); // Display the loading screen for 4 seconds
 
-  //   return () => clearTimeout(timer); // Clean up the timer
-  // }, []);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
 
-  // return (
-  //   <div className="App">{loading ? <LoadingScreen /> : <MainContent />}</div>
-  // );
-  return <div className="App">{<MainContent />}</div>;
+    return () => clearTimeout(timer);
+  }, []);
+
+
+  return !loading && (
+    <div className="App">
+      <MainContent />
+    </div>
+  );
+
+
 };
 
 export default Home;

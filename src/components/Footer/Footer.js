@@ -1,8 +1,20 @@
 import React from "react";
 import "./Footer.css";
 import Logo from "../LandingPage/kik-final-logo.png";
+import { useEffect, useState } from "react";
+
 export default function Footer() {
-  return (
+
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return !loading && (
     <div id="footer">
       <div className="footerItems" id="footerItem1">
         <div className="footerHeader">
@@ -17,35 +29,35 @@ export default function Footer() {
           </p>
         </div>
         <div className='iconsContainer'>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/kodeinkgp?mibextid=ZbWKwL"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-facebook"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/kodeinkgp_iitkgp?igsh=cmhyMXM3YTA5YzZm"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-instagram"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/company/kodeinkgp/"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-linkedin"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://medium.com/@kodeinkgp"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-medium"></ion-icon>
-            </a>
-          </div>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/kodeinkgp?mibextid=ZbWKwL"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-facebook"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/kodeinkgp_iitkgp?igsh=cmhyMXM3YTA5YzZm"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-instagram"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/kodeinkgp/"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://medium.com/@kodeinkgp"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-medium"></ion-icon>
+          </a>
+        </div>
       </div>
       <div className="footerItems" id="footerItem2">
         <div className="footerItemElement" id="footerItemElement1">

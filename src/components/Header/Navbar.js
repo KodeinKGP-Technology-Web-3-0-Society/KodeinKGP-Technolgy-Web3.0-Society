@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import Logo from "../LandingPage/kik-final-logo.png";
 import { Link } from "react-router-dom";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
@@ -9,7 +9,16 @@ function Navbar() {
     setIsOpen(!isOpen);
   };
 
-  return (
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setLoading(false);
+    }, 800);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  return !loading && (
     <div className={`navbar ${isOpen ? "open" : ""}`}>
       <div className={`TitleOfPlatforms ${isOpen ? "open" : ""}`}>
         <div className="logoo">
