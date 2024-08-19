@@ -5,6 +5,7 @@ import { Bounce } from 'gsap/all';
 import { TypeAnimation } from 'react-type-animation';
 import anime from './anime.gif'
 import './anime.css'
+import animeMob from "./animeMob.gif"
 
 const Animation = ({ animate, setAnimate }) => {
     // const KRef = useRef(null);
@@ -136,7 +137,7 @@ const Animation = ({ animate, setAnimate }) => {
 
             <div className='loading-gif'>
                 {!gifPlayed &&
-                    <img src={anime} alt="GIF" />
+                    <img src={window.innerWidth < 768 ? animeMob : anime} alt="GIF" />
                 }
             </div>
         </div>

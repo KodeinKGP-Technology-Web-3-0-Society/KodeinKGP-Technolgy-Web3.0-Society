@@ -24,7 +24,7 @@
 
 #recentHeader {
   margin: 2rem 0rem 1rem 0rem;
-  font-family: 'Monteserrat';
+  font-family: 'Poppins', sans-serif;
   text-align: center;
   color: transparent;
   background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
