@@ -21,7 +21,9 @@ export default function Lab() {
         {Object.keys(dataJ).map((topic, index) => (
           <div key={index} className="dropdown">
             <div className="dropdown-header" onClick={() => toggleTopic(topic)}>
-              {topic.replace(/([a-z])([A-Z])/g, "$1 $2")}{" "}
+              {topic
+                .replace(/([a-z])([A-Z0-9])|([A-Z])([0-9])/g, "$1$3 $2$4")
+                .replace(/\bAnd\b/g, "and")}
               <span className="dropdown-icon">
                 {openTopics.includes(topic) ? "-" : "+"}
               </span>

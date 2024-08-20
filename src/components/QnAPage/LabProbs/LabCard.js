@@ -18,7 +18,7 @@ export default function LabCard({ qna, topic, ind }) {
             : question_words}
         </td>
         <td className="lc-link">
-          <Link to={path} className="quest">
+          <Link to={path} className="quest" target="_blank">
             <FontAwesomeIcon icon={faNewspaper} />
           </Link>
         </td>
