@@ -2,6 +2,8 @@ import react, { useEffect, useState } from "react";
 import { DB_URL } from "../EventsPage/DB_URL";
 // import Navbar from "../LandingPage/Navbar";
 import "./regformcss.css";
+import React from "react";
+import Select from "react-select";
 import aiimg from "./ai3.png";
 
 const RegistrationForm = () => {
@@ -108,6 +110,35 @@ const RegistrationForm = () => {
               placeholder="Contact Number"
               required
             />
+            <div className="portfolio_selector">
+              <input
+                type="checkbox"
+                id="Trainie Developer"
+                className="portfolio_checker"
+                required
+              />
+              <label for="Trainie Developer" className="label_portfolio">
+                Trainie Developer
+              </label>
+              <input
+                type="checkbox"
+                id="Associate Design Member"
+                className="portfolio_checker"
+                required
+              />
+              <label for="Trainie Developer" className="label_portfolio">
+                Associate Design Member
+              </label>
+              <input
+                type="checkbox"
+                id="Associate Event Coordinator"
+                className="portfolio_checker"
+                required
+              />
+              <label for="Trainie Developer" className="label_portfolio">
+                Associate Events Coordinator
+              </label>
+            </div>
             <input
               type="text"
               id="other-involvements"
