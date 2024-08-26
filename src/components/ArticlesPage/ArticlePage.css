@@ -304,6 +304,21 @@ h3 {
 }
 
 @media screen and (max-width: 1300px) {
+  .head-anim {
+    margin-bottom: 5rem;
+  }
+
+  .sub-lines h2 {
+    font-size: 1.8rem;
+  }
+  .sub-lines h3 {
+    font-size: 1.2rem;
+  }
+
+  .article-heading {
+    font-size: 7rem;
+  }
+
   .small-cards .article-card {
     width: 50vw;
   }
@@ -317,7 +332,10 @@ h3 {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1000px) {
+  .article-heading {
+    font-size: 6rem;
+  }
   .big-card .article-card {
     max-width: 330px;
   }
@@ -327,6 +345,28 @@ h3 {
 }
 
 @media screen and (max-width: 800px) {
+  .head-anim {
+    flex-direction: column;
+  }
+
+  .article-heading {
+    padding-left: 0rem;
+    align-self: center;
+  }
+
+  .intro-container .sub-lines {
+    padding-left: 3rem;
+  }
+
+  .intro-container {
+    width: 70vw;
+  }
+
+  .animation {
+    align-self: center;
+    width: 50vw;
+  }
+
   .articles-container {
     flex-direction: column;
     align-items: center;
@@ -386,11 +426,21 @@ h3 {
 
 @media screen and (max-width: 550px) {
   .article-heading {
-    font-size: 50px;
+    font-size: 5rem;
     line-height: 100px;
   }
-  .read-now {
-    font-size: 22px;
+  .sub-lines h2 {
+    font-size: 1.5rem;
+  }
+  .sub-lines h3 {
+    font-size: 1rem;
+  }
+
+  .intro-container {
+    width: 80vw;
+  }
+  .animation {
+    width: 70vw;
   }
   .articles-container {
     overflow-x: hidden;
