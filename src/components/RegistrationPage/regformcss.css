@@ -78,6 +78,7 @@
   transition: transform 0.3s ease;
   font-weight: 550;
   font-size: 1.25vw;
+  cursor: pointer;
 }
 .reg-btn:hover {
   transform: scale(1.1);

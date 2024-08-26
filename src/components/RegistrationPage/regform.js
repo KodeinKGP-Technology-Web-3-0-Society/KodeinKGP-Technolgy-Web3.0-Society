@@ -13,6 +13,7 @@ const RegistrationForm = () => {
   const [instituteEmail, setInstituteEmail] = useState("");
   const [contactNumber, setContactNumber] = useState("");
   const [otherInvolvements, setOtherInvolvements] = useState("");
+  const [isLoad, setIsLoad] = useState(false);
 
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -27,7 +28,7 @@ const RegistrationForm = () => {
   }, []);
 
   const handleSubmit = async (e) => {
-    e.preventDefault();
+    setIsLoad(true)
     try {
       const response = await fetch(`${DB_URL}`, {
         method: "POST",
@@ -35,7 +36,7 @@ const RegistrationForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          nme,
+          name:nme,
           rollNumber,
           personalEmail,
           instituteEmail,
@@ -50,6 +51,7 @@ const RegistrationForm = () => {
       setInstituteEmail("");
       setContactNumber("");
       setOtherInvolvements("");
+      setIsLoad(false);
       console.log(response);
     } catch (error) {
       console.log(error);
@@ -150,7 +152,7 @@ const RegistrationForm = () => {
             />
           </form>
           <div className="submit">
-            <button type="submit" className="reg-btn">
+            <button type="submit" className="reg-btn" onClick={(e) => handleSubmit(e)} disabled={isLoad}>
               Register
             </button>
           </div>
