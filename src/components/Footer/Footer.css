@@ -1,69 +1,67 @@
 #footer {
-    background-color: transparent;
-    /* background-color: rgb(16, 16, 83); */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    justify-content: space-evenly;
-    justify-content: space-between;
-    align-items: center;
-    text-align: left !important;
-    /* border-radius: 8px 8px 0px 0px; */
-    margin-top: 2rem;
-    color: white;
-    /* font-family: Mark Pro,sans-serif; */
-  font-family: 'Poppins', sans-serif;
+  background-color: rgba(54, 54, 54, 0.4);
+  /* background-color: rgb(16, 16, 83); */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  justify-content: space-between;
+  align-items: center;
+  text-align: left !important;
+  /* border-radius: 8px 8px 0px 0px; */
+  margin-top: 2rem;
+  color: white;
+  /* font-family: Mark Pro,sans-serif; */
+  font-family: "Poppins", sans-serif;
   border: 1px solid rgb(1, 1, 27);
   border-top-width: 1px;
   border-top-color: rgb(63 62 69 / 1);
-
 }
 .footerItems {
-    
-    padding: 1rem;
-    margin: 1rem 2.5rem;
+  padding: 1rem;
+  margin: 1rem 2.5rem;
 }
 .footerItemElement {
-    margin: 1rem 0rem;
-    /* padding: 1rem; */
+  margin: 1rem 0rem;
+  /* padding: 1rem; */
 }
 #KiKLogo {
-    width: 50px;
+  width: 50px;
 }
 .KiKName {
-    margin: 0px;
+  margin: 0px;
 }
-.iconsContainer{
-    margin: 2rem 0rem;
+.iconsContainer {
+  margin: 2rem 0rem;
 }
-.iconsContainer a{
-    margin: 1rem 1rem 1rem 0rem;
+.iconsContainer a {
+  margin: 1rem 1rem 1rem 0rem;
 }
 ion-icon {
-    color: white;
-  }
-.KiKDescription{
-    margin-top: 1rem;
+  color: white;
 }
-.KiKName{
-    margin-top: 0.5rem;
+.KiKDescription {
+  margin-top: 1rem;
 }
-#footerItemElement1{
-    font-weight: bold;
-    font-size: 1.2rem;
-    padding-bottom: 1rem;
+.KiKName {
+  margin-top: 0.5rem;
 }
-.footerLinks{
-    text-decoration: none;
-    color: wheat;
+#footerItemElement1 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+}
+.footerLinks {
+  text-decoration: none;
+  color: wheat;
 }
 @media screen and (max-width: 700px) {
-    .footerItems{
-        margin: 0rem 1rem;
-        padding: 0.5rem 0rem;
-    }
-    .footerItemElement {
-        margin: 0.6rem 0rem;
-        /* padding: 1rem; */
-    }
+  .footerItems {
+    margin: 0rem 1rem;
+    padding: 0.5rem 0rem;
+  }
+  .footerItemElement {
+    margin: 0.6rem 0rem;
+    /* padding: 1rem; */
+  }
 }

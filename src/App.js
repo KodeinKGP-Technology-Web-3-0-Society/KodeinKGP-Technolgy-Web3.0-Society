@@ -19,9 +19,12 @@ import Layout from "./Layout";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ScrollToTop from "./ScrollToTop";
 import "./App.css";
+import ParticlesComponent from "./components/particles";
+
 function App() {
   return (
     <>
+      <ParticlesComponent id="particles"></ParticlesComponent>
       <Router>
         <ScrollToTop />
         <Routes>
