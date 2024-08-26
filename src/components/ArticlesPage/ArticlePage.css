@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
 
 .article-content {
   display: flex;
@@ -51,23 +51,78 @@
   width: min(25vw, 420px);
   height: 475px;
   border: none;
-  border-radius: 10px;
+  border-radius: 2.5vw;
   padding: 2px 12px 0px;
 }
+.badge {
+  position: relative;
+}
 
+.ribbon {
+  width: 156px;
+  height: 121px;
+  overflow: hidden;
+  position: absolute;
+  top: 2px;
+  right: 163px;
+}
+
+.rib {
+  position: absolute;
+  display: block;
+  width: 248px;
+  padding: 14px 0;
+  background-color: green;
+  color: white;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  transform: rotate(-45deg);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  top: 53px;
+  right: 39px;
+}
+
+.rib span {
+  position: absolute;
+  top: 4px;
+  right: 54px;
+}
+@media screen and (max-width: 551px) {
+  .ribbon {
+    width: 143px;
+  }
+  .rib span {
+    right: 47px;
+  }
+}
+
+@media screen and (min-width: 1325px) {
+  .ribbon {
+    width: 175px;
+  }
+  .rib span {
+    right: 70px;
+    top: 6px;
+  }
+  .rib {
+    padding: 16px 0px;
+  }
+}
 .big-card .article-card {
   display: block;
   width: 100%;
   height: 100%;
   position: relative;
   padding: 20px 12px;
-  border-radius: 10px;
+  border-radius: 2.5vw;
 }
 
 .big-card .article-card img {
   width: 100%;
   height: 45%;
   align-self: center;
+
   position: relative;
   margin: 0 0 18px;
 }
@@ -94,19 +149,29 @@
   width: min(70vw, 1250px);
   max-height: 480px;
   overflow-y: auto;
-  border-radius: 10px;
+  border-radius: 2.5vw;
   padding: 3px 1px 6px;
   justify-content: center;
   margin-bottom: 40px;
 }
 
+@media screen and (max-width: 430px) {
+  /* .articles-container{
+   width:70vw;
+  } */
+  .small-cards .article-card {
+    width: 64%;
+  }
+}
 .article-card {
   display: flex;
   width: min(31vw, 550px);
   height: 140px;
+  background-color: rgba(54, 54, 54, 0.4);
+
   position: relative;
-  box-shadow: 0px 3px 10px #3dc4d4;
-  border-radius: 10px;
+  /* box-shadow: 0px 3px 10px #3dc4d4; */
+  border-radius: 2.5vw;
   border: 4px solid transparent;
 }
 
@@ -130,9 +195,9 @@
 .article-card h1 {
   color: rgb(255, 255, 255);
   font-size: 20px;
-  font-family: "Poppins";
+  font-family: "Montserrat";
   font-style: normal;
-  font-weight: 600;
+  /* font-weight: 600; */
   font-size: 17px;
   line-height: 28px;
   color: #ffffff;
@@ -145,7 +210,7 @@
   color: rgb(17, 227, 251);
   font-family: "Poppins";
   font-style: normal;
-  font-weight: 500;
+  font-weight: 600;
   font-size: 13px;
   line-height: 22px;
   color: #11e3fb;
@@ -163,10 +228,6 @@
 h3 {
   z-index: 10;
 }
-/* .article-card:hover h3 {
-  color: black;
-  font-weight: 900;
-} */
 
 .article-card:hover h1 {
   font-weight: 900;
@@ -174,6 +235,32 @@ h3 {
 
 .article-card {
   overflow: hidden;
+}
+
+@media screen and (min-width: 1325px) {
+  .ribbon {
+    width: 178px;
+    top: 2px;
+    right: 145px;
+  }
+}
+@media screen and (min-width: 1355px) {
+  .ribbon {
+    width: 44%;
+    top: 2px;
+    right: 53%;
+  }
+  .rib span {
+    right: 23%;
+    top: 6px;
+  }
+}
+
+@media screen and (min-width: 1500px) {
+  .rib span {
+    right: 27%;
+    top: 6px;
+  }
 }
 
 @media screen and (max-width: 1300px) {
@@ -191,7 +278,7 @@ h3 {
 }
 
 @media screen and (max-width: 900px) {
-  .big-card .article-card{
+  .big-card .article-card {
     max-width: 330px;
   }
   .articles-container {
@@ -219,56 +306,82 @@ h3 {
   .big-card {
     width: 20.5rem;
   }
-  .big-card .article-card{
+  .big-card .article-card {
     height: 420px;
   }
 }
 
-@media screen and (max-width: 550px){
-  .big-card{
+@media screen and (max-width: 550px) {
+  .big-card {
     width: 19rem;
     height: 385px;
     display: flex;
     justify-content: center;
   }
-  .big-card .article-card{
+  .big-card .article-card {
     width: 17.5rem;
     height: 380px;
   }
-  .big-card .article-card h1{
+  .big-card .article-card h1 {
     font-size: 19px;
     top: 230px;
   }
-  .big-card .article-card h3{
+  .big-card .article-card h3 {
     font-size: 13px;
     top: 200px;
   }
-  .big-card .article-card img{
+  .big-card .article-card img {
     height: 50%;
   }
-  .small-cards .article-card{
+  .small-cards .article-card {
     margin: 0 35px;
   }
-  .small-cards .article-card h1{
-    font-size: 15px;
+  .small-cards .article-card h1 {
+    font-size: 14px;
   }
-  .small-cards .article-card h3{
+  .small-cards .article-card h3 {
     font-size: 12px;
   }
 }
 
-@media screen and (max-width: 550px){
-  .article-heading{
+@media screen and (max-width: 550px) {
+  .article-heading {
     font-size: 50px;
     line-height: 100px;
   }
-  .read-now{
+  .read-now {
     font-size: 22px;
   }
-  .articles-container{
+  .articles-container {
     overflow-x: hidden;
   }
-  .small-cards .article-card{
+  .small-cards .article-card {
     margin: 0 40px;
   }
 }
+@media screen and (max-width: 430px) {
+  .small-cards .article-card {
+    width: 65%;
+  }
+  .article-card img {
+    width: 110px;
+  }
+  .small-cards .article-card h1 {
+    font-size: 11px;
+  }
+}
+/* @media screen and (min-width:1400px) and (max-width:1325px) {
+  .ribbon {
+    width: 185px;
+}
+}
+
+.ribbon {
+
+height: 121px;
+overflow: hidden;
+position: absolute;
+top: -2px;
+right: 224px;
+  
+} */

@@ -1,5 +1,5 @@
 {
-    "initialBasics": [
+    "InitialBasics": [
         {
             "type": "lab",
             "Elements": [
@@ -243,8 +243,8 @@
                     "Question":"Write a C-program and implement the function given in the\r\nfollowing diagram.\r\n\r\nProvide functional values at the following values of x\r\nx= 5, 15, 25, 40, and 60.\r\n\r\nN.B. All your programs may be tested by other input values.",
                     "Answer":"#include<stdio.h>\r\n#include<math.h>\r\n\r\nint main(){\r\n\r\n    float x;float ans;\r\n    printf(\"Enter the value of x:\\n\");\r\n    scanf(\"%f\",&x);\r\n    printf(\"%.2f\\n\",x);\r\n\r\n    if(x>50 || x<0){\r\n        printf(\"x is out of domain.\\n\");\r\n        return 0;\r\n    }\r\n\r\n    if(x>=0 && x<=10){\r\n        ans=x;\r\n    }\r\n    else if(x>10 && x<30){\r\n        ans=sqrt(40*x-x*x-200)+20;\r\n    }\r\n    else if(x>=30 && x<=50){\r\n        ans=25-x\/2;\r\n    }\r\n\r\n    printf(\"The value of f(x) is %.2f.\\n\",ans);\r\n\r\n    return 0;\r\n}"
                 }
-            ]
-        },
+             ]
+      },
         {
             "type": "theory",
             "Elements": [
@@ -288,7 +288,7 @@
             ]
         }
     ],
-    "loops": [
+    "Loops": [
         {
             "type": "lab",
             "Elements": [
@@ -435,7 +435,7 @@
                 {
                     "Question":"Write a program that reads an integer N, and prints the\r\nsum of prime numbers, which are less than N. Compute\r\nthe values for N=2, 4, 8, 16, 32, 64 and 128, and provide\r\nthe result in a separate output file (named result.txt).\r\nUse standard output redirection feature to generate the\r\noutput file.",
                     "Answer":"#include<stdio.h>\r\n\r\nint main(){\r\n\r\n    int n;\r\n    printf(\"Enter the value of n:\\n\");\r\n    scanf(\"%d\",&n);\r\n    printf(\"%d\\n\",n);\r\n\r\n    int sum=0;\r\n\r\n    for(int i=2;i<n;i++){\r\n        int j;\r\n        for(j=2;j<i;j++){\r\n            if(i%j==0){\r\n                break;\r\n            }\r\n        }\r\n        if(j==i){\r\n            sum+=i;\r\n        }\r\n    }\r\n\r\n    printf(\"The sum of all prime numbers less than %d = %d\\n\\n\",n,sum);\r\n\r\n    return 0;\r\n}"
-                }    
+                }   
             ]
         },
         {
@@ -740,7 +740,7 @@
             ]
         }
     ],
-    "functionsAndRecursions": [
+    "FunctionsAndRecursions": [
         {
             "type": "lab",
             "Elements": [
@@ -966,7 +966,7 @@
             ]
         }
     ],
-    "structuresAndPointers": [
+    "StructuresAndPointers": [
         {
             "type": "lab",
             "Elements": [
@@ -1066,7 +1066,7 @@
             ]
         }
     ],
-    "sortingAnd2dArrays": [
+    "SortingAnd2dArrays": [
         {
             "type": "lab",
             "Elements": [
@@ -1129,7 +1129,7 @@
             ]
         }
     ],
-    "linkedList": [
+    "LinkedList": [
         {
             "type": "lab",
             "Elements": [

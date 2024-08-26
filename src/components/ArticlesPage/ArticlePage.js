@@ -19,7 +19,11 @@ function ArticlePage() {
       <h1 className="article-heading">ARTICLES</h1>
       <h3 className="read-now">READ NOW</h3>
       <div className="articles-container">
-        <div className="big-card">{cards[0]}</div>
+        <div className="badge">
+        <div className="big-card ">{cards[0]}</div>
+          <div class="ribbon"><div className="rib"><span>New</span></div></div>
+          </div>
+        
         <div className="small-cards">{cards.slice(1)}</div>
       </div>
     </div>

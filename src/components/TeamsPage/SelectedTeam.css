@@ -22,6 +22,11 @@
     transition: background-color 0.3s ease;
 }
 
+.team-button:hover{
+    background-color: rgba(57, 57, 64, 0.8);
+    color: rgba(255,255,255, 0.85);
+}
+
 .team-button.active{
     transition: background-color 0.5s ease;
     background-color: #3DC4D4;

@@ -18,7 +18,7 @@ const TeamsPage = () => {
         }}
       >
         <div className="members">
-          <h3 className="members_title">Founders</h3>
+          <h3 className="members_title founders_title">Founders</h3>
           <Founders />
         </div>
         <div className="members">

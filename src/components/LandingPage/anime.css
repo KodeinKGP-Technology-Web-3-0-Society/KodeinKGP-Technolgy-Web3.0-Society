@@ -1,0 +1,28 @@
+.loading-gif {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    object-fit: cover;
+    height: 95vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+.loading-gif img {
+    max-height: fit-content;
+    object-fit: contain;
+}
+
+@media screen and (max-width: 768px) {
+
+    .loading-gif {
+        max-height: 100vh;
+        max-width: 100vw;
+        position: fixed;
+    }
+
+    .loading-gif img {
+        height: 100vh;
+        width: 100vw;
+    }
+}
