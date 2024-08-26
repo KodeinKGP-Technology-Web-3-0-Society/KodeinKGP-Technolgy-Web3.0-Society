@@ -5,6 +5,10 @@
   flex-direction: column;
 }
 
+.head-anim {
+  display: flex;
+}
+
 .article-heading {
   font-family: "Poppins";
   font-style: normal;
@@ -12,7 +16,7 @@
   font-size: 8rem;
   margin-left: 2.5vw;
   line-height: 120px;
-  margin-top: 6rem;
+  /* margin-top: 4rem; */
   padding-left: 3rem;
   /* margin-bottom: 20px; */
   display: flex;
@@ -41,30 +45,36 @@
 } */
 
 .intro-container {
-  width: 95vw;
+  width: 55vw;
   display: flex;
   justify-content: space-between;
   align-self: center;
+  display: flex;
+  flex-direction: column;
 }
 
 .intro-container .sub-lines {
   color: #fff;
   align-self: center;
   font-family: "Montserrat";
+  align-self: flex-start;
+  padding-left: 6rem;
+  margin-top: 3.5rem;
 }
 
 .sub-lines h2 {
   font-weight: 300;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .sub-lines h3 {
   font-weight: 100;
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .animation {
-  width: 40vw;
+  width: 35vw;
+  align-self: flex-start;
 }
 
 .articles-container {

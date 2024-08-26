@@ -18,15 +18,17 @@ function ArticlePage() {
   });
   return (
     <div className="article-content">
-      <h1 className="article-heading">ARTICLES</h1>
-      {/* <h3 className="read-now">READ NOW</h3> */}
-      <div className="intro-container">
-        <div className="sub-lines">
-          <h2>Your Gateway to AI, Web Dev, and Blockchain</h2>
-          <h3>
-            Explore cutting-edge trends and insights shaping the future of
-            technology.
-          </h3>
+      <div className="head-anim">
+        {/* <h3 className="read-now">READ NOW</h3> */}
+        <div className="intro-container">
+          <h1 className="article-heading">Articles</h1>
+          <div className="sub-lines">
+            <h2>Your Gateway to AI, Web Dev, and Blockchain</h2>
+            <h3>
+              Explore cutting-edge trends and insights shaping the future of
+              technology.
+            </h3>
+          </div>
         </div>
         <div className="animation">
           <Lottie animationData={Article} />
