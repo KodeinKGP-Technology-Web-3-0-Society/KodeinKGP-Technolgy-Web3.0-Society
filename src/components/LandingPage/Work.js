@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef, useEffect } from "react";
 import { useInView } from "react-intersection-observer";
+import { Link } from "react-router-dom";
 
 import "./Work.css";
 // import './Team-Cards.css';
@@ -14,6 +15,7 @@ import WEBDEV from './WEB.json'
 import Blockchain from './Blockchain.json'
 import { gsap } from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import programmer from './programmer-image.png';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -300,7 +302,21 @@ export default function Teams() {
                 </div>
             </div>
 
-        </div>
+            <Link to='/pds'>
+                <div className="pds-page-poster-wrapper">
+                    <div className="pds-page-poster">
+                        <div className="pds-page-poster-left">
+                            <h1>Still Getting Stuck in PDS?</h1>
+                            <h2>Our curated PDS Problems set works right for you...</h2>
+                        </div>
+                        <div className="pds-page-poster-right">
+                            <img src={programmer} alt="img" />
+                        </div>
+                    </div>
+                </div >
+            </Link >
+
+        </div >
 
     );
 }
