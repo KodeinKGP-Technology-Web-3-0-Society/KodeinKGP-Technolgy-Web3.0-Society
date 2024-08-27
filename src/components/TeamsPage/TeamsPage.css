@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
 
-.members {
+/* .members {
   margin: 0 0 1rem 0;
 }
 
@@ -11,11 +11,33 @@
   font-size: 2.5rem;
   margin: 6.5rem 0 2.5rem;
   color: #3dc4d4;
-  /* padding-top: 4rem; */
+  /* padding-top: 4rem; 
 }
 
 .founders_title{
   margin: 2.5rem 0;
+  padding: 5px;
+}
+ */
+
+.members {
+  margin: 0 0 1rem 0;
+}
+
+.members_title {
+  font-family: Montserrat;
+  font-size: 2.5rem;
+  margin: 3rem 0 2.5rem;
+  color: #3dc4d4;
+  /* padding-top: 4rem; */
+}
+
+.heads_title{
+  margin: 3rem 0 2.5rem;
+}
+
+.founders_title, .advisors_title, .our_teams_title{
+  margin: 4rem 0 2.5rem;
   padding: 5px;
 }
 
