@@ -46,7 +46,7 @@ const MainContent = () => {
       {
         x: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 1,
         ease: "power2.out"
       }
@@ -60,7 +60,7 @@ const MainContent = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 1,
         stagger: 0.15,
         ease: "power2.out"
@@ -75,7 +75,7 @@ const MainContent = () => {
       {
         x: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 1,
         ease: "power2.out"
       }, "-=1.5"
@@ -89,7 +89,7 @@ const MainContent = () => {
       {
         x: 100,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 1,
         ease: "power2.out"
       }, "-=1.5"
@@ -131,7 +131,7 @@ const MainContent = () => {
       {
         // x: 0,        
         opacity: 1,
-        duration: 1.5,
+        duration: 1,
         delay: 1,
         ease: "power2.out"
       }, "-=1.2"
@@ -157,7 +157,7 @@ const MainContent = () => {
       {
         y: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         delay: 1,
         stagger: 0.2,
         ease: "power2.out",
@@ -185,7 +185,7 @@ const MainContent = () => {
       {
         x: 0,
         opacity: 1,
-        duration: 1,
+        duration: 0.5,
         // delay: 1,
         stagger: 0.2,
         ease: "power2.out",
