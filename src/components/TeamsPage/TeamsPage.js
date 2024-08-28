@@ -18,19 +18,20 @@ const TeamsPage = () => {
         }}
       >
         <div className="members">
+          <h3 className="members_title heads_title">Heads</h3>
+          <Heads />
+        </div>
+        <div className="members">
           <h3 className="members_title founders_title">Founders</h3>
           <Founders />
         </div>
         <div className="members">
-          <h3 className="members_title">Advisors</h3>
+          <h3 className="members_title advisors_title">Advisors</h3>
           <OldHeads />
         </div>
-        <div className="members">
-          <h3 className="members_title">Heads</h3>
-          <Heads />
-        </div>
+        
         <div className="teams">
-          <h3 className="members_title">Our Teams</h3>
+          <h3 className="members_title our_teams_title">Our Teams</h3>
           <Teams/>
         </div>
       </div>
