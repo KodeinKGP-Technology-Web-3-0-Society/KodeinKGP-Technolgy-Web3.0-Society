@@ -1,1 +1,1 @@
-export const DB_URL = "https://localhost:3000/user";
+export const DB_URL = "https://kik-backend.onrender.com/register";

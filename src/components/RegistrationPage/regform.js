@@ -13,6 +13,8 @@ const RegistrationForm = () => {
   const [instituteEmail, setInstituteEmail] = useState("");
   const [contactNumber, setContactNumber] = useState("");
   const [otherInvolvements, setOtherInvolvements] = useState("");
+  const [isLoad, setIsLoad] = useState(false);
+  const [selTeams, setSelTeams] = useState([]);
 
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -28,6 +30,7 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsLoad(true)
     try {
       const response = await fetch(`${DB_URL}`, {
         method: "POST",
@@ -35,14 +38,15 @@ const RegistrationForm = () => {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          nme,
+          name: nme,
           rollNumber,
           personalEmail,
           instituteEmail,
           contactNumber,
           otherInvolvements,
+          selTeams
         }),
-      });
+      })
 
       setName("");
       setRollNumber("");
@@ -50,11 +54,25 @@ const RegistrationForm = () => {
       setInstituteEmail("");
       setContactNumber("");
       setOtherInvolvements("");
+      setSelTeams([]);
       console.log(response);
     } catch (error) {
       console.log(error);
     }
+    setIsLoad(false)
   };
+
+  const handleSelTeam = (team) => {
+    setSelTeams(prevTeams => {
+      const isTeamSelected = prevTeams.includes(team);
+      if (isTeamSelected) {
+        return prevTeams.filter(t => t !== team);
+      } else {
+        return [...prevTeams, team];
+      }
+    });
+  };
+
   return (
     <>
       {/* <Navbar /> */}
@@ -113,8 +131,10 @@ const RegistrationForm = () => {
             <div className="portfolio_selector">
               <input
                 type="checkbox"
-                id="Trainie Developer"
+                id="Trainiee Developer"
                 className="portfolio_checker"
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Trainiee Developer")}
                 required
               />
               <label for="Trainie Developer" className="label_portfolio">
@@ -124,6 +144,8 @@ const RegistrationForm = () => {
                 type="checkbox"
                 id="Associate Design Member"
                 className="portfolio_checker"
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Associate Design Member")}
                 required
               />
               <label for="Trainie Developer" className="label_portfolio">
@@ -133,6 +155,8 @@ const RegistrationForm = () => {
                 type="checkbox"
                 id="Associate Event Coordinator"
                 className="portfolio_checker"
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Associate Event Coordinator")}
                 required
               />
               <label for="Trainie Developer" className="label_portfolio">
@@ -150,7 +174,7 @@ const RegistrationForm = () => {
             />
           </form>
           <div className="submit">
-            <button type="submit" className="reg-btn">
+            <button type="submit" className="reg-btn" disabled={isLoad} onClick={(e) => handleSubmit(e)}>
               Register
             </button>
           </div>
