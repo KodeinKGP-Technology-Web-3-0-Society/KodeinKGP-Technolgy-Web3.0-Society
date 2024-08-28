@@ -97,6 +97,30 @@ export default function Teams() {
         );
       }
     });
+
+    var t4 = gsap.timeline({
+      scrollTrigger: {
+        trigger: ".pds-page-poster-wrapper",
+        start: "center bottom",
+        end: "center center",
+        scrub: 1,
+        scroller: "body",
+      }
+    })
+
+    t4.fromTo(".pds-page-poster-wrapper",
+      {
+        x: -300,
+        opacity: 0
+      },
+      {
+        x: 0,
+        opacity: 1,
+        duration: 0.5,
+        stagger: 0.2
+      },
+    )
+
   }, []);
 
   // useEffect(() => {
@@ -279,7 +303,7 @@ export default function Teams() {
           <p className="field-heading">Web</p>
           <p className="field-description">
             Weave your digital aspirations into reality through our dynamic Web
-            solutions, fusing creativity with functionality.​
+            solutions, fusing creativity with functionality.
           </p>
         </div>
         <div
