@@ -46,18 +46,6 @@ const RegistrationForm = () => {
           otherInvolvements,
           selTeams
         }),
-      }).then((data) => {
-        if(data.ok){
-          alert("Registration Success");
-        }else if(data.status == 400){
-          data.text().then((dataText) => {
-            alert(dataText);
-          })
-        }else{
-          alert("Error Registering");
-        }
-      }).catch((error) => {
-        console.log(error)
       })
 
       setName("");
