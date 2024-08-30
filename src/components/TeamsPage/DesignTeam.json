@@ -24,17 +24,6 @@
         },
         {
             "id": 3,
-            "name": "Brajesh Kumar Sahoo",
-            "Rollno": "",
-            "mailid": "sahoobrajesh.99@gmail.com",
-            "facebook": "https://www.facebook.com/brajeshkumar.sahoo.1?mibextid=ZbWKwL",
-            "instagram": "https://www.instagram.com/subu_105?igsh=MWVhdGNrOW95aGFmag==",
-            "linkedin": "https://www.linkedin.com/in/brajesh-kumar-sahoo-1315902a2?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-            "github": "https://github.com/WinterSoldier07",
-            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/WhatsApp%20Image%202024-08-09%20at%2023.30.39_aa96d215.jpg?raw=true"
-        },
-        {
-            "id": 4,
             "name": "Khushi Srivastava",
             "Rollno": "",
             "mailid": "khushi.srivastav462@gmail.com",
@@ -45,18 +34,8 @@
             "image_url": "https://github.com/kodeinkgp/Photos/blob/main/image.jpg?raw=true"
         },
         {
-            "id": 5,
-            "name": "Aryan Malhotra",
-            "Rollno": "",
-            "mailid": "malhotra.aryan.a01@gmail.com",
-            "facebook": "https://www.facebook.com/profile.php?id=61552083171510&mibextid=LQQJ4d",
-            "instagram": "https://www.instagram.com/aryan.malhotra2005?igsh=aWw5YTZ5eGIzYWZr&utm_source=qr",
-            "linkedin": "https://www.linkedin.com/in/aryan-malhotra-4664a1291?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app",
-            "github": "",
-            "image_url": "https://github.com/kodeinkgp/Photos/blob/main/Untitled%20design%20(8).png?raw=true"
-        },{
-            "id": 6,
-            "name": "Dharavath Prathwik Naik ",
+            "id": 4,
+            "name": "Prathwik Naik ",
             "Rollno": "",
             "mailid": "prathwiknaik08@gmail.com",
             "facebook": "",
@@ -66,7 +45,7 @@
             "image_url": "https://github.com/kodeinkgp/Photos/blob/main/IMG-20240811-WA0064.jpg?raw=true"
         },
         {
-            "id": 7,
+            "id": 5,
             "name": "D.Yuvan Gates",
             "Rollno": "",
             "mailid": "yuvangates025@gmail.com",
@@ -77,7 +56,7 @@
             "image_url": ""
         },
         {
-            "id": 8,
+            "id": 6,
             "name": "Satakshi Chauhan",
             "Rollno": "",
             "mailid": "satakshiappleid09@gmail.com",
