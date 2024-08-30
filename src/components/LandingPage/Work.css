@@ -215,6 +215,26 @@
   font-family: "Montserrat";
 }
 
+.separator-line {
+  width: 80%;
+  height: 1px;
+  /* thin line */
+  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
+  /* tapering effect */
+  margin: 20px auto;
+  /* centers the line and adds some spacing */
+}
+
+@media (max-width: 768px) {
+  .separator-line {
+    width: 80%;
+    height: 1px;
+    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
+    margin: 20px auto;
+  }
+}
+
+
 @media only screen and (min-width: 769px) {
   .field-card {
     width: 20vw;

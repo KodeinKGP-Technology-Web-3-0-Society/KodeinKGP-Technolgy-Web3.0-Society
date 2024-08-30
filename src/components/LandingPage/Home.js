@@ -12,7 +12,8 @@ import React, { useState, useEffect } from "react";
 import main from './main.json'
 import Lottie from "lottie-react";
 import { gsap } from 'gsap';
-import ScrollTrigger from "gsap/ScrollTrigger.js";
+import Animation from "./Animation.js";
+// import ScrollTrigger from "gsap/ScrollTrigger.js";
 
 // Loading screen with selections poster
 // const LoadingScreen = () => {

@@ -333,6 +333,8 @@ export default function Teams() {
         </div>
       </div>
 
+      <div className="separator-line"></div>
+
       <div className="pds-page-poster-wrapper">
         <Link to="/pds" style={{ textDecoration: "none" }}>
           <div className="pds-page-poster">

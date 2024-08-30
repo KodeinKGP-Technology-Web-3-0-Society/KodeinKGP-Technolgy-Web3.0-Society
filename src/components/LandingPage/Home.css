@@ -43,13 +43,11 @@ h1 {
 h1 span {
   font-size: 80px;
   font-weight: 700;
-  background: linear-gradient(
-    to bottom right,
-    rgb(17, 227, 251),
-    rgb(91, 230, 255),
-    rgb(181, 246, 253),
-    rgb(17, 227, 251)
-  );
+  background: linear-gradient(to bottom right,
+      rgb(17, 227, 251),
+      rgb(91, 230, 255),
+      rgb(181, 246, 253),
+      rgb(17, 227, 251));
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
@@ -119,13 +117,11 @@ p {
 
 .bottom-bar .text span {
   font-size: x-large;
-  background: linear-gradient(
-    to bottom right,
-    rgb(17, 227, 251),
-    rgb(91, 230, 255),
-    rgb(181, 246, 253),
-    rgb(17, 227, 251)
-  );
+  background: linear-gradient(to bottom right,
+      rgb(17, 227, 251),
+      rgb(91, 230, 255),
+      rgb(181, 246, 253),
+      rgb(17, 227, 251));
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
@@ -195,13 +191,11 @@ p {
 .pds-page-poster-left h1 {
   font-size: 3vw;
   padding: 10px 0;
-  background: linear-gradient(
-    to bottom right,
-    rgb(17, 227, 251),
-    rgb(91, 230, 255),
-    rgb(181, 246, 253),
-    rgb(17, 227, 251)
-  );
+  background: linear-gradient(to bottom right,
+      rgb(17, 227, 251),
+      rgb(91, 230, 255),
+      rgb(181, 246, 253),
+      rgb(17, 227, 251));
   /* -webkit-background-clip: text; */
   color: transparent;
   background-clip: text;
@@ -233,6 +227,7 @@ p {
     flex-direction: column;
     width: 70vw;
     padding: 30px 10px;
+    margin-top: 20px;
   }
 
   .pds-page-poster-right {
