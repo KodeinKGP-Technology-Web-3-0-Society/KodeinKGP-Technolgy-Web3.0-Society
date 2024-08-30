@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import dataJ from "./data.json";
 import LabCard from "./LabCard";
 import "./LabTopic.css";
@@ -27,9 +27,11 @@ export default function LabTopic({ topic }) {
   return (
     <div className="LabTopicList">
       <table className="ques-table">
-        {arr.map((ele, ind) => (
-          <LabCard key={ind} qna={arr[ind]} topic={topic} ind={ind} />
-        ))}
+        <tbody>
+          {arr.map((ele, ind) => (
+            <LabCard key={ind} qna={arr[ind]} topic={topic} ind={ind} />
+          ))}
+        </tbody>
       </table>
     </div>
   );

@@ -1,10 +1,22 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import dataJ from "./data.json";
 import LabTopic from "./LabTopic";
 import "./Lab.css";
 
 export default function Lab() {
   const [openTopics, setOpenTopics] = useState([]);
+
+  useEffect(() => {
+    if (!localStorage.getItem("favourites")) {
+      localStorage.setItem("favourites", JSON.stringify([]));
+    }
+  }, []);
+
+  useEffect(() => {
+    if (!localStorage.getItem("completed")) {
+      localStorage.setItem("completed", JSON.stringify([]));
+    }
+  }, []);
 
   const toggleTopic = (topic) => {
     setOpenTopics((prevOpenTopics) =>
@@ -13,7 +25,6 @@ export default function Lab() {
         : [...prevOpenTopics, topic]
     );
   };
-
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>
