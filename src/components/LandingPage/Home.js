@@ -48,7 +48,7 @@ const MainContent = () => {
         x: 0,
         opacity: 1,
         duration: 0.5,
-        delay: 1,
+        delay: 2,
         ease: "power2.out"
       }
     )
@@ -62,7 +62,7 @@ const MainContent = () => {
         y: 0,
         opacity: 1,
         duration: 0.5,
-        delay: 1,
+        delay: 2,
         stagger: 0.15,
         ease: "power2.out"
       }, "-=1.5"
@@ -196,6 +196,9 @@ const MainContent = () => {
 
   }, [])
 
+
+  const [animate, setAnimate] = useState(true)
+  if (animate) return <Animation animate={animate} setAnimate={setAnimate} />
 
   return (
     <div className="landing-page">
