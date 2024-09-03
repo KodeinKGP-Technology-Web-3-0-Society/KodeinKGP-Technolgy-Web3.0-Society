@@ -17,35 +17,42 @@ export default function Footer() {
           </p>
         </div>
         <div className='iconsContainer'>
-            <a
-              target="_blank"
-              href="https://www.facebook.com/kodeinkgp?mibextid=ZbWKwL"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-facebook"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.instagram.com/kodeinkgp_iitkgp?igsh=cmhyMXM3YTA5YzZm"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-instagram"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://www.linkedin.com/company/kodeinkgp/"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-linkedin"></ion-icon>
-            </a>
-            <a
-              target="_blank"
-              href="https://medium.com/@kodeinkgp"
-              rel="noreferrer"
-            >
-              <ion-icon size="large" name="logo-medium"></ion-icon>
-            </a>
-          </div>
+          <a
+            target="_blank"
+            href="https://www.facebook.com/kodeinkgp?mibextid=ZbWKwL"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-facebook"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.instagram.com/kodeinkgp_iitkgp?igsh=cmhyMXM3YTA5YzZm"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-instagram"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/company/kodeinkgp/"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-linkedin"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://medium.com/@kodeinkgp"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-medium"></ion-icon>
+          </a>
+          <a
+            target="_blank"
+            href="https://chat.whatsapp.com/IFt69sSqZsu7FlRWl3EIbk"
+            rel="noreferrer"
+          >
+            <ion-icon size="large" name="logo-whatsapp"></ion-icon>
+          </a>
+        </div>
       </div>
       <div className="footerItems" id="footerItem2">
         <div className="footerItemElement" id="footerItemElement1">
