@@ -47,7 +47,7 @@ export default function Lab() {
           <div className="custom-dropdown-selected">
             {viewMode}
             <span className="custom-dropdown-icon">
-              {isDropdownOpen ? "-" : "+"}
+              {isDropdownOpen ? "▲" : "▼"}
             </span>
           </div>
           <div className="custom-dropdown-options">
