@@ -1,8 +1,3 @@
-.labCards {
-  text-decoration: none;
-  width: 100%;
-}
-
 .cardDiv {
   border: 1px solid #555;
   background-color: rgb(91, 230, 255, 0.04);
@@ -13,6 +8,7 @@
   /* margin: 20px 10px; */
   max-width: 100%;
   width: 100%;
+  text-decoration: none;
 }
 
 /* .cardDiv:hover {
@@ -46,6 +42,16 @@
   text-decoration: none;
 }
 
+.fav-star {
+  color: #fff;
+  cursor: pointer;
+}
+
+.checkbox {
+  color: white;
+  cursor: pointer;
+}
+
 .cardDiv tr {
   height: fit-content;
 }
@@ -55,11 +61,9 @@
 
 .lc-ques {
   padding: 0.5rem 0.5rem 0.5rem 0.7rem;
-  color: #fff;
   vertical-align: middle;
   font-size: 1.2rem;
   text-align: left;
-  /* width: calc(100vw - 8rem); */
   width: 100%;
 }
 
@@ -67,4 +71,9 @@
   min-height: 5rem;
   max-width: 5rem;
   vertical-align: middle;
+}
+
+.ques-link {
+  text-decoration: none;
+  color: #fff;
 }
