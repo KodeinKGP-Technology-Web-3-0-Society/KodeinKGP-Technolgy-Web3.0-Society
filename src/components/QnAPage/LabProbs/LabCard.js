@@ -2,6 +2,7 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./LabCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import dataJ from "./data.json";
 import {
   faNewspaper,
   faSquareCheck,
@@ -75,9 +76,11 @@ export default function LabCard({ qna, topic, ind }) {
         </span>
       </td>
       <td className="lc-ques">
-        {question_words.length > question_chars.length
-          ? question_chars
-          : question_words}
+        <Link to={path} className="ques-link" target="_blank">
+          {question_words.length > question_chars.length
+            ? question_chars
+            : question_words}
+        </Link>
       </td>
       <td className="favourite">
         <span
@@ -90,11 +93,11 @@ export default function LabCard({ qna, topic, ind }) {
           <FontAwesomeIcon icon={faStar} />
         </span>
       </td>
-      <td className="lc-link">
+      {/* <td className="lc-link">
         <Link to={path} className="quest" target="_blank">
           <FontAwesomeIcon icon={faNewspaper} />
         </Link>
-      </td>
+      </td> */}
     </tr>
   );
 }
