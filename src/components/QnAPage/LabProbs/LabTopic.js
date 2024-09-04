@@ -5,7 +5,7 @@ import "./LabTopic.css";
 
 export default function LabTopic({ topic, viewMode }) {
   const getQuestionsData = () => {
-    if (viewMode === "favourites") {
+    if (viewMode === "Favourite Questions") {
       const savedFavourites =
         JSON.parse(localStorage.getItem("favourites")) || [];
       const favQuestions = {};
@@ -27,6 +27,31 @@ export default function LabTopic({ topic, viewMode }) {
         favQuestions[t][0].Elements.push(question);
       });
       return favQuestions[topic][0].Elements;
+    } else if (viewMode === "Incomplete Questions") {
+      const completedQues = JSON.parse(localStorage.getItem("completed"));
+      const incompleteQues = {};
+      const topicArray = [
+        "InitialBasics",
+        "Loops",
+        "ArrayAndStrings",
+        "FunctionsAndRecursions",
+        "StructuresAndPointers",
+        "SortingAnd2dArrays",
+        "LinkedList",
+      ];
+      topicArray.forEach((t) => {
+        incompleteQues[t] = [{ type: "lab", Elements: [] }];
+      });
+      Object.keys(dataJ).forEach((topic) => {
+        const questions = dataJ[topic][0].Elements; // Assuming elements are stored in this format
+        questions.forEach((question, index) => {
+          const key = `${topic}-${index}`;
+          if (!completedQues.includes(key)) {
+            incompleteQues[topic][0].Elements.push(question);
+          }
+        });
+      });
+      return incompleteQues[topic][0].Elements;
     } else {
       if (topic === "labTest") {
         const topicArray = [

@@ -5,7 +5,7 @@ import "./Lab.css";
 
 export default function Lab() {
   const [openTopics, setOpenTopics] = useState([]);
-  const [viewMode, setViewMode] = useState("all"); // "all" or "favourites"
+  const [viewMode, setViewMode] = useState("All Questions"); // "All Questions", "Favourite Questions", Incomplete Questions
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
 
   useEffect(() => {
@@ -45,7 +45,7 @@ export default function Lab() {
           onClick={toggleDropdown}
         >
           <div className="custom-dropdown-selected">
-            {viewMode === "all" ? "All Questions" : "Favourite Questions"}
+            {viewMode}
             <span className="custom-dropdown-icon">
               {isDropdownOpen ? "-" : "+"}
             </span>
@@ -53,15 +53,21 @@ export default function Lab() {
           <div className="custom-dropdown-options">
             <div
               className="custom-dropdown-option"
-              onClick={() => handleViewModeChange("all")}
+              onClick={() => handleViewModeChange("All Questions")}
             >
               All Questions
             </div>
             <div
               className="custom-dropdown-option"
-              onClick={() => handleViewModeChange("favourites")}
+              onClick={() => handleViewModeChange("Favourite Questions")}
             >
               Favourite Questions
+            </div>
+            <div
+              className="custom-dropdown-option"
+              onClick={() => handleViewModeChange("Incomplete Questions")}
+            >
+              Incomplete Questions
             </div>
           </div>
         </div>
