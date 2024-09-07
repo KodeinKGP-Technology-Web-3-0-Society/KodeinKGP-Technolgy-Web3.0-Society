@@ -36,6 +36,25 @@ export default function Lab() {
     setIsDropdownOpen(false);
   };
 
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      const dropdown = document.querySelector(".custom-dropdown");
+      if (dropdown && !dropdown.contains(event.target)) {
+        setIsDropdownOpen(false);
+      }
+    };
+
+    if (isDropdownOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    } else {
+      document.removeEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isDropdownOpen]);
+
   return (
     <div className="lab-container">
       <h1 id="LabHeader">LAB PROBLEMS</h1>

@@ -106,9 +106,11 @@
 }
 
 .dropdown-filter {
-  width: 95vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
+  margin-left: 10vw;
+  padding-right: 20px;
 }
 
 .custom-dropdown {
@@ -127,7 +129,7 @@
   background-color: #252531;
   border: none;
   border-radius: 5px 5px 0 0;
-  border-bottom : 1px solid #5be6ff;
+  border-bottom: 1px solid #5be6ff;
   font-size: 1rem;
   font-weight: 600;
   color: white;
@@ -155,6 +157,5 @@
 }
 
 .custom-dropdown-option:hover {
-  font-weight: 700;
   background-color: #19396350;
 }
