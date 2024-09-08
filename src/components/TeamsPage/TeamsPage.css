@@ -15,10 +15,14 @@
 }
 
 .heads_title{
-  margin: 3rem 0 2.5rem;
+  margin: 0.5rem 0 2.5rem;
 }
 
-.founders_title, .advisors_title, .our_teams_title{
+.founders_title, .advisors_title{
+  margin: 1.5rem 0 2.5rem;
+  padding: 5px;
+}
+.our_teams_title{
   margin: 4rem 0 2.5rem;
   padding: 5px;
 }
