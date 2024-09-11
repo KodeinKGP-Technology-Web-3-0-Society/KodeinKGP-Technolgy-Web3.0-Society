@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import main from './main.json'
 import Lottie from "lottie-react";
+import { Link } from "react-router-dom";
 import { gsap } from 'gsap';
 
 
@@ -203,16 +204,16 @@ const Landing = () => {
             </div>
             <div className="bottom-bar">
                 <div className="text">
-                    260+ <span>Problems</span>
+                    260+ <span>PDS Problems</span>
                 </div>
                 <div className="text">
-                    260+ <span>Detailed Solutions</span>
+                    17+ <span>Articles</span>
                 </div>
                 <div className="text">
-                    1 <span>Platform</span>
+                    15+ <span>Events</span>
                 </div>
                 <div className="text">
-                    1 <span>Vision</span>
+                    7000+ <span>Community Members</span>
                 </div>
             </div>
         </div>

@@ -53,7 +53,7 @@ function Navbar() {
             >
               <span className="link-tag2">
                 <Link className="link" to="/pds" onClick={toggleMenu}>
-                  QnA Page
+                  PDS_Bank
                 </Link>
               </span>
             </li>
