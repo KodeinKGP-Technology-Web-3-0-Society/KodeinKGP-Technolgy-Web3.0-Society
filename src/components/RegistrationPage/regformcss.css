@@ -90,7 +90,7 @@
 .portfolio_selector {
   display: grid;
   grid-template-columns: 0.6fr 1.75fr;
-  gap: 0.75vw;
+  gap: 0.75vh;
   width: 25vw;
 }
 .portfolio_checker {

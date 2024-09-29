@@ -14,6 +14,7 @@ const RegistrationForm = () => {
   const [contactNumber, setContactNumber] = useState("");
   const [otherInvolvements, setOtherInvolvements] = useState("");
   const [isLoad, setIsLoad] = useState(false);
+  const [selTeams, setSelTeams] = useState([]);
 
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -42,6 +43,7 @@ const RegistrationForm = () => {
           instituteEmail,
           contactNumber,
           otherInvolvements,
+          selTeams
         }),
       });
 
@@ -52,11 +54,24 @@ const RegistrationForm = () => {
       setContactNumber("");
       setOtherInvolvements("");
       setIsLoad(false);
+      setSelTeams([]);
       console.log(response);
     } catch (error) {
       console.log(error);
     }
   };
+
+  const handleSelTeam = (team) => {
+    setSelTeams(prevTeams => {
+      const isTeamSelected = prevTeams.includes(team);
+      if (isTeamSelected) {
+        return prevTeams.filter(t => t !== team);
+      } else {
+        return [...prevTeams, team];
+      }
+    });
+  };
+
   return (
     <>
       {/* <Navbar /> */}
@@ -115,18 +130,22 @@ const RegistrationForm = () => {
             <div className="portfolio_selector">
               <input
                 type="checkbox"
-                id="Trainie Developer"
+                id="Trainee Developer"
                 className="portfolio_checker"
                 required
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Trainee Developer")}
               />
-              <label for="Trainie Developer" className="label_portfolio">
-                Trainie Developer
+              <label for="Trainee Developer" className="label_portfolio">
+                Trainee Developer
               </label>
               <input
                 type="checkbox"
                 id="Associate Design Member"
                 className="portfolio_checker"
                 required
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Associate Design Member")}
               />
               <label for="Trainie Developer" className="label_portfolio">
                 Associate Design Member
@@ -136,6 +155,8 @@ const RegistrationForm = () => {
                 id="Associate Event Coordinator"
                 className="portfolio_checker"
                 required
+                onClick={(e) => handleSelTeam(e.target.id)}
+                checked={selTeams.find((d) => d == "Associate Event Coordinator")}
               />
               <label for="Trainie Developer" className="label_portfolio">
                 Associate Events Coordinator
