@@ -144,14 +144,14 @@ const RegistrationForm = () => {
             <div className="portfolio_selector">
               <input
                 type="checkbox"
-                id="Trainiee Developer"
+                id="Trainee Developer"
                 className="portfolio_checker"
                 onClick={(e) => handleSelTeam(e.target.id)}
-                checked={selTeams.find((d) => d == "Trainiee Developer")}
+                checked={selTeams.find((d) => d == "Trainee Developer")}
                 required
               />
-              <label for="Trainie Developer" className="label_portfolio">
-                Trainie Developer
+              <label for="Trainee Developer" className="label_portfolio">
+                Trainee Developer
               </label>
               <input
                 type="checkbox"
@@ -161,7 +161,7 @@ const RegistrationForm = () => {
                 checked={selTeams.find((d) => d == "Associate Design Member")}
                 required
               />
-              <label for="Trainie Developer" className="label_portfolio">
+              <label for="Associate Design Member" className="label_portfolio">
                 Associate Design Member
               </label>
               <input
