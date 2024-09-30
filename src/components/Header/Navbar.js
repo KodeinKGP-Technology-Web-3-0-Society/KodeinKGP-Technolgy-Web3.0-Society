@@ -103,7 +103,7 @@ function Navbar() {
                 }
               }}
             >
-              <span className="link-tag">
+              <span className="link-tag link-tag-reg">
                 <Link className="link" to="/regform" onClick={toggleMenu}>
                   Registration Form
                 </Link>
