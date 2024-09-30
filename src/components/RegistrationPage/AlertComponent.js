@@ -61,7 +61,6 @@ const containerStyle = {
   const msgDiv = {
     display:'flex',
     flexDirection: 'column',
-    maxWidth: '25vw'
   }
 
   return (

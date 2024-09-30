@@ -55,7 +55,7 @@ const RegistrationForm = () => {
         setSuccessShown(true);
       }else{
         resp.text().then((txt) => {
-          setAlertMsg(txt);
+          setAlertMsg('Please check all fields before submitting');
           setAlertShown(true);
         })
       }
@@ -68,11 +68,11 @@ const RegistrationForm = () => {
       setSelTeams([]);
     }).catch((e) => {
       console.log(e);
-      setAlertMsg('');
+      setAlertMsg('Please check all fields before submitting');
       setAlertShown(true);
     })
     
-    setIsLoad(false)
+    setIsLoad(false);
   };
 
   const handleSelTeam = (team) => {
