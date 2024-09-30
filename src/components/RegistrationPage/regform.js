@@ -6,6 +6,7 @@ import React from "react";
 import Select from "react-select";
 import aiimg from "./ai3.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import AlertComponent from "./AlertComponent";
 
 const RegistrationForm = () => {
   const [nme, setName] = useState("");
@@ -16,6 +17,9 @@ const RegistrationForm = () => {
   const [otherInvolvements, setOtherInvolvements] = useState("");
   const [isLoad, setIsLoad] = useState(false);
   const [selTeams, setSelTeams] = useState([]);
+  const [alertMsg, setAlertMsg] = useState("");
+  const [alertShown, setAlertShown] = useState(false);
+  const [successShown, setSuccessShown] = useState(false);
 
   useEffect(() => {
     const handleBeforeUnload = () => {
@@ -31,24 +35,30 @@ const RegistrationForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsLoad(true)
-    try {
-      const response = await fetch(`${DB_URL}`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          name: nme,
-          rollNumber,
-          personalEmail,
-          instituteEmail,
-          contactNumber,
-          otherInvolvements,
-          selTeams
-        }),
-      })
-
+    setIsLoad(true);
+    fetch(`${DB_URL}`, {
+      method: 'POST',
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        name: nme,
+        rollNumber,
+        personalEmail,
+        instituteEmail,
+        contactNumber,
+        otherInvolvements,
+        selTeams
+      }),
+    }).then((resp) => {
+      if(resp.ok){
+        setSuccessShown(true);
+      }else{
+        resp.text().then((txt) => {
+          setAlertMsg(txt);
+          setAlertShown(true);
+        })
+      }
       setName("");
       setRollNumber("");
       setPersonalEmail("");
@@ -56,10 +66,12 @@ const RegistrationForm = () => {
       setContactNumber("");
       setOtherInvolvements("");
       setSelTeams([]);
-      console.log(response);
-    } catch (error) {
-      console.log(error);
-    }
+    }).catch((e) => {
+      console.log(e);
+      setAlertMsg('');
+      setAlertShown(true);
+    })
+    
     setIsLoad(false)
   };
 
@@ -185,6 +197,8 @@ const RegistrationForm = () => {
             </button>
           </div>
         </div>
+        {alertShown && <AlertComponent type={'warning'} title={'Error registering for selections'} message={alertMsg}/>}
+        {successShown && <AlertComponent type={'success'} title={'Successfully registered for selections'} message={'Thank you for participating in selection'}/>}
       </div>
     </>
   );
