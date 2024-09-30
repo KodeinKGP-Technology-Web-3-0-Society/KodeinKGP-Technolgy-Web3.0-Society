@@ -96,19 +96,19 @@ function Navbar() {
                 </Link>
               </span>
             </li>
-            {/* <li
+            <li
               onClick={() => {
                 if (isOpen) {
                   toggleMenu();
                 }
               }}
             >
-              <span className="link-tag">
+              {/* <span className="link-tag link-tag-reg">
                 <Link className="link" to="/regform" onClick={toggleMenu}>
                   Registration Form
                 </Link>
-              </span>
-            </li> */}
+              </span> */}
+            </li>
             {/* <li
               onClick={() => {
                 if (isOpen) {

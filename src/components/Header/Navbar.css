@@ -235,6 +235,10 @@ body {
   transition: width 0.3s linear;
 }
 
+.link-tag-reg:hover::after{
+  width: 75%;
+}
+
 .link-tag2:hover::after{
   width: 65%;
   transition: width 0.3s linear;
