@@ -53,19 +53,19 @@ const RegistrationForm = () => {
     }).then((resp) => {
       if(resp.ok){
         setSuccessShown(true);
+        setName("");
+        setRollNumber("");
+        setPersonalEmail("");
+        setInstituteEmail("");
+        setContactNumber("");
+        setOtherInvolvements("");
+        setSelTeams([]);
       }else{
         resp.text().then((txt) => {
           setAlertMsg('Please check all fields before submitting');
           setAlertShown(true);
         })
       }
-      setName("");
-      setRollNumber("");
-      setPersonalEmail("");
-      setInstituteEmail("");
-      setContactNumber("");
-      setOtherInvolvements("");
-      setSelTeams([]);
     }).catch((e) => {
       console.log(e);
       setAlertMsg('Please check all fields before submitting');
