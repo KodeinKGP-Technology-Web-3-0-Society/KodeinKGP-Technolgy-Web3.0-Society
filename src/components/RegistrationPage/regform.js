@@ -32,6 +32,16 @@ const RegistrationForm = () => {
       window.removeEventListener("beforeunload", handleBeforeUnload);
     };
   }, []);
+  
+  useEffect(() => {
+    if (alertShown) {
+      const timer = setTimeout(() => {
+        setAlertShown(false);
+      }, 5000);
+      
+      return () => clearTimeout(timer); 
+    }
+  }, [alertShown]);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -85,6 +95,7 @@ const RegistrationForm = () => {
       }
     });
   };
+
 
   return (
     <>
