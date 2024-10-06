@@ -2,8 +2,13 @@ import "./Navbar.css";
 import Logo from "../LandingPage/kik-final-logo.png";
 import { Link } from "react-router-dom";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+
+
+
 function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
+  const nav = useNavigate()
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -103,11 +108,11 @@ function Navbar() {
                 }
               }}
             >
-              {/* <span className="link-tag link-tag-reg">
+              <span className="link-tag link-tag-reg">
                 <Link className="link" to="/regform" onClick={toggleMenu}>
                   Registration Form
                 </Link>
-              </span> */}
+              </span>
             </li>
             {/* <li
               onClick={() => {
