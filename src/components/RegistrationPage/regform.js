@@ -43,6 +43,16 @@ const RegistrationForm = () => {
     }
   }, [alertShown]);
 
+  useEffect(() => {
+    if (successShown) {
+      const timer = setTimeout(() => {
+        setAlertShown(false);
+      }, 5000);
+      
+      return () => clearTimeout(timer); 
+    }
+  }, [successShown]);
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setIsLoad(true);
@@ -70,9 +80,19 @@ const RegistrationForm = () => {
         setContactNumber("");
         setOtherInvolvements("");
         setSelTeams([]);
-      }else{
+      }else if(resp.status == 409){
+        setSuccessShown(true);
+        setName("");
+        setRollNumber("");
+        setPersonalEmail("");
+        setInstituteEmail("");
+        setContactNumber("");
+        setOtherInvolvements("");
+        setSelTeams([]);
+      }
+      else{
         resp.text().then((txt) => {
-          setAlertMsg('Please check all fields before submitting');
+          setAlertMsg(txt);
           setAlertShown(true);
         })
       }
