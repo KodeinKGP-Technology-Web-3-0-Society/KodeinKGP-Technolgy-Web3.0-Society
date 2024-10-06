@@ -46,7 +46,7 @@ const RegistrationForm = () => {
   useEffect(() => {
     if (successShown) {
       const timer = setTimeout(() => {
-        setAlertShown(false);
+        setSuccessShown(false);
       }, 5000);
       
       return () => clearTimeout(timer); 
