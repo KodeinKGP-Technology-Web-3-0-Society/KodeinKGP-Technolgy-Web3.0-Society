@@ -38,7 +38,7 @@ function App() {
               element={<TheoryQuestion />}
             />
             <Route path="/teams" element={<TeamsPage />}></Route>
-            <Route path="/regform" element={<RegistrationForm />}></Route>
+            {/* <Route path="/regform" element={<RegistrationForm />}></Route> */}
             <Route path="/events" element={<EventsPage />}></Route>
             <Route path="/events/apply" element={<ApplyPage />}></Route>
             <Route path="/articles" element={<ArticlePage />}></Route>
