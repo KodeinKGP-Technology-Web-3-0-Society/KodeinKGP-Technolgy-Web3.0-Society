@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import dataJ from "./data.json";
-import LabTopic from "./LabTopic";
+import dataJ from "./new_data.json";
+import SubTopics from "./SubTopics";
 import "./Lab.css";
 
 export default function Lab() {
@@ -85,7 +85,7 @@ export default function Lab() {
             </div>
             {openTopics.includes(topic) && (
               <div className="dropdown-content">
-                <LabTopic topic={topic} viewMode={viewMode} />
+                <SubTopics topic={topic} viewMode={viewMode} />
               </div>
             )}
           </div>

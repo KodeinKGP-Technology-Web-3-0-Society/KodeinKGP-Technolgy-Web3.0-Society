@@ -41,7 +41,9 @@
 
 .dropdown-content {
   background-color: #1c1a22;
-  padding: 10px;
+  padding: 0px 10px;
+  padding-top: 18px;
+  padding-bottom: 2px;
   border-radius: 0 0 10px 10px;
 }
 
@@ -127,7 +129,7 @@
   background-color: #252531;
   border: none;
   border-radius: 5px 5px 0 0;
-  border-bottom : 1px solid #5be6ff;
+  border-bottom: 1px solid #5be6ff;
   font-size: 1rem;
   font-weight: 600;
   color: white;

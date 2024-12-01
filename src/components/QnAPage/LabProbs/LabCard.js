@@ -2,16 +2,14 @@ import { React, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./LabCard.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import dataJ from "./data.json";
 import {
-  faNewspaper,
   faSquareCheck,
   faSquare,
   faStar,
 } from "@fortawesome/free-solid-svg-icons";
 
-export default function LabCard({ qna, topic, ind }) {
-  const key = `${topic}-${ind}`;
+export default function LabCard({ qna, topic, subTopic, ind }) {
+  const key = `${topic}-${subTopic}-${ind}`;
   const [isFav, setisFav] = useState(() => {
     const savedFavourites = JSON.parse(localStorage.getItem("favourites"));
     return savedFavourites.indexOf(key) !== -1;
@@ -33,7 +31,7 @@ export default function LabCard({ qna, topic, ind }) {
   }, [isFav, key]);
 
   const toggleFavourite = () => {
-    setisFav((prevFav) => !prevFav); // Toggle the state
+    setisFav((prevFav) => !prevFav);
   };
 
   const [isComp, setisComp] = useState(() => {
@@ -57,10 +55,10 @@ export default function LabCard({ qna, topic, ind }) {
   }, [isComp, key]);
 
   const toggleCompleted = () => {
-    setisComp((prevComp) => !prevComp); // Toggle the state
+    setisComp((prevComp) => !prevComp);
   };
 
-  let path = `/pds/lab/${topic}/${ind}`;
+  let path = `/pds/lab/${topic}/${subTopic}/${ind}`;
   let question_words = qna.Question.split(" ").slice(0, 13).join(" ") + "...";
   let question_chars = qna.Question.slice(0, 100) + "...";
   return (
