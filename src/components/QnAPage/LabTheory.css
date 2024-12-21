@@ -1,128 +1,132 @@
 body {
-  margin: 0;
-  padding: 0;
-  background-color: rgb(1, 1, 27);
-  font-family: 'Arial', sans-serif;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  max-height: 100vh;
-  flex-direction: column;
+	margin: 0;
+	padding: 0;
+	background-color: rgb(1, 1, 27);
+	font-family: 'Arial', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	max-height: 100vh;
+	flex-direction: column;
 }
 
 #LabTheory {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px;
 }
 
-.LabTheoryContainer{
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.LabTheoryContainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
 
 .LabTheoryItems {
-  text-align: left;
-  /* min-width: 300px; */
-  border: 1px solid #555;
-  padding: 20px;
-  background-color: #444;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  transition: transform 0.2s;
-  margin: 1rem 10px;
-  flex: 1;
-  /* font-family: 'Arial', sans-serif; */
+	text-align: left;
+	/* min-width: 300px; */
+	border: 1px solid #555;
+	padding: 20px;
+	background-color: #444;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.2s;
+	margin: 1rem 10px;
+	flex: 1;
+	/* font-family: 'Arial', sans-serif; */
 }
 
 .LabTheoryItems:hover {
-  transform: translateY(-5px);
+	transform: translateY(-5px);
 }
 
 .LabTheoryHeads {
-  font-size: 1.5rem;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color:rgb(91, 230, 255);
+	font-size: 1.5rem;
+	margin-bottom: 10px;
+	font-weight: bold;
+	color: rgb(91, 230, 255);
 }
 
 .LabTheoryTexts {
-  color: #ccc;
-  margin: 15px 0;
+	color: #ccc;
+	margin: 15px 0;
 }
 
 .LabTheoryBtns {
-  background-color: #0074d9;
-  color: white;
-  border: none;
-  padding: 10px 20px;
-  text-decoration: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-weight: bold;
-  margin-top: 10px;
-  text-transform: none;
+	background-color: #0074d9;
+	color: white;
+	border: none;
+	padding: 10px 20px;
+	text-decoration: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-weight: bold;
+	margin-top: 10px;
+	text-transform: none;
 }
 
 .LabTheoryBtns a {
-  color: white;
-  text-decoration: none;
+	color: white;
+	text-decoration: none;
 }
 
 .LabTheoryBtns:hover {
-  background-color: #0056b3;
-  text-decoration: none;
+	background-color: #0056b3;
+	text-decoration: none;
 }
 
 .quesimg {
-  width: 90%;
-  display: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 1rem;
+	width: 90%;
+	display: none;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-bottom: 1rem;
 }
 
 .quesimg {
-  width: 90%;
-  /* background: red; */
-  height: 300px;
-  /* margin-top: -2rem; */
+	width: 90%;
+	/* background: red; */
+	height: 300px;
+	/* margin-top: -2rem; */
 }
-.qimg { 
-  width: 500px;
-  height: 100%;
-  /* background: yellow; */
-  overflow: hidden;
-  margin: 0 auto;
-  border-radius: 8px;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+.qimg {
+	width: 500px;
+	height: 100%;
+	/* background: yellow; */
+	overflow: hidden;
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 
 .qimg img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
-#theoryContainer, #labContainer {
-  background: linear-gradient(-168.39deg,#ffffff -278.56%,#24248b -78.47%, #1d1b66 5.67%, #11101d 91.61%);
+#theoryContainer,
+#labContainer {
+	background: linear-gradient(
+		-168.39deg,
+		#ffffff -278.56%,
+		#24248b -78.47%,
+		#1d1b66 5.67%,
+		#11101d 91.61%
+	);
 }
-
-
-
 
 @media only screen and (min-width: 1200px) {
-  .quesimg {
-    display: block;
-  }
+	.quesimg {
+		display: block;
+	}
 }
 
 @media only screen and (max-width: 1200px) {
-  .LabTheoryContainer{
-   flex-direction: column;
-  }
+	.LabTheoryContainer {
+		flex-direction: column;
+	}
 }

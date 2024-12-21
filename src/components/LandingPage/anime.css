@@ -1,33 +1,32 @@
 .loading-gif {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    object-fit: cover;
-    height: 95vh;
-    width: 100vw;
-    overflow: hidden;
-    top: 0;
-    left: 0;
-    position: fixed;
-    z-index: 999;
-    background-color: rgb(1, 1, 25);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	object-fit: cover;
+	height: 95vh;
+	width: 100vw;
+	overflow: hidden;
+	top: 0;
+	left: 0;
+	position: fixed;
+	z-index: 999;
+	background-color: rgb(1, 1, 25);
 }
 
 .loading-gif img {
-    max-height: fit-content;
-    object-fit: contain;
+	max-height: fit-content;
+	object-fit: contain;
 }
 
 @media screen and (max-width: 768px) {
+	.loading-gif {
+		max-height: 100vh;
+		max-width: 100vw;
+		position: fixed;
+	}
 
-    .loading-gif {
-        max-height: 100vh;
-        max-width: 100vw;
-        position: fixed;
-    }
-
-    .loading-gif img {
-        height: 100vh;
-        width: 100vw;
-    }
+	.loading-gif img {
+		height: 100vh;
+		width: 100vw;
+	}
 }

@@ -1,72 +1,72 @@
-import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import "./TeamsPage.css";
+import React from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import './TeamsPage.css'
 // import { Tilt } from 'react-tilt';
-import { library } from "@fortawesome/fontawesome-svg-core";
+import { library } from '@fortawesome/fontawesome-svg-core'
 import {
-  faFacebook,
-  faInstagram,
-  faLinkedin,
-  faGithub,
-} from "@fortawesome/free-brands-svg-icons";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import Head from "./OldHeads.json";
+	faFacebook,
+	faInstagram,
+	faLinkedin,
+	faGithub,
+} from '@fortawesome/free-brands-svg-icons'
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import Head from './OldHeads.json'
 
-library.add(faFacebook, faInstagram, faEnvelope, faLinkedin, faGithub);
+library.add(faFacebook, faInstagram, faEnvelope, faLinkedin, faGithub)
 
 const OldHeads = () => {
-  function eachHead(head) {
-    return (
-      // <Tilt
-      // className="parallax-effect-glare-scale"
-      // perspective={500}
-      // glareEnable={true}
-      // scale={1}
-      // gyroscope={true}
-      // >
-      <article className="member head">
-        {/* <h4 className="photo-role"><strong>{head.role}</strong></h4> */}
-        <div className="photo-image">
-          <img src={head.image_url} alt="" />
-          <div className="photo-details">
-            <span>
-              <a href={head.facebook} target="_blank">
-                <FontAwesomeIcon icon={["fab", "facebook"]} />
-              </a>
-            </span>
-            <span>
-              <a href={head.mailid} target="_blank">
-                <FontAwesomeIcon icon="envelope" />
-              </a>
-            </span>
-            <span>
-              <a href={head.instagram} target="_blank">
-                <FontAwesomeIcon icon={["fab", "instagram"]} />
-              </a>
-            </span>
-            <span>
-              <a href={head.linkedin} target="_blank">
-                <FontAwesomeIcon icon={["fab", "linkedin"]} />
-              </a>
-            </span>
-            <span>
-              <a href={head.github} target="_blank">
-                <FontAwesomeIcon icon={["fab", "github"]} />
-              </a>
-            </span>
-          </div>
-        </div>
-        <h5 className="photo-name">
-          <strong>{head.name}</strong>
-        </h5>
-      </article>
-      // </Tilt>
-    );
-  }
-  return (
-    <div className="heads">
-      {Head.map(eachHead)}
-      {/* <article className = "member">
+	function eachHead(head) {
+		return (
+			// <Tilt
+			// className="parallax-effect-glare-scale"
+			// perspective={500}
+			// glareEnable={true}
+			// scale={1}
+			// gyroscope={true}
+			// >
+			<article className="member head">
+				{/* <h4 className="photo-role"><strong>{head.role}</strong></h4> */}
+				<div className="photo-image">
+					<img src={head.image_url} alt="" />
+					<div className="photo-details">
+						<span>
+							<a href={head.facebook} target="_blank">
+								<FontAwesomeIcon icon={['fab', 'facebook']} />
+							</a>
+						</span>
+						<span>
+							<a href={head.mailid} target="_blank">
+								<FontAwesomeIcon icon="envelope" />
+							</a>
+						</span>
+						<span>
+							<a href={head.instagram} target="_blank">
+								<FontAwesomeIcon icon={['fab', 'instagram']} />
+							</a>
+						</span>
+						<span>
+							<a href={head.linkedin} target="_blank">
+								<FontAwesomeIcon icon={['fab', 'linkedin']} />
+							</a>
+						</span>
+						<span>
+							<a href={head.github} target="_blank">
+								<FontAwesomeIcon icon={['fab', 'github']} />
+							</a>
+						</span>
+					</div>
+				</div>
+				<h5 className="photo-name">
+					<strong>{head.name}</strong>
+				</h5>
+			</article>
+			// </Tilt>
+		)
+	}
+	return (
+		<div className="heads">
+			{Head.map(eachHead)}
+			{/* <article className = "member">
               
               <div className="photo-image">
                 <img src="https://user-images.githubusercontent.com/96824839/171794126-16b6182a-65f3-483b-95f1-04682526a6ca.jpg" alt="" />
@@ -81,8 +81,8 @@ const OldHeads = () => {
               <h5><strong>Suraj Gupta</strong></h5>
               
             </article> */}
-    </div>
-  );
-};
+		</div>
+	)
+}
 
-export default OldHeads;
+export default OldHeads

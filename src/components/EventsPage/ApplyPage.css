@@ -1,58 +1,56 @@
 @import url('https://fonts.googleapis.com/css2?family=Black+Ops+One&display=swap');
 
-.apply_content{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.apply_content {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-@media only screen and (max-width:700px){
-    .event_image{
-        width: 20rem;
-    }
+@media only screen and (max-width: 700px) {
+	.event_image {
+		width: 20rem;
+	}
 }
 
-@media only screen and (min-width:701px){
-    .event_image{
-        width: 40rem;
-    }
+@media only screen and (min-width: 701px) {
+	.event_image {
+		width: 40rem;
+	}
 }
 
-.apply_title{
-    font-size: 2rem;
-    margin: 0.5rem 0;
-    color: white;
-    font-family: BlackOpsOne;
+.apply_title {
+	font-size: 2rem;
+	margin: 0.5rem 0;
+	color: white;
+	font-family: BlackOpsOne;
 }
 
-.apply_details{
-    color: white;
-    font-size: 1.35rem;
-    margin: 0.2rem;
-    text-align: center;
+.apply_details {
+	color: white;
+	font-size: 1.35rem;
+	margin: 0.2rem;
+	text-align: center;
 }
 
-.apply_details span , .problem_text span{
-    font-weight: 600;
+.apply_details span,
+.problem_text span {
+	font-weight: 600;
 }
 
-.problem_text{
-    font-size: 1.2rem;
-    margin: 0.2rem 0;
+.problem_text {
+	font-size: 1.2rem;
+	margin: 0.2rem 0;
 }
 
-.problem_subheading{
-    font-size: 1.35rem;
-    font-weight: 600;
-    text-decoration: underline;
+.problem_subheading {
+	font-size: 1.35rem;
+	font-weight: 600;
+	text-decoration: underline;
 }
 
 @meida screen and (max-width: 1200px) {
-    .apply_details {
-        font-size: 1rem;
-    }
+	.apply_details {
+		font-size: 1rem;
+	}
 }
-
-
-

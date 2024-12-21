@@ -23,14 +23,20 @@
 } */
 
 #recentHeader {
-  margin: 2rem 0rem 1rem 0rem;
-  font-family: 'Poppins', sans-serif;
-  text-align: center;
-  color: transparent;
-  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
-  background-clip: text;
-  -webkit-background-clip: text;
-  font-size: 48px;
+	margin: 2rem 0rem 1rem 0rem;
+	font-family: 'Poppins', sans-serif;
+	text-align: center;
+	color: transparent;
+	background: linear-gradient(
+		to bottom right,
+		rgb(17, 227, 251),
+		rgb(91, 230, 255),
+		rgb(181, 246, 253),
+		rgb(17, 227, 251)
+	);
+	background-clip: text;
+	-webkit-background-clip: text;
+	font-size: 48px;
 }
 
 /* #event1,
@@ -176,148 +182,162 @@
 } */
 
 .work-wrapper {
-  position: relative;
+	position: relative;
 }
 
 .field-cards {
-  margin-bottom: 20vw;
+	margin-bottom: 20vw;
 }
 
 .field-card {
-  padding: 0;
-  background-color: rgba(54, 54, 54, 0.4);
-  border-radius: 2.5vw;
-  height: 40vw;
-  transition: all 1s cubic-bezier(.63, .15, .03, 1.12);
-  margin-top: 20px;
+	padding: 0;
+	background-color: rgba(54, 54, 54, 0.4);
+	border-radius: 2.5vw;
+	height: 40vw;
+	transition: all 1s cubic-bezier(0.63, 0.15, 0.03, 1.12);
+	margin-top: 20px;
 }
 
 .field-card img {
-  width: 5vw;
-  height: 50vh;
+	width: 5vw;
+	height: 50vh;
 }
 
 .field-heading {
-  margin-top: 1.5vw;
-  margin-bottom: 0.5vw;
-  text-align: center;
-  font-family: "Montserrat";
-  font-size: xx-large;
-  background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
-  -webkit-background-clip: text;
-  color: transparent;
-  background-clip: text;
+	margin-top: 1.5vw;
+	margin-bottom: 0.5vw;
+	text-align: center;
+	font-family: 'Montserrat';
+	font-size: xx-large;
+	background: linear-gradient(
+		to bottom right,
+		rgb(17, 227, 251),
+		rgb(91, 230, 255),
+		rgb(181, 246, 253),
+		rgb(17, 227, 251)
+	);
+	-webkit-background-clip: text;
+	color: transparent;
+	background-clip: text;
 }
 
 .field-description {
-  padding: 10px 20px;
-  text-align: center;
-  font-family: "Montserrat";
+	padding: 10px 20px;
+	text-align: center;
+	font-family: 'Montserrat';
 }
 
 .separator-line {
-  width: 80%;
-  height: 1px;
-  /* thin line */
-  background: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.5), transparent);
-  /* tapering effect */
-  margin: 20px auto;
-  /* centers the line and adds some spacing */
+	width: 80%;
+	height: 1px;
+	/* thin line */
+	background: linear-gradient(
+		to right,
+		transparent,
+		rgba(0, 0, 0, 0.5),
+		transparent
+	);
+	/* tapering effect */
+	margin: 20px auto;
+	/* centers the line and adds some spacing */
 }
 
 @media (max-width: 768px) {
-  .separator-line {
-    width: 80%;
-    height: 1px;
-    background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.5), transparent);
-    margin: 20px auto;
-  }
+	.separator-line {
+		width: 80%;
+		height: 1px;
+		background: linear-gradient(
+			to right,
+			transparent,
+			rgba(255, 255, 255, 0.5),
+			transparent
+		);
+		margin: 20px auto;
+	}
 }
 
-
 @media only screen and (min-width: 769px) {
-  .field-card {
-    width: 20vw;
-    position: absolute;
-    top: 70%;
-    left: 50%;
-  }
+	.field-card {
+		width: 20vw;
+		position: absolute;
+		top: 70%;
+		left: 50%;
+	}
 
-  .field-card img {
-    width: 20vw;
-  }
+	.field-card img {
+		width: 20vw;
+	}
 
-  .field-heading {
-    font-size: 2vw;
-  }
+	.field-heading {
+		font-size: 2vw;
+	}
 
-  .field-cards {
-    position: relative;
-    height: 30vw;
-  }
+	.field-cards {
+		position: relative;
+		height: 30vw;
+	}
 
-  .card1 {
-    z-index: 1;
-    transform: translate(-50%, -50%) rotateZ(5deg);
-    transition-delay: 0.1s;
-  }
+	.card1 {
+		z-index: 1;
+		transform: translate(-50%, -50%) rotateZ(5deg);
+		transition-delay: 0.1s;
+	}
 
-  .card2 {
-    z-index: 2;
-    transform: translate(-50%, -50%) rotateZ(-7deg);
-    transition-delay: 0.05s;
-  }
+	.card2 {
+		z-index: 2;
+		transform: translate(-50%, -50%) rotateZ(-7deg);
+		transition-delay: 0.05s;
+	}
 
-  .card3 {
-    z-index: 3;
-    transform: translate(-50%, -50%) rotateZ(-2deg);
-  }
+	.card3 {
+		z-index: 3;
+		transform: translate(-50%, -50%) rotateZ(-2deg);
+	}
 
-  .field-description {
-    width: 19vw;
-    margin: 0 auto;
-    padding-bottom: 1vw;
-    font-size: 1.25vw;
-  }
+	.field-description {
+		width: 19vw;
+		margin: 0 auto;
+		padding-bottom: 1vw;
+		font-size: 1.25vw;
+	}
 }
 
 @media only screen and (max-width: 768px) {
+	#recentHeader {
+		font-size: 10vw;
+	}
 
-  #recentHeader {
-    font-size: 10vw;
-  }
+	.field-card {
+		width: 70vw;
+		height: 130vw;
+		position: relative;
+		left: 0;
+		top: 0;
+		transform: translate(0, 0);
+		margin-bottom: 20px;
+	}
 
-  .field-card {
-    width: 70vw;
-    height: 130vw;
-    position: relative;
-    left: 0;
-    top: 0;
-    transform: translate(0, 0);
-    margin-bottom: 20px;
-  }
+	.field-card img {
+		height: 40vh;
+	}
 
-  .field-card img {
-    height: 40vh;
-  }
+	.field-heading {
+		font-size: 7vw;
+		margin-top: 5vw;
+	}
 
-  .field-heading {
-    font-size: 7vw;
-    margin-top: 5vw;
-  }
+	.field-cards {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		max-height: fit-content;
+		margin-bottom: 5vh;
+	}
 
-  .field-cards {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    max-height: fit-content;
-    margin-bottom: 5vh;
-  }
-
-  .field-description {
-    width: 100%;
-    padding: 10px 30px;
-    font-size: 3.8vw;
-  }
+	.field-description {
+		width: 100%;
+		padding: 10px 30px;
+		font-size: 3.8vw;
+	}
 }

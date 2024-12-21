@@ -1,45 +1,45 @@
-import React from "react";
-import Founders from "./Founders";
-import Heads from "./Heads.js";
-import OldHeads from "./OldHeads.js";
-import Teams from "./Teams.js";
-import "./TeamsPage.css";
+import React from 'react'
+import Founders from './Founders'
+import Heads from './Heads.js'
+import OldHeads from './OldHeads.js'
+import Teams from './Teams.js'
+import './TeamsPage.css'
 
 const TeamsPage = () => {
-  return (
-    <>
-      <div
-        className="teamspage"
-        style={{
-          backgroundColor: "rgb(1, 1, 27)",
-          textAlign: "center",
-          color: "white",
-          fontFamily: "Montserrat",
-        }}
-      >
-        <div className="members">
-          <h3 className="members_title heads_title">Heads</h3>
-          <Heads />
-        </div>
-        <div className="members">
-          <h3 className="members_title founders_title">Founders</h3>
-          <Founders />
-        </div>
-        <div className="members">
-          <h3 className="members_title advisors_title">Advisors</h3>
-          <OldHeads />
-        </div>
-        
-        <div className="teams">
-          <h3 className="members_title our_teams_title">Our Teams</h3>
-          <Teams/>
-        </div>
-      </div>
-    </>
-  );
-};
+	return (
+		<>
+			<div
+				className="teamspage"
+				style={{
+					backgroundColor: 'rgb(1, 1, 27)',
+					textAlign: 'center',
+					color: 'white',
+					fontFamily: 'Montserrat',
+				}}
+			>
+				<div className="members">
+					<h3 className="members_title heads_title">Heads</h3>
+					<Heads />
+				</div>
+				<div className="members">
+					<h3 className="members_title founders_title">Founders</h3>
+					<Founders />
+				</div>
+				<div className="members">
+					<h3 className="members_title advisors_title">Advisors</h3>
+					<OldHeads />
+				</div>
 
-export default TeamsPage;
+				<div className="teams">
+					<h3 className="members_title our_teams_title">Our Teams</h3>
+					<Teams />
+				</div>
+			</div>
+		</>
+	)
+}
+
+export default TeamsPage
 
 // const indicator = (member) => {
 //   return (

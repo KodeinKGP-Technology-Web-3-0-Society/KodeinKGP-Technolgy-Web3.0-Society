@@ -1,83 +1,83 @@
-@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i");
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
 
 .members {
-  margin: 0 0 1rem 0;
+	margin: 0 0 1rem 0;
 }
 
 .members_title {
-  font-family: Montserrat;
-  font-size: 2.5rem;
-  margin: 3rem 0 2.5rem;
-  color: #3dc4d4;
-  /* padding-top: 4rem; */
+	font-family: Montserrat;
+	font-size: 2.5rem;
+	margin: 3rem 0 2.5rem;
+	color: #3dc4d4;
+	/* padding-top: 4rem; */
 }
 
-.heads_title{
-  margin: 0.5rem 0 2.5rem;
+.heads_title {
+	margin: 0.5rem 0 2.5rem;
 }
 
-.founders_title, .advisors_title{
-  margin: 1.5rem 0 2.5rem;
-  padding: 5px;
+.founders_title,
+.advisors_title {
+	margin: 1.5rem 0 2.5rem;
+	padding: 5px;
 }
-.our_teams_title{
-  margin: 4rem 0 2.5rem;
-  padding: 5px;
+.our_teams_title {
+	margin: 4rem 0 2.5rem;
+	padding: 5px;
 }
 
 .founders,
 .heads {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 25px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-wrap: wrap;
+	gap: 25px;
 }
 
 .founders {
-  width: 50vw;
-  margin: 2rem auto;
+	width: 50vw;
+	margin: 2rem auto;
 }
 
 @media screen and (max-width: 800px) {
-  .founders {
-    width: 90vw;
-    margin: 2rem auto;
-  }
+	.founders {
+		width: 90vw;
+		margin: 2rem auto;
+	}
 }
 
 .heads {
-  width: 90vw;
-  margin: 2rem auto;
+	width: 90vw;
+	margin: 2rem auto;
 }
 
 .member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* height: 325px; */
-  padding: 10px 10px;
-  margin: 0.75rem;
-  border: rgb(181, 246, 253,0.8) 4px solid;
-  /* border-radius: 15px; */
-  border-image: linear-gradient(
-      to bottom right,
-      rgb(17, 227, 251),
-      rgb(91, 230, 255),
-      rgb(181, 246, 253),
-      rgb(17, 227, 251)
-    )
-    1;
-  position: relative;
-  place-content: center;
-  place-items: center;
-  overflow: hidden;
-  background: #01011b;
-  transform-style: preserve-3d;
-  transition: .3s ease-in;
-  
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	/* height: 325px; */
+	padding: 10px 10px;
+	margin: 0.75rem;
+	border: rgb(181, 246, 253, 0.8) 4px solid;
+	/* border-radius: 15px; */
+	border-image: linear-gradient(
+			to bottom right,
+			rgb(17, 227, 251),
+			rgb(91, 230, 255),
+			rgb(181, 246, 253),
+			rgb(17, 227, 251)
+		)
+		1;
+	position: relative;
+	place-content: center;
+	place-items: center;
+	overflow: hidden;
+	background: #01011b;
+	transform-style: preserve-3d;
+	transition: 0.3s ease-in;
 }
 
 /* .member::before {
@@ -95,12 +95,12 @@
   transition: all 0.2s linear;
 } */
 
-.member::after{
-  content: "";
-  position: absolute;
-  background: #01011b;
-  z-index: -1;
-  inset: 5px;
+.member::after {
+	content: '';
+	position: absolute;
+	background: #01011b;
+	z-index: -1;
+	inset: 5px;
 }
 
 /* @keyframes rotBGimg {
@@ -114,99 +114,96 @@
 } */
 
 .member:after {
-  content: "";
-  position: absolute;
-  top: -110%;
-  left: -210%;
-  width: 200%;
-  height: 200%;
-  opacity: 0;
-  transform: rotate(30deg);
-  z-index: -5;
-  background: linear-gradient(
-    to right, 
-    rgba(255, 255, 255, 0.13) 0%,
-    rgba(255, 255, 255, 0.13) 77%,
-    rgba(255, 255, 255, 0.5) 92%,
-    rgba(255, 255, 255, 0.0) 100%
-  );
+	content: '';
+	position: absolute;
+	top: -110%;
+	left: -210%;
+	width: 200%;
+	height: 200%;
+	opacity: 0;
+	transform: rotate(30deg);
+	z-index: -5;
+	background: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0.13) 0%,
+		rgba(255, 255, 255, 0.13) 77%,
+		rgba(255, 255, 255, 0.5) 92%,
+		rgba(255, 255, 255, 0) 100%
+	);
 }
 
 /* Hover state - trigger effect */
 
 .member:hover:after {
-  opacity: 1;
-  top: -40%;
-  left: -40%;
-  transition-property: left, top, opacity;
-  transition-duration: 0.7s, 0.7s, 0.15s;
-  transition-timing-function: ease;
+	opacity: 1;
+	top: -40%;
+	left: -40%;
+	transition-property: left, top, opacity;
+	transition-duration: 0.7s, 0.7s, 0.15s;
+	transition-timing-function: ease;
 }
 
 /* Active state */
 
 .member:active:after {
-  opacity: 0;
+	opacity: 0;
 }
 
 .member:hover {
-  box-shadow: 0px 2px 10px #3dc4d4;
-  background-color: rgba(54,54,54,0.6);
-  transform: translateY(-5px) scale(1.005) translateZ(0);
-
+	box-shadow: 0px 2px 10px #3dc4d4;
+	background-color: rgba(54, 54, 54, 0.6);
+	transform: translateY(-5px) scale(1.005) translateZ(0);
 }
-
 
 .member:hover .founder,
 .member:hover .member {
-  transform: translateZ(20px);
+	transform: translateZ(20px);
 }
 
 .founder,
 .member {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 280px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 280px;
 }
 
 .photo-image img {
-  object-fit: cover;
-  max-width: 200px;
-  height: 250px;
+	object-fit: cover;
+	max-width: 200px;
+	height: 250px;
 }
 
 .photo-details {
-  opacity: 0;
+	opacity: 0;
 }
 
 .photo-details {
-  width: 60%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
+	width: 60%;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
 }
 
 .photo-details a {
-  color: #3dc4d4;
-  font-size: 20px;
+	color: #3dc4d4;
+	font-size: 20px;
 }
 
 .founder:hover .photo-details,
 .member:hover .photo-details {
-  opacity: 1;
+	opacity: 1;
 }
 
 .photo-name {
-  color: #fff;
-  font-size: 1.25rem;
-  font-family: Montserrat;
+	color: #fff;
+	font-size: 1.25rem;
+	font-family: Montserrat;
 }
 
 .photo-role {
-  color: #3dc4d4;
-  font-size: 1.25rem;
-  margin: 4px 0 8px;
-  font-family: Montserrat;
+	color: #3dc4d4;
+	font-size: 1.25rem;
+	margin: 4px 0 8px;
+	font-family: Montserrat;
 }
-

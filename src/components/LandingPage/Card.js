@@ -1,42 +1,51 @@
-import React from "react"
-import event1 from "./event1.jpg"
-import event2 from "./event2.jpg"
-import event3 from "./event3.jpg"
+import React from 'react'
+import event1 from './event1.jpg'
+import event2 from './event2.jpg'
+import event3 from './event3.jpg'
 
 import './Card.css'
-import Lottie from "lottie-react"
+import Lottie from 'lottie-react'
 import Robot from './Robot.json'
 
 // import { PRODUCTS } from "./eventassets"
 
 const Card = () => {
-    return (
-        // <div>
-        <div className="cards">
-            <div className="card 1">
-                <img src={event1} alt="" className="cardImage" />
-                {/* <Lottie animationData={Robot}/> */}
-                <div className="about-card">
-                    <h1>EVENT 1</h1>
-                    <span>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</span>
-                </div>
-            </div>
-            <div className="card 2">
-                <img src={event2} alt="" className="cardImage" />
-                <div className="about-card">
-                    <h1>EVENT 2</h1>
-                    <span>Weave your digital aspirations into reality through our dynamic Web solutions, fusing creativity with functionality.​</span>
-                </div>
-            </div>
-            <div className="card 3">
-                <img src={event3} alt="" className="cardImage" />
-                <div className="about-card">
-                    <h1>EVENT 3</h1>
-                    <span>Transform transactions with our secure Blockchain solutions, rewriting the rules of trust and transparency.​</span>
-                </div>
-            </div>
+	return (
+		// <div>
+		<div className="cards">
+			<div className="card 1">
+				<img src={event1} alt="" className="cardImage" />
+				{/* <Lottie animationData={Robot}/> */}
+				<div className="about-card">
+					<h1>EVENT 1</h1>
+					<span>
+						Weave your digital aspirations into reality through our dynamic Web
+						solutions, fusing creativity with functionality.​
+					</span>
+				</div>
+			</div>
+			<div className="card 2">
+				<img src={event2} alt="" className="cardImage" />
+				<div className="about-card">
+					<h1>EVENT 2</h1>
+					<span>
+						Weave your digital aspirations into reality through our dynamic Web
+						solutions, fusing creativity with functionality.​
+					</span>
+				</div>
+			</div>
+			<div className="card 3">
+				<img src={event3} alt="" className="cardImage" />
+				<div className="about-card">
+					<h1>EVENT 3</h1>
+					<span>
+						Transform transactions with our secure Blockchain solutions,
+						rewriting the rules of trust and transparency.​
+					</span>
+				</div>
+			</div>
 
-            {/* <section data-v-5e6923b3="" class="VueCarousel"><div class="VueCarousel-wrapper"><div role="listbox" class="VueCarousel-inner" style="transform: translate(0px, 0px); transition: transform 0.5s ease 0s; flex-basis: 312.5px; visibility: visible; height: auto;">
+			{/* <section data-v-5e6923b3="" class="VueCarousel"><div class="VueCarousel-wrapper"><div role="listbox" class="VueCarousel-inner" style="transform: translate(0px, 0px); transition: transform 0.5s ease 0s; flex-basis: 312.5px; visibility: visible; height: auto;">
     
                     <div data-v-5e6923b3="" tabindex="-1" class="VueCarousel-slide VueCarousel-slide-active" data-index="0">
                             
@@ -67,15 +76,9 @@ const Card = () => {
                     <li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 4" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li><li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 5" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li><li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 6" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li><li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 7" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li><li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 8" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li><li data-v-438fd353="" aria-hidden="false" role="presentation" aria-selected="false" class="VueCarousel-dot" style="margin-top: 20px; padding: 10px;"><button data-v-438fd353="" type="button" role="button" aria-label="`Item ${index}`" title="Item 9" tabindex="0" class="VueCarousel-dot-button" style="width: 10px; height: 10px; background: rgb(239, 239, 239);"></button></li></ul></div>
 
                 </section> */}
-
-
-        
-
-        </div>
-        // </div>
-    );
+		</div>
+		// </div>
+	)
 }
 
- 
 export default Card
-

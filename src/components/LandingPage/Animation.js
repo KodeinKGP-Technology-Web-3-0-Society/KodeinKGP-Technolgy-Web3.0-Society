@@ -1,79 +1,73 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { gsap, CSSPlugin } from 'gsap'
 import logo from './kik-final-logo.png'
-import { Bounce } from 'gsap/all';
-import { TypeAnimation } from 'react-type-animation';
+import { Bounce } from 'gsap/all'
+import { TypeAnimation } from 'react-type-animation'
 import anime from './anime.gif'
 import './anime.css'
-import animeMob from "./animeMob.gif"
+import animeMob from './animeMob.gif'
 
 const Animation = ({ animate, setAnimate }) => {
-    // const KRef = useRef(null);
-    // const ballRef = useRef(null);
-    const wordRef = useRef(null);
-    // const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
+	// const KRef = useRef(null);
+	// const ballRef = useRef(null);
+	const wordRef = useRef(null)
+	// const CURSOR_CLASS_NAME = 'custom-type-animation-cursor';
 
-    // const [disappear, setDisappear] = useState(false)
+	// const [disappear, setDisappear] = useState(false)
 
+	const [gifPlayed, setGifPlayed] = useState(false)
+	const gifDuration = 1600
 
-    const [gifPlayed, setGifPlayed] = useState(false);
-    const gifDuration = 1600;
+	useEffect(() => {
+		const timer = setTimeout(() => {
+			setGifPlayed(true)
+		}, gifDuration)
 
+		return () => clearTimeout(timer) // Cleanup the timer on component unmount
+	})
 
-    useEffect(() => {
-        const timer = setTimeout(() => {
-            setGifPlayed(true);
-        }, gifDuration);
+	useEffect(() => {
+		if (gifPlayed) {
+			setAnimate(false)
+		}
+	}, [gifPlayed])
 
-        return () => clearTimeout(timer); // Cleanup the timer on component unmount
-    },);
+	// useEffect(() => {
+	//     // GSAP animation code
+	//     gsap.to(KRef.current, {
+	//         duration: 0.5,
+	//         x: '18vw',
+	//         repeat: 0,
 
-    useEffect(() => {
-        if (gifPlayed) {
-            setAnimate(false)
-        }
-    }, [gifPlayed]);
+	//     });
 
+	//     gsap.to(ballRef.current, {
+	//         y: '60vh',
+	//         duration: 2,
+	//         ease: "bounce.out",
+	//         yoyo: true,
+	//         repeat: 0,
+	//         delay: 0.3
+	//     });
+	// }, []);
 
-    // useEffect(() => {
-    //     // GSAP animation code
-    //     gsap.to(KRef.current, {
-    //         duration: 0.5,
-    //         x: '18vw',
-    //         repeat: 0,
+	// useEffect(() => {
+	//     if (disappear) {
+	//         gsap.to(wordRef.current, {
+	//             duration: 2, // duration in seconds
+	//             opacity: 0,
+	//             ease: 'power1.out',
+	//             onComplete: () => {
+	//                 setAnimate(false)
+	//             }
+	//         });
+	//     }
+	// },
+	//     [disappear])
 
-    //     });
-
-    //     gsap.to(ballRef.current, {
-    //         y: '60vh',
-    //         duration: 2,
-    //         ease: "bounce.out",
-    //         yoyo: true,
-    //         repeat: 0,
-    //         delay: 0.3
-    //     });
-    // }, []);
-
-    // useEffect(() => {
-    //     if (disappear) {
-    //         gsap.to(wordRef.current, {
-    //             duration: 2, // duration in seconds
-    //             opacity: 0,
-    //             ease: 'power1.out',
-    //             onComplete: () => {
-    //                 setAnimate(false)
-    //             }
-    //         });
-    //     }
-    // },
-    //     [disappear])
-
-
-
-
-    return (
-        <div className='intro' ref={wordRef}>
-            {/* <div
+	return (
+		<div className="intro" ref={wordRef}>
+			{/* <div
                 ref={KRef}
                 style={{
                     fontSize: '10rem',
@@ -135,13 +129,13 @@ const Animation = ({ animate, setAnimate }) => {
                 />
             </div> */}
 
-            <div className='loading-gif'>
-                {!gifPlayed &&
-                    <img src={window.innerWidth < 768 ? animeMob : anime} alt="GIF" />
-                }
-            </div>
-        </div>
-    )
+			<div className="loading-gif">
+				{!gifPlayed && (
+					<img src={window.innerWidth < 768 ? animeMob : anime} alt="GIF" />
+				)}
+			</div>
+		</div>
+	)
 }
 
 export default Animation

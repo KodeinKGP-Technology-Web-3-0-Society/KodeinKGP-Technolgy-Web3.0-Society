@@ -1,127 +1,127 @@
-import react, { useEffect, useState } from "react";
-import { DB_URL } from "../EventsPage/DB_URL";
+import react, { useEffect, useState } from 'react'
+import { DB_URL } from '../EventsPage/DB_URL'
 // import Navbar from "../LandingPage/Navbar";
-import "./regformcss.css";
-import React from "react";
-import Select from "react-select";
-import aiimg from "./ai3.png";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import AlertComponent from "./AlertComponent";
-import { Link } from 'react-router-dom';
+import './regformcss.css'
+import React from 'react'
+import Select from 'react-select'
+import aiimg from './ai3.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import AlertComponent from './AlertComponent'
+import { Link } from 'react-router-dom'
 
 const RegistrationForm = () => {
-  const [nme, setName] = useState("");
-  const [rollNumber, setRollNumber] = useState("");
-  const [personalEmail, setPersonalEmail] = useState("");
-  const [instituteEmail, setInstituteEmail] = useState("");
-  const [contactNumber, setContactNumber] = useState("");
-  const [otherInvolvements, setOtherInvolvements] = useState("");
-  const [isLoad, setIsLoad] = useState(false);
-  const [selTeams, setSelTeams] = useState([]);
-  const [alertMsg, setAlertMsg] = useState("");
-  const [alertShown, setAlertShown] = useState(false);
-  const [successShown, setSuccessShown] = useState(false);
+	const [nme, setName] = useState('')
+	const [rollNumber, setRollNumber] = useState('')
+	const [personalEmail, setPersonalEmail] = useState('')
+	const [instituteEmail, setInstituteEmail] = useState('')
+	const [contactNumber, setContactNumber] = useState('')
+	const [otherInvolvements, setOtherInvolvements] = useState('')
+	const [isLoad, setIsLoad] = useState(false)
+	const [selTeams, setSelTeams] = useState([])
+	const [alertMsg, setAlertMsg] = useState('')
+	const [alertShown, setAlertShown] = useState(false)
+	const [successShown, setSuccessShown] = useState(false)
 
-  useEffect(() => {
-    const handleBeforeUnload = () => {
-      window.scrollTo(0, 0);
-    };
+	useEffect(() => {
+		const handleBeforeUnload = () => {
+			window.scrollTo(0, 0)
+		}
 
-    window.addEventListener("beforeunload", handleBeforeUnload);
+		window.addEventListener('beforeunload', handleBeforeUnload)
 
-    return () => {
-      window.removeEventListener("beforeunload", handleBeforeUnload);
-    };
-  }, []);
-  
-  useEffect(() => {
-    if (alertShown) {
-      const timer = setTimeout(() => {
-        setAlertShown(false);
-      }, 5000);
-      
-      return () => clearTimeout(timer); 
-    }
-  }, [alertShown]);
+		return () => {
+			window.removeEventListener('beforeunload', handleBeforeUnload)
+		}
+	}, [])
 
-  useEffect(() => {
-    if (successShown) {
-      const timer = setTimeout(() => {
-        setSuccessShown(false);
-      }, 5000);
-      
-      return () => clearTimeout(timer); 
-    }
-  }, [successShown]);
+	useEffect(() => {
+		if (alertShown) {
+			const timer = setTimeout(() => {
+				setAlertShown(false)
+			}, 5000)
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    setIsLoad(true);
-    fetch(`${DB_URL}`, {
-      method: 'POST',
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        name: nme,
-        rollNumber,
-        personalEmail,
-        instituteEmail,
-        contactNumber,
-        otherInvolvements,
-        selTeams
-      }),
-    }).then((resp) => {
-      if(resp.ok){
-        setSuccessShown(true);
-        setName("");
-        setRollNumber("");
-        setPersonalEmail("");
-        setInstituteEmail("");
-        setContactNumber("");
-        setOtherInvolvements("");
-        setSelTeams([]);
-      }else if(resp.status == 409){
-        setSuccessShown(true);
-        setName("");
-        setRollNumber("");
-        setPersonalEmail("");
-        setInstituteEmail("");
-        setContactNumber("");
-        setOtherInvolvements("");
-        setSelTeams([]);
-      }
-      else{
-        resp.text().then((txt) => {
-          setAlertMsg(txt);
-          setAlertShown(true);
-        })
-      }
-    }).catch((e) => {
-      console.log(e);
-      setAlertMsg('Please check all fields before submitting');
-      setAlertShown(true);
-    })
-    
-    setIsLoad(false);
-  };
+			return () => clearTimeout(timer)
+		}
+	}, [alertShown])
 
-  const handleSelTeam = (team) => {
-    setSelTeams(prevTeams => {
-      const isTeamSelected = prevTeams.includes(team);
-      if (isTeamSelected) {
-        return prevTeams.filter(t => t !== team);
-      } else {
-        return [...prevTeams, team];
-      }
-    });
-  };
+	useEffect(() => {
+		if (successShown) {
+			const timer = setTimeout(() => {
+				setSuccessShown(false)
+			}, 5000)
 
+			return () => clearTimeout(timer)
+		}
+	}, [successShown])
 
-  return (
-    <>
-      {/* <Navbar /> */}
-      {/* <div className="regpage">
+	const handleSubmit = async e => {
+		e.preventDefault()
+		setIsLoad(true)
+		fetch(`${DB_URL}`, {
+			method: 'POST',
+			headers: {
+				'Content-Type': 'application/json',
+			},
+			body: JSON.stringify({
+				name: nme,
+				rollNumber,
+				personalEmail,
+				instituteEmail,
+				contactNumber,
+				otherInvolvements,
+				selTeams,
+			}),
+		})
+			.then(resp => {
+				if (resp.ok) {
+					setSuccessShown(true)
+					setName('')
+					setRollNumber('')
+					setPersonalEmail('')
+					setInstituteEmail('')
+					setContactNumber('')
+					setOtherInvolvements('')
+					setSelTeams([])
+				} else if (resp.status == 409) {
+					setSuccessShown(true)
+					setName('')
+					setRollNumber('')
+					setPersonalEmail('')
+					setInstituteEmail('')
+					setContactNumber('')
+					setOtherInvolvements('')
+					setSelTeams([])
+				} else {
+					resp.text().then(txt => {
+						setAlertMsg(txt)
+						setAlertShown(true)
+					})
+				}
+			})
+			.catch(e => {
+				console.log(e)
+				setAlertMsg('Please check all fields before submitting')
+				setAlertShown(true)
+			})
+
+		setIsLoad(false)
+	}
+
+	const handleSelTeam = team => {
+		setSelTeams(prevTeams => {
+			const isTeamSelected = prevTeams.includes(team)
+			if (isTeamSelected) {
+				return prevTeams.filter(t => t !== team)
+			} else {
+				return [...prevTeams, team]
+			}
+		})
+	}
+
+	return (
+		<>
+			{/* <Navbar /> */}
+			{/* <div className="regpage">
         <div className="imgofai">
           <img src={aiimg} className="aiimgreg" />
         </div>
@@ -232,65 +232,73 @@ const RegistrationForm = () => {
         {alertShown && <AlertComponent type={'warning'} title={'Error registering for selections'} message={alertMsg}/>}
         {successShown && <AlertComponent type={'success'} title={'Successfully registered for selections'} message={'Thank you for participating in selection'}/>}
       </div> */}
-      <div style={{
-          background: 'linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
-          WebkitBackgroundClip: 'text',
-          backgroundClip: 'text',
-          color: 'transparent',
-          fontSize: '7vh',
-          fontWeight: 'bold',
-          textAlign: 'center',
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          height: '30vh',
-          marginBottom: '20px',
-          marginLeft: '20px',
-          marginRight:'20px'
-      }}>
-        Registrations Are Closed For Now
-      </div>
+			<div
+				style={{
+					background:
+						'linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
+					WebkitBackgroundClip: 'text',
+					backgroundClip: 'text',
+					color: 'transparent',
+					fontSize: '7vh',
+					fontWeight: 'bold',
+					textAlign: 'center',
+					display: 'flex',
+					justifyContent: 'center',
+					alignItems: 'center',
+					height: '30vh',
+					marginBottom: '20px',
+					marginLeft: '20px',
+					marginRight: '20px',
+				}}
+			>
+				Registrations Are Closed For Now
+			</div>
 
-      <div style={{
-          color: 'white',
-          fontSize: '3vh',
-          display: 'flex',
-          justifyContent: 'center',
-          flexDirection: 'column',
-          alignItems: 'center'
-      }}>
-        <span>You can check out our Tasks</span>
-        <Link 
-          to="https://drive.google.com/drive/folders/1A4P7qn8dYh_D-i5c0MjSXHzImAFzWTyx?usp=sharing"
-          style={{
-            color: 'black',
-            background: 'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
-            padding: '10px 30px',
-            borderRadius: '30px',
-            textDecoration: 'none',
-            fontSize: '3vh',
-            fontWeight: 'bold',
-            marginTop: '30px',
-            transition: 'all 0.4s ease',
-            boxShadow: '0 4px 14px rgba(17, 227, 251, 0.5)',
-            backgroundClip: 'padding-box',
-            WebkitBackgroundClip: 'padding-box',
-          }}
-          onMouseEnter={e => {
-            e.target.style.background = 'linear-gradient(to right, rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))';
-            e.target.style.transform = 'scale(1.05)';
-            e.target.style.boxShadow = '0 6px 16px rgba(17, 227, 251, 0.7)';
-          }}
-          onMouseLeave={e => {
-            e.target.style.background = 'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))';
-            e.target.style.transform = 'scale(1)';
-            e.target.style.boxShadow = '0 4px 14px rgba(17, 227, 251, 0.5)';
-          }}
-        >
-          Here
-        </Link>
-      </div>
-    </>
-  );
-};
-export default RegistrationForm;
+			<div
+				style={{
+					color: 'white',
+					fontSize: '3vh',
+					display: 'flex',
+					justifyContent: 'center',
+					flexDirection: 'column',
+					alignItems: 'center',
+				}}
+			>
+				<span>You can check out our Tasks</span>
+				<Link
+					to="https://drive.google.com/drive/folders/1A4P7qn8dYh_D-i5c0MjSXHzImAFzWTyx?usp=sharing"
+					style={{
+						color: 'black',
+						background:
+							'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
+						padding: '10px 30px',
+						borderRadius: '30px',
+						textDecoration: 'none',
+						fontSize: '3vh',
+						fontWeight: 'bold',
+						marginTop: '30px',
+						transition: 'all 0.4s ease',
+						boxShadow: '0 4px 14px rgba(17, 227, 251, 0.5)',
+						backgroundClip: 'padding-box',
+						WebkitBackgroundClip: 'padding-box',
+					}}
+					onMouseEnter={e => {
+						e.target.style.background =
+							'linear-gradient(to right, rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
+						e.target.style.transform = 'scale(1.05)'
+						e.target.style.boxShadow = '0 6px 16px rgba(17, 227, 251, 0.7)'
+					}}
+					onMouseLeave={e => {
+						e.target.style.background =
+							'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
+						e.target.style.transform = 'scale(1)'
+						e.target.style.boxShadow = '0 4px 14px rgba(17, 227, 251, 0.5)'
+					}}
+				>
+					Here
+				</Link>
+			</div>
+		</>
+	)
+}
+export default RegistrationForm

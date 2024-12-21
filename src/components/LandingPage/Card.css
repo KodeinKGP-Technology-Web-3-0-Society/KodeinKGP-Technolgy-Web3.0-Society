@@ -1,101 +1,113 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
 
-.cards{
-    display: flex;
-    justify-content: space-between;
-    color: black;
-    padding-top: 10vh;
-    padding-bottom: 15vh;
-    padding-left: 6vw;
-    padding-right: 6vw;
+.cards {
+	display: flex;
+	justify-content: space-between;
+	color: black;
+	padding-top: 10vh;
+	padding-bottom: 15vh;
+	padding-left: 6vw;
+	padding-right: 6vw;
 }
 
-.card{
-    width: 25vw;
-    height: 65vh;
-    border-radius: 14px;
-    color: black;
-    background: transparent;
-    /* -webkit-background-clip: text; */
-    color: transparent;
-    overflow: hidden;
+.card {
+	width: 25vw;
+	height: 65vh;
+	border-radius: 14px;
+	color: black;
+	background: transparent;
+	/* -webkit-background-clip: text; */
+	color: transparent;
+	overflow: hidden;
 }
 
 /* .card span{
     display: none;
 } */
 
-.about-card{
-    height: 8vh;
-    width: 25vw;
-    position: relative;
-    bottom: 10vh;
-    right: 12px;
-    margin: 10px;
-    font-size: 0.8rem;
-    letter-spacing: 0.2px;
-    padding: 10px 3px 0 10px;
-    border-radius: 14px;
-    /* bottom: 10vh; */
-    /* box-sizing: border-box; */
-    background: rgb(70, 69, 69, 0.2);
-    color: white;
-    /* opacity: 0.5; */
-    z-index: 1;
+.about-card {
+	height: 8vh;
+	width: 25vw;
+	position: relative;
+	bottom: 10vh;
+	right: 12px;
+	margin: 10px;
+	font-size: 0.8rem;
+	letter-spacing: 0.2px;
+	padding: 10px 3px 0 10px;
+	border-radius: 14px;
+	/* bottom: 10vh; */
+	/* box-sizing: border-box; */
+	background: rgb(70, 69, 69, 0.2);
+	color: white;
+	/* opacity: 0.5; */
+	z-index: 1;
 }
 
-.about-card h1{
-    font-size: 1rem;
-    padding: 10px;
-    text-align: left;
+.about-card h1 {
+	font-size: 1rem;
+	padding: 10px;
+	text-align: left;
 }
 
-.about-card span{
-    font-size: 0.8rem;
-    visibility: hidden;
-    opacity: 0;
+.about-card span {
+	font-size: 0.8rem;
+	visibility: hidden;
+	opacity: 0;
 }
 
-.card:hover{
-    cursor: pointer;
-    opacity: 1;
+.card:hover {
+	cursor: pointer;
+	opacity: 1;
 }
 
-.card:hover .about-card{
-    /* display: flex;
+.card:hover .about-card {
+	/* display: flex;
     flex-direction: column; */
-    height: 5vh;
-    bottom: 30vh;
+	height: 5vh;
+	bottom: 30vh;
 }
 
-.card:hover{
-    opacity: 1;
-    /* visibility: visible; */
+.card:hover {
+	opacity: 1;
+	/* visibility: visible; */
 }
 
-.card:hover img{
-    transform: scale(1.1) rotate(-3deg);
-    /* overflow: hidden; */
+.card:hover img {
+	transform: scale(1.1) rotate(-3deg);
+	/* overflow: hidden; */
 }
 
-img:hover + .card span{
-    display: block;
-    background: linear-gradient(-168.39deg,#ffffff -278.56%,#6d6d6d -78.47%, #2d2b2b 5.67%, #11101d 91.61%);
-    transition: all 1.5s;
+img:hover + .card span {
+	display: block;
+	background: linear-gradient(
+		-168.39deg,
+		#ffffff -278.56%,
+		#6d6d6d -78.47%,
+		#2d2b2b 5.67%,
+		#11101d 91.61%
+	);
+	transition: all 1.5s;
 }
-.cardImage{
-    width: 25vw;
-    height: 40vh;
-    border-radius: 8px;
-    overflow: hidden;
-    background: cover;
+.cardImage {
+	width: 25vw;
+	height: 40vh;
+	border-radius: 8px;
+	overflow: hidden;
+	background: cover;
 }
 
-.card h1{
-    color: black;
-    /* font-size: 1.5rem; */
-    background: linear-gradient(to bottom right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251));
-    -webkit-background-clip: text;
-    background-clip: text;
-    color: transparent;
+.card h1 {
+	color: black;
+	/* font-size: 1.5rem; */
+	background: linear-gradient(
+		to bottom right,
+		rgb(17, 227, 251),
+		rgb(91, 230, 255),
+		rgb(181, 246, 253),
+		rgb(17, 227, 251)
+	);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
 }
