@@ -40,6 +40,9 @@ export default function Lab() {
 		<div className="lab-container">
 			<h1 id="LabHeader">LAB PROBLEMS</h1>
 			<div className="dropdown-filter">
+				<div className="lab-problem-login">
+					<button className='lt-btn-login'>Login to Save</button>
+				</div>
 				<div
 					className={`custom-dropdown ${isDropdownOpen ? 'open' : ''}`}
 					onClick={toggleDropdown}
