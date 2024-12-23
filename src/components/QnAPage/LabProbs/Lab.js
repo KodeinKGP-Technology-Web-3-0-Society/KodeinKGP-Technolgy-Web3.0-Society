@@ -2,23 +2,51 @@ import React, { useEffect, useState } from 'react'
 import dataJ from './new_data.json'
 import SubTopics from './SubTopics'
 import './Lab.css'
+import LoginModal from './LoginModal'
+
 
 export default function Lab() {
+	const BACKEND_URL = 'http://localhost:8080/'
 	const [openTopics, setOpenTopics] = useState([])
 	const [viewMode, setViewMode] = useState('All Questions') // "All Questions", "Favourite Questions", Incomplete Questions
-	const [isDropdownOpen, setIsDropdownOpen] = useState(false)
+	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+	const [isLoginOpen, setIsLoginOpen] = useState(false);
 
 	useEffect(() => {
-		if (!localStorage.getItem('favourites')) {
-			localStorage.setItem('favourites', JSON.stringify([]))
+		if (!localStorage.getItem('user')) {
+			if(!localStorage.getItem('favourites')) localStorage.setItem('favourites', JSON.stringify([]));
+		}else{
+			const uid = localStorage.getItem('user');
+			fetch(BACKEND_URL + 'status', {
+				method: 'GET',
+				headers: {
+					'Authorization': `Bearer ${uid}`
+				}
+			}).then((resp) => {
+				if(resp.ok){
+					resp.json().then((data) => localStorage.setItem('favourites', JSON.stringify(data.favourites)))
+				}
+			})
 		}
-	}, [])
+	}, []);
 
 	useEffect(() => {
-		if (!localStorage.getItem('completed')) {
-			localStorage.setItem('completed', JSON.stringify([]))
+		if (!localStorage.getItem('user')) {
+			if (!localStorage.getItem('completed')) localStorage.setItem('completed', JSON.stringify([]));
+		}else{
+			const uid = localStorage.getItem('user');
+			fetch(BACKEND_URL + 'status', {
+				method: 'GET',
+				headers: {
+					'Authorization': `Bearer ${uid}`
+				}
+			}).then((resp) => {
+				if(resp.ok){
+					resp.json().then((data) => localStorage.setItem('completed', JSON.stringify(data.completed)))
+				}
+			})
 		}
-	}, [])
+	}, []);
 
 	const toggleTopic = topic => {
 		setOpenTopics(prevOpenTopics =>
@@ -36,12 +64,34 @@ export default function Lab() {
 		setIsDropdownOpen(false)
 	}
 
+	const loginUser = (email, pswd) => {
+		console.log("Email: ", email, "Pswd: ", pswd);
+		const favourites = JSON.parse(localStorage.getItem('favourites'));
+		const complete = JSON.parse(localStorage.getItem('completed'));
+		fetch(BACKEND_URL + 'makeUser', {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify({email, pswd, favourites, complete})
+		}).then((data) => {
+			if(data.ok){
+				setIsLoginOpen(false);
+				data.json().then((txt) => {
+					localStorage.setItem('user', txt.user);
+					localStorage.setItem('completed', JSON.stringify(txt.completed));
+					localStorage.setItem('favourites', JSON.stringify(txt.favourites));
+				});
+			}
+		});
+	}
+
 	return (
 		<div className="lab-container">
 			<h1 id="LabHeader">LAB PROBLEMS</h1>
 			<div className="dropdown-filter">
 				<div className="lab-problem-login">
-					<button className="lt-btn-login">Login to Save</button>
+					<button className="lt-btn-login" onClick={() => setIsLoginOpen(true)}>Login to Save</button>
 				</div>
 				<div
 					className={`custom-dropdown ${isDropdownOpen ? 'open' : ''}`}
@@ -94,6 +144,7 @@ export default function Lab() {
 					</div>
 				))}
 			</div>
+			<LoginModal isVisible={isLoginOpen} onClose={() => setIsLoginOpen(false)} onLogin={loginUser}/>
 		</div>
 	)
 }
