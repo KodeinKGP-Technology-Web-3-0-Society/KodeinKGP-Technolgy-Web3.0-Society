@@ -28,17 +28,17 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 				savedFavourites.splice(index, 1)
 			}
 		}
-		localStorage.setItem('favourites', JSON.stringify(savedFavourites));
-		if(localStorage.getItem('user')){
-			const uid = localStorage.getItem('user');
+		localStorage.setItem('favourites', JSON.stringify(savedFavourites))
+		if (localStorage.getItem('user')) {
+			const uid = localStorage.getItem('user')
 			fetch(BACKEND_URL + 'status/favourites', {
 				method: 'POST',
-				headers:{
-					'Authorization': `Bearer ${uid}`,
-					"Content-Type": "application/json"
+				headers: {
+					Authorization: `Bearer ${uid}`,
+					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify({favourites: savedFavourites})
-			});
+				body: JSON.stringify({ favourites: savedFavourites }),
+			})
 		}
 	}, [isFav, key])
 
@@ -63,17 +63,17 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 				savedComp.splice(index, 1)
 			}
 		}
-		localStorage.setItem('completed', JSON.stringify(savedComp));
-		if(localStorage.getItem('user')){
-			const uid = localStorage.getItem('user');
+		localStorage.setItem('completed', JSON.stringify(savedComp))
+		if (localStorage.getItem('user')) {
+			const uid = localStorage.getItem('user')
 			fetch(BACKEND_URL + 'status/completed', {
 				method: 'POST',
-				headers:{
-					'Authorization': `Bearer ${uid}`,
-					"Content-Type": "application/json"
+				headers: {
+					Authorization: `Bearer ${uid}`,
+					'Content-Type': 'application/json',
 				},
-				body: JSON.stringify({complete: savedComp})
-			});
+				body: JSON.stringify({ complete: savedComp }),
+			})
 		}
 	}, [isComp, key])
 

@@ -3,23 +3,27 @@ import './LoginModal.css'
 
 const LoginModal = ({ isVisible, onClose, onLogin }) => {
 	const [email, setEmail] = useState('')
-	const [password, setPassword] = useState('');
-	const parentRef = useRef();
+	const [password, setPassword] = useState('')
+	const parentRef = useRef()
 
 	const handleLogin = () => {
 		onLogin(email, password)
 	}
 
-	const handleOutClick = (e) => {
-		if(e.target == parentRef.current){
-			onClose();
+	const handleOutClick = e => {
+		if (e.target == parentRef.current) {
+			onClose()
 		}
 	}
 
 	if (!isVisible) return null
 
 	return (
-		<div className="login-modal-overlay" onClick={handleOutClick} ref={parentRef}>
+		<div
+			className="login-modal-overlay"
+			onClick={handleOutClick}
+			ref={parentRef}
+		>
 			<div className="login-modal">
 				<button className="close-button" onClick={onClose}>
 					&times;
