@@ -9,6 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function LabCard({ qna, topic, subTopic, ind }) {
+	const BACKEND_URL = 'http://localhost:8080/'
 	const key = `${topic}-${subTopic}-${ind}`
 	const [isFav, setisFav] = useState(() => {
 		const savedFavourites = JSON.parse(localStorage.getItem('favourites'))
@@ -27,7 +28,18 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 				savedFavourites.splice(index, 1)
 			}
 		}
-		localStorage.setItem('favourites', JSON.stringify(savedFavourites))
+		localStorage.setItem('favourites', JSON.stringify(savedFavourites));
+		if(localStorage.getItem('user')){
+			const uid = localStorage.getItem('user');
+			fetch(BACKEND_URL + 'status/favourites', {
+				method: 'POST',
+				headers:{
+					'Authorization': `Bearer ${uid}`,
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({favourites: savedFavourites})
+			});
+		}
 	}, [isFav, key])
 
 	const toggleFavourite = () => {
@@ -51,7 +63,18 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 				savedComp.splice(index, 1)
 			}
 		}
-		localStorage.setItem('completed', JSON.stringify(savedComp))
+		localStorage.setItem('completed', JSON.stringify(savedComp));
+		if(localStorage.getItem('user')){
+			const uid = localStorage.getItem('user');
+			fetch(BACKEND_URL + 'status/completed', {
+				method: 'POST',
+				headers:{
+					'Authorization': `Bearer ${uid}`,
+					"Content-Type": "application/json"
+				},
+				body: JSON.stringify({complete: savedComp})
+			});
+		}
 	}, [isComp, key])
 
 	const toggleCompleted = () => {
