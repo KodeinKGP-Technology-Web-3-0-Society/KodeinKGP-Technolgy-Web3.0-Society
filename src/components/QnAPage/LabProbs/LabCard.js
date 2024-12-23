@@ -9,7 +9,7 @@ import {
 } from '@fortawesome/free-solid-svg-icons'
 
 export default function LabCard({ qna, topic, subTopic, ind }) {
-	const BACKEND_URL = 'http://localhost:8080/'
+	const BACKEND_URL = 'https://kik-backend.onrender.com/'
 	const key = `${topic}-${subTopic}-${ind}`
 	const [isFav, setisFav] = useState(() => {
 		const savedFavourites = JSON.parse(localStorage.getItem('favourites'))

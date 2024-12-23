@@ -6,7 +6,7 @@ import LoginModal from './LoginModal'
 
 
 export default function Lab() {
-	const BACKEND_URL = 'http://localhost:8080/'
+	const BACKEND_URL = ' https://kik-backend.onrender.com/'
 	const [openTopics, setOpenTopics] = useState([])
 	const [viewMode, setViewMode] = useState('All Questions') // "All Questions", "Favourite Questions", Incomplete Questions
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
