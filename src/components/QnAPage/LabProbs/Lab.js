@@ -64,8 +64,15 @@ export default function Lab() {
 		setIsDropdownOpen(false)
 	}
 
+	const openLoginBox = () => {
+		if(localStorage.getItem('user')){
+			localStorage.removeItem('user');
+		}else{
+			setIsLoginOpen(true);
+		}
+	}
+
 	const loginUser = (email, pswd) => {
-		console.log("Email: ", email, "Pswd: ", pswd);
 		const favourites = JSON.parse(localStorage.getItem('favourites'));
 		const complete = JSON.parse(localStorage.getItem('completed'));
 		fetch(BACKEND_URL + 'makeUser', {
@@ -91,7 +98,9 @@ export default function Lab() {
 			<h1 id="LabHeader">LAB PROBLEMS</h1>
 			<div className="dropdown-filter">
 				<div className="lab-problem-login">
-					<button className="lt-btn-login" onClick={() => setIsLoginOpen(true)}>Login to Save</button>
+					<button className="lt-btn-login" onClick={openLoginBox}>
+						{localStorage.getItem('user') ? 'LogOut' : 'Login to Save'}
+					</button>
 				</div>
 				<div
 					className={`custom-dropdown ${isDropdownOpen ? 'open' : ''}`}
