@@ -100,24 +100,13 @@
 	},
 	{
 		"id": "10",
-		"name": "Ayushi Pradhan ",
-		"image_url": "https://github.com/kodeinkgp/Photos/blob/main/ayushi.jpg?raw=true",
-		"facebook": "",
-		"mailid": "mailto:ayushipradhanryp08@gmail.com",
-		"instagram": "",
-		"linkedin": "",
+		"name": "Shreyansh Agarwal ",
+		"image_url": "https://github.com/kodeinkgp/Photos/blob/main/Shreyansh.jpg",
+		"facebook": "https://www.facebook.com/profile.php?id=100087340759849",
+		"mailid": "shreyanshua59@gmail.com",
+		"instagram": "https://www.instagram.com/shreyansh_474_/",
+		"linkedin": "https://www.linkedin.com/in/shreyansh-agrawal-858948251/",
 		"github": "",
 		"role": "Events Head"
-	},
-	{
-		"id": "11",
-		"name": "Makrawat Singh ",
-		"image_url": "https://github.com/kodeinkgp/Photos/blob/main/makrawat.jpg?raw=true",
-		"facebook": "https://www.facebook.com/profile.php?id=100087227336594&mibextid=ZbWKwL",
-		"mailid": "mailto:makrawatsingh@gmail.com",
-		"instagram": "https://instagram.com/makrawat_22?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D",
-		"linkedin": "https://www.linkedin.com/in/i-am-makrawat",
-		"github": "https://github.com/Makrawatsingh",
-		"role": "Finance Head"
 	}
 ]
