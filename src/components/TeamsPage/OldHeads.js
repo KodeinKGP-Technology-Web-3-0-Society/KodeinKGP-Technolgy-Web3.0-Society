@@ -25,7 +25,7 @@ const OldHeads = () => {
 			// gyroscope={true}
 			// >
 			<article className="member head">
-				{/* <h4 className="photo-role"><strong>{head.role}</strong></h4> */}
+				<h4 className="photo-role"></h4>
 				<div className="photo-image">
 					<img src={head.image_url} alt="" />
 					<div className="photo-details">

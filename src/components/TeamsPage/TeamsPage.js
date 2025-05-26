@@ -2,7 +2,7 @@ import React from 'react'
 import Founders from './Founders'
 import Heads from './Heads.js'
 import OldHeads from './OldHeads.js'
-import Teams from './Teams.js'
+// import Teams from './Teams.js'
 import './TeamsPage.css'
 
 const TeamsPage = () => {
@@ -30,10 +30,10 @@ const TeamsPage = () => {
 					<OldHeads />
 				</div>
 
-				<div className="teams">
+				{/* <div className="teams">
 					<h3 className="members_title our_teams_title">Our Teams</h3>
 					<Teams />
-				</div>
+				</div> */}
 			</div>
 		</>
 	)
