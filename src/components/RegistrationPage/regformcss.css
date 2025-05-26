@@ -335,3 +335,25 @@
 		font-size: 4vw;
 	}
 }
+
+.team-checkbox-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.5em;
+	color:white /* optional: space between rows */
+}
+
+.team-checkbox-item label {
+    margin-left: 0.75em; /* adjust gap as needed */
+}
+
+.select-team-text{
+	color: white;
+	padding-bottom: 1rem;
+}
+
+.sel-team-main-div{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
