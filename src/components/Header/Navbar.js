@@ -99,7 +99,7 @@ function Navbar() {
 								</Link>
 							</span>
 						</li>
-						{/* <li
+						<li
 							onClick={() => {
 								if (isOpen) {
 									toggleMenu();
@@ -111,7 +111,7 @@ function Navbar() {
 									Registration Form
 								</Link>
 							</span>
-						</li> */}
+						</li>
 						{/* <li
               onClick={() => {
                 if (isOpen) {
