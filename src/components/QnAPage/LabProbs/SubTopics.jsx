@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import dataJ from './new_data.json'
+import dataJ from '../../../data/qna/lab-questions.json'
 import Questions from './Questions'
 import './SubTopic.css'
 

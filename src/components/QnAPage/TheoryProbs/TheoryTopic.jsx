@@ -1,5 +1,5 @@
 import React from 'react'
-import dataJ from '../LabProbs/data.json'
+import dataJ from '../../../data/qna/programming-questions.json'
 import { useParams } from 'react-router-dom'
 import TheoryCard from './TheoryCard'
 import './TheoryTopic.css'

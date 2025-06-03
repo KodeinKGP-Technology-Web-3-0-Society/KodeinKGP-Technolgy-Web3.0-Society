@@ -1,6 +1,6 @@
 import React from 'react'
 import './Footer.css'
-import Logo from '../LandingPage/kik-final-logo.png'
+import Logo from '../../assets/images/kik-final-logo.png'
 export default function Footer() {
 	return (
 		<div id="footer">

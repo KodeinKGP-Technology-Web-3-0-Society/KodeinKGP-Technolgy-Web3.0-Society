@@ -1,5 +1,5 @@
 import './Events.css'
-import data from './EventsData.json'
+import data from '../../data/events/EventsData.json'
 
 const EventsPage = () => {
 	return (

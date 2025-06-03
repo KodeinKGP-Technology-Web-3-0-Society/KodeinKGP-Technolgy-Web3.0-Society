@@ -1,7 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react'
-import anime from './anime.gif'
+import anime from '../../assets/images/anime.gif'
 import './anime.css'
-import animeMob from './animeMob.gif'
+import animeMob from '../../assets/images/animeMob.gif'
 
 const Animation = ({ animate, setAnimate }) => {
 	const wordRef = useRef(null)

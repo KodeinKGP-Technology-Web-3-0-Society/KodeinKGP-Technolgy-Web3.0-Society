@@ -8,7 +8,7 @@ import {
 	faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-import Head from './OldHeads.json'
+import Head from '../../data/teams/OldHeads.json'
 
 library.add(faFacebook, faInstagram, faEnvelope, faLinkedin, faGithub)
 

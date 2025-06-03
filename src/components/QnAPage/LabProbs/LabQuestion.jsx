@@ -1,5 +1,5 @@
 import React from 'react'
-import dataJ from './data.json'
+import dataJ from '../../../data/qna/programming-questions.json'
 import { useParams } from 'react-router-dom'
 import SyntaxHighlighter from 'react-syntax-highlighter'
 import { dracula } from 'react-syntax-highlighter/dist/esm/styles/hljs'

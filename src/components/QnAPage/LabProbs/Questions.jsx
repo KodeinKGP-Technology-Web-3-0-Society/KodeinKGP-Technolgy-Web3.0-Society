@@ -1,5 +1,5 @@
 import React from 'react'
-import dataJ from './new_data.json'
+import dataJ from '../../../data/qna/lab-questions.json'
 import LabCard from './LabCard'
 import './LabTopic.css'
 

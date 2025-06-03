@@ -1,5 +1,5 @@
 import './Navbar.css'
-import Logo from '../LandingPage/kik-final-logo.png'
+import Logo from '../../assets/images/kik-final-logo.png'
 import { Link } from 'react-router-dom'
 import { useState } from 'react'
 

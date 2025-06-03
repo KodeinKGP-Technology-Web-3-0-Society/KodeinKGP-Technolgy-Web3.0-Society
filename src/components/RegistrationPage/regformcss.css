@@ -9,6 +9,9 @@
 	flex-direction: row;
 	justify-content: center;
 	height: fit-content;
+	background-color: #0d1117;
+	min-height: 100vh;
+	padding: 20px 0;
 }
 .imgofai,
 .aiimgreg {
@@ -31,7 +34,7 @@
 	-webkit-text-fill-color: transparent;
 	background-clip: text;
 	font-weight: bold;
-	font-family: 'kanit', sans-serif;
+	font-family: 'Kanit', sans-serif;
 	margin: 1.5vw;
 }
 .regformtag {
@@ -49,6 +52,15 @@
 	border-radius: 20px;
 	width: 22vw;
 	height: 6vh;
+	background-color: rgba(255, 255, 255, 0.9);
+	color: #000;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+}
+
+.input_box::placeholder {
+	color: #666;
+	opacity: 0.8;
 }
 .regbox {
 	display: flex;
@@ -337,23 +349,47 @@
 }
 
 .team-checkbox-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 0.5em;
-	color:white /* optional: space between rows */
+	display: flex;
+	align-items: center;
+	margin-bottom: 0.5em;
+	color: white; /* optional: space between rows */
+}
+
+.team-checkbox-item input[type='checkbox'] {
+	width: 16px;
+	height: 16px;
+	margin-right: 0.75em;
+	cursor: pointer;
+	accent-color: #33bbcf;
 }
 
 .team-checkbox-item label {
-    margin-left: 0.75em; /* adjust gap as needed */
+	margin-left: 0.75em; /* adjust gap as needed */
+	color: white;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 14px;
+	cursor: pointer;
 }
 
-.select-team-text{
+.select-team-text {
 	color: white;
 	padding-bottom: 1rem;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 16px;
+	font-weight: 600;
 }
 
-.sel-team-main-div{
+.sel-team-main-div {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+.error-message {
+	color: #ff6b6b;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 12px;
+	font-weight: 500;
+	margin-top: 0.5rem;
+	padding: 0.25rem;
 }

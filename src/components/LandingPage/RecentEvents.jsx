@@ -3,9 +3,9 @@ import { useRef, useEffect } from 'react'
 import { useInView } from 'react-intersection-observer'
 
 import './RecentEvents.css'
-import event1 from './event1.jpg'
-import event2 from './event2.jpg'
-import event3 from './event3.jpg'
+import event1 from '../../assets/images/event1.jpg'
+import event2 from '../../assets/images/event2.jpg'
+import event3 from '../../assets/images/event3.jpg'
 export default function RecentEvents() {
 	const [ref, inView] = useInView({
 		threshold: 0.1,

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import './regformcss.css'
-import aiimg from './ai3.png'
+import aiimg from '../../assets/images/ai3.png'
 import AlertComponent from './AlertComponent'
 import { Link } from 'react-router-dom'
 import { db } from './firebase'

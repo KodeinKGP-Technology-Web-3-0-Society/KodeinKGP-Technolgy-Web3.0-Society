@@ -1,7 +1,7 @@
 import './ArticlePage.css'
-import data from './data.json'
+import data from '../../data/articles/articles-list.json'
 import Lottie from 'lottie-react'
-import Article from './article-anim.json'
+import Article from '../../data/articles/article-anim.json'
 
 function ArticlePage() {
 	let cards = data.map(info => {

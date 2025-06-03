@@ -1,7 +1,6 @@
-import React, { useState, useEffect } from 'react'
-import main from './main.json'
+import { useEffect } from 'react'
+import main from '../../data/animations/main.json'
 import Lottie from 'lottie-react'
-import { Link } from 'react-router-dom'
 import { gsap } from 'gsap'
 
 const Landing = () => {

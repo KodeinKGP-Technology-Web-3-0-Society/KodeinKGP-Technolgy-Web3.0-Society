@@ -1,13 +1,13 @@
 import { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './Work.css'
-import Robot from './Robo.json'
+import Robot from '../../data/animations/Robo.json'
 import Lottie from 'lottie-react'
-import WEBDEV from './WEB.json'
-import Blockchain from './Blockchain.json'
+import WEBDEV from '../../data/animations/WEB.json'
+import Blockchain from '../../data/animations/Blockchain.json'
 import { gsap } from 'gsap'
 import { ScrollTrigger } from 'gsap/ScrollTrigger'
-import programmer from './programmer-image.png'
+import programmer from '../../assets/images/programmer-image.png'
 
 gsap.registerPlugin(ScrollTrigger)
 
