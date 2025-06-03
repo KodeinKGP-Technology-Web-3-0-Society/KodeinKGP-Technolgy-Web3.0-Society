@@ -111,8 +111,8 @@ const RegistrationForm = () => {
 					<img src={aiimg} className="aiimgreg" />
 				</div>
 				<div className="regbox">
-					<h5 className=" reg-header">Registration Form </h5>
-					<form onSubmit={handleSubmit} className="regformtag">
+					<h5 className=" reg-header">Sorry, Registrations have been Closed.  You can still submit the tasks before 5th June, 2025</h5>
+					{/* <form onSubmit={handleSubmit} className="regformtag">
 						<input
 							type="text"
 							id="name"
@@ -199,6 +199,53 @@ const RegistrationForm = () => {
 								Register
 							</div>)}
 						</button>
+					</div> */}
+					<div
+						style={{
+							color: 'white',
+							fontSize: '3vh',
+							display: 'flex',
+							justifyContent: 'center',
+							flexDirection: 'column',
+							alignItems: 'center',
+							marginTop: "2rem"
+						}}
+					>
+						<span >You can check out our Tasks</span>
+						<Link
+							to="https://drive.google.com/drive/folders/1-YygSCupsHzG1yUtb_wvb8DWH9ak2eLy"
+							style={{
+								color: 'black',
+								background:
+									'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
+								padding: '10px 30px',
+								borderRadius: '30px',
+								textDecoration: 'none',
+								fontSize: '3vh',
+								fontWeight: 'bold',
+								marginTop: '30px',
+								transition: 'all 0.4s ease',
+								boxShadow: '0 4px 14px rgba(17, 227, 251, 0.5)',
+								backgroundClip: 'padding-box',
+								WebkitBackgroundClip: 'padding-box',
+							}}
+							onMouseEnter={e => {
+								e.target.style.background =
+									'linear-gradient(to right, rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
+								e.target.style.transform = 'scale(1.05)'
+								e.target.style.boxShadow = '0 6px 16px rgba(17, 227, 251, 0.7)'
+							}}
+							onMouseLeave={e => {
+								e.target.style.background =
+									'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
+								e.target.style.transform = 'scale(1)'
+								e.target.style.boxShadow = '0 4px 14px rgba(17, 227, 251, 0.5)'
+							}}
+
+							target='_blank'
+						>
+							Here
+						</Link>
 					</div>
 				</div>
 				{alertShown && <AlertComponent type={'warning'} title={'Error registering for selections'} message={alertMsg} />}
@@ -226,53 +273,7 @@ const RegistrationForm = () => {
 				Registrations Are Closed For Now
 			</div> */}
 
-			<div
-				style={{
-					color: 'white',
-					fontSize: '3vh',
-					display: 'flex',
-					justifyContent: 'center',
-					flexDirection: 'column',
-					alignItems: 'center',
-					marginTop:"2rem"
-				}}
-			>
-				<span>You can check out our Tasks</span>
-				<Link
-					to="https://drive.google.com/drive/folders/1-YygSCupsHzG1yUtb_wvb8DWH9ak2eLy"
-					style={{
-						color: 'black',
-						background:
-							'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))',
-						padding: '10px 30px',
-						borderRadius: '30px',
-						textDecoration: 'none',
-						fontSize: '3vh',
-						fontWeight: 'bold',
-						marginTop: '30px',
-						transition: 'all 0.4s ease',
-						boxShadow: '0 4px 14px rgba(17, 227, 251, 0.5)',
-						backgroundClip: 'padding-box',
-						WebkitBackgroundClip: 'padding-box',
-					}}
-					onMouseEnter={e => {
-						e.target.style.background =
-							'linear-gradient(to right, rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
-						e.target.style.transform = 'scale(1.05)'
-						e.target.style.boxShadow = '0 6px 16px rgba(17, 227, 251, 0.7)'
-					}}
-					onMouseLeave={e => {
-						e.target.style.background =
-							'linear-gradient(to right, rgb(17, 227, 251), rgb(91, 230, 255), rgb(181, 246, 253), rgb(17, 227, 251))'
-						e.target.style.transform = 'scale(1)'
-						e.target.style.boxShadow = '0 4px 14px rgba(17, 227, 251, 0.5)'
-					}}
 
-					target='_blank'
-				>
-					Here
-				</Link>
-			</div>
 		</>
 	)
 }
