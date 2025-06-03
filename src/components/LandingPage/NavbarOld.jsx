@@ -1,6 +1,4 @@
-// Navbar.js
-
-import React, { useState } from 'react'
+import { useState } from 'react'
 import Logo from './kik-final-logo.png'
 import { Link } from 'react-router-dom'
 import './Navbar.css'
@@ -44,11 +42,6 @@ const Navbar = () => {
 						Events
 					</Link>
 				</span>
-				{/* <span className='link-tag1'>
-          <Link className='link' to="/selections" onClick={toggleMenu}>
-            Selection Results
-          </Link>
-        </span> */}
 			</div>
 		</div>
 	)

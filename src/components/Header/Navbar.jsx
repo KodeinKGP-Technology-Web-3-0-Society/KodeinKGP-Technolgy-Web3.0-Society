@@ -1,12 +1,10 @@
 import './Navbar.css'
 import Logo from '../LandingPage/kik-final-logo.png'
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react'
-import { useNavigate } from 'react-router-dom'
+import { useState } from 'react'
 
 function Navbar() {
 	const [isOpen, setIsOpen] = useState(false)
-	const nav = useNavigate()
 
 	const toggleMenu = () => {
 		setIsOpen(!isOpen)
@@ -102,7 +100,7 @@ function Navbar() {
 						<li
 							onClick={() => {
 								if (isOpen) {
-									toggleMenu();
+									toggleMenu()
 								}
 							}}
 						>
@@ -112,19 +110,6 @@ function Navbar() {
 								</Link>
 							</span>
 						</li>
-						{/* <li
-              onClick={() => {
-                if (isOpen) {
-                  toggleMenu();
-                }
-              }}
-            >
-              <span className="link-tag1">
-                <Link className="link" to="/selections" onClick={toggleMenu}>
-                  Selection Results
-                </Link>
-              </span>
-            </li> */}
 					</div>
 				</div>
 			</div>

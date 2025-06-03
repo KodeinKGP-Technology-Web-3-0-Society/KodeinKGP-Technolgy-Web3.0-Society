@@ -1,4 +1,3 @@
-import React from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './TeamsPage.css'
 import { library } from '@fortawesome/fontawesome-svg-core'
@@ -9,7 +8,6 @@ import {
 	faGithub,
 } from '@fortawesome/free-brands-svg-icons'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons'
-// import { Tilt } from 'react-tilt';
 
 library.add(faFacebook, faInstagram, faEnvelope, faLinkedin, faGithub)
 
@@ -68,14 +66,6 @@ const Founders = () => {
 					<strong>Suraj Gupta</strong>
 				</h5>
 			</article>
-			{/* </Tilt> */}
-			{/* <Tilt
-      className="parallax-effect-glare-scale"
-      perspective={500}
-      glareEnable={true}
-      scale={1}
-      gyroscope={true}
-      > */}
 			<article className="founder member">
 				<h4 className="photo-role"></h4>
 				<div className="photo-image">
@@ -121,7 +111,6 @@ const Founders = () => {
 					<strong>Bhushan Nakade</strong>
 				</h5>
 			</article>
-			{/* </Tilt> */}
 		</div>
 	)
 }

@@ -1,15 +1,7 @@
-import React from 'react'
-import { Link } from 'react-router-dom'
 import './Events.css'
 import data from './EventsData.json'
 
 const EventsPage = () => {
-	const imagex = [
-		'NationalScienceWeek',
-		'Swadeshi_event',
-		'MoveEvent',
-		'Moveicon',
-	]
 	return (
 		<>
 			<div>
@@ -30,7 +22,6 @@ const EventsPage = () => {
 										? 'Previous Workshops'
 										: null}
 							</h2>
-							{/*EVENT */}
 							<div className={index % 2 == 0 ? 'event event2' : 'event event1'}>
 								<img src={`${eventx.image}`} alt="event" />
 								<div className="event_content">

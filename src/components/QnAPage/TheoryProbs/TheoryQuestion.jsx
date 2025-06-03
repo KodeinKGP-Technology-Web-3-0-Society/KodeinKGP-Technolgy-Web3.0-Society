@@ -8,7 +8,6 @@ export default function TheoryQuestion() {
 	const [flag, setFlag] = React.useState(0)
 	const [copy, setCopy] = React.useState(0)
 	let arr = []
-	// const data = JSON.parse(dataJ);
 	const data = dataJ
 	const param = useParams()
 	const topic = param.topic

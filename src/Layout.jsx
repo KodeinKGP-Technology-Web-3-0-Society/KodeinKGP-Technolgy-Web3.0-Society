@@ -5,8 +5,6 @@ import Navbar from './components/Header/Navbar'
 import Animation from './components/LandingPage/Animation'
 
 function Layout() {
-	// const [animate, setAnimate] = useState(true)
-	// if (animate) return <Animation animate={animate} setAnimate={setAnimate} />
 
 	return (
 		<>

@@ -1,8 +1,7 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 import ProblemStatement1 from './ProblemStatement1'
 import ProblemStatement2 from './ProblemStatement2'
 import ProblemStatement3 from './ProblemStatement3'
-// import Image from "/EventsImages/Swadeshi_event.png";
 import './ApplyPage.css'
 
 const ApplyPage = () => {
@@ -10,20 +9,16 @@ const ApplyPage = () => {
 
 	const ButtonClicked = e => {
 		setActiveButton(e.target.id)
-		// console.log(e.target.id);
 	}
 
 	function ProblemSelect() {
 		switch (activeButton) {
 			case '1':
 				return <ProblemStatement1 />
-				break
 			case '2':
 				return <ProblemStatement2 />
-				break
 			case '3':
 				return <ProblemStatement3 />
-				break
 			default:
 				return null
 		}
@@ -44,7 +39,6 @@ const ApplyPage = () => {
 				<p className="apply_details">
 					<span>Submission deadline : </span>2nd Dec 2023
 				</p>
-				{/* <p className=''></p> */}
 				<div className="classif-buttons">
 					<button
 						className={`team-button ${activeButton === '1' ? 'active' : ''}`}

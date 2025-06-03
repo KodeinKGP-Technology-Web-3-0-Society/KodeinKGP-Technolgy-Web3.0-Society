@@ -1,4 +1,3 @@
-import React from 'react'
 import './ArticlePage.css'
 import data from './data.json'
 import Lottie from 'lottie-react'
@@ -19,7 +18,6 @@ function ArticlePage() {
 	return (
 		<div className="article-content">
 			<div className="head-anim">
-				{/* <h3 className="read-now">READ NOW</h3> */}
 				<div className="intro-container">
 					<h1 className="article-heading">Articles</h1>
 					<div className="sub-lines">

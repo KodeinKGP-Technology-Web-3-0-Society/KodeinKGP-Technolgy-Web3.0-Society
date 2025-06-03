@@ -1,4 +1,4 @@
-import { React, useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import './LabCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -86,7 +86,6 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 	let question_chars = qna.Question.slice(0, 100) + '...'
 	return (
 		<tr className="cardDiv">
-			{/* <td className="index">{ind + 1}</td> */}
 			<td className="mark-completed">
 				<span className="checkbox" onClick={() => toggleCompleted()}>
 					{isComp ? (

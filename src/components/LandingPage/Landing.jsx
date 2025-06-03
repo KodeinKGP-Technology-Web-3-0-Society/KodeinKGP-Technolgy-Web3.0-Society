@@ -107,11 +107,9 @@ const Landing = () => {
 		tl.fromTo(
 			'.left',
 			{
-				// x: -100,
 				opacity: 0,
 			},
 			{
-				// x: 0,
 				opacity: 1,
 				duration: 1,
 				delay: 1,
@@ -125,8 +123,6 @@ const Landing = () => {
 				trigger: '.bottom-bar .text',
 				start: 'top 90%',
 				end: 'top 30%',
-				// start: "20% bottom",
-				// end: "50% center",
 				scrub: 1,
 				scroller: 'body',
 			},
@@ -153,8 +149,6 @@ const Landing = () => {
 				trigger: '#recentHeader',
 				start: 'top 90%',
 				end: 'top 30%',
-				// start: "20% bottom",
-				// end: "50% center",
 				scrub: 1,
 				scroller: 'body',
 			},
@@ -170,7 +164,6 @@ const Landing = () => {
 				x: 0,
 				opacity: 1,
 				duration: 0.5,
-				// delay: 1,
 				stagger: 0.2,
 				ease: 'power2.out',
 			}
@@ -203,12 +196,7 @@ const Landing = () => {
 					</p>
 				</div>
 				<div className="left">
-					{/* <img src={aiLogo} alt="ai-image" /> */}
-					<Lottie
-						animationData={main}
-						height={300} // Set height here
-						width={300} // Set width here
-					/>
+					<Lottie animationData={main} height={300} width={300} />
 				</div>
 			</div>
 			<div className="bottom-bar">

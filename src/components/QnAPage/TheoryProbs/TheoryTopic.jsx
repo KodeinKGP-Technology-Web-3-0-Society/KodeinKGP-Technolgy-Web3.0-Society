@@ -4,7 +4,6 @@ import { useParams } from 'react-router-dom'
 import TheoryCard from './TheoryCard'
 import './TheoryTopic.css'
 export default function TheoryTopic() {
-	// const data = JSON.parse(dataJ);
 	const data = dataJ
 	const param = useParams()
 	const topic = param.topic

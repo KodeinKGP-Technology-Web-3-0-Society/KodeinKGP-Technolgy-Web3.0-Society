@@ -1,15 +1,10 @@
-import react, { useEffect, useState } from 'react'
-import { DB_URL } from '../EventsPage/DB_URL'
-// import Navbar from "../LandingPage/Navbar";
+import { useEffect, useState } from 'react'
 import './regformcss.css'
-import React from 'react'
-import Select from 'react-select'
 import aiimg from './ai3.png'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import AlertComponent from './AlertComponent'
 import { Link } from 'react-router-dom'
 import { db } from './firebase'
-import { collection, addDoc } from "firebase/firestore";
+import { collection, addDoc } from 'firebase/firestore'
 
 const RegistrationForm = () => {
 	const [nme, setName] = useState('')
@@ -24,13 +19,12 @@ const RegistrationForm = () => {
 	const [alertShown, setAlertShown] = useState(false)
 	const [successShown, setSuccessShown] = useState(false)
 
-	// Team options for the dropdown
 	const teamOptions = [
 		{ value: 'Tech Team', label: 'Tech Team' },
 		{ value: 'AI & Metaverse Team', label: 'AI & Metaverse Team' },
 		{ value: 'Blockchain Team', label: 'Blockchain Team' },
 		{ value: 'Events Team', label: 'Events Team' },
-		{ value: 'Design and Media Team', label: 'Design and Media Team' }
+		{ value: 'Design and Media Team', label: 'Design and Media Team' },
 	]
 
 	useEffect(() => {
@@ -69,7 +63,7 @@ const RegistrationForm = () => {
 		e.preventDefault()
 		setIsLoad(true)
 		try {
-			await addDoc(collection(db, "registrations"), {
+			await addDoc(collection(db, 'registrations'), {
 				name: nme,
 				rollNumber,
 				personalEmail,
@@ -77,35 +71,34 @@ const RegistrationForm = () => {
 				contactNumber,
 				otherInvolvements,
 				selTeams,
-				timestamp: new Date()
-			});
-			setSuccessShown(true);
-			setName('');
-			setRollNumber('');
-			setPersonalEmail('');
-			setInstituteEmail('');
-			setContactNumber('');
-			setOtherInvolvements('');
-			setSelTeams([]);
+				timestamp: new Date(),
+			})
+			setSuccessShown(true)
+			setName('')
+			setRollNumber('')
+			setPersonalEmail('')
+			setInstituteEmail('')
+			setContactNumber('')
+			setOtherInvolvements('')
+			setSelTeams([])
 		} catch (error) {
-			setAlertMsg('Error registering: ' + error.message);
-			setAlertShown(true);
+			setAlertMsg('Error registering: ' + error.message)
+			setAlertShown(true)
 		}
 		setIsLoad(false)
 	}
 
-	const handleTeamChange = (e) => {
-		const { value, checked } = e.target;
+	const handleTeamChange = e => {
+		const { value, checked } = e.target
 		if (checked) {
-			setSelTeams(prev => [...prev, value]);
+			setSelTeams(prev => [...prev, value])
 		} else {
-			setSelTeams(prev => prev.filter(team => team !== value));
+			setSelTeams(prev => prev.filter(team => team !== value))
 		}
 	}
 
 	return (
 		<>
-			{/* <Navbar /> */}
 			<div className="regpage">
 				<div className="imgofai">
 					<img src={aiimg} className="aiimgreg" />
@@ -117,7 +110,7 @@ const RegistrationForm = () => {
 							type="text"
 							id="name"
 							value={nme}
-							onChange={(e) => setName(e.target.value)}
+							onChange={e => setName(e.target.value)}
 							className="input_box "
 							placeholder="Full Name"
 							required
@@ -126,7 +119,7 @@ const RegistrationForm = () => {
 							type="text"
 							id="roll-number"
 							value={rollNumber}
-							onChange={(e) => setRollNumber(e.target.value)}
+							onChange={e => setRollNumber(e.target.value)}
 							className="input_box"
 							placeholder="Roll Number"
 							required
@@ -135,7 +128,7 @@ const RegistrationForm = () => {
 							type="email"
 							id="personal-email"
 							value={personalEmail}
-							onChange={(e) => setPersonalEmail(e.target.value)}
+							onChange={e => setPersonalEmail(e.target.value)}
 							className="input_box"
 							placeholder="Personal E-mail"
 							required
@@ -144,7 +137,7 @@ const RegistrationForm = () => {
 							type="email"
 							id="institute-email"
 							value={instituteEmail}
-							onChange={(e) => setInstituteEmail(e.target.value)}
+							onChange={e => setInstituteEmail(e.target.value)}
 							className="input_box "
 							placeholder="Institute E-mail"
 							required
@@ -153,15 +146,15 @@ const RegistrationForm = () => {
 							type="tel"
 							id="contact-number"
 							value={contactNumber}
-							onChange={(e) => setContactNumber(e.target.value)}
+							onChange={e => setContactNumber(e.target.value)}
 							className="input_box"
 							placeholder="Contact Number"
 							required
 						/>
-						<div className='sel-team-main-div'>
-							<label className='select-team-text'>Select Teams *</label>
+						<div className="sel-team-main-div">
+							<label className="select-team-text">Select Teams *</label>
 							<div className="team-checkbox-container">
-								{teamOptions.map((option) => (
+								{teamOptions.map(option => (
 									<div key={option.value} className="team-checkbox-item">
 										<input
 											type="checkbox"
@@ -184,25 +177,42 @@ const RegistrationForm = () => {
 							type="text"
 							id="other-involvements"
 							value={otherInvolvements}
-							onChange={(e) => setOtherInvolvements(e.target.value)}
+							onChange={e => setOtherInvolvements(e.target.value)}
 							className="input_box"
 							placeholder="Involvements"
 							required
 						/>
 					</form>
 					<div className="submit">
-						<button type="submit" className="reg-btn" disabled={isLoad} onClick={(e) => handleSubmit(e)}>
-							{isLoad && (<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-								<path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
-							</svg>)}
-							{!isLoad && (<div>
-								Register
-							</div>)}
+						<button
+							type="submit"
+							className="reg-btn"
+							disabled={isLoad}
+							onClick={e => handleSubmit(e)}
+						>
+							{isLoad && (
+								<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+									<path d="M304 48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zm0 416a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM48 304a48 48 0 1 0 0-96 48 48 0 1 0 0 96zm464-48a48 48 0 1 0 -96 0 48 48 0 1 0 96 0zM142.9 437A48 48 0 1 0 75 369.1 48 48 0 1 0 142.9 437zm0-294.2A48 48 0 1 0 75 75a48 48 0 1 0 67.9 67.9zM369.1 437A48 48 0 1 0 437 369.1 48 48 0 1 0 369.1 437z" />
+								</svg>
+							)}
+							{!isLoad && <div>Register</div>}
 						</button>
 					</div>
 				</div>
-				{alertShown && <AlertComponent type={'warning'} title={'Error registering for selections'} message={alertMsg} />}
-				{successShown && <AlertComponent type={'success'} title={'Successfully registered for selections'} message={'Thank you for participating in selection'} />}
+				{alertShown && (
+					<AlertComponent
+						type={'warning'}
+						title={'Error registering for selections'}
+						message={alertMsg}
+					/>
+				)}
+				{successShown && (
+					<AlertComponent
+						type={'success'}
+						title={'Successfully registered for selections'}
+						message={'Thank you for participating in selection'}
+					/>
+				)}
 			</div>
 			{/* <div
 				style={{
@@ -234,7 +244,7 @@ const RegistrationForm = () => {
 					justifyContent: 'center',
 					flexDirection: 'column',
 					alignItems: 'center',
-					marginTop:"2rem"
+					marginTop: '2rem',
 				}}
 			>
 				<span>You can check out our Tasks</span>
@@ -267,8 +277,7 @@ const RegistrationForm = () => {
 						e.target.style.transform = 'scale(1)'
 						e.target.style.boxShadow = '0 4px 14px rgba(17, 227, 251, 0.5)'
 					}}
-
-					target='_blank'
+					target="_blank"
 				>
 					Here
 				</Link>
