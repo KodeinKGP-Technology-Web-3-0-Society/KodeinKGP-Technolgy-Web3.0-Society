@@ -1,29 +1,30 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,400i,700,700i');
 
-.article-content {
-	display: flex;
-	flex-direction: column;
+.font-montserrat{
+	font-family: 'Montserrat', sans-serif;
 }
-
-.head-anim {
-	display: flex;
+.font-poppins{
+	font-family: 'Poppins', sans-serif;
 }
+/* .head-anim {
+	display: flex;
+} */
 
-.article-heading {
-	font-family: 'Poppins';
-	font-style: normal;
-	font-weight: 0;
-	font-size: 8rem;
-	margin-left: 2.5vw;
-	line-height: 120px;
+/* .article-heading { */
+	/* font-family: 'Poppins'; */
+	/* font-style: normal; */
+	/* font-weight: 0; */
+	/* font-size: 8rem; */
+	/* margin-left: 2.5vw; */
+	/* line-height: 120px; */
 	/* margin-top: 4rem; */
-	padding-left: 3rem;
+	/* padding-left: 3rem; */
 	/* margin-bottom: 20px; */
-	display: flex;
-	align-items: center;
-	letter-spacing: 0.1rem;
+	/* display: flex; */
+	/* align-items: center; */
+	/* letter-spacing: 0.1rem; */
 
-	background: linear-gradient(
+	/* background: linear-gradient(
 		298.19deg,
 		#11e3fb 30.71%,
 		#b5f6fd 46.29%,
@@ -32,8 +33,8 @@
 	);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
-	background-clip: text;
-}
+	background-clip: text; */
+/* } */
 
 /* .read-now {
   font-size: 27px;
@@ -44,16 +45,16 @@
   border-bottom: 2px solid #58e6ff;
 } */
 
-.intro-container {
+/* .intro-container {
 	width: 55vw;
 	display: flex;
 	justify-content: space-between;
 	align-self: center;
 	display: flex;
 	flex-direction: column;
-}
+} */
 
-.intro-container .sub-lines {
+/* .intro-container .sub-lines {
 	color: #fff;
 	align-self: center;
 	font-family: 'Montserrat';
@@ -70,21 +71,21 @@
 .sub-lines h3 {
 	font-weight: 100;
 	font-size: 1.5rem;
-}
+} */
 
-.animation {
+/* .animation {
 	width: 35vw;
 	align-self: flex-start;
-}
+} */
 
-.articles-container {
+/* .articles-container {
 	display: flex;
 	gap: 2vw;
 	width: 95vw;
 	align-self: center;
 	justify-self: center;
 	justify-content: center;
-}
+} */
 
 .big-card {
 	width: min(25vw, 420px);
@@ -93,10 +94,10 @@
 	border-radius: 2.5vw;
 	padding: 2px 12px 0px;
 }
-.badge {
+/* .badge {
 	position: relative;
-}
-
+} */
+/* 
 .ribbon {
 	width: 156px;
 	height: 121px;
@@ -147,7 +148,7 @@
 	.rib {
 		padding: 16px 0px;
 	}
-}
+} */
 .big-card .article-card {
 	display: block;
 	width: 100%;
@@ -268,7 +269,7 @@ h3 {
 .article-card {
 	overflow: hidden;
 }
-
+/* 
 @media screen and (min-width: 1325px) {
 	.ribbon {
 		width: 178px;
@@ -293,23 +294,23 @@ h3 {
 		right: 27%;
 		top: 6px;
 	}
-}
+} */
 
 @media screen and (max-width: 1300px) {
-	.head-anim {
+	/* .head-anim {
 		margin-bottom: 5rem;
-	}
+	} */
 
-	.sub-lines h2 {
+	/* .sub-lines h2 {
 		font-size: 1.8rem;
-	}
-	.sub-lines h3 {
+	} */
+	/* .sub-lines h3 {
 		font-size: 1.2rem;
-	}
+	} */
 
-	.article-heading {
+	/* .article-heading {
 		font-size: 7rem;
-	}
+	} */
 
 	.small-cards .article-card {
 		width: 50vw;
@@ -325,44 +326,44 @@ h3 {
 }
 
 @media screen and (max-width: 1000px) {
-	.article-heading {
+	/* .article-heading {
 		font-size: 6rem;
-	}
+	} */
 	.big-card .article-card {
 		max-width: 330px;
 	}
-	.articles-container {
+	/* .articles-container {
 		gap: 2vw;
-	}
+	} */
 }
 
 @media screen and (max-width: 800px) {
-	.head-anim {
+	/* .head-anim {
 		flex-direction: column;
-	}
+	} */
 
-	.article-heading {
+	/* .article-heading {
 		padding-left: 0rem;
 		align-self: center;
-	}
+	} */
 
-	.intro-container .sub-lines {
+	/* .intro-container .sub-lines {
 		padding-left: 3rem;
-	}
+	} */
 
-	.intro-container {
+	/* .intro-container {
 		width: 90vw;
-	}
+	} */
 
-	.animation {
+	/* .animation {
 		align-self: center;
 		width: 50vw;
-	}
+	} */
 
-	.articles-container {
+	/* .articles-container {
 		flex-direction: column;
 		align-items: center;
-	}
+	} */
 
 	.small-cards {
 		max-height: none;
@@ -451,32 +452,32 @@ h3 {
 }
 
 @media screen and (max-width: 550px) {
-	.article-heading {
+	/* .article-heading {
 		font-size: 4rem;
 		line-height: 100px;
-	}
+	} */
 
-	.intro-container .sub-lines {
+	/* .intro-container .sub-lines {
 		text-align: center;
 		padding-left: 0;
 		margin-top: 1.5rem;
-	}
-	.sub-lines h2 {
+	} */
+	/* .sub-lines h2 {
 		font-size: 1.2rem;
 	}
 	.sub-lines h3 {
 		font-size: 1rem;
-	}
+	} */
 
-	.intro-container {
+	/* .intro-container {
 		width: 90vw;
-	}
-	.animation {
+	} */
+	/* .animation {
 		width: 70vw;
-	}
-	.articles-container {
+	} */
+	/* .articles-container {
 		overflow-x: hidden;
-	}
+	} */
 	.big-card .article-card,
 	.small-cards .article-card {
 		border-radius: 5vw;
