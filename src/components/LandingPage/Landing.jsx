@@ -170,18 +170,20 @@ const Landing = () => {
 	}, [])
 
 	return (
-		<div className="landing-page-contents">
-			<div className="content">
-				<div className="right">
-					<h1 className="wel">
+		<div className="bg-[#01011b] flex flex-col h-full w-full overflow-hidden">
+			<div className="flex flex-col md:flex-row justify-between p-5 md:pl-10">
+				<div className="text-center md:text-left text-lg p-5 md:p-8 md:w-1/2">
+					<h1 className="text-white text-[40px] font-semibold text-left lg:text-[50px] xl:text-[65px]">
 						<div className="Welcome">Welcome to</div>
-						<span>KodeinKGP</span>
+						<span className="text-[50px] lg:text-[60px] xl:text-[80px] font-extrabold bg-gradient-to-br from-[#11E3FB] via-[#5BE6FF] to-[#B5F6FD] bg-clip-text text-transparent text-center">
+							KodeinKGP
+						</span>
 					</h1>
-					<p className="vision">
+					<p className=" text-[#979898] font-poppins text-lg font-normal leading-loose pt-10 pb-10 text-left">
 						“The Web as I envisaged it, we have not seen it yet. The future is
 						still so much bigger than the past”
 					</p>
-					<p className="vision-depth">
+					<p className=" text-white font-poppins text-lg font-normal leading-loose text-left">
 						A student-run society that aims to spread awareness and educate
 						students about the potential of Web 3.0 and future technologies. We
 						host workshops and hackathons to give students hands-on experience
@@ -194,22 +196,22 @@ const Landing = () => {
 						rapidly-evolving technologies of our time.
 					</p>
 				</div>
-				<div className="left">
-					<Lottie animationData={main} height={300} width={300} />
+				<div className="relative bottom-8 w-full md:w-1/2 mt-20 md:mt-0">
+					<Lottie animationData={main} className="" />
 				</div>
 			</div>
-			<div className="bottom-bar">
-				<div className="text">
-					260+ <span>PDS Problems</span>
+			<div className="bottom-bar flex flex-col md:flex-row justify-between items-start text-left px-8 md:px-[60px] pb-[60px]">
+				<div className="text text-white text-2xl font-semibold">
+					260+ <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#11e3fb] via-[#5be6ff] to-[#11e3fb] text-xl">PDS Problems</span>
 				</div>
-				<div className="text">
-					17+ <span>Articles</span>
+				<div className="text text-white text-2xl font-semibold">
+					17+ <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#11e3fb] via-[#5be6ff] to-[#11e3fb] text-xl">Articles</span>
 				</div>
-				<div className="text">
-					15+ <span>Events</span>
+				<div className="text text-white text-2xl font-semibold">
+					15+ <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#11e3fb] via-[#5be6ff] to-[#11e3fb] text-xl">Events</span>
 				</div>
-				<div className="text">
-					7000+ <span>Community Members</span>
+				<div className="text text-white text-2xl font-semibold">
+					7000+ <span className="text-transparent bg-clip-text bg-gradient-to-br from-[#11e3fb] via-[#5be6ff] to-[#11e3fb] text-xl">Community Members</span>
 				</div>
 			</div>
 		</div>

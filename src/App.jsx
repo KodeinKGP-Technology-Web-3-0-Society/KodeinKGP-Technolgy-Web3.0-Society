@@ -44,6 +44,7 @@ function App() {
 						<Route path="/events" element={<EventsPage />}></Route>
 						<Route path="/events/apply" element={<ApplyPage />}></Route>
 						<Route path="/articles" element={<ArticlePage />}></Route>
+						<Route path="/selection" element={<Selection />}></Route>
 					</Route>
 				</Routes>
 			</Router>
