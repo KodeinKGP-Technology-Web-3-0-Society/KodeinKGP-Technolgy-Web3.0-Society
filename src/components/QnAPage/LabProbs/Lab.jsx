@@ -100,7 +100,7 @@ export default function Lab() {
 
 	return (
 		<div className="flex flex-col items-center w-full !px-4">
-			<div className="text-center text-3xl text-cyan-300 !mt-5 !mb-5 font-bold">LAB PROBLEMS</div>
+			<div className="text-center text-4xl text-cyan-300 !mt-5 !mb-5 font-bold">LAB PROBLEMS</div>
 
 			<div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between px-7 sm:px-0 sm:items-center !mb-4">
 				<button

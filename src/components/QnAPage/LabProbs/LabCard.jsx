@@ -97,7 +97,7 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 				)}
 			</span>
 			</td>
-			<td className="lc-ques py-[0.5rem] pl-[0.7rem] pr-[0.5rem] align-middle text-[1.2rem] text-left w-full whitespace-nowrap">
+			<td className="lc-ques py-[0.5rem] pl-[0.7rem] pr-[0.5rem] align-middle !text-[1.2rem] !text-left w-full whitespace-nowrap">
 			<Link to={path} className="ques-link text-white no-underline" target="_blank">
 				{question_words.length > question_chars.length
 				? question_chars
