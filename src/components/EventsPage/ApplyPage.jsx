@@ -1,9 +1,8 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
 import ProblemStatement1 from './ProblemStatement1'
 import ProblemStatement2 from './ProblemStatement2'
 import ProblemStatement3 from './ProblemStatement3'
 import './ApplyPage.css'
-
 const ApplyPage = () => {
 	const [activeButton, setActiveButton] = useState('1')
 
@@ -25,45 +24,47 @@ const ApplyPage = () => {
 	}
 
 	return (
-		<div className="applyPage">
-			<div className="apply_content">
+		<div className="w-full">
+			<div className="flex flex-col justify-center items-center">
 				<img
 					src="/EventsImages/Swadeshi_event.png"
 					alt="event-image"
-					className="event_image"
+					className="w-[20rem] md:w-[40rem]"
 				/>
-				<h2 className="apply_title">INNOVATE4SWADESHI</h2>
-				<p className="apply_details">
-					<span>Registration deadline : </span>27th Nov 2023
+				<h2
+					className="text-2xl my-2 text-white"
+					style={{ fontFamily: "'Black Ops One', cursive" }}
+				>
+					INNOVATE4SWADESHI
+				</h2>
+				<p className="text-white text-[1.35rem] m-1 text-center max-[1200px]:text-[1rem]">
+					<span className="font-semibold">Registration deadline : </span>27th Nov 2023
 				</p>
-				<p className="apply_details">
-					<span>Submission deadline : </span>2nd Dec 2023
+				<p className="text-white text-[1.35rem] m-1 text-center max-[1200px]:text-[1rem]">
+					<span className="font-semibold">Submission deadline : </span>2nd Dec 2023
 				</p>
-				<div className="classif-buttons">
-					<button
-						className={`team-button ${activeButton === '1' ? 'active' : ''}`}
-						id="1"
-						onClick={ButtonClicked}
-					>
-						Question 1
-					</button>
-					<button
-						className={`team-button ${activeButton === '2' ? 'active' : ''}`}
-						id="2"
-						onClick={ButtonClicked}
-					>
-						Question 2
-					</button>
-					<button
-						className={`team-button ${activeButton === '3' ? 'active' : ''}`}
-						id="3"
-						onClick={ButtonClicked}
-					>
-						Question 3
-					</button>
+
+				<div className="flex gap-4 mt-4">
+					{['1', '2', '3'].map(id => (
+						<button
+							key={id}
+							className={`px-4 py-2 rounded-md font-medium border ${
+								activeButton === id
+									? 'bg-blue-600 text-white border-blue-700'
+									: 'bg-white text-black border-gray-300'
+							}`}
+							id={id}
+							onClick={ButtonClicked}
+						>
+							Question {id}
+						</button>
+					))}
 				</div>
 			</div>
-			<ProblemSelect />
+
+			<div className="mt-8">
+				<ProblemSelect />
+			</div>
 		</div>
 	)
 }

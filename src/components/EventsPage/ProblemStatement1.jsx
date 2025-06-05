@@ -4,15 +4,16 @@ const ProblemStatement1 = () => {
 	return (
 		<div
 			className="problem_statement"
-			style={{ color: 'white', width: '90vw', margin: '0 auto' }}
+			style={{ color: 'white', width: '90vw', margin: '0 auto',  }}
 		>
-			<p className="apply_details">
-				<span>Problem Statement :</span> AI-Powered Purchasing Management
-				Solution for SMEs
-			</p>
+			<p className=" text-[1.35rem] xl:text-base my-1 text-center">
+  <span className="font-semibold">Problem Statement :</span> Forecasting Quality and Dependability
+  at the IIT Kharagpur Campus with the Aid of Artificial Intelligence
+</p>
+
 			<br />
-			<p className="problem_text">
-				<span>Problem Overview :</span>Purchasing is a critical function for
+			<p className="text-[1.2rem] my-1">
+				<span className="font-semibold">Problem Overview :</span>Purchasing is a critical function for
 				businesses that involves acquiring goods and services from external
 				sources. Small and medium-sized enterprises (SMEs) often face challenges
 				in managing their purchasing activities efficiently due to the
@@ -23,16 +24,16 @@ const ProblemStatement1 = () => {
 				assistant.
 			</p>
 			<br />
-			<p className="problem_subheading">Dashboard</p>
+			<p className="text-[1.35rem] font-semibold underline">Dashboard</p>
 			<br />
-			<p className="problem_text">
-				<span>Objective : </span>The dashboard will provide an integrated
+			<p className="text-[1.2rem] my-1">
+				<span className="font-semibold">Objective : </span>The dashboard will provide an integrated
 				platform for SMEs to manage and optimise their purchasing activities.
 			</p>
 			<br />
-			<p className="problem_subheading">Features</p>
+			<p className="text-[1.35rem] font-semibold underline">Features</p>
 			<br />
-			<p className="problem_text">
+			<p className="text-[1.2rem] my-1">
 				1. Purchasing Process Overview: A comprehensive view of ongoing
 				purchasing tasks, projects, and their current status.
 				<br />
@@ -61,14 +62,14 @@ const ProblemStatement1 = () => {
 			</p>
 			<br />
 			<br />
-			<p className="problem_subheading">Personal Assistant</p>
+			<p className="text-[1.35rem] font-semibold underline">Personal Assistant</p>
 			<br />
-			<p className="problem_text">
-				<span>Objective : </span>The personal assistant will be a conversational
+			<p className="text-[1.2rem] my-1">
+				<span className="font-semibold">Objective : </span>The personal assistant will be a conversational
 				agent that streamlines and automates purchasing tasks.
 				<br />
 				<br />
-				<span>Features:</span>
+				<span className="font-semibold">Features:</span>
 				<br />
 				1. Conversational Interface: Natural language communication for
 				answering queries, providing suggestions, and executing commands.
@@ -81,13 +82,13 @@ const ProblemStatement1 = () => {
 				and manage them if the issue is found beyond the algorithm.
 				<br />
 				<br />
-				<span>Additionals:</span>
+				<span className="font-semibold">Additionals:</span>
 				<br />
 				1. Invoice Verification: Automate the verification of invoices.
 			</p>
 			<br />
-			<p className="problem_text">
-				<span>Objectives:</span>
+			<p className="text-[1.2rem] my-1">
+				<span className="font-semibold">Objectives:</span>
 				<br />
 				<br />
 				The solution aims to achieve the following objectives:
@@ -111,7 +112,7 @@ const ProblemStatement1 = () => {
 				data for making responsible choices.
 				<br />
 				<br />
-				<span>Target Users:</span>
+				<span className="font-semibold">Target Users:</span>
 				<br />
 				The primary target users for this solution are small and medium-sized
 				enterprises (SMEs) looking for a simple and affordable way to manage
@@ -120,31 +121,31 @@ const ProblemStatement1 = () => {
 				optimise their purchasing activities
 			</p>
 			<br />
-			<p className="problem_subheading">Evaluation Criteria</p>
-			<p className="problem_text">
+			<p className="text-[1.35rem] font-semibold underline">Evaluation Criteria</p>
+			<p className="text-[1.2rem] my-1">
 				Judges will evaluate hackathon submissions based on the following
 				criteria:
 				<br />
 				<br />
-				<span>1. Innovation:</span> How creative and novel is the solution in
+				<span className="font-semibold">1. Innovation:</span> How creative and novel is the solution in
 				addressing SMEs' purchasing challenges?
 				<br />
-				<span>2. Functionality:</span> Does the solution effectively address the
+				<span className="font-semibold">2. Functionality:</span> Does the solution effectively address the
 				objectives stated in the problem statement?
 				<br />
-				<span>3. Usability:</span> Is the solution user-friendly and accessible
+				<span className="font-semibold">3. Usability:</span> Is the solution user-friendly and accessible
 				to non-technical users, primarily SMEs?
 				<br />
-				<span>4. Impact:</span> What potential impact can the solution have on
+				<span className="font-semibold">4. Impact:</span> What potential impact can the solution have on
 				the efficiency and profitability of SMEs?
 				<br />
-				<span>5. Technical Implementation:</span> How well are AI techniques
+				<span className="font-semibold">5. Technical Implementation:</span> How well are AI techniques
 				integrated into the solution?
 				<br />
-				<span>6. Scalability:</span> Does the solution have the potential to
+				<span className="font-semibold">6. Scalability:</span> Does the solution have the potential to
 				scale and adapt to different SME requirements?
 				<br />
-				<span>7. Sustainability and Responsibility:</span>Does the solution
+				<span className="font-semibold">7. Sustainability and Responsibility:</span>Does the solution
 				promote sustainability and ethical purchasing practices?
 				<br />
 				Join us in solving a critical challenge for SMEs and revolutionise the
