@@ -1,34 +1,31 @@
 import Founders from './Founders'
 import Heads from './Heads.jsx'
 import OldHeads from './OldHeads.jsx'
-import './TeamsPage.css'
 
 const TeamsPage = () => {
 	return (
-		<>
-			<div
-				className="teamspage"
-				style={{
-					backgroundColor: 'rgb(1, 1, 27)',
-					textAlign: 'center',
-					color: 'white',
-					fontFamily: 'Montserrat',
-				}}
-			>
-				<div className="members">
-					<h3 className="members_title heads_title">Heads</h3>
-					<Heads />
+		<div className="min-h-screen bg-[#01011b] text-center text-white font-montserrat py-8">
+			<div className="grid grid-cols-1 gap-20 items-center justify-items-center">
+				<div className="grid grid-cols-1 gap-12 items-center justify-items-center w-full">
+					<h3 className="text-[#3dc4d4] text-[2.5rem]"><strong>Heads</strong></h3>
+					<div className="mt-6 w-full flex justify-center">
+						<Heads />
+					</div>
 				</div>
-				<div className="members">
-					<h3 className="members_title founders_title">Founders</h3>
-					<Founders />
+				<div className="grid grid-cols-1 gap-12 items-center justify-items-center w-full">
+					<h3 className="text-[#3dc4d4] text-[2.5rem]"><strong>Founders</strong></h3>
+					<div className="mt-6 w-full flex justify-center">
+						<Founders />
+					</div>
 				</div>
-				<div className="members">
-					<h3 className="members_title advisors_title">Advisors</h3>
-					<OldHeads />
+				<div className="grid grid-cols-1 gap-12 items-center justify-items-center w-full">
+					<h3 className="text-[#3dc4d4] text-[2.5rem]"><strong>Advisors</strong></h3>
+					<div className="mt-6 w-full flex justify-center">
+						<OldHeads />
+					</div>
 				</div>
 			</div>
-		</>
+		</div>
 	)
 }
 
