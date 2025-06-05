@@ -1,6 +1,5 @@
 import { useRef, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './Work.css'
 import Robot from '../../data/animations/Robo.json'
 import Lottie from 'lottie-react'
 import WEBDEV from '../../data/animations/WEB.json'
@@ -97,46 +96,47 @@ export default function Teams() {
 	}, [])
 
 	return (
-		<div className="work-wrapper">
-			<h2 id="recentHeader">Our Expertise</h2>
+		<div className="relative">
+			<h2 id="recentHeader"
+      className="my-8 text-center text-[48px] font-poppins text-transparent bg-gradient-to-br from-[#11E3FB] via-[#5BE6FF] to-[#11E3FB] bg-clip-text [background-clip:text] [-webkit-background-clip:text]">Our Expertise</h2>
 
-			<div className="field-cards">
+			<div className="!mb-[20vw] md:relative md:h-[30vw] md:pb-[40vw] max-[768px]:relative max-[768px]:flex max-[768px]:flex-col max-[768px]:items-center max-[768px]:max-h-fit max-[768px]:mb-[5vh]">
 				<div
-					className="field-card card1"
+					className="p-0 bg-[rgba(54,54,54,0.4)] rounded-[2.5vw] h-[40vw] transition-all duration-[1000ms] ease-[cubic-bezier(0.63,0.15,0.03,1.12)] mt-5 max-[768px]:w-[70vw] max-[768px]:h-[130vw] max-[768px]:relative max-[768px]:left-0 max-[768px]:top-0 max-[768px]:translate-x-0 max-[768px]:translate-y-0 max-[768px]:!mb-[20px] md:w-[20vw] md:absolute md:top-[10%] md:left-[40%] md:mb-[16px] md:z-[1] md:translate-x-[-50%] md:translate-y-[-50%] md:rotate-[5deg] md:transition md:delay-[100ms]"
 					ref={el => (cardRefs.current[0] = el)}
 				>
-					<Lottie animationData={Robot} height={10} />
-					<p className="field-heading">AI & Metaverse</p>
-					<p className="field-description">
+					<Lottie animationData={Robot} height={10}  />
+					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">AI & Metaverse</p>
+					<p className="!px-5 !py-2.5 !text-center font-montserrat">
 						Enter a realm where AI drives immersive Metaverse encounters,
 						pushing boundaries of what&apos;s possible.
 					</p>
 				</div>
 				<div
-					className="field-card card2"
+					className="p-0 bg-[rgba(54,54,54,0.4)] rounded-[2.5vw] h-[40vw] transition-all duration-[1000ms] ease-[cubic-bezier(0.63,0.15,0.03,1.12)] mt-5 max-[768px]:w-[70vw] max-[768px]:h-[130vw] max-[768px]:relative max-[768px]:left-0 max-[768px]:top-0 max-[768px]:translate-x-0 max-[768px]:translate-y-0 max-[768px]:!mb-[20px] md:w-[20vw] md:absolute md:top-[10%] md:left-[40%]  md:z-[2] md:translate-x-[-50%] md:translate-y-[-50%] md:rotate-[-7deg] md:transition md:delay-[50ms]"
 					ref={el => (cardRefs.current[1] = el)}
 				>
-					<Lottie animationData={WEBDEV} height={10} />
-					<p className="field-heading">Web Development</p>
-					<p className="field-description">
+					<Lottie animationData={WEBDEV} height={10}/>
+					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">Web Development</p>
+					<p className="!px-5 !py-2.5 !text-center font-montserrat">
 						Crafting dynamic, responsive websites that deliver exceptional user
 						experiences across all devices.
 					</p>
 				</div>
 				<div
-					className="field-card card3"
+					className="p-0 bg-[rgba(54,54,54,0.4)] rounded-[2.5vw] h-[40vw] transition-all duration-[1000ms] ease-[cubic-bezier(0.63,0.15,0.03,1.12)] mt-5 max-[768px]:w-[70vw] max-[768px]:h-[130vw] max-[768px]:relative max-[768px]:left-0 max-[768px]:top-0 max-[768px]:translate-x-0 max-[768px]:translate-y-0 max-[768px]:mb-[20px] md:w-[20vw] md:absolute md:top-[10%] md:left-[40%] md:z-[3] md:translate-x-[-50%] md:translate-y-[-50%] md:rotate-[-2deg]"
 					ref={el => (cardRefs.current[2] = el)}
 				>
 					<Lottie animationData={Blockchain} height={10} />
-					<p className="field-heading">Blockchain</p>
-					<p className="field-description">
+					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">Blockchain</p>
+					<p className="!px-5 !py-2.5 !text-center font-montserrat">
 						Building the decentralized future with secure, transparent
 						blockchain solutions and smart contracts.
 					</p>
 				</div>
 			</div>
 
-			<div className="separator-line"></div>
+			<div className="w-[80%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent my-5 mx-auto md:hidden"></div>
 
 			<div className="pds-page-poster-wrapper">
 				<Link to="/pds" style={{ textDecoration: 'none' }}>
