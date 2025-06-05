@@ -138,15 +138,15 @@ export default function Teams() {
 
 			<div className="w-[80%] h-px bg-gradient-to-r from-transparent via-white/50 to-transparent my-5 mx-auto md:hidden"></div>
 
-			<div className="pds-page-poster-wrapper">
+			<div className="pds-page-poster-wrapper flex justify-center items-center mb-[50px] no-underline">
 				<Link to="/pds" style={{ textDecoration: 'none' }}>
-					<div className="pds-page-poster">
-						<div className="pds-page-poster-left">
-							<h1>Still Getting Stuck in PDS?</h1>
-							<h2>Our curated PDS Problems set works right for you...</h2>
+					<div className="pds-page-poster flex justify-center items-center w-[85vw] bg-[rgba(70,69,69,0.2)] rounded-[30px] no-underline max-md:flex-col max-md:w-[70vw] max-md:pt-[30px] max-md:pb-[30px] max-md:px-[10px] max-md:mt-[20px]">
+						<div className="pds-page-poster-left w-[45vw] no-underline max-md:w-[70vw] max-md:px-[50px]">
+							<h1 className='text-[3vw] py-[10px] bg-gradient-to-br from-[#11e3fb] via-[#5be6ff] to-[#11e3fb] text-transparent bg-clip-text no-underline font-montserrat max-md:text-[4vw] max-md:py-[10px] max-md:text-center'>Still Getting Stuck in PDS?</h1>
+							<h2 className='text-[1.5vw] py-[10px] text-[aliceblue] font-montserrat max-md:py-[10px] max-md:text-[3vw] max-md:text-center'>Our curated PDS Problems set works right for you...</h2>
 						</div>
-						<div className="pds-page-poster-right">
-							<img src={programmer} alt="img" />
+						<div className="pds-page-poster-right flex justify-center items-center mb-[25px] ml-[10px] max-md:m-[20px]">
+							<img className="w-[35vw] max-md:w-[60vw]"src={programmer} alt="img" />
 						</div>
 					</div>
 				</Link>
