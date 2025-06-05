@@ -5,11 +5,9 @@ import Lab from './components/QnAPage/LabProbs/Lab'
 import Theory from './components/QnAPage/TheoryProbs/Theory'
 import Questions from './components/QnAPage/LabProbs/Questions'
 import LabQuestion from './components/QnAPage/LabProbs/LabQuestion'
-import TheoryQuestion from './components/QnAPage/TheoryProbs/TheoryQuestion'
 import RegistrationForm from './components/RegistrationPage/regform'
 import Selection from './Selection'
 import ArticlePage from './components/ArticlesPage/ArticlePage'
-import TheoryTopic from './components/QnAPage/TheoryProbs/TheoryTopic'
 import TeamsPage from './components/TeamsPage/TeamsPage'
 import EventsPage from './components/EventsPage/EventsPage'
 import Home from './components/LandingPage/Home'
@@ -30,14 +28,9 @@ function App() {
 						<Route path="/pds/lab" element={<Lab />} />
 						<Route path="/pds/theory" element={<Theory />} />
 						<Route path="/pds/lab/:topic" element={<Questions />} />
-						<Route path="/pds/theory/:topic" element={<TheoryTopic />} />
 						<Route
 							path="/pds/lab/:topic/:subTopic/:ind"
 							element={<LabQuestion />}
-						/>
-						<Route
-							path="/pds/theory/:topic/:ind"
-							element={<TheoryQuestion />}
 						/>
 						<Route path="/teams" element={<TeamsPage />}></Route>
 						<Route path="/regform" element={<RegistrationForm />}></Route>
