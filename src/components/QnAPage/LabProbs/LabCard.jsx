@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './LabCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faSquareCheck,
@@ -85,39 +84,37 @@ export default function LabCard({ qna, topic, subTopic, ind }) {
 	let question_words = qna.Question.split(' ').slice(0, 13).join(' ') + '...'
 	let question_chars = qna.Question.slice(0, 100) + '...'
 	return (
-		<tr className="cardDiv">
+		<tr className="border border-[#555] bg-[rgba(91,230,255,0.04)] p-0 rounded-none shadow-[0_4px_8px_rgba(0,0,0,0.2)] transition-[transform,box-shadow] duration-200 max-w-full w-full">
 			<td className="mark-completed">
-				<span className="checkbox" onClick={() => toggleCompleted()}>
-					{isComp ? (
-						<FontAwesomeIcon icon={faSquareCheck} />
-					) : (
-						<FontAwesomeIcon icon={faSquare} />
-					)}
-				</span>
+			<span 
+				className="text-white cursor-pointer" 
+				onClick={() => toggleCompleted()}
+			>
+				{isComp ? (
+				<FontAwesomeIcon icon={faSquareCheck} />
+				) : (
+				<FontAwesomeIcon icon={faSquare} />
+				)}
+			</span>
 			</td>
-			<td className="lc-ques">
-				<Link to={path} className="ques-link" target="_blank">
-					{question_words.length > question_chars.length
-						? question_chars
-						: question_words}
-				</Link>
+			<td className="lc-ques py-[0.5rem] pl-[0.7rem] pr-[0.5rem] align-middle text-[1.2rem] text-left w-full whitespace-nowrap">
+			<Link to={path} className="ques-link text-white no-underline" target="_blank">
+				{question_words.length > question_chars.length
+				? question_chars
+				: question_words}
+			</Link>
 			</td>
 			<td className="favourite">
-				<span
-					className="fav-star"
-					style={{
-						color: isFav ? 'yellow' : 'white',
-					}}
-					onClick={() => toggleFavourite()}
-				>
-					<FontAwesomeIcon icon={faStar} />
-				</span>
+			<span
+				className="fav-star cursor-pointer"
+				style={{
+				color: isFav ? 'yellow' : 'white',
+				}}
+				onClick={() => toggleFavourite()}
+			>
+				<FontAwesomeIcon icon={faStar} />
+			</span>
 			</td>
-			{/* <td className="lc-link">
-        <Link to={path} className="quest" target="_blank">
-          <FontAwesomeIcon icon={faNewspaper} />
-        </Link>
-      </td> */}
 		</tr>
 	)
 }
