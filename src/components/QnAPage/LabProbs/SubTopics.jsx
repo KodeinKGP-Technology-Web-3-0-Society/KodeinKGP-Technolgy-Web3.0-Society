@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import dataJ from '../../../data/qna/lab-questions.json'
 import Questions from './Questions'
-import './SubTopic.css'
 
 export default function SubTopics({ topic, viewMode }) {
 	const [openSubTopics, setOpenSubTopics] = useState([])
@@ -17,7 +16,7 @@ export default function SubTopics({ topic, viewMode }) {
 		<div className="sub-topic-container">
 			<div id="subTopics">
 				{Object.keys(dataJ[topic][0]['Subtopics']).map((subTopic, index) => (
-					<div key={index} className="subdrop">
+					<div key={index} className="w-full bg-[#01011b] rounded-lg !mb-4 overflow-hidden">
 						<div
 							className="dropdown-header"
 							onClick={() => toggleSubTopic(subTopic)}
