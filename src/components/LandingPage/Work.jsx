@@ -107,7 +107,7 @@ export default function Teams() {
 				>
 					<Lottie animationData={Robot} height={10}  />
 					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">AI & Metaverse</p>
-					<p className="!px-5 !py-2.5 !text-center font-montserrat">
+					<p className="!px-5 !py-2.5 !text-center font-montserrat text-white">
 						Enter a realm where AI drives immersive Metaverse encounters,
 						pushing boundaries of what&apos;s possible.
 					</p>
@@ -118,7 +118,7 @@ export default function Teams() {
 				>
 					<Lottie animationData={WEBDEV} height={10}/>
 					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">Web Development</p>
-					<p className="!px-5 !py-2.5 !text-center font-montserrat">
+					<p className="!px-5 !py-2.5 !text-center font-montserrat text-white">
 						Crafting dynamic, responsive websites that deliver exceptional user
 						experiences across all devices.
 					</p>
@@ -129,7 +129,7 @@ export default function Teams() {
 				>
 					<Lottie animationData={Blockchain} height={10} />
 					<p className="max-[768px]:text-[7vw] max-[768px]:mt-[5vw] !mt-[1.5vw] !mb-[0.5vw] !text-center font-montserrat text-2xl !bg-[linear-gradient(to_bottom_right,rgba(17,227,251,1),rgba(91,230,255,1),rgba(181,246,253,1),rgba(17,227,251,1))] bg-clip-text !text-transparent -webkit-bg-clip-text">Blockchain</p>
-					<p className="!px-5 !py-2.5 !text-center font-montserrat">
+					<p className="!px-5 !py-2.5 !text-center font-montserrat text-white">
 						Building the decentralized future with secure, transparent
 						blockchain solutions and smart contracts.
 					</p>
