@@ -1,67 +1,77 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react';
+import QuestionImg from './assets/question_mark.svg';
+import { Link } from 'react-router-dom';
 
-import QuestionImg from './assets/question_mark.svg'
-import './LabTheory.css'
-import { Link } from 'react-router-dom'
 export default function LabTheory() {
-	const [isExpanded, setIsExpanded] = useState(false)
+    const [isExpanded, setIsExpanded] = useState(false);
 
-	const handleToggle = () => {
-		setIsExpanded(!isExpanded)
-	}
-	return (
-		<>
-			<div id="LabTheory">
-				<div className="quesimg">
-					<div className="qimg">
-						<img src={QuestionImg} />
-					</div>
-				</div>
-				<div className="LabTheoryContainer">
-					<div id="labContainer" className="LabTheoryItems">
-						<h2 id="theoryHead" className="LabTheoryHeads">
-							Lab Problems
-						</h2>
-						<div id="labText" className="LabTheoryTexts">
-							Welcome to our Lab Questions section, where you can embark on an
-							exciting journey of hands-on learning. Immerse yourself in the
-							world of programming and data structures through a wide array of
-							exercises and challenges. Whether you're new to coding or an
-							aspiring developer, our carefully curated collection of real-world
-							problems and their solutions is your go-to resource. These
-							exercises are designed to help you build a strong foundation,
-							refine your practical skills, and gain the valuable experience
-							necessary for success in your programming adventures.
-						</div>
-						<Link to="/pds/lab">
-							<button id="labBtn" className="LabTheoryBtns">
-								See Problems
-							</button>
-						</Link>
-					</div>
-					<div id="theoryContainer" className="LabTheoryItems">
-						<h2 id="theoryHead" className="LabTheoryHeads">
-							Theory Problems
-						</h2>
-						<div id="theoryText" className="LabTheoryTexts">
-							Step into the realm of theoretical knowledge with our Theory
-							Questions section. Here, you can explore the fundamental
-							principles that underpin programming and data structures. Dive
-							into a diverse set of questions that cover the theoretical
-							foundations of computer science and software engineering. While
-							these resources are valuable for learners at any level, they are
-							particularly beneficial for those who want to deepen their
-							understanding of the theoretical aspects of these subjects.
-						</div>
-						<Link to="/pds/theory">
-							<button id="theoryBtn" className="LabTheoryBtns">
-								See Problems
-							</button>
-						</Link>
-					</div>
-				</div>
-			</div>
-			<div className="foo"></div>
-		</>
-	)
+    const handleToggle = () => {
+        setIsExpanded(!isExpanded);
+    };
+
+    return (
+        <div className="bg-[rgb(1,1,27)] min-h-screen flex items-center justify-center flex-col font-['Arial'] p-5">
+            <div id="LabTheory" className="flex flex-col justify-center items-center p-5 w-full">
+                {/* Question Image - hidden on mobile, shown on desktop */}
+                <div className="quesimg w-[90%] h-[300px] hidden lg:block mb-4">
+                    <div className="qimg w-[500px] h-full mx-auto overflow-hidden rounded-lg shadow-[rgba(0,0,0,0.15)_1.95px_1.95px_2.6px]">
+                        <img src={QuestionImg} className="w-full h-full object-cover" alt="Question mark" />
+                    </div>
+                </div>
+
+                <div className="LabTheoryContainer flex flex-col lg:flex-row justify-center items-center w-full">
+                    {/* Lab Problems Container */}
+                    <div 
+                        id="labContainer" 
+                        className="LabTheoryItems text-left border border-[#555] p-5 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.2)] transition-transform duration-200 m-4 flex-1 bg-gradient-to-br from-white from-[-278.56%] via-[#24248b] via-[-78.47%] via-[#1d1b66] via-[5.67%] to-[#11101d] to-[91.61%] hover:-translate-y-1"
+                    >
+                        <h2 className="LabTheoryHeads text-[1.5rem] mb-2.5 font-bold text-[rgb(91,230,255)]">
+                            Lab Problems
+                        </h2>
+                        <div className="LabTheoryTexts text-[#ccc] my-[15px]">
+                            Welcome to our Lab Questions section, where you can embark on an
+                            exciting journey of hands-on learning. Immerse yourself in the
+                            world of programming and data structures through a wide array of
+                            exercises and challenges. Whether you're new to coding or an
+                            aspiring developer, our carefully curated collection of real-world
+                            problems and their solutions is your go-to resource. These
+                            exercises are designed to help you build a strong foundation,
+                            refine your practical skills, and gain the valuable experience
+                            necessary for success in your programming adventures.
+                        </div>
+                        <Link to="/pds/lab">
+                            <button className="LabTheoryBtns bg-[#0074d9] text-white border-none py-2.5 px-5 no-underline rounded font-bold mt-2.5 cursor-pointer hover:bg-[#0056b3]">
+                                See Problems
+                            </button>
+                        </Link>
+                    </div>
+
+                    {/* Theory Problems Container */}
+                    <div 
+                        id="theoryContainer" 
+                        className="LabTheoryItems text-left border border-[#555] p-5 rounded-lg shadow-[0_4px_8px_rgba(0,0,0,0.2)] transition-transform duration-200 m-4 flex-1 bg-gradient-to-br from-white from-[-278.56%] via-[#24248b] via-[-78.47%] via-[#1d1b66] via-[5.67%] to-[#11101d] to-[91.61%] hover:-translate-y-1"
+                    >
+                        <h2 className="LabTheoryHeads text-[1.5rem] mb-2.5 font-bold text-[rgb(91,230,255)]">
+                            Theory Problems
+                        </h2>
+                        <div className="LabTheoryTexts text-[#ccc] my-[15px]">
+                            Step into the realm of theoretical knowledge with our Theory
+                            Questions section. Here, you can explore the fundamental
+                            principles that underpin programming and data structures. Dive
+                            into a diverse set of questions that cover the theoretical
+                            foundations of computer science and software engineering. While
+                            these resources are valuable for learners at any level, they are
+                            particularly beneficial for those who want to deepen their
+                            understanding of the theoretical aspects of these subjects.
+                        </div>
+                        <Link to="/pds/theory">
+                            <button className="LabTheoryBtns bg-[#0074d9] text-white border-none py-2.5 px-5 no-underline rounded font-bold mt-2.5 cursor-pointer hover:bg-[#0056b3]">
+                                See Problems
+                            </button>
+                        </Link>
+                    </div>
+                </div>
+            </div>
+        </div>
+    );
 }

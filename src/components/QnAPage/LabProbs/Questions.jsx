@@ -1,7 +1,5 @@
-import React from 'react'
 import dataJ from '../../../data/qna/lab-questions.json'
 import LabCard from './LabCard'
-import './LabTopic.css'
 
 export default function Questions({ topic, subTopic, viewMode }) {
 	const getQuestionsData = subTopic => {
@@ -33,8 +31,8 @@ export default function Questions({ topic, subTopic, viewMode }) {
 	}
 	let questionsData = getQuestionsData(subTopic)
 	return (
-		<div className="LabTopicList">
-			<table className="ques-table">
+		<div className="overflow-x-auto">
+			<table>
 				<tbody>
 					{questionsData.map((qa, ind) => (
 						<LabCard

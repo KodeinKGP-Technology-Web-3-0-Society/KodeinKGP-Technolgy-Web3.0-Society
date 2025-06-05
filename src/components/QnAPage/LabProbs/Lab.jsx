@@ -1,13 +1,12 @@
 import React, { useEffect, useState } from 'react'
 import dataJ from '../../../data/qna/lab-questions.json'
 import SubTopics from './SubTopics'
-import './Lab.css'
 import LoginModal from './LoginModal'
 
 export default function Lab() {
 	const BACKEND_URL = ' https://kik-backend.onrender.com/'
 	const [openTopics, setOpenTopics] = useState([])
-	const [viewMode, setViewMode] = useState('All Questions') // "All Questions", "Favourite Questions", Incomplete Questions
+	const [viewMode, setViewMode] = useState('All Questions')
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false)
 	const [isLoginOpen, setIsLoginOpen] = useState(false)
 
@@ -27,10 +26,7 @@ export default function Lab() {
 					resp
 						.json()
 						.then(data =>
-							localStorage.setItem(
-								'favourites',
-								JSON.stringify(data.favourites)
-							)
+							localStorage.setItem('favourites', JSON.stringify(data.favourites))
 						)
 				}
 			})
@@ -61,16 +57,13 @@ export default function Lab() {
 	}, [])
 
 	const toggleTopic = topic => {
-		setOpenTopics(prevOpenTopics =>
-			prevOpenTopics.includes(topic)
-				? prevOpenTopics.filter(t => t !== topic)
-				: [...prevOpenTopics, topic]
+		setOpenTopics(prev =>
+			prev.includes(topic) ? prev.filter(t => t !== topic) : [...prev, topic]
 		)
 	}
 
-	const toggleDropdown = () => {
-		setIsDropdownOpen(!isDropdownOpen)
-	}
+	const toggleDropdown = () => setIsDropdownOpen(!isDropdownOpen)
+
 	const handleViewModeChange = mode => {
 		setViewMode(mode)
 		setIsDropdownOpen(false)
@@ -106,65 +99,65 @@ export default function Lab() {
 	}
 
 	return (
-		<div className="lab-container">
-			<h1 id="LabHeader">LAB PROBLEMS</h1>
-			<div className="dropdown-filter">
-				<div className="lab-problem-login">
-					<button className="lt-btn-login" onClick={openLoginBox}>
-						{localStorage.getItem('user') ? 'LogOut' : 'Login to Save'}
-					</button>
-				</div>
-				<div
-					className={`custom-dropdown ${isDropdownOpen ? 'open' : ''}`}
-					onClick={toggleDropdown}
+		<div className="flex flex-col items-center w-full !px-4">
+			<div className="text-center text-4xl text-cyan-300 !mt-5 !mb-5 font-bold">LAB PROBLEMS</div>
+
+			<div className="w-full max-w-6xl flex flex-col sm:flex-row justify-between px-7 sm:px-0 sm:items-center !mb-4">
+				<button
+					className="bg-gray-800 text-white px-10 py-2 rounded-t border-b border-cyan-300 font-semibold hover:brightness-125 transition-all  sm:w-[200px]"
+					onClick={openLoginBox}
 				>
-					<div className="custom-dropdown-selected">
+					{localStorage.getItem('user') ? 'LogOut' : 'Login to Save'}
+				</button>
+
+				<div className="relative w-full sm:w-[200px] mt-2 sm:mt-0">
+					<div
+						className="bg-gray-900 text-white px-4 py-2 rounded-t border-b border-cyan-300 flex justify-between cursor-pointer font-semibold"
+						onClick={toggleDropdown}
+					>
 						{viewMode}
-						<span className="custom-dropdown-icon">
-							{isDropdownOpen ? '▲' : '▼'}
-						</span>
+						<span>{isDropdownOpen ? '▲' : '▼'}</span>
 					</div>
-					<div className="custom-dropdown-options">
-						<div
-							className="custom-dropdown-option"
-							onClick={() => handleViewModeChange('All Questions')}
-						>
-							All Questions
+					{isDropdownOpen && (
+						<div className="absolute top-full left-0 w-full bg-[#193963] rounded-b z-10">
+							{['All Questions', 'Favourite Questions', 'Incomplete Questions'].map(mode => (
+								<div
+									key={mode}
+									onClick={() => handleViewModeChange(mode)}
+									className="text-white px-4 py-2 hover:font-bold hover:bg-[#19396380] cursor-pointer bg-[#252531]"
+								>
+									{mode}
+								</div>
+							))}
 						</div>
-						<div
-							className="custom-dropdown-option"
-							onClick={() => handleViewModeChange('Favourite Questions')}
-						>
-							Favourite Questions
-						</div>
-						<div
-							className="custom-dropdown-option"
-							onClick={() => handleViewModeChange('Incomplete Questions')}
-						>
-							Incomplete Questions
-						</div>
-					</div>
+					)}
 				</div>
 			</div>
-			<div id="Lab">
+
+			<div className="flex flex-col items-center w-full max-w-6xl">
 				{Object.keys(dataJ).map((topic, index) => (
-					<div key={index} className="dropdown">
-						<div className="dropdown-header" onClick={() => toggleTopic(topic)}>
+					<div
+						key={index}
+						className="w-full bg-[#01011b] mb-3 rounded-lg overflow-hidden"
+					>
+						<div
+							className="text-white text-xl font-semibold px-5 py-4 bg-[#43434390] border-b border-cyan-300 flex justify-between items-center cursor-pointer"
+							onClick={() => toggleTopic(topic)}
+						>
 							{topic
 								.replace(/([a-z])([A-Z0-9])|([A-Z])([0-9])/g, '$1$3 $2$4')
 								.replace(/\bAnd\b/g, 'and')}
-							<span className="dropdown-icon">
-								{openTopics.includes(topic) ? '-' : '+'}
-							</span>
+							<span className="text-xl">{openTopics.includes(topic) ? '-' : '+'}</span>
 						</div>
 						{openTopics.includes(topic) && (
-							<div className="dropdown-content">
+							<div className="bg-[#1c1a22] px-3 py-4 rounded-b-lg">
 								<SubTopics topic={topic} viewMode={viewMode} />
 							</div>
 						)}
 					</div>
 				))}
 			</div>
+
 			<LoginModal
 				isVisible={isLoginOpen}
 				onClose={() => setIsLoginOpen(false)}
