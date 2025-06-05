@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { Link } from 'react-router-dom'
-import './LabCard.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {
 	faSquareCheck,
